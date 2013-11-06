@@ -1,0 +1,15 @@
+Nirmal Patel&nirmals squares&startshape nirmal
+
+rule nirmal2 {
+   nirmal{r 45}
+}
+
+rule nirmal {
+   SQUARE{size .6 .2 x -.2 y .4}
+   SQUARE{size .2 .6 x -.4 y .2}
+   SQUARE{size .6 .2 x .2 y -.4}
+   SQUARE{size .2 .6 x .4 y -.2}
+   nirmal{size .2}
+   nirmal{x .4 y .4 size .2}
+   nirmal{x -.4 y -.4 size .2}
+}

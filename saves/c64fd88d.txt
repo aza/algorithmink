@@ -1,0 +1,101 @@
+Qbit&spirals&startshape EMPTY
+
+rule EMPTY {}
+
+rule MOUSECLICK {
+ ROOT_NODE{}
+ SPIRAL{ r   0 }
+ SPIRAL{ r  90 }
+ SPIRAL{ r 180 }
+ SPIRAL{ r 270 }
+}
+
+
+rule ROOT_NODE {
+ SQUARE {
+  s .09
+  r 45
+ }
+ SQUARE {
+  s .085
+  r 45
+  h 60
+  sat 1
+  b .5
+ }
+}
+
+rule BASIC_NODE {
+ CIRCLE {
+  s .05
+ }
+ CIRCLE {
+  s .045
+  h 200
+  sat 1
+  b .5
+ }
+}
+
+rule SPLIT_NODE {
+ SQUARE {
+  s .05
+  r 180
+ }
+ SQUARE {
+  s .045
+  r 180
+  h 80
+  sat 1
+  b .5
+ }
+}
+
+rule SPIKE_NODE {
+ TRIANGLE {
+  s .05
+  x .1
+  r 270
+  h 1
+  sat 1
+  b .3
+ }
+ TRIANGLE {
+  s .045
+  x .1
+  r 270
+  h 1
+  sat 1
+  b .7
+ }
+}
+
+
+rule SPIRAL {
+ BASIC_NODE{}
+ SPIRAL{ y .1 r 5 s .95 }
+}
+
+rule SPIRAL .05 {
+ BASIC_NODE{}
+ SPIKE{ r   0 }
+ SPIKE{ r 180 }
+ SPIRAL{ y .1 r 5 s .99 flip 90 }
+}
+
+rule SPIRAL .02 {
+ SPLIT_NODE{}
+ SPIRAL{ y .1 r 5 s .99 }
+ SPIRAL{ y .1 r 5 s .99 flip 90 }
+}
+
+
+rule SPIKE {
+ SPIKE_NODE{}
+ SPIKE{ s .85 x .07 r -7 b .1 }
+}
+
+rule SPIKE .3 {
+ SPIKE_NODE{}
+ SPIKE{ s .85 x .07 r 7 b .1 }
+}

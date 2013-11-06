@@ -1,0 +1,5 @@
+rishabh&circle&startshape shape
+ 
+rule shape{
+ CIRCLE{}
+}

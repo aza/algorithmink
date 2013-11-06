@@ -1,0 +1,76 @@
+lunarbunny&hearty&startshape start
+
+rule start {
+  WELCOME { s 0.01 }
+}
+
+rule WELCOME {
+
+	CORE { sat 1 hue 10
+		x 0 y -55
+		r 28 b 0.5 s 10
+	}
+	CORE { flip 90
+		sat 1 hue 10
+		x 0 y -55
+		r -28 b 0.5 s 10
+	}
+
+	CORE { sat 1 hue 5
+		x 0 y +27.2
+		r 10 b 0.5 s 2.4
+	}
+	CORE { flip 90
+		sat 1 hue 5
+		x 0 y +27.2
+		r -10 b 0.5 s 2.4
+	}
+
+
+	VINEL { sat 1 hue 1
+		x 0 y -55
+		r 28 b 0.5 s 10
+	}
+	VINEL { flip 90
+		sat 1 hue 1
+		x 0 y -55
+		r -28 b 0.5 s 10
+	}
+
+}
+
+rule CORE  {
+	SQUARE  { x 1 y 5 s 2 10.5}
+	CORE { x 2 size 0.91 r 10}
+}
+
+
+rule VINEL 100 {
+	SQUARE  { x 1 y 0 s 2.2 0.5}
+	VINEL { x 2 size 0.91 r 10 }
+}
+
+rule VINEL 40 {
+	SPAWN {}
+	VINEL { }
+}
+
+rule SPAWN {
+	VEIN { r 90 }
+}
+
+rule VEIN 10 {
+	CIRCLE { x 0 y 0 hue 10 b 0.2 s 1 0.4 }
+	VEIN { s 0.95 x 0.5 r 5}
+}
+
+rule VEIN 10 {
+	CIRCLE { x 0 y 0 hue 10 b 0.2 s 1.1 0.3 }
+	VEIN { s 0.95 x 0.5 r -5}
+}
+
+rule VEIN 0.5 {
+	CIRCLE { x 0 y 0 hue 10 b 0.2 s 1 0.4 }
+	VEIN { s 0.92 x 0.3 r 15}
+	VEIN { s 0.92 x 0.3 r -15}
+}

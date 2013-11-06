@@ -1,0 +1,65 @@
+Evan&Georges Bugs&startshape shape
+background {b -1}
+
+rule shape{
+ nextGen{b .5 sat 1 h 50}
+}
+
+rule bsquare{
+ SQUARE{s .0125}
+}
+
+rule nextGen 10{
+ nextGen{}
+}
+
+rule nextGen 4{
+ bsquare{}
+ move{}
+}
+
+rule nextGen .125{
+ breed{}
+ nextGen{}
+}
+
+rule nextGen .0125{
+ die{}
+}
+
+rule nextGen .5{
+ mutate{}
+}
+
+rule move{
+ nextGen{x .0125}
+}
+
+rule move{
+ nextGen{x -.0125}
+}
+
+rule move{
+ nextGen{y .0125}
+}
+
+rule move{
+ nextGen{y -.0125}
+}
+
+rule breed{
+ nextGen{h 17}
+}
+
+rule breed{
+ nextGen{h 41}
+}
+
+rule mutate{
+ nextGen{h 71}
+}
+
+rule die{
+ bsqaure{}
+ die{b -.2}
+}

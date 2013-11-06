@@ -1,0 +1,30 @@
+More&Aza&startshape scale
+
+rule scale{ 
+  plusOn{ s 1 h 5 sat .75 b .5 }
+}
+
+rule plusOn{
+  SQUARE{ s 1.5 .35 }
+  SQUARE{ s 1.5 .35 r 90}
+  ARCH{ x .78 }
+  ARCH{ x -.78 r 180 }
+  plus{}
+}
+
+rule plus 2{
+  SQUARE{ s 1.5 .35 }
+  SQUARE{ s 1.5 .35 r 90}
+  plus{ x .6 y .6 s .4}
+  plus{ x -.6 y .6 s .4}
+  plus{ x .6 y -.6 s .4}
+  plus{ x -.6 y -.6 s .4}
+}
+
+rule ARCH 200{
+  SQUARE{ b -.3 sat -1 s .02 .35}
+  ARCH{ r .73 s 1 x .01 }
+}
+
+
+rule plus{}

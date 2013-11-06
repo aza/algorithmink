@@ -1,0 +1,6 @@
+jkochis&drip&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{y .01 s .99 b .05}
+}

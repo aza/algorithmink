@@ -1,0 +1,13 @@
+sazhide&four circles&startshape shape
+
+rule shape {
+  four{ a -.65 }
+}
+
+rule four {
+ CIRCLE{}
+ four{ x -.5 y -.5 s .5}
+ four{ x  .5 y -.5 s .5}
+ four{ x -.5 y  .5 s .5}
+ four{ x  .5 y  .5 s .5}
+}

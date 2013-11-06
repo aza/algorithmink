@@ -1,0 +1,52 @@
+matti&circle disco&startshape init
+background{ b -1 }
+
+rule init{
+  CIRCLE{ sat 0 s .01 b .5 }
+  shape{hue 0}
+  shape{hue 72}
+  shape{hue 144}
+  shape{hue 216}
+  shape{hue 288}
+}
+
+rule shape{
+ CIRCLE{ sat 0.5 s .09 b .5  }
+ move{}
+}
+
+rule move{
+ shape{ y .10 a .1 sat +.05 s 0.9 }
+}
+
+rule move{
+ shape{ x .10 hue +5 b +.05 a -.5 s 1.1}
+}
+
+rule move{
+ shape{ y -.10 a -.5 b -.05 hue +10 a +.1}
+}
+
+rule move{
+ shape{ x -.10 hue -10 sat -.05 }
+}
+
+rule move{
+ shape{ y .10 x -.10 }
+}
+
+rule move{
+ shape{ x .10 y .10 s 1.2}
+}
+
+rule move{
+ shape{ y -.10  x .10 s 1.4}
+}
+
+rule move{
+ shape{ x -.10 y -.10 s .5 b -1 a 2}
+}
+
+rule MOUSECLICK{
+  init(s 0.5)
+}

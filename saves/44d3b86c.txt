@@ -1,0 +1,32 @@
+Michael R Bernstein&Sqaure Smoke&startshape STARTER
+
+rule STARTER{
+  DOT{}
+}
+
+rule DOT{
+  SQUARE{ s 1 b 1 a -.99 }
+  SQUARE{ s .33 b 1 a -.5 }  
+  SQUARE{ s .3 b .5 sat .08 }
+  MOTION{ h 0.1 }
+}
+
+rule MOTION{
+  DOT{ x .03 }
+}
+
+rule MOTION{
+  DOT{ x -.03 }
+}
+
+rule MOTION{
+  DOT{ y .03 }
+}
+
+rule MOTION{
+  DOT{ y -.03 }
+}
+
+rule MOUSECLICK{
+  DOT{ s .5 }
+}

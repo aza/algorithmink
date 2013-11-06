@@ -1,0 +1,18 @@
+juan carlos&cool&startshape start
+
+rule start{
+
+ shapeA{}
+ shapeB{}
+}
+
+rule shapeA{
+ CIRCLE{s 0.4}
+ CIRCLE{s 0.25 x 1 }
+ shapeA{r 20 s 0.88 b 0.1 sat 0.2}
+}
+
+rule shapeB{
+ CIRCLE{s 0.25 x 1 }
+ shapeB{r -20 s 0.88 b 0.1 sat 0.2}
+}

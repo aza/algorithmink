@@ -1,0 +1,190 @@
+luisukbrazil&where is the love&startshape ordem
+background {b -.7 hue 360 sat 5}
+rule ordem{
+ w{s 1.1 x -1.2 y .6}
+ h{s .6 x -.5 y .45 r -45}
+ e{s .8 x .02 y .52 r 180}
+ r{s .7 r 180 x .6 y .5 }
+ e2{s .7 x 1.2 y .52 r -60}
+ I{s .5 r 180 x -1.6}
+ S{s .5 r 90 x -1.4 y -.151}
+ e3{s .7 1.5 y -.4 x 1.5}
+ v{s 1.5 2 y -.22 x .7}
+ L{x -.5 y -.4 s 1.6 1.5 }
+ o{hue 360 sat 5 b .7 x -.15 y -.28 s 1.2 .8}
+ t{x -1.55 y -.6 s .6 1}
+}
+
+rule w{
+ TRIANGLE{s .6 r 180 x -.2}
+ TRIANGLE{s .6 r 180 x .25}
+ w2{hue 360 sat 5 b .7}
+}
+
+rule w2{
+ TRIANGLE{s .4 r 180 y .15 x .25}
+ TRIANGLE{s .4 r 180 y .15 x -.2}
+}
+
+rule h{
+ SQUARE{s .55 .7}
+ h1{hue 360 sat 5 b .7}
+}
+
+rule h1{
+ SQUARE{s .2 .3 y -.26}
+ SQUARE{1 s .2 .3 y .26}
+}
+
+rule e{
+ SQUARE{s .55 .7}
+ e1{hue 360 sat 5 b .7}
+}
+
+rule e1{
+ SQUARE{r 90 s .2 .4 y -.16 x .077}
+ SQUARE{r 90 s .2 .4 y .16 x .077}
+ SQUARE{s .2 x .2}
+}
+
+rule r{
+ CIRCLE{s .5 y .155 x .1}
+ SQUARE{s .15 .8}
+ SQUARE{s .15 .4 r 45 x .2 y -.2}
+ r1{hue 360 sat 5 b .7}
+}
+
+rule r1{
+ SQUARE{s .2 .4 x -.176 y .15}
+ SQUARE{ r 45 s .25 y .155 x .12}
+}
+
+rule e2{
+ SQUARE{s .55 .7}
+ e1{hue 360 sat 5 b .7}
+}
+
+rule e1{
+ SQUARE{r 90 s .2 .4 y -.16 x .077}
+ SQUARE{r 90 s .2 .4 y .16 x .077}
+ SQUARE{s .2 x .2}
+}
+
+rule I{
+ SQUARE{s .15 .6}
+ TRIANGLE{s .2 y .42 r 60}
+}
+
+
+rule S{
+ s{}
+ s1{x .4 y .1}
+ s2{hue 360 sat 5 b .7}
+}
+
+rule s{
+ CIRCLE{s .4}
+ SQUARE{s .4 x .2}
+ SQUARE{s .2 .1 x .5 y .15}
+}
+
+rule s1{
+ CIRCLE{s .4 y -.4}
+ SQUARE{s .4 x -.2 y -.4}
+ SQUARE{s .2 .1 x -.5 y -.55}
+}
+
+rule s2{
+ CIRCLE{s .2 }
+ SQUARE{s .4 .2 x .2 }
+ CIRCLE{s .2 y -.3 x .4}
+ SQUARE{s .4 .2 x .2 y -.3}
+}
+
+rule e3{
+ SQUARE{s .55 .7}
+ e1{hue 360 sat 5 b .7}
+}
+
+rule e1{
+ SQUARE{r 90 s .2 .4 y -.16 x .077}
+ SQUARE{r 90 s .2 .4 y .16 x .077}
+ SQUARE{s .2 x .2}
+}
+
+rule v{
+ TRIANGLE{s .6 r 180 }
+ v1{hue 360 sat 5 b .7}
+}
+
+rule v1{
+ TRIANGLE{s .4 r 180 y .1 }
+}
+
+rule L{
+ SQUARE{s .55 .7}
+ SQUARE{s .55 .155 x .4 y -.272}
+ L1{hue 360 sat 5 b .7}
+}
+
+rule L1{
+ SQUARE{s .4 .55 x .08 y .08}
+}
+
+rule o{
+ CIRCLE{s .9}
+ o1{hue 360 sat 5 b .7}
+}
+
+rule o1{
+ CIRCLE{s .8 b 1}
+ 
+}
+
+
+rule t{
+ SQUARE{s .55 .7}
+ t1{hue 360 sat 5 b .7}
+ h2{s .65 x .35 y -.1}
+ e3{x .77 s .8 .9}
+}
+
+rule t1{
+ SQUARE{s .18 .5 x .2 y -.11}
+ SQUARE{s .18 .5 x -.2 y -.11}
+}
+
+rule h2{
+ SQUARE{s .55 .7}
+ h1{hue 360 sat 5 b .7}
+}
+
+rule h1{
+ SQUARE{s .2 .3 y -.26}
+ SQUARE{1 s .2 .3 y .26}
+}
+
+rule e3{
+ SQUARE{s .55 .7}
+ e1{hue 360 sat 5 b .7}
+}
+
+rule e1{
+ SQUARE{r 90 s .2 .4 y -.16 x .077}
+ SQUARE{r 90 s .2 .4 y .16 x .077}
+ SQUARE{s .2 x .2}
+}
+
+rule a{
+ CIRCLE{s .5 b 1}
+ SQUARE{s .3 x -0.25 }
+ CIRCLE{ s .35}
+ CIRCLE{s .104 b 1 y .135 x -.15}
+ SQUARE{s .2 y -.2 x -.12}
+ SQUARE{s .08 .2 b 1 y -.275}
+ CIRCLE{s .12 y -.49 b 1}
+}
+
+rule MOUSECLICK{
+ a{s .2}
+}

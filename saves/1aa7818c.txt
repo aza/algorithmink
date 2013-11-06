@@ -1,0 +1,5 @@
+sdgasg&sfas&startshape shape
+
+rule shape{
+ squre{}
+}

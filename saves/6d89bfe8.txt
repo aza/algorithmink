@@ -1,0 +1,35 @@
+ox&starway to paradise&startshape shape
+
+rule a{
+star{b -1}
+star{s 0.991}
+}
+
+rule b{
+a{}
+b{r 10 s 0.991 sat 1 hue 1}
+}
+
+rule c{
+a{}
+b{r 10 s 0.991 sat 1 hue -1}
+}
+
+rule shape{
+b{b 0.75 s 6}
+c{b 0.75 s 5}
+}
+
+
+rule star{
+   base {}
+   base {r 72 }   
+   base {r 144 } 
+   base {r 216 } 
+   base {r 288 } 
+}
+ 
+rule base{
+  TRIANGLE{ s 1 1.2 y 1}
+  TRIANGLE{ s 1 1.2 y .330 flip 180}
+}

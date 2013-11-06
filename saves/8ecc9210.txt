@@ -1,0 +1,8 @@
+Hans&Toupee&startshape shape
+
+rule shape{
+ CIRCLE{y 0 size .5}
+ CIRCLE{b 1 y 0 size .45}
+ shape{r -25 x 0.5 y 0 size .75}
+ shape{r 25 x -0.25 y 0 size .75}
+}

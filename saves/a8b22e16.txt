@@ -1,0 +1,13 @@
+benjamin&bubble&startshape twoshapes
+rule twoshapes{
+  CIRCLE{s .5}
+  SQUARE{x 1}
+  twoshapes{y .2 s .5 b .1}
+}
+
+rule twoshapes{
+  CIRCLE{s .9}
+  SQUARE{x 2}
+  twoshapes{y .25 s .5 b .3}
+}
+

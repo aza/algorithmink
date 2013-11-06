@@ -1,0 +1,41 @@
+Ward Cunningham&a vs b&startshape shape
+
+rule shape{
+ grid{x -1 y -1 s .2 sat 1}
+}
+
+rule grid {
+ row {y 0 b .0}
+ row {y 1 b .1}
+ row {y 2 b .2}
+ row {y 3 b .3}
+ row {y 4 b .4}
+ row {y 5 b .5}
+ row {y 6 b .6}
+ row {y 7 b .7}
+ row {y 8 b .8}
+ row {y 9 b .9}
+}
+
+rule row {
+ cell {x 0 a -.0}
+ cell {x 1 a -.1}
+ cell {x 2 a -.2}
+ cell {x 3 a -.3}
+ cell {x 4 a -.4}
+ cell {x 5 a -.5}
+ cell {x 6 a -.6}
+ cell {x 7 a -.7}
+ cell {x 8 a -.8}
+ cell {x 9 a -.9}
+}
+
+
+rule cell {
+ c {}
+ c {r 120 hue 120}
+ c {r 240 hue 240}
+}
+
+rule c {
+ CIRCLE{x .18 s .6}

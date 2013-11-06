@@ -1,0 +1,50 @@
+Sjoerd Visscher&tricky inversion&startshape starter
+background{ b -1 }
+
+rule starter{
+ center1{ s 1.3 y -.2 }
+}
+
+rule center1 {
+  CIRCLE{ b 1 }
+  arms1 {}	
+}
+
+rule arms1 {
+  center2{ y .75 s .5 r 180}	
+  center2{ y -.37 x -.65 s .5 r -60 }
+  center2{ y -.37 x .65 s .5 r 60}
+}
+
+rule center2 {
+  CIRCLE{ b 1 }
+  arms2 {}	
+}
+
+rule arms2 {
+  center3{ y .75 s .5 r 180}	
+  center2{ y -.37 x -.65 s .5 r -60 }
+  center2{ y -.37 x .65 s .5 r 60}
+}
+
+rule center3 {
+  CIRCLE{ b -1 }
+  arms3 {}	
+}
+
+rule arms3 {
+  center4{ y .75 s .5 r 180}	
+  center4{ y -.37 x -.65 s .5 r -60 }
+  center4{ y -.37 x .65 s .5 r 60}
+}
+
+rule center4 {
+  CIRCLE{ b -1 }
+  arms4 {}	
+}
+
+rule arms4 {
+  center1{ y .75 s .5 r 180}	
+  center4{ y -.37 x -.65 s .5 r -60 }
+  center4{ y -.37 x .65 s .5 r 60}
+}

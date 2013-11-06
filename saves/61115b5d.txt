@@ -1,0 +1,13 @@
+Marcos Leal&White Rose&startshape start
+
+rule start{
+  shapeA{r 90 s 2}
+  shapeA{r 90 flip 90 s 2}  
+}
+
+rule shapeA {
+  SQUARE{s .5 }
+  SQUARE{s .5 b 1}
+  shapeA{s .95 r 10 }
+}
+

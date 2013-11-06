@@ -1,0 +1,36 @@
+Hobbit&bCurve rArm&startshape bCurve
+
+rule bCurve { 
+	Arm{ s .03 x .6 }
+	Arm{ s .03 x .6 r 90}
+	Arm{ s .03 x .6 r 180}
+	Arm{ s .03 x .6 r -90}
+	Arm{ s .03 x -.6 }
+	Arm{ s .03 x -.6 r 90}
+	Arm{ s .03 x -.6 r 180}
+	Arm{ s .03 x -.6 r -90}
+}
+
+rule MOUSECLICK{
+	Arm{ s .03 }
+	Arm{ s .03 r 90}
+	Arm{ s .03 r 180}
+	Arm{ s .03 r -90}
+}
+
+rule Arm { rArm {} }
+rule Arm { rArm { flip 90 } }
+
+rule rArm {
+	SQUARE {}
+	rArm { y 0.45 s 0.94 r 1}
+}
+rule rArm {
+	SQUARE {}
+	rArm { y 0.45 s 1.05 r 1}
+}
+
+rule rArm 0.01 {
+	rArm { r 90 }
+	rArm { r -90 }
+}

@@ -1,0 +1,8 @@
+adf&afs&startshape start
+
+rule start{
+ vines{ s .2 h 5 sat .3 }
+ vines{ s .2 r 180 h 10 sat . 4}
+ vines{ s .1 r 90 h 10 sat .5 }
+ vines{ s .3 r 270 h 5 sat .5}
+}

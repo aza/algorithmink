@@ -1,0 +1,13 @@
+matt m&infinitum&startshape start
+
+rule start{
+ shapeA{ r 90 s 2}
+ shapeA{ r 90 flip 180 s 2}
+}
+
+rule shapeA{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .49 .95 b 1}
+ shapeA{ s .95 r 3 }
+
+}

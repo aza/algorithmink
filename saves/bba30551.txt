@@ -1,0 +1,35 @@
+Ward Cunningham&Protea 1a&startshape shape
+
+rule shape {
+ round { s .06 y -.6 b .5 sat .5}
+}
+
+rule round {
+ tick {}
+ round {x 1 r 10 h 20.5 s .9995}
+}
+
+rule tick 20 {
+}
+
+rule tick {
+ line {r 180 y -.5 s .5}
+}
+
+rule line {
+ cell {}
+}
+
+rule line {
+ cell {r 3}
+}
+
+rule line {
+ cell {r -3}
+}
+
+rule cell {
+ CIRCLE {s 8}
+ CIRCLE {s 7.5 b .3}
+ line {y 1 s .99}
+}

@@ -1,0 +1,26 @@
+timothymh&Random&startshape one
+
+rule one{
+ path{r 20,30}
+ path{r -20,-30}
+}
+
+rule path{
+ CIRCLE{s .1 x .1 y .1}
+ one{x .1 y .1 b 0.1}
+}
+
+rule path{
+ CIRCLE{s .1 x -.1 y .1}
+ one{x .1 y -.1 b 0.2}
+}
+
+rule path{
+ CIRCLE{s .1 x -.1 y .1}
+ one{x -.1 y .1 b 0,0.2}
+}
+
+rule path{
+ CIRCLE{s .1 x -.1 y .1}
+ one{x -.1 y -.1 b 0,0.3}
+}

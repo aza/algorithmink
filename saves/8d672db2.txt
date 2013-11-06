@@ -1,0 +1,11 @@
+matt b&eye burner&startshape shape
+
+rule shape {
+ triColor{s .5}
+ shape{r 1 hue 200}
+}
+
+rule triColor{
+ TRIANGLE{ hue 100 sat 1 b .8}
+ triColor{s 0.9 hue -3}
+}

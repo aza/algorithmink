@@ -1,0 +1,47 @@
+Zod&briarpatch click&startshape begin
+
+rule begin{
+ briars{y -1 x -1}
+ briars{y -1 x -.5}
+ briars{y -1 }
+ briars{y -1 x .5}
+ briars{y -1 x 1}
+}
+
+rule briars{
+ briar{r 80 s .03}
+ briar{r 70 s .03}
+ briar{r 100 s .03}
+ briar{r 110 s .03}
+}
+
+rule briar{
+ briarleft {}
+}
+
+rule briar{
+ briarright {}
+}
+
+rule briarleft 50{
+   TRIANGLE{r 30}
+   briarleft {x 1 r 2 s .99 b .01}
+}
+
+rule briarleft {
+   briarright{}
+}
+
+rule briarright 50{
+   TRIANGLE{r 30}
+   briarright{x 1 r -2 s .99 b .01}
+}
+
+rule briarright{
+   briarleft {}
+}
+
+
+rule MOUSECLICK{
+   briars{}
+}

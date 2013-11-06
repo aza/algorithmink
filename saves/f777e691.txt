@@ -1,0 +1,10 @@
+timothymh&Die side 1&startshape die
+
+rule die{
+ SQUARE{}
+ pip{}
+}
+
+rule pip{
+ CIRCLE{ b 1 s .14 }
+}

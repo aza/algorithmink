@@ -1,0 +1,25 @@
+pigpenguin&Green swirly stuff&startshape shape
+background{ b -1}
+rule shape{
+swirl { s .08 f 90 r 180 }
+}
+rule shape{
+swirl { s .08 f 90}
+}
+
+rule shape{
+swirl { s .08}
+}
+
+
+
+rule swirl 5 {
+TRIANGLE{h 100 sat 1 b .5 a .9}
+swirl { y 1 s .99 r 3 }
+}
+
+rule swirl .1 {
+TRIANGLE{h 100 sat 1 b .5}
+swirl { y 1  s .99 r 3}
+swirl {y 1  s .99 r 3  flip 90 }
+}

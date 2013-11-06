@@ -1,0 +1,37 @@
+Logan&Curly2&startshape scale
+
+background {h 8}
+
+rule scale{ 
+	SPIKES{ s .000001 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 90 }
+	SPIKE { r 180 }
+	SPIKE { r 270 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 33 }
+
+}
+
+rule LSPIKE {
+	SQUARE { x .4 }
+	LSPIKE {hue .5 sat .2 x 0.899 s .965 r 12 b .004}
+       
+}
+rule LSPIKE 0.0006 {
+	SPIKE { r 90 }
+	SPIKE { r -90 }
+	LSPIKE { y 0.98 s 0.99  r 1}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .09 }
+}

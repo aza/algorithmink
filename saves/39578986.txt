@@ -1,0 +1,12 @@
+Luisukbrazil&Algoritmo 2 &startshape start
+
+rule start{
+ shapeA{ r 340 s 4 }
+ shapeA{ r 90 flip 90 s 4 }
+}
+
+rule shapeA{
+ CIRCLE{ s 0.9 1}
+ CIRCLE{ s 0.4 .98 b 1}
+ shapeA{ s 0.95 r 0.8 }
+}

@@ -1,0 +1,7 @@
+Jesse&swirly&startshape shape
+
+rule shape{
+ SQUARE{}
+ CIRCLE{b .5 s 1.05}
+ shape{y .0025 s .995 b .0025 r .75}
+}

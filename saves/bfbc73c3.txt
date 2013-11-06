@@ -1,0 +1,6 @@
+ANDI HARPIANTO&AMHNews&The AMH News Syndicate 
+Online Newspaper Version 1.0
+
+rule shape{
+ CIRCLE{}
+}

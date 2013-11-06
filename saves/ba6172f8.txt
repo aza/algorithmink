@@ -1,0 +1,21 @@
+trytryrty&ytyrty&startshape start
+
+rule start{
+ shapeA{ r 100 s 100}
+ shapeA{ r 100 flip 100 s 100}
+}
+
+rule shapeA{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .100 .100 b 100}
+ shapeA{ s .100 r 100 }
+}
+
+rule MOUSECLICK{
+  start{ s .5 sat .1 b .3 r 90}
+}
+
+
+rule MOUSECLICK{
+  start{ s .100 sat .100 b .100}
+}

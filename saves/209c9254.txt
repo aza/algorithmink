@@ -1,0 +1,6 @@
+ patrick&square&startshape shape
+
+rule shape{
+ squere{}
+}
+

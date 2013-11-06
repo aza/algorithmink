@@ -1,0 +1,32 @@
+luisukbrazil&os seguidores&startshape shape
+
+rule shape{
+  preto{s .2}
+}
+
+rule preto{
+ TRIANGLE{}
+ branco{r +180}
+}
+
+rule branco{
+ TRIANGLE{b .3}
+ branco{+360}
+}
+rule preto{
+ TRIANGLE{}
+ branco{r +90}
+}
+
+rule branco{
+ TRIANGLE{b -.3}
+ preto{+270}
+}
+
+rule MOUSEMOVE{
+ shape{s .305}
+}
+
+rule MOUSECLICK{
+  SQUARE{s 10 b 1}
+}

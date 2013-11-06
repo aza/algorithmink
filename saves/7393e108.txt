@@ -1,0 +1,33 @@
+Lupinius&Click for circles&startshape shape
+
+rule MOUSECLICK{
+ circle{ s 0.5}
+}
+
+rule circlea{
+ CIRCLE{}
+ circlea{ s 0.9 x -.75 b 0.8}
+}
+
+rule circle{
+ CIRCLE{}
+ circleb{ s 0.9 x 0.75 b 0.8}
+ circlea{ s 0.9 x -.75 b 0.8}
+ circlec{ s 0.9 y 0.75 b 0.8}
+ circled{ s 0.9 y -.75 b 0.8}
+}
+
+rule circleb{
+ CIRCLE{}
+ circleb{ s 0.9 x 0.75 b 0.8}
+}
+
+rule circlec{
+ CIRCLE{}
+ circlec{ s 0.9 y 0.75 b 0.8}
+}
+
+rule circled{
+ CIRCLE{}
+ circled{ s 0.9 y -.75 b 0.8}
+}

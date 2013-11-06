@@ -1,0 +1,19 @@
+JeanPascal DC&Black Star&startshape shape
+
+rule shape{
+ spin{s 1}
+}
+
+rule spin 1{
+ hand{}
+ spin{r 70 s .999 b .001}
+}
+
+rule spin{
+ hand{}
+ spin{r 51 s .999 b .001}
+}
+
+rule hand{
+ CIRCLE{b 0 s 1 .04 r 90 y 1}
+}

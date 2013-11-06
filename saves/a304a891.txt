@@ -1,0 +1,16 @@
+luisukbrazil&triangulos&startshape shape
+
+
+rule shape{
+ preto{}
+}
+
+rule preto{
+ TRIANGLE{}
+ branco{r +180}
+}
+
+rule branco{
+ TRIANGLE{b 1}
+ preto{+360}
+}

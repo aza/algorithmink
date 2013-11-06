@@ -1,0 +1,44 @@
+PALO&NOSE&startshape net
+
+rule net {
+    expand { }
+    dot { }
+    net { x 1 r 90 s 0.71 b 0.5}
+    net { x -1 r 90 s 0.71 b -0.5}
+}
+rule net {
+    expand { }
+    dot { }
+    net { x 1 r 90 s 0.71 b -0.5}
+    net { x -1 r 90 s 0.71 b 0.5}
+}
+
+rule expand {
+    arm { s 0.1 }
+    arm { s 0.1 r 180 }
+}
+
+
+rule dot {
+    CIRCLE { s 0.4 }
+}
+rule dot 0.7 {
+    CIRCLE { s 0.565685424949 }
+}
+rule dot 0.2 {
+    CIRCLE { s 0.8 }
+}
+
+rule arm {
+    CIRCLE { }
+    CIRCLE { x 1 }
+    CIRCLE { x 2 }
+    CIRCLE { x 3 }
+    CIRCLE { x 4 }
+    CIRCLE { x 5 }
+    CIRCLE { x 6 }
+    CIRCLE { x 7 }
+    CIRCLE { x 8 }
+    CIRCLE { x 9 }
+    CIRCLE { x 10 }
+}

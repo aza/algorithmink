@@ -1,0 +1,26 @@
+Nathan&coloured pixel matrix&startshape scale
+
+rule scale {
+ SQUARE { s .05 }
+ dot { s 0.2 sat .7 b .5}
+}
+
+rule dot {
+ SQUARE {  }
+ dot { x 1 hue .05 a -.1}
+}
+
+rule dot {
+ SQUARE {  }
+ dot { y 1 hue .05 a .1}
+}
+
+rule dot {
+ SQUARE {  }
+ dot { x -1 hue .05 a -.1}
+}
+
+rule dot {
+ SQUARE {  }
+ dot { y -1 hue .05 a .1}
+}

@@ -1,0 +1,15 @@
+Don Sheehy&Hyperbolic&startshape shape
+
+rule shape{
+ spin{s 2.5}
+}
+
+rule spin{
+ hand{}
+ spin{r 17 s .999}
+}
+
+rule hand{
+ CIRCLE{b 0 s .07 .02 y 1 r -20}
+ CIRCLE{b 0 s .15 .01 y 1 r 43}
+}

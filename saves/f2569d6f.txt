@@ -1,0 +1,13 @@
+kimen&Sierpinski&startshape black
+
+rule black{
+ TRIANGLE{ s 2.3 y -.4}
+ white{ s 2.3 y -.4 b 0.2}
+}
+
+rule white{
+ TRIANGLE{ r 180 s 0.5}
+ white{ s 0.5 y -.145 x -.25  b .1}
+ white{ y -.145 x .25 s 0.5 b .1}
+ white{ y .29 s 0.5 b .1}
+}

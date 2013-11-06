@@ -1,0 +1,41 @@
+Beast&aaa123&startshape start
+background{b -1}
+rule start{
+one{s 3 y -.5 hue 180 sat .6}
+}
+rule one{
+ SQUARE{s .1}
+ two{x .077 r 30 }
+}
+
+rule two{
+TRIANGLE{s .1}
+three{ s .9 r 10 x .05 y .02 b.02}
+}
+
+
+rule three{
+ SQUARE{s .1}
+ four{x .077 r 30 b.02}
+}
+
+rule four{
+ TRIANGLE{s .1}
+five{ s .9 r 10 x .05 y .02 b .02}
+}
+
+rule five{
+ SQUARE{s .1}
+ six{x .077 r 30 b.02}
+}
+
+rule six{
+ TRIANGLE{s .1}
+ seven{ s .9 r 10 x .05 y .02 b.02}
+}
+
+rule seven{
+ SQUARE{s .1}
+ one{s .9 r 10 x .05 y .02 b .02}
+ one{s .9 r 180 x -.05 y -.02 b .02}
+}

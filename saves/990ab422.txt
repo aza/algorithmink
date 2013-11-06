@@ -1,0 +1,10 @@
+luisukbrazil&downtsays&startshape woah
+  background {h 50 sat .5 b -.5}
+rule woah{
+  spiral{b .5 sat .9999 s .14 y -.8}
+}
+
+rule spiral{
+ TRIANGLE{}
+ spiral{x .1 s .9999 hue 3.1 r 1}
+}

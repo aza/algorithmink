@@ -1,0 +1,13 @@
+luisukbrazil&estrreellaa&startshape shape
+
+rule shape{
+MOUSEMOVE(s 1}
+MOUSECLICK{s 1}
+}
+rule MOUSEMOVE{
+TRIANGLE{s .15}
+TRIANGLE{s .15 r 60}
+}
+rule MOUSECLICK{
+ SQUARE{s 10 b 1}
+}

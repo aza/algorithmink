@@ -1,0 +1,84 @@
+lunarbunny&Xmas Tree 2009&startshape SETUP
+
+rule SETUP {
+	TREE { z 0 s 0.25 y -0.7 } 
+	POT { s 0.25 y -0.7 hue 20 sat 0.7 b 0.4 z 50 }
+}
+
+rule POT {
+}
+
+rule POT 30 {
+	TRIANGLE { r 180 y 0.12}
+	TRIANGLE { r 40 x -0.15}
+	TRIANGLE { r -40  x +0.15} 
+	TRIANGLE { y -0.34 s 0.7}
+	POT {}
+}
+
+rule TREE { TRUNKSEGMENT { s 1 y 0.7} }
+
+rule TRUNKSEGMENT 4 {
+	SQUARE { hue 20 sat 0.7 b 0.2 s 0.2 0.8 y -0.5 }
+	DRAWBRANCH { flip 90 r -10}
+	DRAWBRANCH { r 10 }
+	TRUNKSEGMENT { s 0.98 y 0.2 }
+}
+
+rule TRUNKSEGMENT 5 { TRUNKSEGMENT { y 0.01 } }
+
+rule TRUNKSEGMENT  { TRUNKSEGMENT { s 0.92 } }
+
+rule DRAWBRANCH {
+	R_TRIANGLE { s 0.4 }
+	NEEDLES { hue 120 sat 0.7 b 0.2 }
+	R_DRAWBRANCH { s 0.9 x 0.2 }
+}
+
+rule R_DRAWBRANCH 10 {	DRAWBRANCH { r 1 } }
+
+rule R_DRAWBRANCH 10 {	DRAWBRANCH { r -1 } }
+
+rule R_DRAWBRANCH {
+	DRAWBRANCH { }
+	R_DRAWBRANCH { }
+}
+
+rule R_DRAWBRANCH {
+	R_DRAWBRANCH { }
+	BAUBLE { z 25 x -0.5 }
+}
+
+rule R_TRIANGLE 10 {
+	R_TRIANGLE { r 32 }
+}
+
+rule R_TRIANGLE {
+	TRIANGLE { hue 120 sat 0.7 b 0.18 a -0.1 z -20 }
+}
+
+rule NEEDLES 100 { NEEDLES { r 3.2 } }
+
+rule NEEDLES { SQUARE { z 20 s 0.05 0.3 a -0.2 } }
+
+
+rule BAUBLE {
+}
+
+rule BAUBLE 25 {
+	BAUBLE {}
+}
+
+rule BAUBLE 25 {
+	CIRCLE { hue 5 sat 1 b 0.3 s 0.5 }
+	CIRCLE { hue 5 sat 1 b 0.4 s 0.45 y 0.01 x 0.01}
+	CIRCLE { hue 5 sat 1 b 1 s 0.05 y 0.1 x 0.1 }
+	BAUBLE { }
+}
+
+rule BAUBLE 25 {
+	CIRCLE { hue 300 sat 1 b 0.3 s 0.5 }
+	CIRCLE { hue 300 sat 1 b 0.4 s 0.45 y 0.01 x 0.01 }
+	CIRCLE { hue 300 sat 1 b 1 s 0.05 y 0.1 x 0.1 }
+	BAUBLE { }
+}

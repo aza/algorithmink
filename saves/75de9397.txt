@@ -1,0 +1,41 @@
+Bruna de S&The Flowers&startshape start
+background {b -.5}
+
+rule start{ CHIAROSCURO{ s .2 y -.3} }
+
+rule CHIAROSCURO {
+    BLACK {b .5}
+}
+
+rule BLACK 60 {
+    CIRCLE {s .6}
+    BLACK {x .4 r 36 s .99 b -.01 a -.01}
+}
+rule BLACK {
+    WHITE {}
+    BLACK {X .6 r 2 s .99 b -.02 a -.01}
+}
+
+rule WHITE 68 {
+    CIRCLE {s .99}
+    WHITE {x .3 r -5 s .98 b .02 a -.01}
+}
+rule WHITE {
+    BLACK {d .47 r -5 d}
+    WHITE {}
+}
+
+
+}
+rule BLACK {
+    WHITE {d .6}
+    BLACK {D.5}
+
+}
+
+}
+rule BLACK {
+    WHITE {d .6}
+    BLACK {D.5}
+
+}

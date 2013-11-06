@@ -1,0 +1,67 @@
+Joe DiPilato&Music Generator V2&startshape start
+rule start{scale{s 1 0.7}}
+rule scale{full{y .6} full{y -.2} full{y -1} clean{}}
+rule full{sbar{x -1.5} lines{y .2} lines{y -.2} sbar{x 1.48}}
+
+rule sbar{sbarii{} sbarii{x .02}}
+rule sbarii{SQUARE{s .01 .6}}
+
+rule lines{cbar{} notes{x -1.435}}
+
+rule cbar{
+ cbari{y .1} cbari{y .05}
+ cbari{y .0} cbari{y -.05} cbari{y -.1}
+ vbar{x -.75} vbar{x .75} vbar{}
+}
+rule cbari{SQUARE{s 3 .005}}
+rule vbar{SQUARE{s 0.005 .2}}
+
+rule notes{note{}}
+rule notes .02 {note{y .025}}
+rule notes .02 {note{y -.025}}
+rule notes .02 {note{y .05}}
+rule notes .02 {note{y -.05}}
+
+rule note    {note1{}notes{x .0927}}
+rule note .4 {note2{}notes{x .1854}}
+rule note .2 {note4{}notes{x .3708}}
+rule note .3 {note05{}notes{x .0927}}
+rule note .5 {notes{x .0927}}
+
+rule note1 {nbot{}nline{}}
+rule note1 0.2 {note1{}note1{}}
+rule note1 0.5 {note1{}nbot{}nline{}}
+rule note1 {note1{y -.025}}
+rule note1 {note1{y +.025}}
+
+rule note2{nbotw{}nline{}}
+rule note2 0.2 {note2{}note2{}}
+rule note2 {note2{y -.025}}
+rule note2 {note2{y +.025}}
+
+rule note05{nbot{}nline{}nflag{}}
+rule note05 0.3 {note05{}note05{}}
+rule note05 {note05{y -.025}}
+rule note05 {note05{y +.025}}
+
+rule note4{nbotw{}}
+rule note4 0.1 {note4{}note4{}}
+rule note4 {note4{y -.025}}
+rule note4 {note4{y +.025}}
+
+rule noted{ndot{}}
+
+rule nbot{CIRCLE{s .04 .032 r 40}}
+rule nbot 0.4 {nbot{} ndot{}}
+rule nbotw{nbot{}nbot{s .7 b 1}}
+rule nline{SQUARE{y .075 x .0175 s .005 .15}}
+rule nbot{CIRCLE{s .04 .032 r 40}}
+rule nflag{SQUARE{y .135 x .035 s .04 .01 r 150}}
+rule ndot{CIRCLE{s .01 x .03 y -.01}}
+
+
+rule clean 0.1{SQUARE{b 1 x 3.01 s 3 3}clean{}}
+rule clean{clean{}}
+
+
+

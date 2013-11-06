@@ -1,0 +1,34 @@
+ox&Love Again&startshape main
+  background {h 50 sat .5 b -.15}
+
+rule s2c{
+	s2{s 1.1}
+	s2{s 1 b 0.5 x .04 hue 5 sat 1}
+}
+
+rule s2c {
+	s2{s 1.1 b 1}
+	s2{s 1 b 0.5 x .08 hue 20 sat 1 }
+}
+
+rule s2c {
+	s2{s 1.1 b 1}
+	s2{s 1 b 0 x .02 }
+}
+
+rule s2 {
+	SQUARE{r 46 x .24 s .9}
+	SQUARE{r 46 x .56 s .9}
+	CIRCLE{y .2}
+	CIRCLE{x .8 y .2}
+	TRIANGLE{f 180 x .4 s 1.58}
+}
+
+rule linha{
+	s2c{s 2 x.04}
+	linha{x 1.9 r 19 s 0.94}
+}
+
+rule MOUSECLICK{
+	linha{s .14 y -.6}
+}

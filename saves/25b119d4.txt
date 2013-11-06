@@ -1,0 +1,24 @@
+Steren&colored circle&background { b -1 }
+
+startshape scale
+
+rule scale{
+  scene{ s .02 h 200 sat .3 b .5 }
+}
+
+rule scene 30{
+ path {}
+ scene { r 10 hue 10}
+}
+rule scene {}
+
+
+rule path 10 {
+ line {}
+ path {x .5 r 1 s 0.99}
+}
+
+rule line{
+ SQUARE{y 30 }
+ line{ x .5 s .1}
+}

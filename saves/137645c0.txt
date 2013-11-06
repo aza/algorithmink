@@ -1,0 +1,27 @@
+tom&donkey&startshape start
+background {b -.05}
+
+rule start{ CHIAROSCURO{ s .4 y -.3} }
+
+rule CHIAROSCURO {
+    BLACK {b .5}
+}
+
+rule BLACK 60 {
+    CIRCLE {s .6}
+    BLACK {x .1 r 4 s .99 b -.01 a -.02}
+}
+rule BLACK {
+    WHITE {}
+    BLACK {}
+}
+
+rule WHITE 60 {
+    CIRCLE {s .4}
+    WHITE {x .1 r -2 s .99 b .01 a -.001}
+}
+rule WHITE {
+    BLACK {}
+    BLACK {}
+    WHITE {}
+}

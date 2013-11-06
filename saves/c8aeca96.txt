@@ -1,0 +1,6 @@
+kk&iiiijj&startshape shape
+
+rule shape{
+ CIRCLE{}
+
+}

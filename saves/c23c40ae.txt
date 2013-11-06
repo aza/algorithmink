@@ -1,0 +1,3 @@
+HA&HA&startshape shape
+
+rule shape{SQUARE{}}

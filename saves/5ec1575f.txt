@@ -1,0 +1,15 @@
+Mb&HallWay&startshape shape
+
+rule shape{
+ TRIANGLE{}
+ shape{b .1 s .7}
+ dtwo{x -.1}
+ dtwo{x .1}
+ dtwo{y .1}
+ dtwo{y -.1}
+}
+
+rule dtwo{
+ CIRCLE{s .5}
+ dtwo{s .7 y .1}
+}

@@ -1,0 +1,56 @@
+Beast&vines of evil&startshape start
+background{b -.9 hue 3 sat 1}
+
+rule MOUSECLICK{ 
+start{ s .1 } }
+rule MOUSECLICK{ 
+start{ s .8 } }
+rule MOUSECLICK{ 
+start{ s .5 } }
+
+
+rule start{
+ shape{s .1 r 70}
+ shape{s .09 r -30}
+ shape{ r -160 s .07 b .2}
+ shape{  r -80 s .08 flip 90 b -.2}
+}
+rule start{
+ shape{s .04 r 70}
+ shape{s .06 r -30}
+ shape{ r -160 s .05 b .2}
+ shape{  r -80 s .03 flip 90 b -.2}
+}
+
+
+rule shape{
+ CIRCLE{ s .999 }
+ CIRCLE{ a -.5 }
+ shape{b -.1 y .7 r 8 s .99}
+}
+rule shape{
+ CIRCLE{ s .999 }
+ CIRCLE{ a -.2}
+ shape{ b .1 y .7 r 5 s .99}
+}
+rule shape .03 {
+ CIRCLE{ }
+ shape{ y .7 r 10 s .99 b .2}
+ shape{ y .7 r 6 s .99 flip 90 b -.2}
+}
+rule shape{
+ CIRCLE{}
+ TRIANGLE { s .2 3.3 r 140 y 3.6 flip 0 }
+ shape{b -.1 y .7 r 10 s .99}
+}
+rule shape{
+ CIRCLE{ s .9 }
+ CIRCLE{ a -.1 }
+ shape{b -.1 y .7 r 8 s .99}
+}
+rule shape{
+ CIRCLE{ s .999 }
+ CIRCLE{ a -.5 }
+ shape{b -.1 y .7 r -10 s .99}
+}
+

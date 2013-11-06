@@ -1,0 +1,12 @@
+Kisbarna&Euphorbia pulcherrima&startshape Komenco
+
+background {h 130 sat .8 b -.6}
+
+rule Komenco {
+	Figuro {h -18 sat 1 b .2}
+}
+
+rule Figuro {
+	TRIANGLE {}
+	Figuro {s .9 r 166.86918 h 1 b .15}
+}

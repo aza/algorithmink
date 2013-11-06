@@ -1,0 +1,213 @@
+semferon&MistiqueColored&
+
+startshape scale
+
+background{ b -1 }
+
+ 
+rule scale { start {s 0.005} }
+
+rule start {
+	up{  }
+	right{ x 10 y -2 r 40  }
+        down{   }
+        left{ }
+}
+
+rule start {
+	up{ hue 230 }
+	right{ x 10 y -2 r 40 hue 15 }
+        down{ hue 330  }
+        left{ hue221}
+}
+
+rule start {
+	up{ hue 140 }
+	right{ x 10 y -2 r 40 hue 153 }
+        down{ hue 200  }
+        left{ hue 0}
+}
+
+rule color{size{a -.9 b .5 hue 400 sat 1}}
+rule size{move{s .05 hue 150}move{s .1}move{s .0.5 hue 300}}
+
+rule move{hex{}move{r 60 y 2}}
+rule move{move{r 60}}
+rule move .0001{}
+
+
+rule hex{hexh{y .286}hexh{r 180 y -.286}}
+rule hexh{TRIANGLE{x -.5}TRIANGLE{x .5}TRIANGLE{r 180 y .286}}
+
+rule MOUSECLICK{
+start {s 0.005}
+}
+
+rule makeit {
+ CIRCLEx{  sat 1 b 0.3 a -0.3}
+
+}
+rule CIRCLEx {
+CIRCLE{}
+ jitter{}
+}
+
+rule jitter{
+jitter1 {x 2 y -1}
+}
+rule jitter{
+  shapec{}
+}
+rule jitter1{
+jitter2 {x -4 y -2 s 20 a -.9}
+}
+rule jitter1{
+jitter2 {x 3 y 2 s 2  a -2}
+}
+rule jitter1{
+}
+rule jitter1{
+jitter2 {x 1 y -4 s -3  a -.1}
+}
+rule jitter2 {
+  shapec{}
+}
+
+rule shapec {
+   CIRCLE{s 2 a -0.9}
+}
+rule shapec {
+   CIRCLE{s 5 a -0.95}
+}
+
+rule shapec {
+   CIRCLE{s 5 a -0.95}
+}
+
+rule shapec {
+   CIRCLE{s 10 a -0.95}
+}
+
+rule directionChangeV{
+	up{hue -5}
+}
+
+rule directionChangeV{
+	down{hue 1}
+}
+
+rule directionChangeH{
+	left{hue 2}
+}
+
+rule directionChangeH{
+	right{-8}
+}
+
+rule directionChangeV{
+	angle{}
+}
+
+rule directionChangeH{
+	angle{}
+}
+
+
+
+rule angle{
+	makeit{y 0.5 r 10} 
+	up{ y 0.5  r 10}
+}
+
+rule angle{
+	makeit{} 
+	anglee{ y 1 s .999 r 10}
+}
+
+rule anglee{
+	makeit{} 
+	anglee{ y 0.5  r 1 s -0.001 hue 0.1}
+}
+
+rule anglee 0.001{
+	makeit{} 
+	anglee{ y 0.5 s 0.00001  r 1}
+}
+
+rule angle{
+	makeit{x -0.5 r 10} 
+	left{ x -0.5  r 10}
+}
+
+rule angle{
+	makeit{ r 10} 
+	down{ y -0.5  r 10}
+}
+
+rule angle{
+	makeit{ r 10} 
+	right{ x 0.5  r 10}
+}
+
+
+
+rule up 0.003{
+	makeit{ r 10} 
+	up{ y 0.5 s .00001 r 1}
+}
+
+rule down 0.003{
+	makeit{ r 10} 
+	down{ y -0.5 s .00001 r -1}
+}
+
+rule left 0.004{
+	makeit { r 10} 
+	left{ x -0.5 s .00001 r 1}
+}
+
+rule right 0.003{
+	makeit{ r 10} 
+	right{ x 0.5 s .00001 r -1}
+}
+
+
+rule up{
+	makeit{ r 10} 
+	up{ y 0.5 r .1 alpha -0.001 hue 0.1}
+}
+
+rule down{
+	makeit{ r 10} 
+	down{ y -0.5 alpha -0.0001}
+}
+
+rule left{
+	makeit{ r 10} 
+	left{ x -0.5 alpha -0.0001}
+}
+
+rule right{
+	makeit{ r 10} 
+	right{ x 0.5 alpha -0.0001}
+}
+
+rule up 0.005{
+	directionChangeH{}
+	up{}
+}
+
+rule down 0.005{
+	directionChangeH{}
+	down{}
+}
+
+rule left 0.005{
+	directionChangeV{}
+	left{}
+}
+
+rule right 0.005{
+	directionChangeV{}
+	right{}
+}

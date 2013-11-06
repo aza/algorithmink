@@ -1,0 +1,43 @@
+Koalia&Boxes here lines there&startshape internet
+
+//start with one node then build the network randomly evorywhere :
+rule internet{
+node{ s 2 b 0.5 sat 1 hue 0}
+network{b 0.5 sat 0.8 hue 0}
+}
+
+//buildind network : 
+
+rule network 1000 {cable{}}
+
+//increase this probability if you like curved network
+rule network 1
+{cable{r 10}}
+
+rule network 10{node{ }}
+
+rule network 10 {computer{s 0.5}}
+
+
+
+
+//computer, start of network
+rule computer{
+ SQUARE{hue 20 s .04}
+ SQUARE{ s .07 .0169o8785 y -.02}
+}
+
+//no node
+rule cable{
+CIRCLE{ s 0.005}
+network{x 0.004}
+}
+
+//network node
+rule node{
+CIRCLE{ b 0 s 0.02}
+cable{ r 90 sat 0.8 hue 30}
+cable{ r 270 sat 0.8 hue 70}
+cable{ s 0.95 node 1958320}
+}
+

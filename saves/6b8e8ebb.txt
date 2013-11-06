@@ -1,0 +1,9 @@
+Jimtla&Simply Shading&startshape shape
+
+rule shape .1{
+   CIRCLE {}
+   shape {s .5 b .2 x -.25}
+   shape {s .5 b -.1 x +.25}
+   shape {s .5 b .1 y +.25}
+   shape {s .5 b .2 y -.25}
+}

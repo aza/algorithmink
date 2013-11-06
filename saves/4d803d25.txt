@@ -1,0 +1,22 @@
+foo&foo&startshape Foo       
+ 
+include stuff.cfdg   
+ 
+background { b -1 }  
+ 
+tile { s 3 4 }       
+rule Foo {
+    SQUARE { b 1 }
+    CIRCLE {}
+    Bar { b 1 s 0.5 }
+}
+ 
+path Bar {
+    MOVETO { y 1 }
+    12* { r (5 * 360 / 13) } {
+        LINETO { x cos(90 + 5 * 360 / 13)
+                 y sin(90 + 5 * 360 / 13) }
+    }
+    CLOSEPOLY {}
+    FILL { p evenodd }
+}

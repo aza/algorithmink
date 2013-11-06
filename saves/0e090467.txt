@@ -1,0 +1,13 @@
+escobar&flower&startshape scale
+
+rule scale{ BULB{ s .9 y -.5} }
+
+rule BULB {
+    WHEEL { }
+    BULB { x .5 r 50 s .99 }
+}
+
+rule WHEEL {
+    CIRCLE { }
+    CIRCLE { s .90 b 2 }
+}

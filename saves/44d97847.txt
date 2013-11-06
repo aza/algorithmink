@@ -1,0 +1,16 @@
+Aza Raskin&Half Pipe Hills&startshape scale
+
+rule scale{ 
+    RBULB{ s 6 y -2.5}
+}
+
+
+rule RBULB {
+    RWHEEL { }
+    RBULB { x -.2 r 10 s .96 f 90}
+}
+
+rule RWHEEL {
+    CIRCLE { }
+    CIRCLE { s .95 b 2 h 3 sat .5 b .5 }
+}

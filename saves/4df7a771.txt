@@ -1,0 +1,11 @@
+atl&triangle vertigo&startshape shape
+
+rule shape{
+ TRIANGLE{}
+ shape2{s .95 b 1 r 5}
+}
+
+rule shape2{
+ TRIANGLE{}
+ shape{s .95 b -1 r 5}
+}

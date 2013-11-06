@@ -1,0 +1,7 @@
+Bill&Test&startshape shape
+
+rule shape{
+ CIRCLE{}
+ fractal{ a .5 b .2 x -.25}
+ fractal{ a .5 b .2 x .25}
+}

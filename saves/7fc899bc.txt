@@ -1,0 +1,32 @@
+milo317&eyeof the beholder&startshape starter
+
+rule starter{
+ snakeparty{ s .85 x -1 y -.9}
+}
+
+rule snakeparty {
+ snake { }
+ snakeparty {y 2.0 s 0.95 r -35}
+}
+
+rule snakeeye {
+  CIRCLE {b 1}
+  CIRCLE {b -7 s 0.4 x -0.35}
+}
+
+rule snake {
+ snaketail { }
+ snakeeye {s 0.7 x -0.5 y 0.2}
+ snakemouth {x -0.1 y -0.5 s 0.3}
+}
+
+rule snaketail {
+ CIRCLE{}
+ SQUARE {x 0.12 y 0.1 s 0.5 r -30}
+ SQUARE {x 0.62 y -0.1 s 0.5 r 30}
+ snaketail {x 0.8 s 0.7}
+}
+
+rule snakemouth {
+ SQUARE {b 1 r 35}
+}

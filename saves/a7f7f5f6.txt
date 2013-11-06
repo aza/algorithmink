@@ -1,0 +1,12 @@
+b&b&startshape shape
+
+rule shape{
+ CIRCLE{ b 0}
+ shape{ r 20 x 0.12 b 1.006 s 1.99 h 11}
+ mouseclick{ s 0.99 }
+}
+
+rule mouseclick{
+ CIRCLE{ b 0 sat 1}
+ CIRCLE{ b 0 sat 11}
+}

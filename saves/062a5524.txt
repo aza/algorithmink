@@ -1,0 +1,8 @@
+AwesomeSauce Hans&Fractal Cicles&startshape shape
+
+rule shape{
+ CIRCLE{y 0 size .5}
+ CIRCLE{b 1 y 0 size .45}
+ shape{r 45 x -0.25 y 0 size .707106781}
+ shape{r 45 x 0.25 y 0 size .707106781}
+}

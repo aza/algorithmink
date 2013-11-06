@@ -1,0 +1,9 @@
+contextfree&triangular&startshape fract2
+
+rule fract2 {
+TRIANGLE { }
+fract2 { y .288 s .5 b .1}
+fract2 { s .5 r 180 b .1}
+fract2 { x -.25 y -.144 s .5 b -.1}
+fract2 { x .25 y -.144 s .5 b .1}
+}

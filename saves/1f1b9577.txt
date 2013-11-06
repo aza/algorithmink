@@ -1,0 +1,5 @@
+aldo&cerchio1&startshape shape
+
+rule shape{
+ CIRCLE{10,110}
+}

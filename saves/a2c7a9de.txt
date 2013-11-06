@@ -1,0 +1,33 @@
+d8uv&Heiroglyphics&startshape start
+
+rule start{
+ heiro{x -1.25}
+ heiro{}
+ heiro{x 1.25}
+}
+
+rule heiro{
+ CIRCLE{}
+ CIRCLE{s .85 b 1}
+ eye{x -.225}
+ eye{}
+ eye{x .225}
+ mouth{}
+}
+
+rule mouth{
+ SQUARE{s .5 .1 y -.2}
+}
+
+rule mouth 0.05{
+ CIRCLE{s .15 y -.2}
+ CIRCLE{s .1 y -.2 b 1}
+}
+
+rule eye{
+ CIRCLE{s .175 y .1}
+}
+
+rule eye 0.05{
+ SQUARE{s .175 .05 y .1}
+}

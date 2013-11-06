@@ -1,0 +1,19 @@
+ROBB&ROBBS TEST&startshape grid
+ 
+rule grid {
+10* {y 1} row {} 
+  }
+rule row {
+10* {x 1} core {} 
+  }
+rule core .5  {
+  SQUARE {b -1 }
+  CIRCLE {b 1}
+  core {s .95}
+}
+rule core .5 {
+  SQUARE {b 1  }
+  CIRCLE {b -1}
+  core {s .95 }
+}
+rule core .001 {}

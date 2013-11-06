@@ -1,0 +1,111 @@
+cp&spiral tree&startshape scale
+
+rule scale {
+start{ s .025 y -1.3 }
+}
+
+rule start{
+
+grow{ x .5 }
+grow{ x .6 }
+grow{ x .7 }
+grow{ x .8 }
+grow{ x .9 }
+grow{ x 1 }
+grow{ x 1.1 }
+grow{ x 1.2 }
+grow{ x 1.3 }
+grow{ x 1.4 }
+grow{ x 1.5 }
+
+}
+
+rule grow {
+  right{}
+}
+
+rule grow {
+  left{}
+}
+
+rule grow .1{
+left{}
+right{}
+}
+
+rule right{
+  CIRCLE{ hue 000 sat .5 }
+  right{ y .5 r -1 b .003 s .997}
+}
+
+rule right .3{
+  grow{  }
+}
+
+rule right .015{
+  spiralr{ }
+}
+
+rule left{
+  CIRCLE{ hue 000 sat .5 }
+  left{ y .5 r 1 b .003 s .997}
+}
+
+rule left .3{
+  grow{  }
+}
+
+rule left .015{
+  spirall{  }
+}
+
+rule spirall .2{
+ CIRCLE{ hue 000 sat .5 }
+ spirall{ y .5 r 6 s .97}
+}
+
+rule spirall .2{
+ CIRCLE{ hue 000 sat .5 }
+ spirall{ y .5 r 7 s .97}
+}
+
+rule spirall .2{
+ CIRCLE{ hue 000 sat .5 }
+ spirall{ y .5 r 8 s .97}
+}
+
+rule spirall .2{
+ CIRCLE{ hue 000 sat .5 }
+ spirall{ y .5 r 9 s .97}
+}
+
+rule spirall .2{
+ CIRCLE{ hue 000 sat .5 }
+ spirall{ y .5 r 10 s .97}
+}
+
+
+rule spiralr .2{
+ CIRCLE{ hue 000 sat .5 }
+ spiralr{ y .5 r -6 s .97}
+}
+
+rule spiralr .2{
+ CIRCLE{ hue 000 sat .5 }
+ spiralr{ y .5 r -7 s .97}
+}
+
+rule spiralr .2{
+ CIRCLE{ hue 000 sat .5 }
+ spiralr{ y .5 r -8 s .97}
+}
+
+rule spiralr .2{
+ CIRCLE{ hue 000 sat .5 }
+ spiralr{ y .5 r -9 s .97}
+}
+
+rule spiralr .2{
+ CIRCLE{ hue 000 sat .5 }
+ spiralr{ y .5 r -10 s .97}
+}

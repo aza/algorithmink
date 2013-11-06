@@ -1,0 +1,6 @@
+d&d&startshape shape
+
+rule shape{
+ CIRCLE{}
+ SQUARE{}
+}

@@ -1,0 +1,11 @@
+Gabriel&Morango&startshape shape
+
+
+rule smoke {
+ CIRCLE {  }
+ smoke { x 0 y 1 s 0.995 b -0.005 r 10  }
+}
+
+rule MOUSECLICK {
+  smoke { x 0 y 0 s .15 sat 0.5 b 1 hue 0 }
+}

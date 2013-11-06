@@ -1,0 +1,20 @@
+tal&square circle&startshape shape
+
+rule shape {
+ background {}
+ CIRCLE{ }
+ shape { s .99 }
+}
+
+
+rule shape {
+ background {}
+ SQUARE { }
+ shape { s .99 }
+}
+
+
+rule background {
+ CIRCLE { s 2.2  b 1 } 
+}
+

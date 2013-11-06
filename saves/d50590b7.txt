@@ -1,0 +1,14 @@
+LUISUKBRAZIL&Algoritmo 1&startshape DOT
+
+rule DOT{
+  CIRCLE{ s 12
+ b 1 a -.9 }
+  CIRCLE{ s .33 b 1 a -.5 }  
+  CIRCLE{ s .3 b .8 sat 0 }
+}
+
+rule MOUSEMOVE{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .49 .55 b 1}
+ shapeA{ s .95 r 10 }
+}

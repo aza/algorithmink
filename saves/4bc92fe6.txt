@@ -1,0 +1,35 @@
+EdTheDev&Art Box&startshape firstbox
+
+rule firstbox 
+{
+coolbox { b 0 sat 1}
+}
+
+rule coolbox
+{
+coolbox { b  .3}
+}
+
+rule coolbox
+{
+coolbox { hue -20}
+}
+
+rule coolbox
+{
+SQUARE { }
+coolbox { s .48 hue 20 x -.25 y -.25 b  -.2}
+coolbox { s  .48 hue -20 x -.25 y  .25 b -.2}
+coolbox { s  .48 hue 30 x  .25 y  .25 b  -.2}
+coolbox { s  .48 hue -30 x  .25 y  -.25 b  -.2}
+}
+
+rule coolbox .2
+{
+CIRCLE {}
+}
+
+rule coolbox  .2
+{
+TRIANGLE {y -.20}
+}

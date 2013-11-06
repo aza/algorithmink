@@ -1,0 +1,47 @@
+Nathan Ziarek&Flaire&startshape stack
+
+background { b -1 }
+
+rule bubble {
+  CIRCLE { alpha -.99 s .2 hue 199 saturation .71 b .7 }
+}
+
+rule stack {
+  bubble { }
+  stack { x -.01 }
+}
+
+rule stack {
+  bubble { }
+  stack { x .01 }
+}
+
+rule stack {
+  bubble { }
+  stack { y -.01 }
+}
+
+rule stack {
+  bubble { }
+  stack { y .01 }
+}
+
+rule stack {
+  bubble { }
+  stack { s 1.10 }
+}
+
+rule stack {
+  bubble { }
+  stack { s .9 }
+}
+
+rule stack {
+  bubble { }
+  stack { hue -90 }
+}
+
+rule stack {
+  bubble { }
+  stack { hue 90 }
+}

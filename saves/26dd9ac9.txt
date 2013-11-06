@@ -1,0 +1,20 @@
+Steven&mask&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{ x .2 s .8 b -.2}
+}
+rule shape{
+ CIRCLE{}
+ shape{ y .2 s .8 b .2}
+ shape{ y -.2 s .8 b .2}
+}
+rule shape{
+ CIRCLE{}
+ shape{ x -.2 s .7 b .2}
+ shape{ y -.2 s .8 b .2}
+}
+rule shape{
+ CIRCLE{}
+ shape{ y -.2 s .6 b -.2}
+}

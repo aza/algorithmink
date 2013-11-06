@@ -1,0 +1,50 @@
+seligretep&alien DIN plug&startshape scale
+
+background { b -1 }
+
+rule scale{
+  SHAPE { s 4 }
+
+}
+
+rule SSCENE {
+    FOUR { x 1 y 1 }
+    FOUR { x -1 y 1 }
+    FOUR { x 1 y -1 }
+    FOUR { x -1 y -1 }
+}
+
+rule INVFOUR { INVSHAPE { s 2 } }
+
+rule INVFOUR 2 { 
+    INVFOUR { s .5 x -.5 y .5}
+    INVFOUR { s .5 x .5 y .5}
+    INVFOUR { s .5 x -.5 y -.5}
+    INVFOUR { s .5 x .5 y -.5}
+}
+
+rule FOUR 1 {SHAPE { s 2 }}
+
+rule FOUR 2 { 
+    FOUR { s .5 x -.5 y .5}
+    FOUR { s .5 x .5 y .5}
+    FOUR { s .5 x -.5 y -.5}
+    FOUR { s .5 x .5 y -.5}
+}
+
+rule SSHAPE {CIRCLE { s 0.8 b -1}}
+rule SHAPE 6 {
+    CIRCLE { s 0.8 b 1 }
+    INVFOUR { s 0.28 r 30 }
+}  
+
+rule SHAPE .001 {
+}  
+
+rule INVSHAPE 6 {
+    CIRCLE { s 0.8 b -1 }
+    FOUR { s 0.28 r -30 }
+}  
+
+rule INVSHAPE .001 {
+}  

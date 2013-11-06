@@ -1,0 +1,23 @@
+Joe DiPilato&Honeycomb&startshape color
+
+rule color{size{a -.9 b .5 hue 400 sat 1}}
+rule size{move{s .06}move{s .06}}
+
+rule move{hexb{}move{r 60 y 2}}
+rule move{move{r 60}}
+rule move .001{}
+
+rule hexb{hex{s 1.2 b .1}hex{}}
+rule hex{hexh{y .286}hexh{r 180 y -.286}}
+rule hexh{TRIANGLE{x -.5}TRIANGLE{x .5}TRIANGLE{r 180 y .286}}
+
+rule MOUSECLICK{rand{}}
+
+rule rand{movex{a -.9 b .5 hue 400 sat 1 s .02}}
+rule movex{hexb{}movex{r 60 y 2}}
+rule movex{movex{r 60}}
+rule movex .01{}
+rule movex .1{x{}}
+rule x 10{x{s 1.1}}
+rule x 10{x{s .9}}
+rule x {movex{}}

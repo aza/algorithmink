@@ -1,0 +1,54 @@
+dan&strange tree&startshape start
+
+rule start {
+stem{s .2 y -1}
+}
+
+rule stem {stemr{}steml{}}
+rule stem {steml{}stems{}}
+rule stem {stems{}stemr{}}
+rule stem {leaf{}}
+
+rule stems{
+SQUARE{s .05 .8 hue 120 b .2 sat .8}
+stems{s .95 y .7 }
+}
+rule stems .2 {stem{}}
+
+rule stemr{
+SQUARE{s .05 .8 hue 120 b .2 sat .8}
+stemr{s .95 y .7 r -5}
+}
+rule stemr .2 {stem{}}
+
+rule steml{
+SQUARE{s .05 .8 hue 120 b .2 sat .8}
+steml{s .95 y .7 r 5}
+}
+rule steml .2 {stem{}}
+
+rule leafl{
+ CIRCLE{hue 120 b .3 sat .8 x .3}
+ CIRCLE{hue 120 b .3 sat .8 x -.3}
+ SQUARE{s .05 .8 hue 120 b .2 sat .8}
+ SQUARE{s .05 .8 hue 120 b .2 sat .8 r 45 x -.3}
+SQUARE{s .05 .8 hue 120 b .2 sat .8 r -45 x .3}
+ leafl{y .5 s .6 r 4}
+}
+
+rule leafr{
+ CIRCLE{hue 120 b .3 sat .8 x .3}
+ CIRCLE{hue 120 b .3 sat .8 x -.3}
+ SQUARE{s .05 .8 hue 120 b .2 sat .8}
+ SQUARE{s .05 .8 hue 120 b .2 sat .8 r 45 x -.3}
+SQUARE{s .05 .8 hue 120 b .2 sat .8 r -45 x .3}
+ leafr{y .5 s .6 r -4}
+}
+
+rule leaf {
+leafr{}
+}
+
+rule leaf {
+leafl{}
+}

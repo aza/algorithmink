@@ -1,0 +1,24 @@
+philwc&pretty flower&startshape pretty
+
+rule pretty{ BULB{ s .5 y -.5} }
+
+rule BULB {
+    WHEEL { }
+    BULB { x 1 r 50 s .995 }
+}
+
+rule WHEEL {
+    CIRCLE { }
+    CIRCLE { s .995 b .5 sat 5 hue 10}    
+    
+}
+
+rule WHEEL {
+    CIRCLE { }   
+    CIRCLE { s .995 b .5 sat 5 hue 100}
+}
+
+rule WHEEL {
+    CIRCLE { }   
+    CIRCLE { s .995 b .5 sat 5 hue 200}
+}

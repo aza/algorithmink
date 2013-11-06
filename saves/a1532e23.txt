@@ -1,0 +1,21 @@
+ugur guney&Starfish&startshape scale
+
+rule scale{
+ spiral{s .1 r 0}
+ spiral{s .1 r 72}
+ spiral{s .1 r 144}
+ spiral{s .1 r 216}
+ spiral{s .1 r 296}
+}
+
+rule spiral{
+ CIRCLE{ a -.5 }
+ TRIANGLE{ a -.5 s .5}
+ spiral{ y .9 r 10 s .9}
+}
+
+rule spiral{
+ CIRCLE{ a -.5 }
+ TRIANGLE{ a -.5 s .5}
+ spiral{ y .9 r -10 s .9}
+}

@@ -1,0 +1,38 @@
+theshwam&UglyTrees&startshape shape
+
+rule shape{
+ hline{ y -1.5 x -1 }
+}
+
+rule hline{
+TRIANGLE { hue 90 sat 0.5 b 0.5 }
+hline{ x 0.1 }
+}
+
+rule hline 0.1 {
+ grow{x 0.1 hue 10 sat 0.4 b 0.3}
+ hline{}
+
+}
+
+rule grow {
+ CIRCLE { s 0.05 }
+ grow { r 2 s 0.99 }
+}
+
+rule grow {
+CIRCLE{ s 0.1}
+grow{ y 0.02 flip 90 }
+}
+
+rule grow 0.04 {
+grow { r 15 s 0.8 flip 90 }
+grow { r 10 s 0.6 }
+
+}
+
+rule grow 0.09 {
+grow{}
+TRIANGLE { hue 100 sat 0.8 b 0.1 s 0.1 x -0.05 }
+
+}

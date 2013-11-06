@@ -1,0 +1,16 @@
+Joe DiPilato&Bubble Towers&startshape x
+rule x{1{s 2}}
+rule 1{a{}a{}a{}a{}}
+rule a {si{}a{}}
+rule a 10{a{x .1}}
+rule a 10{a{y .1}}
+rule a 50{a{flip 90}}
+rule a 10{a{r 90}}
+rule a 10{a{r -90}}
+rule a .2 {}
+rule a .5 {si{s 1.5}b{s .6}}
+rule b{a{}a{}}
+rule si 300{ CIRCLE{} CIRCLE{s .997 b 1 x .002 } si{y -.002 s .996}}
+rule si{}
+
+ 

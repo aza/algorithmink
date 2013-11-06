@@ -1,0 +1,6 @@
+aaa&aaa&startshape shape
+
+rule shape{
+ CIRCLE{}
+ CIRCLE{}
+}

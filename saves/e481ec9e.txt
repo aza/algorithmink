@@ -1,0 +1,76 @@
+ox&Colored Hexox&startshape shape
+
+rule shape{
+ As {s 0.2 b 0.5 hue 200 sat 0.8}
+
+}
+
+rule MOUSECLICK{shape 30{s 0.5}}
+rule MOUSECLICK{shape 10{s 1}}
+rule MOUSECLICK{shape 70{s 1.5}}
+
+rule As {
+  A1 {}
+}
+
+rule A {
+  A1 {hue -10}
+}
+rule A 0.02 {
+  A0 {}
+}
+
+rule A1 {
+  hex {}
+  A { r 0 y 1 }
+}
+
+rule A1 {
+  hex {}
+  A { r 60 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 120 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 180 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 240 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 300 y 1 }
+}
+
+rule A0 {
+}
+
+rule hex {
+ hex2 { b -.9 sat .8 hue 210}
+ hex3 {}
+}
+
+rule hex2 {
+  hext {r 0}
+  hext {r 60}
+  hext {r 120}
+  hext {r 180}
+  hext {r 240}
+  hext {r 300}
+}
+rule hex3 {
+  hext {s 0.6 r 0}
+  hext {s 0.6 r 60}
+  hext {s 0.6 r 120}
+  hext {s 0.6 r 180}
+  hext {s 0.6 r 240}
+  hext {s 0.6 r 300}
+}
+rule hext {
+  TRIANGLE {y 0.25 s 0.5 r 180 }
+  TRIANGLE {y 0.25 s 0.4 r 180 }
+}

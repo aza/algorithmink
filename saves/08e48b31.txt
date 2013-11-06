@@ -1,0 +1,43 @@
+Lucas&Lukeeee&startshape start 
+  
+rule start{
+shapeA{ r 80 s 2}
+shapeA{ r 160 s 2}
+shapeA{ r 240 s 2}
+shapeA{ r 320 s 2}
+shapeA{ r 320 flip 180 s 2}
+shapeA{ r 240 flip 180 s 2}
+shapeA{ r 160 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+shapeA{ r 80 flip 180 s 2}
+
+shapeB{ r 40 s 2}
+shapeB{ r 120 s 2}
+shapeB{ r 200 s 2}
+shapeB{ r 280 s 2}
+shapeB{ r 360 s 2}
+shapeB{ r 360 flip 180 s 2}
+shapeB{ r 280 flip 90 s 2}
+shapeB{ r 200 flip 180 s 2}
+shapeB{ r 120 flip 90 s 2}
+shapeB{ r 40 flip 180 s 2}
+} 
+  
+rule shapeA{
+TRIANGLE{ s .5 1}
+TRIANGLE{ s .75 .99 b 2}
+shapeA{ s .95 r 2} 
+  
+}
+
+rule shapeB{
+CIRCLE{ s .5 1}
+TRIANGLE{ s .75 .99 b 2}
+shapeB{ s .95 r 2} 
+  
+}

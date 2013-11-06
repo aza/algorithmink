@@ -1,0 +1,9 @@
+funk&tranglo&startshape fractal
+
+rule fractal{
+ TRIANGLE{y 2}
+ TRIANGLE{x 2 r 30}
+ TRIANGLE{x -2 r -30}
+ TRIANGLE{y -2 r 60}
+ fractal{s .99 b .01 r 10}
+}

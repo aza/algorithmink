@@ -1,0 +1,14 @@
+Sander Kllo&Holes and Balls&startshape start
+background { a -1 }
+
+rule start{B{y -0.6}}
+
+rule A{
+    CIRCLE{s 0.4 0.05 }
+    A{r 63 x -0.1 y -0.1  alpha -0.1 }
+}
+
+rule B{
+    A{r 39 x -0.1 y -0.1 alpha -0.7}
+    B{x 0.37 r 55 s 0.97 alpha -0.009}
+}

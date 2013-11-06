@@ -1,0 +1,10 @@
+123&nub&startshape DOT
+
+rule DOT{
+
+Circle{s 4 b 1 a -.9}
+Circle{s .3}
+}
+rule MOUSEMOVE{
+DOT{}
+}

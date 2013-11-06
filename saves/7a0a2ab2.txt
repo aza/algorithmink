@@ -1,0 +1,20 @@
+milo317&dots&startshape scale
+
+rule scale{
+  SEED1 { s .09 y -1}
+}
+ 
+rule SEED1 {
+ SQUARE{}
+ SEED1 {y 1.9 s 0.99 rotate 1.5 brightness 0.09}
+}
+ 
+rule SEED1 0.05 {SEED1 {flip 90}}
+ 
+rule SEED1 0.05 {
+ SQUARE{}
+ SEED1 {y 1.2 s 0.99 r 1.5 b -0.5 flip 90}
+ SEED1 {y 1.2 x 1.2 s 0.6 r -60 b -0.5}
+ SEED1 {y 1.2 x -1.2 s 0.5 r 60 b -0.5 flip 90}
+SEED1 {y 1.2 x -1.9 s 0.8 r 90 b -0.1 flip 90}
+}

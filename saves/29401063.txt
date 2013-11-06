@@ -1,0 +1,14 @@
+Alface&rvore&startshape forest
+ 
+rule forest { 
+   tree {s .2 y -1 x .5}
+}
+rule tree {
+    CIRCLE { s .5 1.2 }
+    tree { s .97 y .3 r 3}
+}
+rule tree .1 { 
+    tree { flip 90 } }
+rule tree .1 { 
+    tree { r 10 } 
+    tree { r -30 s .6} }

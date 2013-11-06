@@ -1,0 +1,12 @@
+Joe DiPilato&Maelstrom&startshape x
+background {sat .4 b -.4 h 100}
+rule x{n{sat .4 b -.4 h 200}}
+rule n 1000{n{}}
+rule n{fs{b 1}n{}}
+rule n{f{b 0}n{}}
+rule f{s{s .07 y -1.5}}
+rule fs{ss{s .07 y -1.5}}
+rule ss{ds{r 2.647 s .9996 b -.0004 a -.0001}}
+rule s{d{r 2.647 s .9996 b .0004 a -.0001}}
+rule d{SQUARE{x .5 s 1.1}s{x 1}}
+rule ds{SQUARE{x .5 s 1.15}ss{x 1}}

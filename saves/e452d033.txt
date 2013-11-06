@@ -1,0 +1,82 @@
+EdTheDev&Trees in the dark&startshape firsttree
+background { b -1 }
+rule firsttree
+{
+trunk { s .1 hue 070 b .09 sat .2 }
+roots { s .1 hue 070 b .09 sat .2}
+}
+
+rule MOUSECLICK {
+trunk { s .1 hue 070 b .09 sat .2 }
+roots { s .1 hue 070 b .09 sat .2 }
+}
+
+rule roots 
+{
+CIRCLE {   }
+roots { s .4 y -.3 x .4 }
+roots { s .4 y -.3 x -.4 }
+}
+
+rule roots
+{
+CIRCLE {}
+roots {  s .4 y -.3 x -.4 }
+roots { s .4 y  -.3 x .4 }
+}
+
+rule trunk 
+{ 
+SQUARE {}
+trunk {  y .7 s .95}
+}
+
+rule trunk .10
+{
+tree{}
+}
+
+rule trunk .10
+{
+tree{ flip 90 hue -300}
+}
+
+rule tree
+{
+spiro{ }
+}
+
+rule spiro
+{
+SQUARE{ }
+spiro { r 10 y .7 s .95 sat .3 b .02 hue 1}
+}
+
+rule spiro .06
+{
+SQUARE {   }
+spiro { r 10 y .7 s. 95 }
+fruit { .25 hue 900 sat 1 b .5}
+}
+
+rule spiro .05
+{
+SQUARE{ }
+spiro {r 10 y .7 s .95}
+spiro {y .7 s .95 flip 270}
+}
+
+rule fruit .05
+{
+CIRCLE{  x 1 }
+CIRCLE{  x -1 }
+}
+
+rule fruit .5
+{
+CIRCLE{  x 1 }
+}
+rule fruit .5
+{
+CIRCLE{  x -1 }
+}

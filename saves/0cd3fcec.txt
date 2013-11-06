@@ -1,0 +1,5 @@
+dfgh&djh&startshape shape
+
+rule shape{
+ CIRCLE{}
+}gfhdghdfghdgh

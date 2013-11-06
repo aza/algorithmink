@@ -1,0 +1,12 @@
+Emichan&StarSpirals&startshape starspiral
+
+rule starspiral 85{ 
+ TRIANGLE {hue 250 sat 1 b .25}
+ starspiral{ s .9 r -72 x -.8 y -.3 b .05 h -10}
+}
+
+rule starspiral 15 {
+ TRIANGLE {hue 250 sat 1 b .25}
+ starspiral{ s .9 r -72 x -.8 y -.3 b .05 h -10}
+ starspiral{ s .9 r 72 x -.8 y -.3 b .05 h -10}
+}

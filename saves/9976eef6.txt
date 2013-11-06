@@ -1,0 +1,13 @@
+Joe DiPilato&Sierpinski&startshape s
+
+rule s{shape {y -.6}}
+rule shape{
+TRIANGLE{r 180 y .288 b 1 sat 1}
+TRIANGLE{x .5}
+TRIANGLE{y .865}
+TRIANGLE{x -.5}
+shape{y .72 s .5}
+shape{x .5 y -.145 s .5}
+shape{x -.5 y -.145 s .5}
+}
+

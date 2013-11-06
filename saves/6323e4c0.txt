@@ -1,0 +1,58 @@
+Context Free| Try Clicking&Directions&startshape scale
+
+rule scale{ INIT{ s .05} }
+
+rule INIT {
+    CIRCLE {s 2}
+    CIRCLE {s 1.8 b 1}
+    LINE {}
+    LINE { r 120}
+    LINE { r -120}
+}
+
+rule LINE {
+    SQUARE{}
+    LINE_2 {y 2}
+}
+
+rule LINE_2 {
+    SQUARE{}
+    LINE_R {y 2 r 2}
+}
+
+rule LINE_R {
+    SQUARE{}
+    LINE_R {y 2 s 0.999 r 2}
+}
+
+rule LINE_R 0.2 { TRIANGLE{} }
+
+rule LINE_R 0.06 { ALT {} }
+
+rule ALT {
+    INIT {s 0.8 b 0.2}
+}
+
+rule ALT {
+    TARGET{}
+    ALT2{x 2}
+}
+
+rule ALT2 {
+    TARGET{}
+    ALT2{x 2}
+}
+
+rule ALT2 0.5 {
+    TARGET{ x 1 s 2 }
+}
+
+rule TARGET {
+    CIRCLE{}
+    CIRCLE{s 0.8 b 1}
+    CIRCLE{s 0.6}
+    CIRCLE{s 0.4 b 1}
+    CIRCLE{s 0.2}
+}
+
+rule MOUSECLICK{ scale{s .4} }

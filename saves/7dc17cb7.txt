@@ -1,0 +1,12 @@
+luisukbrazil&Etwo&startshape shape
+
+rule shape{
+ SQUARE{s .55 .7}
+ SQUARE{b 1  r 90 s .2 .4 y -.16 x .077}
+ SQUARE{b 1 r 90 s .2 .4 y .16 x .077}
+ SQUARE{b 1 s .2 x .2}
+}
+
+rule MOUSECLICK{
+ shape{s .4}
+}

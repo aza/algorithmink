@@ -1,0 +1,23 @@
+Lambda&Sixdust&startshape rounddust
+
+rule rounddust{
+ window{s 2.5}
+}
+
+rule window{
+ borw{s .333}
+ borw{s .333 y .333}
+ borw{s .333 x .29 y .166}
+ borw{s .333 x .29 y -.166}
+ borw{s .333 y -.333}
+ borw{s .333 x -.29 y -.166}
+ borw{s .333 x -.29 y .166}
+}
+
+rule borw{
+ CIRCLE{b 0}
+}
+
+rule borw 6{
+ window{}
+}

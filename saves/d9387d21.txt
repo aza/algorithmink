@@ -1,0 +1,42 @@
+Ika&Who am I&startshape start
+
+rule start{
+ turn{ s 2 hue 60 saturation 1 b 0.5}
+}
+
+rule forward{ 
+ shape{}
+ turn{ s 0.5 y 0.6}
+ turn{ s 0.5 y -0.6}
+}
+
+rule turn{ 
+ forward{s 0.5 x 0.6}
+ forward{s 0.5 x -0.6}
+ shape{}
+}
+
+rule shape{
+ doShape{hue 111}
+}
+
+rule doShape{
+  turn{ s 0.5}
+  term{ s 0.6}
+}
+
+rule shapeHue{
+ doShape{hue 23}
+}
+
+rule shapeHue{
+ doShape{hue 147}
+}
+
+rule shapeHue{
+ doShape{hue 71}
+}
+
+rule term{
+ CIRCLE{s 0.3}
+}

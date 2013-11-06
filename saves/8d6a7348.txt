@@ -1,0 +1,5 @@
+Ikke&Burps&startshape shape
+
+rule shape{
+ RECTANGLE{}
+}

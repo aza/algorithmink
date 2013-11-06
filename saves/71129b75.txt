@@ -1,0 +1,22 @@
+FuchsiaDreamCatcherMaker&Fuchsia Dream Catcher&startshape start
+
+rule start {
+ shape {y -1.2 size 0.02 0.02 saturation 1 hue 300 b 0.3}
+}
+
+rule shape{
+ TRIANGLE {}
+ shape {r 1 b 0.000025 x 1
+saturation 1 hue 0 s 0.99994}
+}
+rule shape{
+ SQUARE {}
+ shape {r 1 b 0.000025 x 1
+saturation 1 hue -0.75 s 0.99994}
+}
+rule shape{
+ CIRCLE {}
+ shape {r 1 b 0.000025 x 1
+saturation 1 hue 0.75 s 0.99994}
+}
+

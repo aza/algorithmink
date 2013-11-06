@@ -1,0 +1,27 @@
+Aza Raskin&Fall Fractal&startshape scale
+
+rule scale{
+	FRACT{ s 1.5 y -.1 }
+}
+
+rule FRACT{
+	STAR{}
+	SUBSTAR{}
+	SUBSTAR{ r 60 }
+	SUBSTAR{ r 120 }
+
+}
+
+rule SUBSTAR{
+	FRACT{ s .34 b .4 y .385 h 10 sat .7}
+	FRACT{ s .34 b .4 y -.385 h 12 sat 1}
+}
+
+rule SUBSTAR .3 {}
+
+rule STAR{
+	TRIANGLE { }
+	TRIANGLE { flip 180 }
+}
+
+rule fract .5 {}

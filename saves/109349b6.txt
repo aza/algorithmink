@@ -1,0 +1,10 @@
+anon&8bit wonderland&startshape shape
+
+rule shape{
+ shape{ r 10000 x 0.02 b 0.1 s 0.9 h 13}
+ mouseclick{ s 0.99 }
+}
+
+rule mouseclick{
+ SQUARE{ x -2 b -0.253534 sat 1}
+}

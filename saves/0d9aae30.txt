@@ -1,0 +1,11 @@
+agga&star rain&startshape shape
+
+rule shape{
+ CIRCLE{s .3 b .1}
+ doit{}
+ doit{rotate 440 sat .1}
+}
+
+rule doit{
+  shape{x .5 s .7 b .3 rotate 1800}
+}

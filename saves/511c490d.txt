@@ -1,0 +1,34 @@
+Levhita&Tree&startshape mainly
+rule mainly{
+  main {s .2 x -1 y -1}
+}
+
+rule main {
+  CIRCLE {s .2}
+  main {r 10 s .99 x .1 y .1}
+}
+
+rule main {
+  SQUARE {s .2}
+  main {r -10 s .99 x .1 y .1}
+}
+
+rule main .05 {
+  main {r -20}
+  main2{r 20}
+}
+
+rule main2 {
+  TRIANGLE {s .2}
+  main2 {r -10 s .99 x .1 y .1}
+}
+
+rule main2 {
+  SQUARE {s .2}
+  main2 {r 10 s .99 x .1 y .1}
+}
+
+rule main2 .05 {
+  main{r 20}
+  main2{r -20}
+}

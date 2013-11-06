@@ -1,0 +1,23 @@
+spiral&spiral&startshape CALLSTAR
+ 
+background { b -.75} //black
+ 
+rule CALLSTAR{
+    STAR{}
+    CALLSTAR{s .999 r 4 hue 10} 
+}
+        // define 8 pointed star shape
+path STAR {		
+    MOVETO{x 0 y 0}	// these are actual axis points, not
+changes to x and y
+    LINETO{x 3 y 2}
+    LINETO{x 3 y -1}
+    LINETO{x 0 y 1}
+    LINETO{x 4 y 1}
+    LINETO{x 1 y -1}
+    LINETO{x 1 y 2}
+    LINETO{x 4 y 0}
+    CLOSEPOLY{}     // go back to (0.5, 0.5) and close the
+path
+    
+    FILL {p evenodd h 260 sat .3 b 1}

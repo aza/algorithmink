@@ -1,0 +1,89 @@
+Chet Gray&Rounddustier&startshape rounddust
+
+rule rounddust{
+ window{s 2.5}
+}
+
+rule window{
+ borw{s .5 x -.25 y -.25}
+ borw{s .5 x -.25 y  .25}
+ borw{s .5 x  .25 y  .25}
+ borw{s .5 x  .25 y -.25}
+}
+
+rule borw .0721{
+}
+
+rule borw{
+ circy{b 0}
+ corner{s .1464 x -.4268 y -.4268 r  90}
+ corner{s .1464 x -.4268 y  .4268}
+ corner{s .1464 x  .4268 y  .4268 r -90}
+ corner{s .1464 x  .4268 y -.4268 r  180}
+}
+
+rule borw{
+ circ{b 0}
+ cornery{s .1464 x -.4268 y -.4268 r  90}
+ cornery{s .1464 x -.4268 y  .4268}
+ cornery{s .1464 x  .4268 y  .4268 r -90}
+ cornery{s .1464 x  .4268 y -.4268 r  180}
+}
+
+rule borw 6{
+ window{}
+}
+
+
+
+rule corner .0721{
+ cornern{}
+}
+
+rule corner{
+ cornery{}
+}
+
+rule cornern{
+}
+
+rule cornery{
+ borw{}
+ series{s .5858 x  .7929 y  .2071}
+ series{s .5858 x -.2071 y -.7929 f -45}
+}
+
+
+
+rule series .0721{
+ seriesn{}
+}
+
+rule series{
+ seriesy{}
+}
+
+rule seriesn{
+}
+
+rule seriesy{
+ borw{}
+ series{s .5858 x  .7929 y  .2071}
+}
+
+
+
+rule circ .0721{
+ circn{}
+}
+
+rule circ{
+ circy{}
+}
+
+rule circn{
+}
+
+rule circy{
+ CIRCLE{}
+}

@@ -1,0 +1,5 @@
+TJ&Test House&startshape shape
+
+rule shape{
+ SQUARE{ y -.85}
+ TRIANGLE{ y -.063}

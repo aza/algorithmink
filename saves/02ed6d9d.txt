@@ -1,0 +1,31 @@
+Phil Dokas&Birch&startshape seed
+
+rule seed {
+ stem { s .1 x .5 y -1.45 }
+}
+
+rule stem {
+ CIRCLE { b 1 }
+ stem { y .05 s .95 r -2 }
+}
+
+rule stem {
+ CIRCLE { }
+ stem { y .05 s .95 r 2 }
+}
+
+rule stem {
+ CIRCLE { b 1 }
+ stem { y .05 s 1.05 r -2 }
+}
+
+rule stem {
+ CIRCLE { }
+ stem { y .05 s 1.05 r 2 }
+}
+
+rule stem .02 {
+ CIRCLE { }
+ stem { y .05 s 1.05 r -20 }
+ stem { y .05 s 1.05 r 20 }
+}

@@ -1,0 +1,44 @@
+S3t&Russian Finger Trap&startshape start
+
+rule start{ SS1{ s 1.5 y 0} }
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+    GAMMA {}
+    DELTA {}
+    EPSILON {}
+}
+
+rule ALPHA {
+    CIRCLE {b 0}
+    CIRCLE {s 0.9955 b 1}
+    ALPHA {r 3 s 0.99}
+    
+
+}
+ 
+rule BETA {
+    CIRCLE {b 0}
+    CIRCLE {s 0.9955 b 1}
+    BETA {r 5 s 0.99}
+ 
+}
+
+rule GAMMA {
+    CIRCLE {b 0}
+    CIRCLE {s 0.9955 b 1}
+    GAMMA {r 7 s 0.99}
+}
+
+rule DELTA {
+    CIRCLE {b 0}
+    CIRCLE {s 0.9955 b 1}
+    DELTA {r 11 s 0.99}
+}
+
+rule EPSILON {
+    CIRCLE {b 0}
+    CIRCLE {s 0.9955 b 1}
+    EPSILON {r 13 s 0.99}
+}

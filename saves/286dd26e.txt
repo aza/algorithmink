@@ -1,0 +1,29 @@
+BALSD&B LAH&// Thai khomut / Khmer koomuut
+startshape khomut
+ 
+path khomut_tail_part {
+    CURVETO {x 0.25 x1 0.75 y1 1.25 x2 -0.5 y2 1.25}
+    STROKE {p roundcap}
+}
+ 
+path khomut_tail_start {
+    CURVETO {x -1.25 y -1 x1 -0.375 y1 -0.625 x2 -0.6  y2
+-1}
+    STROKE{p roundcap}
+}
+ 
+rule khomut_tail {
+    khomut_tail_part {}
+    khomut_tail {x 0.25 s 0.95 -0.95}
+}
+ 
+rule khomut_spiral {
+    CIRCLE {}
+    khomut_spiral {x -0.1 s 0.999 r -0.4}
+}
+ 
+rule khomut {
+    khomut_tail_start {}
+    khomut_tail {}
+    khomut_spiral {s 0.1 x -1.25 y -1}
+}

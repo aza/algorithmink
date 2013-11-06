@@ -1,0 +1,65 @@
+Shawn Reeves&Crysanthemums2&startshape seed
+rule seed{
+mumsize{ saturation 60 hue 60 brightness 1}
+mumsize{ y 1 saturation 60 hue 30 brightness 1}
+mumsize{ x 1 saturation 60 hue 90 brightness 1}
+translate{ hue 120}
+}
+rule translate 0.05{
+seed {x 1 s 0.01}
+}
+rule translate 0.05{
+seed {x -1 s 0.1 r 40}
+}
+rule translate{
+seed {x 2 y 1}
+}
+rule translate{
+seed {x 1 y -2 r 250}
+}
+rule translate{
+seed {y -1 r 90}
+}
+rule translate{
+seed {x 2 r 160}
+}
+rule translate{
+seed {x -3 r 40}
+}
+rule translate 0.2{} //terminator
+
+rule mumsize{
+mum {s 1}
+}
+rule mumsize 0.1{
+mum {s 1 saturation -1}
+}
+rule mumsize{
+mum {s 0.5}
+}
+rule mumsize{
+mum {s 0.3}
+}
+rule mumsize{
+mum {s 0.1}
+}
+rule mum{
+ellipse{ y 1}
+mum{r 20}
+}
+rule mum 0.008{ mum {r 15 s 0.8 saturation -0.1 brightness 0.1}}
+rule ellipse{
+SQUARE {s 0.5 1 b -1}
+SQUARE {s 0.45 0.9 b 1}
+}
+rule mum 0.008{}
+rule ellipse{
+SQUARE {s 0.5 1 b -1}
+SQUARE {s 0.45 0.9 saturation -1 b 1}
+}
+rule ellipse 0.9{
+SQUARE {s 0.5 1 b -1}
+SQUARE {s 0.48 0.96 b 0.8}
+SQUARE {s 0.46 0.92 b -0.5}
+SQUARE {s 0.45 0.9 b 1}
+}

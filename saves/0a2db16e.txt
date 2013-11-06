@@ -1,0 +1,49 @@
+jordan&theFace&startshape start
+
+rule start{
+
+ shape1 {   hue 70  sat 1  }
+ shape2 {   hue 200 sat 1  }
+ shape3 {           sat 1  }
+ shape4 {   hue 70  sat 1  }
+ shape5 {   hue 70  sat 1  } 
+ shape6 {   hue 70  sat 1  }  
+}
+rule shape1{
+ shape { x -.4 y .4}
+ shape { x .4 y -.4 }
+ shape1 { x .05 y .05 s .95 b .01  r -3 }
+
+}
+rule shape2{
+ shape { x .4 y -.4}
+ shape { x -.4 y .4 }
+ shape2 { x -.05 y -.05 s .95 b .03  r 6 }
+}
+
+rule shape3{
+ shape { x -.4 y -.4}
+ shape { x .4 y .4 }
+ shape3 { x .05 y -.05 s .95 b .03  r -2}
+}
+
+rule shape4{
+ shape { x .4 y .4}
+ shape { x -.4 y -.4 }
+ shape4 { x -.05 y .05 s .95 b .01  r 6 }
+}
+rule shape5{
+ shape { x .4 y .4}
+ shape5 { x -.05 y .05 s .95 b .01  r 2 }
+}
+rule shape6{
+ shape { x .4 y -.4 }
+ shape6 { x .05 y .05 s .95 b .01  r -2 }
+}
+rule shape{
+ CIRCLE {}
+}
+
+rule MOUSECLICK{
+  start { s .5 }
+}

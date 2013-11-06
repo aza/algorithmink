@@ -1,0 +1,7 @@
+VH&Staircase&startshape shape
+
+rule shape{
+ SQUARE { s 1 0.2 }
+ shape { x 0.75 y 0.15 s 0.5 }
+}
+ 

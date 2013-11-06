@@ -1,0 +1,22 @@
+aitee&Sirpinski Carpet may freeze up&startshape start
+
+rule start{
+ 
+ SQUARE{ s 10 10 b 0}
+ shapeA{s .5}
+}
+
+rule shapeA{
+ 
+ SQUARE{ s .333  b 1}
+ shapeA{ s .333  b 1 }
+ shapeA{ s .333  b 1 x .333}
+ shapeA{ s .333  b 1 x .333 y .333}
+ shapeA{ s .333  b 1 x .333 y -.333}
+ shapeA{ s .333  b 1 x -.333}
+ shapeA{ s .333  b 1 x -.333 y .333}
+ shapeA{ s .333  b 1 x -.333 y -.333}
+ shapeA{ s .333  b 1 y .333}
+ shapeA{ s .333  b 1 y -.333}
+}
+

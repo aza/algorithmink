@@ -1,0 +1,32 @@
+ox&Circle Pox&startshape go
+
+rule go {
+ shape {s 2}
+}
+rule shape 9{
+cercle{hue 240 x .2 y .2 s .2}
+shape{r 20}
+}
+
+rule shape 3{
+shape{r 50 x 0.1 s 0.4}
+shape{hue -3 a -0.05 b .03 sat .5}
+}
+
+rule shape{
+shape{a -0.01 b .02 sat .5}
+}
+
+rule cercle{
+  hex {s 0.25}
+}
+
+rule hex{
+hexh{y .286}
+hexh{r 180 y -.286}
+}
+rule hexh{
+TRIANGLE{x -.5}
+TRIANGLE{x .5}
+TRIANGLE{r 180 y .286}
+}

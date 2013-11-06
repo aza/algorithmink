@@ -1,0 +1,44 @@
+Vk0A&Simple Squares&startshape frame
+
+rule frame{
+ shape{hue 255 sat 1 b .35}
+}
+
+rule shape 9{
+ square{}
+ shape{x .11}
+}
+
+rule shape{
+}
+
+rule square{
+ SQUARE{s .01}
+}
+rule square{
+ SQUARE{s .02}
+}
+rule square{
+ SQUARE{s .03}
+}
+rule square{
+ SQUARE{s .04}
+}
+rule square{
+ SQUARE{s .05}
+}
+rule square{
+ SQUARE{s .06}
+}
+rule square{
+ SQUARE{s .07}
+}
+rule square{
+ SQUARE{s .08}
+}
+rule square{
+ SQUARE{s .09}
+}
+rule square{
+ SQUARE{s .1}
+}

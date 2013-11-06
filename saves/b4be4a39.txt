@@ -1,0 +1,54 @@
+inimino&fluffy flowers&startshape shape
+
+rule shape{
+ shape2 {y -.7}
+ shape2 {}
+}
+
+rule shape2{
+ f2 {x -.5}
+ f2 {x .5}
+ f2 {x 1.5}
+}
+
+rule f2{
+ f3 { hue 210 }
+}
+
+rule f2{
+ f3 {hue 120}
+}
+
+rule f2{
+ f3 {hue 0}
+}
+
+rule f3{
+ flower {s .25 .25 sat 1 b 1}
+}
+
+rule flower{
+ CIRCLE{}
+ flower{ x .7 s .98 r 37 b -.02 }
+}
+
+rule flower{
+ CIRCLE{}
+ flower{ x .7 s .98 r 27 b .03 }
+}
+
+rule .01 flower{
+  flower{ flip 90 }
+}
+
+rule .1 flower{
+ flower {hue 210}
+}
+
+rule flower{
+ flower {hue .5}
+}
+
+rule flower{
+ flower {s 1.01}
+}

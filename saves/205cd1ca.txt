@@ -1,0 +1,42 @@
+jone&Flower Vines&startshape scale
+
+rule scale{ 
+ SQUARE{ s 100 }
+ grow{ s .5 b 0.5 hue 100 sat 0.5 }
+ grow{ s .5 b 0.5 hue 200 sat 0.5 r 90 }
+ grow{ s .5 b 0.5 hue 100 sat 0.5 r 180 }
+ grow{ s .5 b 0.5 hue 200 sat 0.5 r 270 }
+}
+
+rule grow .45 {
+ SQUARE{ s .05  }
+ grow{ y .1 s .99 r 25  }
+}
+
+rule grow .45 {
+ SQUARE{ s .05  }
+ grow{ y .1 s .99 r -25  }
+}
+
+rule grow .01 {
+ TRIANGLE{ s .1 }
+ grow{ y 0.05 s .99 r 15 }
+ grow{ y 0.05 s .99 r -15 }
+}
+
+rule grow .1 { 
+ flower{s .25 a -0.4 hue 0 sat 1 b 0.8 }
+ flower{s .2 a -0.4 hue 200 sat 0.5 b 0.5 }
+ grow{ y 0.1 s 0.99 }
+}
+
+rule flower .9 {
+ CIRCLE{ s 1 .5 x .8 y 0 r 0 } 
+ CIRCLE{ s 1 .5 x .5 y .5 r 45 } 
+ CIRCLE{ s 1 .5 x 0 y .8 r 90 } 
+ CIRCLE{ s 1 .5 x -.5 y .5 r -45 } 
+ CIRCLE{ s 1 .5 x -.8 y 0 r 0 } 
+ CIRCLE{ s 1 .5 x -.5 y -.5 r 45 } 
+ CIRCLE{ s 1 .5 x 0 y -.8 r 90 } 
+ CIRCLE{ s 1 .5 x .5 y -.5 r -45 } 
+}

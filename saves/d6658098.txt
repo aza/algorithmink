@@ -1,0 +1,22 @@
+meta4&Root System&startshape shape
+
+rule shape{
+test { s .03 r 210 }
+test { s .07 r 165 }
+test { s .05 r 140 }
+
+test { s .03 r  30 }
+test { s .07 r   5 }
+test { s .05 r 340 }
+}
+
+rule test 1 {
+CIRCLE{}
+test{ y .3 s .99 r 2.5 }
+}
+
+rule test .07 {
+SQUARE{}
+test { y .2 s .6 r 6 }
+test { y .5 s .99 r 5 flip 90 }
+}

@@ -1,0 +1,5 @@
+test&test&startshape chance
+
+rule justacircle{
+ CIRCLE{1,1}
+}

@@ -1,0 +1,7 @@
+Me&First Try&startshape twoshapes
+
+rule twoshape{
+ CIRCLE{s .5}
+ SQUARE{x 1}
+ twoshapes{y .2 s .2 b .1}
+}

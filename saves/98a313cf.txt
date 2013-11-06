@@ -1,0 +1,18 @@
+Adam&Blob&startshape shape
+
+rule shape{
+ SQUARE{}
+
+ CIRCLE{ x -.5 }
+ CIRCLE{ x .5 }
+ 
+ CIRCLE{ y .5}
+ CIRCLE{ y -.5 }
+
+ CIRCLE{ x .5 y .5 }
+ CIRCLE{ x -.5 y .5 }
+ CIRCLE{ x .5 y -.5 }
+ CIRCLE{ x -.5 y -.5 }
+}
+
+rule

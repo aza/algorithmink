@@ -1,0 +1,24 @@
+mnk&klj&startshape scale
+
+rule scale{
+  shape{s .2 y -.3 x 1}
+}
+
+rule shape{ 
+ SQUARE{ hue 70  sat 1 b 1 s 1.1 a -.9}
+ SQUARE{ a -.5 }
+ shape{ y 1.5 r 2 s .99}
+}
+
+rule shape{
+ SQUARE{ hue 70  sat 1 b 1 s .9 }
+ CIRCLE{ hue 70  sat 1 }
+ shape{ y 1.5 r 3 s .99}
+}
+
+rule shape .05 {
+ TRIANGLE{ hue 70  sat 1 }
+ CIRCLE { hue 70  sat 1 }
+ shape{ y 1.5 r 4 s .85 b .1}
+ shape{ y 1.5 r 4 s .95 flip 20 b.1}
+}

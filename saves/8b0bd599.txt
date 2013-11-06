@@ -1,0 +1,51 @@
+funatti&arrays&startshape INIT
+
+shape INIT {
+	ARRAY [b 1 sat 1 hue 30]
+}
+
+shape ARRAY
+rule {}
+rule 20 {
+	NODE []
+	ELM [ y 4 hue 1 b -0.02 ]
+}
+rule 20 {
+	NODE []
+	ELM [ y 4 hue 1 b 0.02 ]
+}
+rule 20 {
+	NODE []
+	ELM [ y 4 hue 0.5 b 0.02 ]
+}
+
+shape ELM
+rule 50 {
+	ARRAY [ r 3 ]
+}
+rule 50 {
+	ARRAY [ r -1 ]
+}
+rule {
+	ARRAY [ r -1 ]
+	ARRAY [ r 90 ]
+}
+
+shape NODE
+rule {}
+rule 30 {
+	BLOCK [ r 0.3 x 1 a -0.01 ]
+}
+rule 30 {
+	BLOCK [ r -0.3 x 1 ]
+}
+
+shape BLOCK
+rule {
+	SQUARE []
+	NODE [ s 1.03 ]
+}
+rule {
+	SQUARE []
+	NODE [ s 0.95 ]
+}

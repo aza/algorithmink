@@ -1,0 +1,10 @@
+Hmm&Roses&startshape s1
+
+rule s1{
+ CIRCLE{}
+ s1{ s .95 r 85 b .01 x .32}
+}
+
+rule MOUSECLICK{
+  s1{ s .5 sat .99}
+}

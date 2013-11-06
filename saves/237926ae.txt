@@ -1,0 +1,48 @@
+Mit&Twist out&startshape init
+
+rule init{
+ shape{s .01}
+}
+
+
+rule shape{
+ SQUARE{
+  s 1.2
+ }
+
+ SQUARE{
+  b .5
+ }
+ 
+ shape{
+  x 1
+  r 10
+ }
+}
+
+
+rule shape .01{
+ CIRCLE{
+  s 2
+ }
+
+ shape{
+  x 1
+  r -50
+ }
+
+ shape{
+  x 1
+  r 10
+ }
+}
+
+
+rule shape .01{
+ TRIANGLE{s 10 b 1}
+}
+
+
+rule MOUSECLICK{
+ init
+}

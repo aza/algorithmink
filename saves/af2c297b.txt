@@ -1,0 +1,19 @@
+LPEdro&nothing&startshape shape
+
+rule shape{
+ CIRCLE{ s .02 a -.19}
+ MOTION {}
+}
+
+rule MOTION{
+ shape{ x .1 }
+}
+rule MOTION{
+ shape{ x -.1 }
+}
+rule MOTION{
+ shape{ y .1 }
+}
+rule MOTION{
+ shape{ y -.1 }
+}

@@ -1,0 +1,36 @@
+Derp&Alien Vines&startshape chain
+
+rule chain{
+ shape{ x -2 y -1}
+}
+
+rule shape{
+ SQUARE{ s .1 h 120 sat 0.5 b 0.2}
+ shape{ s .9 x .1 h 10 r 10}
+}
+rule shape 0.5{
+ SQUARE{ s .1 h 120 sat 0.5 b 0.2}
+ shape{ x .1 h -10 r -10}
+}
+
+rule shape 0.1{
+ SQUARE{ s .1 h 120 sat 0.5 b 0.2}
+ shape{ s 1.1 x .1 h -10 r -25}
+ shape{ s 0.9 x .1 h 50 r 70}
+}
+
+rule MOUSECLICK{
+ shape{}
+}
+
+rule MOUSECLICK{
+ shape{r 45}
+}
+
+rule MOUSECLICK{
+ shape{r 70}
+}
+
+rule MOUSECLICK{
+ shape{r -135}
+}

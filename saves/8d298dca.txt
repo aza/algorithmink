@@ -1,0 +1,43 @@
+Steren&hexa lines&startshape scale
+
+rule scale{
+  scene{ s .01 sat .5}
+}
+
+rule scene {
+ path { h 0 b .3 }
+ path {r 60 h 30 b .3  }
+ path {r 120 h 60 b .3 }
+ path {r 180 h 90 b .3 }
+}
+
+
+rule path 1000 {
+ element {}
+ path { x .5 }
+}
+
+rule path 10 {
+ element {}
+ path { r 60 }
+}
+
+rule path 10 {
+ element {}
+ path { r -60 }
+}
+
+rule path 0.1{
+ element {}
+}
+
+rule path 0.1{
+ element {}
+ path {r 60}
+ path {r-60}
+}
+
+
+rule element {
+    SQUARE {}
+}  

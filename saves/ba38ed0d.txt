@@ -1,0 +1,11 @@
+Kev1n  Lusukbrazil&Ohhh&startshape e
+background{b -1}
+rule e{
+ CIRCLE { x -.2 y 0 s 0.6 1 r 90  b 1}
+ CIRCLE { x -.1 x 0.3 s 0.2 0.2 sat 0 b -1}
+ CIRCLE { x -.1 x -0.3 s 0.2 0.2 sat 0 b -1}
+ CIRCLE { x -.1 y -0.3 s 0.3 0.2 sat 0 b -1}
+ CIRCLE{s .03 .05 b 1 x -.23 }
+ CIRCLE{s .03 .05 b 1 x .265 }
+
+}

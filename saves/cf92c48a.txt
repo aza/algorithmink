@@ -1,0 +1,26 @@
+synthiac&crld&startshape shape
+
+rule shape{
+ rootone{}
+ roottwo{}
+}
+
+rule rootone{
+ CIRCLE{s 0.025}
+ rootone{x 0.01 s .999 r 2}
+}
+
+rule roottwo{
+ CIRCLE{s 0.025}
+ roottwo{x -0.01 s .999 r 2}
+}
+
+rule rootone 0.002{
+ rootone{s .75 r 15}
+ rootone{flip 180 s .75}
+}
+
+rule roottwo 0.002{
+ roottwo{s .75 r 15}
+ roottwo{flip 180 s .75}
+}

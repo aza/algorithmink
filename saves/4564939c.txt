@@ -1,0 +1,11 @@
+9afar&9afar 1st &startshape shape
+
+rule shape{
+ TRIANGLE{}
+ shape2{s .99 b 1 r -30}
+}
+
+rule shape2{
+ TRIANGLE{}
+ shape{s 0.999 b -1 r -100}
+}

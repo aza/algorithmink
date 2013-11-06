@@ -1,0 +1,52 @@
+Joe DiPilato&Music Generator V1&startshape z
+rule z{
+x{.02}
+SQUARE{s .02 .2 x -1.585 y -.1}
+SQUARE{s .02 .2 x -1.615 y -.1}
+SQUARE{s .02 .2 x -1.585 y -.45}
+SQUARE{s .02 .2 x -1.615 y -.45}
+}
+rule x 1000{a{}x{x .05}
+}
+rule x{}
+rule a{
+b{x -1.6 s .01}
+b{x -1.6 s .01 y -.35}
+}
+rule b{
+s{}
+s{y -5}
+s{y -10}
+s{y -15}
+s{y -20}
+}
+rule s 10{
+SQUARE{s 5 1}
+}
+rule s{
+SQUARE{s 5 1}
+note{s 3}
+}
+rule note 2{n{}}
+rule note{n{y .75}}
+rule note{n{y -.75}}
+rule n{
+ CIRCLE{}
+}
+rule n{
+ CIRCLE{}
+ SQUARE{x .4 y 3 s .3 6}
+}
+rule n{
+ CIRCLE{}
+ SQUARE{x .4 y 3 s .3 6}
+ CIRCLE{x 5}
+ SQUARE{x 5.4 y 3 s .3 6}
+ SQUARE{x 2.8 y 5 s 5 .5}
+ SQUARE{x 2.8 y 5.8 s 5 .5}
+}
+rule n{
+ CIRCLE{}
+ SQUARE{x .4 y 3 s .3 6}
+ SQUARE{x 1 y 5.8 s 1 .5}
+}

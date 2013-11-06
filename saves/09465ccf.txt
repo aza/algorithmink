@@ -1,0 +1,48 @@
+Robocop&Click Draw to Roll the Dice&startshape dice
+
+rule dice{
+ die{ x -.7}
+ die{ x .7}
+}
+rule die{
+ SQUARE{}
+ pip{}
+}
+rule die{
+ SQUARE{}
+ pip{ y .25 x -.25 }
+ pip{ y -.25 x .25 }
+}
+rule die{
+ SQUARE{}
+ pip{ y .25 x -.25 }
+ pip{ y -.25 x .25 }
+ pip{}
+}
+rule die{
+ SQUARE{}
+ pip{ y .25 x -.25 }
+ pip{ y .25 x .25 }
+ pip{ y -.25 x -.25 }
+ pip{ y -.25 x .25 }
+}
+rule die{
+ SQUARE{}
+ pip{ y .25 x -.25 }
+ pip{ y .25 x .25 }
+ pip{ y -.25 x -.25 }
+ pip{ y -.25 x .25 }
+ pip{}
+}
+rule die{
+ SQUARE{}
+ pip{ y .25 x -.25 }
+ pip{ y .25 x .25 }
+ pip{ y -.25 x -.25 }
+ pip{ y -.25 x .25 }
+ pip{ x -.25 }
+ pip{ x .25 }
+}
+rule pip{
+ CIRCLE{ b 1 s .14 }
+}

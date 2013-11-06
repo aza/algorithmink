@@ -1,0 +1,11 @@
+atl&circletest&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape2{s .98 b .7}
+}
+
+rule shape2{
+ CIRCLE{}
+ shape{s .98 b -.7}
+}

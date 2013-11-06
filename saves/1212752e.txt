@@ -1,0 +1,16 @@
+mos&mos55&startshape start
+
+rule start
+{
+        spiral {  hue   0  sat 1 r    0}
+        spiral {  hue  90  sat 1 r  -90}
+        spiral {  hue 180  sat 1 r   90}
+        spiral {  hue 270  sat 1 r  180}
+}
+rule spiral
+
+{
+        CIRCLE { x .4 y.4 }
+        spiral { x .04 y .01
+                 s .98 b .02 r 20 }
+}

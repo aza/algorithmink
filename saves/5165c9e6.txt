@@ -1,0 +1,53 @@
+BenP&Floober&startshape blank
+
+rule blank {}
+
+rule shape{
+ CIRCLE {size 0.1} 
+}
+
+rule FOO {
+ shape {}
+ FOO {x .02 size .97 hue 2 rotate 10}
+
+}
+
+rule FOO { 
+ shape {}
+ FOO {x .02 size .95 hue 1 rotate -10}
+}
+
+rule FOOB 
+{
+ FOO {size 10}
+}
+
+rule FOOB 
+{
+ FOO {size 8}
+}
+
+rule FOOB 
+{
+ FOO {size 6}
+}
+
+rule FOOB 
+{
+ FOO {size 4}
+}
+
+rule FOOB 
+{
+ FOO {size 2}
+}
+
+rule FOOB 
+{
+ FOO {size 1}
+}
+
+rule MOUSECLICK
+{
+  FOOB {size .5 b .5 h 200 saturation .5}
+}

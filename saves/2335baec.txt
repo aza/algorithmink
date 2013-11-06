@@ -1,0 +1,24 @@
+Gavin van Lelyveld&rolling up the hose&startshape shape
+
+rule shape{
+ the_thing{ s .01 y -.75 }
+}
+
+rule the_thing {
+ SQUARE{}
+ shadow_column {}
+ shadow_column {r 180}
+ the_thing{ x 1 r 1 }
+}
+
+rule the_thing .025 {
+ the_thing { r 4 }
+}
+
+rule shadow_column {
+ SQUARE{ y 1 b .5 }
+ SQUARE{ y 2 b .75 }
+ SQUARE{ y 3 b .87 }
+ SQUARE{ y 4 b .93 }
+ SQUARE{ y 5 b 1 }
+}

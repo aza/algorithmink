@@ -1,0 +1,24 @@
+LucasH&Peacock Knuckles&startshape begin
+
+rule begin {
+   horns { sat 0.5 b 0.5}
+}
+
+rule horns .5 {
+   line { h 120 x 1 }
+   horns { h 30 b 0.1 s 0.95 r -30}
+}
+
+rule horns {
+   line { x 1 }
+   horns { r 30 h 30 s 0.95 }
+}
+
+rule line {
+  shape { s .65 }
+  line ( b -.04 x -0.1 s .95 r 20 }
+}
+
+rule shape{
+ CIRCLE{ }
+}

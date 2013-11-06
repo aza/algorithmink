@@ -1,0 +1,11 @@
+sydSeven&thoughtbBubbleFromBeyond&startshape shape
+
+rule shape{
+ CIRCLE{ 2 6}
+ shape{ r 10 x 0.4 b 0.006 s 0.60 h 3}
+ mouseclick{ s 0.20 }
+}
+
+rule mouseclick{
+ CIRCLE{ b 10 sat 3}
+}

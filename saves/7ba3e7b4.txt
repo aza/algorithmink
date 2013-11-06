@@ -1,0 +1,10 @@
+luisukbrazil&algoritmo 9 &startshape E
+
+rule E {
+MEST {size 0.3}
+}
+
+rule MEST {
+SQUARE {}
+MEST {size 0.999 y .004 x .004 rotate .4 brightness 0.001}
+}

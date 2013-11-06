@@ -1,0 +1,47 @@
+sofiacc&rain&startshape rain
+
+rule rain {
+ scale{}
+ scale{x 1}
+ scale{x 2}
+ scale{x -.1}
+ scale{x .1}
+ scale{x -.05}
+ scale{x .05}
+ scale{x 1.05}
+ scale{x 1.5}
+}
+ 
+rule scale{
+  shape{s .1 y 2 x .1}
+  shape{s .1 y 2 x -.1}
+  scale{x -.1}
+  
+  
+}
+ 
+rule shape{
+ SQUARE{ b 1  s .2}
+ SQUARE{ a -.1 s .2}
+ shape{ y -.2  s .99}
+}
+ 
+rule shape{
+ SQUARE{ b 1 s .2 }
+ SQUARE{ s .2}
+ shape{ y -1.2  s .99}
+}
+
+rule shape{
+ SQUARE{ b 1  s .2}
+ SQUARE{ a -.1 s .2}
+ shape{ y -.2  s .99}
+}
+
+rule shape{
+ SQUARE{ b 1  s .2}
+ SQUARE{ a -.5 s .2}
+ shape{ y -.2  }
+}
+ 
+

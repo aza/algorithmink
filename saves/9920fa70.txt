@@ -1,0 +1,6 @@
+ismaeel&isk&ismaeel al-killidar
+startshape shape
+
+rule shape{
+ CIRCLE{}
+}

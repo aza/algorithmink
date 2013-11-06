@@ -1,0 +1,20 @@
+Scotty&Sierpinski Carpet&
+startshape Start 
+
+rule Start {
+  SQUARE{s 2}
+  Sq { s .6666 b 1 }
+}
+rule Sq {
+ SQUARE {  }
+ Sq { s .3333 x -1 y -1 }
+ Sq { s .3333 x -1 y 0 }
+ Sq { s .3333 x -1 y 1 }
+ Sq { s .3333 x 0 y -1 }
+ Sq { s .3333 x 0 y 0 }
+ Sq { s .3333 x 0 y 1 }
+ Sq { s .3333 x 1 y -1 }
+ Sq { s .3333 x 1 y 0 }
+ Sq { s .3333 x 1 y 1 }
+ 
+}

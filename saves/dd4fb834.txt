@@ -1,0 +1,20 @@
+Tubby Toast&Dragon Scales&startshape start
+
+rule start{ SS1{ s 1.5 y 0} }
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+}
+
+rule ALPHA {
+    SQUARE {b 0.1}
+    SQUARE {s .99555 b 1}
+    ALPHA {r -40 s 0.92}
+}
+ 
+rule BETA {
+    SQUARE {b 0.1}
+    SQUARE {s .99555 b 1}
+    BETA {r 1 s .4440}
+}

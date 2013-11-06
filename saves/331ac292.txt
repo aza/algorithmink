@@ -1,0 +1,9 @@
+fadsfadf&dsad&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+fule shape{
+
+asdfasdf
+adasf}

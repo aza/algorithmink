@@ -1,0 +1,26 @@
+aktionitems&masterpeace&startshape start
+background {b -10}
+
+rule start{ CHIAROSCURO{ s .2 y -.4} }
+
+rule CHIAROSCURO {
+    BLACK {b .7}
+}
+
+rule BLACK 30 {
+    CIRCLE {s .12}
+    BLACK {x .1 r 5 s .88 b -.1 a -.11}
+}
+rule BLACK {
+    WHITE {}
+    BLACK {}
+}
+
+rule WHITE 60 {
+    CIRCLE {s .6}
+    WHITE {x .1 r -5 s .99 b .01 a -.01}
+}
+rule WHITE {
+    BLACK {}
+    WHITE {}
+}

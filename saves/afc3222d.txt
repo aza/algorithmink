@@ -1,0 +1,6 @@
+Carter&Smooth&startshape mine
+
+rule mine{
+ CIRCLE{}
+ mine{ s .99  b .01}
+}

@@ -1,0 +1,34 @@
+seligretep&acid noodles&startshape woah
+
+background { b -.85 }
+
+rule woah{
+four{sat 1}
+four{r 45 sat 1}
+four{r 120 sat 1}
+}
+
+rule crazeh{
+ CIRCLE{s .05 b .5}
+ crazeh{x .02 r 10 s .995 hue 1}
+}
+
+rule crazeh .2{
+ crazeh{flip 0}
+}
+
+rule crazeh 0.004{
+ crazeh{x .01 r 50 s .995}
+ crazeh{x .01 r -50 s .995}
+}
+
+rule crazeh 0.0005{
+ woah{}
+}
+
+rule four{
+crazeh{}
+crazeh{r 90}
+crazeh{r 180}
+crazeh{r 270}
+}

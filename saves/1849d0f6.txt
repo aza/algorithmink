@@ -1,0 +1,35 @@
+efavie&lisafa&startshape h
+
+rule h{
+ window{s 2,0 b 5}
+}
+
+rule window{
+
+ CIRCLE{ s .07 .5 x -.50  hue 50 sat 1}
+ CIRCLE{ s .55 .05 y .25 hue 200 sat 1}
+ borw{s .5 x -.25 y  .25}
+ borw{s .5 x  .25 y -.25 r 90}
+ conn2{s .025 y .125}
+ conn3{s .060 y -.10 hue 40 sat 1}
+}
+
+rule borw{
+ window{b -.60}
+}
+
+rule conn{
+ CIRCLE{s 2 11 b -.60}
+}
+
+rule conn2{
+ CIRCLE{s 5 b -.60}
+}
+
+rule conn3{
+ CIRCLE{s 5 b -.10}
+}
+
+rule MOUSECLICK{
+  start {s .6}
+}

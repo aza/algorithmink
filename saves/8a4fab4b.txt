@@ -1,0 +1,66 @@
+David Hogarty&FaceStar&startshape start
+
+rule start{
+ facestar{s .5}
+}
+rule MOUSECLICK{facestar{s .3}}
+rule MOUSECLICK{facestar{s .2}}
+rule MOUSECLICK{facestar{s .1}}
+
+rule facestar{
+ FACE{}
+ facespike{r 0}
+ facespike{r 90}
+ facespike{r 180}
+ facespike{r 270}
+}
+
+rule facestar{
+ FACE{}
+ facespike{r 0}
+ facespike{r 120}
+ facespike{r 240}
+}
+
+rule facestar{
+ FACE{}
+ facespike{r 0}
+ facespike{r 72}
+ facespike{r 144}
+ facespike{r 216}
+ facespike{r 288}
+}
+
+rule facespike{
+ faces{y .9 s .6}
+}
+
+rule faces{
+ FACE{}
+ faces{r -25 y .9 s .6}
+}
+
+rule faces{
+ FACE{}
+ faces{r 25 y .9 s .6}
+}
+
+rule FACE{
+ HEAD{hue 45 sat 1 b .5  }
+ EYE{}
+ EYE{flip 90}
+ MOUTH{}
+}
+
+rule HEAD{ CIRCLE{}}
+rule HEAD{  SQUARE{}}
+
+rule EYE{CIRCLE { s .1 b .5 y .12 x .3}}
+rule EYE {SQUARE { s .1 b .5 y .12 x .3}}
+rule EYE {SQUARE { s .1 b .5 y .12 x .3 r 45}}
+rule EYE {TRIANGLE { s .1 b .5 y .12 x .3}}
+rule EYE {TRIANGLE { s .1 b .5 y .12 x .3 r 60}}
+
+rule MOUTH {SQUARE{ s .8 .1 y -.12  b .5}}
+
+

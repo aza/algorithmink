@@ -1,0 +1,144 @@
+lunarbunny&flower silhouettes&startshape start
+
+rule start {
+  drawflowers {}
+}
+
+rule drawflowers {
+  randomstart { s 0.1 x -1.5 }
+  randomstart { s 0.1 x -1 }
+  randomstart { s 0.1 x -0.5 }
+  randomstart { s 0.1 }
+  randomstart { s 0.1 x 0.5 }
+  randomstart { s 0.1 x 1 }
+}
+
+rule randomstart {  randomstart { y 0.3 }}
+rule randomstart {  randomstart { y -0.3 }}
+rule randomstart {  randomstart { s 1.05 }}
+rule randomstart {  randomstart { s 0.95 }}
+rule randomstart 0.3 {  flower { } }
+rule randomstart 0.3 {  flower2 { } }
+
+
+rule flower {
+  petals { r 10 }
+  petals { r -10 flip 90 }
+  stem {}
+  centre {}
+}
+
+rule petals {
+  startpetal { r 5 s 0.9 }
+  startpetal { r 25 s 1.2 }
+  startpetal { r 45 s 1.1 }
+  startpetal { r 65 s 1.2 }
+  startpetal { r 85 }
+  startpetal { r 105 }
+  startpetal { r 125 s 0.8 }
+}
+
+
+rule stem {  stem { r 0.4 }}
+rule stem {  stem { r -0.4 }}
+rule stem {  drawsegment { s 1 r -10 }}
+rule stem {  drawsegment { s 1 r 0 } }
+rule stem {  drawsegment { s 1 r 10 flip 90 }}
+rule stem {  drawsegment { s 1 r 0 flip 90 }}
+
+rule drawsegment {
+  CIRCLE { y -7 s 0.3 }
+  drawsegment { s 0.98 r 0.1 }
+}
+
+
+rule centre {  CIRCLE { s 0.4 } }
+
+rule startpetal 3 {  startpetal { r 0.5 }}
+rule startpetal 3 {  startpetal { r -0.5 }}
+rule startpetal {  petal { y 0.1 } }
+rule startpetal {  petal { s 0.95 y 0.1 } }
+
+
+rule petal {
+  CIRCLE { s 0.5 0.7 y 2 r -10 }
+  petal { s 0.92 r 1 }
+}
+
+
+rule flower2 {
+  petals2 { r 10 }
+  petals2 { r -10 flip 90 }
+  stem { s 1.5 1 }
+  centre { }
+}
+
+rule petals2 30 {
+  startpetal2 { r 5 s 0.9 }
+  startpetal2 { r 25 s 1.2 }
+  startpetal2 { r 45 s 1.1 }
+  startpetal2 { r 65 s 1.2 }
+  startpetal2 { r 85 }
+  startpetal2 { r 105 }
+  startpetal2 { r 125 s 0.8 }
+  petals2extra { r 50 }
+}
+
+rule petals2extra  {
+  startpetal2 { r 125 s 0.9 }
+  petals2extra { r 50 }
+}
+
+rule petals2extra  {
+  startpetal2 { r 125 s 0.9 }
+}
+
+rule startpetal2 3 {  startpetal2 { r 0.5 } }
+rule startpetal2 3 {  startpetal2 { r -0.5 } }
+rule startpetal2 {  petalstart2 { y 0.1 } }
+rule startpetal2 { petalstart2 { s 0.95 y 0.1 } }
+
+rule petalstart2 {
+  CIRCLE { s 0.3 0.3 y 2 r -10 }
+  petal2 { s 0.92 r 1 }
+}
+
+rule petal2 10 {
+  hairstart { }
+  CIRCLE { s 0.2 0.7 y 2 r -10 }
+  petal2 { s 0.922 r 1 }
+}
+
+rule petal2 {
+  CIRCLE { s 0.2 0.7 y 2 r -10 }
+  petal2 { s 0.92 flip 90 }
+}
+
+rule petal2 3 {
+  petal2lock { s 0.922 r 1 }
+}
+
+rule petal2lock {
+  hairstart {  }
+  CIRCLE { s 0.2 0.7 y 2 r -10 }
+  petal2lock { s 0.922 }
+}
+
+rule hairstart 20 {}
+rule hairstart { hair { r 0 }  hair { r 180 } }
+
+rule hair {
+  CIRCLE { s 0.4 0.1 }
+  hair { x 0.75 s 0.62 r 1 }
+}
+
+rule grassstart 20 {}
+rule grassstart { grass { r 0 } }
+
+rule grass {
+  CIRCLE { s 0.4 0.1 }
+  grass { x 1 s 0.92 r 1 }
+}
+
+
+rule MOUSECLICK{  start { s .5 } }

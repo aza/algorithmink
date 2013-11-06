@@ -1,0 +1,15 @@
+forresto&quads&startshape WHOLE
+
+rule WHOLE {
+  QUAD { x -0.5 y -0.5 }
+  QUAD { x  0.5 y -0.5 }
+  QUAD { x  0.5 y  0.5 }
+  QUAD { x -0.5 y  0.5 }
+}
+
+rule QUAD {
+  SQUARE{hue 174 sat 1 b 0.1}
+}
+rule QUAD 4 {
+  WHOLE{s .5 b 0.15}
+}

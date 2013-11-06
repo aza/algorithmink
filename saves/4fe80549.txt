@@ -1,0 +1,23 @@
+Jahn&Tree&startshape start
+
+rule vine{
+	CIRCLE{s 0.5 z 2}
+	vine{y 0.15 s 0.99 r 1}
+}
+
+rule vine 0.02{
+	vine{flip 90 b -0.05}
+	vine{s 0.75 b -0.1 z -1}
+}
+
+rule tree{
+	vine{}
+	vine{flip -90}
+}
+
+rule start{
+	tree{b 0 s 0.05}
+	tree{b 0 s 0.05}
+	tree{b 0 s 0.05}
+	tree{b 0 s 0.05}
+}

@@ -1,0 +1,19 @@
+MJ&Something&startshape shape
+
+rule shape{
+test { s .04 }
+test { s .04 flip 90 }
+test { s .05 r 180 }
+test { s .04 r 180 flip 90 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .5 s .993 r 2,9 }
+}
+
+rule test .06 {
+SQUARE{}
+test { y .01 s .993 r 2 }
+test { y .01 s .93 r 10 flip 90 }
+}

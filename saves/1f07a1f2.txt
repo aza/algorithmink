@@ -1,0 +1,25 @@
+ewae&awe&startshape shape
+
+rule shape{
+test { s .05 }
+test { s .05 flip 90 }
+test { s .05 r 180 }
+test { s .05 r 180 flip 90 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .5 s .99 r 2 }
+}
+
+rule test .06 {
+SQUARE{}
+test { y .5 s .99 r 2 }
+test { y .5 s .99 r 10 flip 90 }
+}
+
+rule twoshapes{
+  CIRCLE{s .5}
+  SQUARE{x 1}
+  twoshapes{y .2 s .5 b .1}
+}

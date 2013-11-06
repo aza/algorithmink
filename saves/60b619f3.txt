@@ -1,0 +1,72 @@
+njc&Gridlock&startshape scale
+
+rule scale {
+  shape { x -1 s 0.02 b 0.2 alpha -0.8 }
+}
+
+rule shape{
+ CIRCLE{}
+ shape{ x 0.3}
+}
+
+rule shape {
+ CIRCLE{}
+ shape1{ x 0.3}
+}
+
+rule shape1{
+ CIRCLE{}
+ shape{ x 0.3}
+}
+
+rule shape1{
+ CIRCLE{}
+ shape2{ x 0.3}
+}
+
+rule shape2{
+ CIRCLE{}
+ shape{ x 0.3}
+}
+
+rule shape2{
+ CIRCLE{}
+ shape3{ x 0.3}
+}
+
+rule shape3{
+ CIRCLE{}
+ shape{ x 0.3}
+}
+
+rule shape3{
+ CIRCLE{}
+ shape{ r 90 x 0.3}
+}
+
+rule shape3{
+ CIRCLE{}
+ shape{ r -90  x 0.3}
+}
+
+rule shape3{
+ CIRCLE{}
+ shape4{ x 0.3}
+}
+
+rule shape4 {
+ CIRCLE{}
+ shape2{ x 0.3}
+}
+
+rule shape4 {
+ CIRCLE{}
+ shape2{ x 0.3}
+ shape{ r 90 x 0.3}
+}
+
+rule shape4 {
+ CIRCLE{}
+ shape2{ x 0.3}
+ shape{ r -90 x 0.3}
+}

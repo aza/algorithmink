@@ -1,0 +1,13 @@
+gryftir&jagged pill&startshape scale
+
+rule scale{ BULB{ s .9 y .35} }
+
+rule BULB {
+    WHEEL { }
+    BULB {x .65  r 299 s .999 }
+}
+
+rule WHEEL {
+    TRIANGLE { }
+    TRIANGLE { s .90 b 2 }
+}

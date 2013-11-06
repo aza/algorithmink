@@ -1,0 +1,41 @@
+Joe DiPilato&Snake v1&startshape a
+rule a{b{s .02}}
+rule b{CIRCLE{}d1{}c{}bd{}}
+rule c{CIRCLE{}d{}}
+rule d{CIRCLE{}e{}}
+rule e{CIRCLE{}f{}}
+rule f{CIRCLE{}g{}}
+rule g{CIRCLE{}h{}}
+rule h{CIRCLE{}i{}}
+rule i{CIRCLE{}j{}}
+rule j{CIRCLE{}k{}}
+rule k{CIRCLE{}l{}}
+rule l{CIRCLE{}m{}}
+rule m{CIRCLE{}n{}}
+rule n{CIRCLE{}o{}}
+rule o{CIRCLE{}p{}}
+rule p{CIRCLE{}q{}}
+rule q{CIRCLE{}r{}}
+rule r{CIRCLE{}s{}}
+rule s{CIRCLE{}t{}}
+rule t{CIRCLE{}u{}}
+rule u{CIRCLE{}v{}}
+rule v{CIRCLE{}w{}}
+rule w{CIRCLE{}x{}}
+rule x{CIRCLE{}y{}}
+rule y{CIRCLE{}z{}}
+rule z{CIRCLE{}cls{}}
+
+rule bd 10{b{x 1}}
+rule bd{bd{r 90}}
+rule cls{CIRCLE{b 1 s 2}}
+
+rule d1{d2{}d2{}d2{}d2{}}
+rule d2{d3{}d3{}d3{}d3{}}
+rule d3{d4{}d4{}d4{}d4{}}
+rule d4{delay{}delay{}}
+rule delay{CIRCLE{a -1}}
+
+
+
+rule MOUSECLICK{a{}}

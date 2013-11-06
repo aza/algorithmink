@@ -1,0 +1,114 @@
+Wizem&Hearts&startshape DRAW
+background {h 190 sat .5 b -.8}
+
+
+rule DRAW
+{
+START{s 0.3}
+}
+
+
+rule MOUSECLICK 0.01{ START{s 0.1 r 36} }
+rule MOUSECLICK 0.01{ START{s 0.2 r 72} }
+rule MOUSECLICK 0.01{ START{s 0.3 r 108} }
+rule MOUSECLICK 0.01{ START{s 0.4 r 144} }
+rule MOUSECLICK 0.01{ START{s 0.5 r 180} }
+rule MOUSECLICK 0.01{ START{s 0.6 r 216} }
+rule MOUSECLICK 0.01{ START{s 0.7 r 252} }
+rule MOUSECLICK 0.01{ START{s 0.8 r 288} }
+rule MOUSECLICK 0.01{ START{s 0.9 r 324} }
+rule MOUSECLICK 0.01{ START{s 0.10} }
+
+
+rule FRAME
+{
+DESATURATING_HEART { hue 0 sat 0 b 0.1 s .05 y -0.5 x -0.015 z -0.1}
+DESATURATING_HEART { hue 0 sat 1 b 0.1 s .05 y -0.5 x 0.015 z -0.1}
+}
+
+rule START
+{
+
+
+
+MIDDLE{y 0.30}
+MIDDLE{y 0.627 x -0.11 r 45 s 0.8}
+MIDDLE{y 0.627 x 0.11 r -45 s 0.8}
+
+GO{y -0.5 z 5}
+
+SPLINES{hue 0 sat 1 b 0.1 s 0.1 r 180 x -1}
+SPLINES{hue 0 sat 1 b 0.1 s 0.1 r 45 x -1}
+SPLINES{hue 0 sat 1 b 0.1 s 0.1 r 90 x 1}
+SPLINES{hue 0 sat 1 b 0.1 s 0.1 r -45 x 1}
+}
+
+rule SPLINES 0.99
+{
+CIRCLE{}
+SPLINES{x -0.1 s 0.99 y -0.1 r 1 b 0.01}
+}
+rule SPLINES 0.025
+{
+CIRCLE{}
+SPLINES{x -0.1 s 0.99 y 0.1 r 1 b 0.01}
+}
+rule SPLINES 0.05
+{
+CIRCLE{}
+SPLINES{x 0.1 s 0.99 y -0.1 r 1 b 0.01}
+}
+
+rule SPLINES 0.025
+{
+CIRCLE{}
+SPLINES{x 0.1 s 0.99 y 0.1 r 1 b 0.01}
+}
+
+
+
+rule GO
+{
+HEART { hue 0 sat 1 b 0.5 s .05}
+
+}
+
+rule HEART {
+PART {}
+PART {flip 90}
+}
+
+rule PART {
+CIRCLE { s 5}
+PART {y 0.282 x -0.3 s 0.9901 r -0.6 b -0.001 z .1}
+}
+
+rule DESATURATING_HEART{
+DESATURATING_PART {}
+DESATURATING_PART {flip 90}
+}
+
+rule DESATURATING_PART
+{
+CIRCLE { s 5}
+DESATURATING_PART {y 0.282 x -0.3 s 0.9901 r -0.6 b -0.001 z -.1}
+}
+
+rule DESATURATING_PART 0.01
+{
+CIRCLE { s 5}
+DESATURATING_PART_RED {y 0.282 x -0.3 s 0.9901 r -0.6 hue 0 b 0.5 sat 1 z -.1}
+}
+
+
+rule DESATURATING_PART_RED
+{
+CIRCLE { s 5}
+DESATURATING_PART_RED {y 0.282 x -0.3 s 0.9901 r -0.6 z -.1}
+}
+
+
+rule MIDDLE{
+CIRCLE {s 1 hue 0 sat 1 b 0.5}
+MIDDLE{s 0.91 y -0.08 b 0.003 z -.1}
+}

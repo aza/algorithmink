@@ -1,0 +1,39 @@
+Ovo&Great masterpiece&startshape lost
+
+rule lost {
+  half { flip 90 x 0.4 b 0.6 }
+  half {x -0.4 b 0.6 }
+}
+  
+rule MOUSECLICK{ vine { s 0.2 0.2 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r 30 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r 60 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r 90 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r 120 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r 150 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r 180 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r -30 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r -60 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r -90 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r -120 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r -150 } }
+rule MOUSECLICK{ vine { s 0.2 0.2 r -180 } }
+
+rule half {
+  CIRCLE { hue 0 sat 1 }
+  half { s 0.959 0.97 x 0.0164 y -0.03 b -0.008 }
+}
+
+rule vine 15 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.96 x 0.4 r 10 z 0.05 b 0.01 }
+}
+
+rule vine 2 {
+  TRIANGLE { s 0.3 1.2 r 40 y -0.3 flip 0 }
+  vine { }
+}
+
+rule vine {
+  vine { flip 1}
+}

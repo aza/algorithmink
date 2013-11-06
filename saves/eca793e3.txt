@@ -1,0 +1,11 @@
+Jacob Rigby&Russian Flowers&startshape shape
+
+rule shape{
+ CIRCLE{s .3 b .5}
+ doit{}
+ doit{rotate 60 sat .1}
+}
+
+rule doit{
+  shape{x .2 s .6 b .1 rotate 10}
+}

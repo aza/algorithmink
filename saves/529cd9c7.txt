@@ -1,0 +1,11 @@
+nita&meu&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+rule shape{
+ CIRCLE{}
+}
+rule shape{
+ CIRCLE{}
+}

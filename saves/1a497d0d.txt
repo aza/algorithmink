@@ -1,0 +1,64 @@
+matt katz&sunny sky&background { h 215 sat 0.37 b -.1 }
+startshape start
+
+rule start {
+ sun{s .8}
+
+ cloud{ alpha -.9 x 1.5  y 0  s .9 }
+ cloud{ alpha -.9 x  .5  y 0  s .9 }
+ cloud{ alpha -.9 x  .2  y .5 s .3 }
+}
+
+
+rule sun{
+ CIRCLE{  s 3 hue 60 sat .7 b .5 x -1.75 alpha -.9 }
+ sun {s .9 alpha .1  x -.2}
+}
+
+rule cloud{
+  puff { r .1}
+  CIRCLE{ b 1 sat 1 alpha -.3}
+  puff{ r .1 }
+
+}
+rule puff{
+  cloud { x .2 s .9 alpha -.3}
+}
+
+rule puff{
+  cloud { x -.2 s .9 alpha -.3}
+  
+}
+
+rule puff{
+  cloud { y .2 s .9 alpha -.3}
+}
+rule puff{
+  cloud { y -.2 s .9 alpha -.3}
+  
+}
+rule puff{
+  cloud { x .4 s .9 alpha -.3}
+}
+
+rule puff{
+  cloud { x -.4 s .9 alpha -.3}
+  
+}
+
+rule puff{
+  cloud { y .4 s .9 alpha -.3}
+}
+rule puff{
+  cloud { y -.4 s .9 alpha -.3}
+  
+}
+
+rule .3 puff {
+  puff{ r .2 }
+}
+
+rule .3 puff {
+  puff { r -.2 }
+}
+             

@@ -1,0 +1,155 @@
+Joe DiPilato&Music Generator V3&
+startshape start
+rule start{scale{s 1 0.7}}
+rule scale{full{y .6} full{y -.2} full{y -1} clean{}}
+rule full{scurl{x -1.53 s .03 .04} sbar{x -1.5} lines{y .2} linesb{y -.2} sbar{x 1.48}}
+
+rule scurl{scurlb{y -3.5}scurlb{y 3.5 flip 90}}
+rule scurlb{scurla{r -10}scurla{r -10}}
+rule scurla{scurl1{}scurl1{r 180}}
+rule scurl1{CIRCLE{}scurl1{y .04 r .2 s .99}}
+
+rule sbar{sbarii{} sbarii{x .02}}
+rule sbarii{SQUARE{s .01 .6}}
+
+rule lines{cbar{} notes{x -1.435}}
+rule linesb{cbar{} notesb{x -1.435}}
+
+rule cbar{
+ cbari{y .1} cbari{y .05}
+ cbari{y .0} cbari{y -.05} cbari{y -.1}
+ vbar{x -.75} vbar{x .75} vbar{}
+}
+rule cbari{SQUARE{s 3 .005}}
+rule vbar{SQUARE{s 0.005 .2}}
+
+rule notes{note{}}
+rule notes 0.0001{}
+rule notes .02 {note{y .025}}
+rule notes .02 {note{y -.025}}
+rule notes .02 {note{y .05}}
+rule notes .02 {note{y -.05}}
+
+rule notesb{noteb{}}
+rule notesb 0.0001{}
+rule notesb .02 {noteb{y .025}}
+rule notesb .02 {noteb{y -.025}}
+rule notesb .02 {noteb{y .05}}
+rule notesb .02 {noteb{y -.05}}
+
+rule note    {note1{}notes{x .0927}}
+rule note .4 {note2{}notes{x .1854}}
+rule note .2 {note4{}notes{x .3708}}
+rule note .3 {note05{}notes{x .0927}}
+rule note .5 {notes{x .0927}}
+
+rule noteb    {note1b{}notesb{x .0927}}
+rule noteb .4 {note2b{}notesb{x .1854}}
+rule noteb .2 {note4b{}notesb{x .3708}}
+rule noteb .3 {note05b{}notesb{x .0927}}
+rule noteb .5 {notesb{x .0927}}
+
+rule note1 {nbot{}nline{}}
+rule note1 0.2 {note1{}note1{}}
+rule note1 0.5 {note1{}nbot{}nline{}}
+rule note1 {note1{y -.025}}
+rule note1 {note1{y +.025}}
+
+rule note2{nbotw{}nline{}}
+rule note2 0.2 {note2{}note2{}}
+rule note2 {note2{y -.025}}
+rule note2 {note2{y +.025}}
+
+rule note05{nbot{}nline{}nflag{}}
+rule note05 0.3 {note05{}note05{}}
+rule note05 {note05{y -.025}}
+rule note05 {note05{y +.025}}
+
+rule note4{nbotw{}}
+rule note4 0.1 {note4{}note4{}}
+rule note4 {note4{y -.025}}
+rule note4 {note4{y +.025}}
+
+rule note1b {nbot{}nlineb{}}
+rule note1b 0.2 {note1b{}note1b{}}
+rule note1b 0.5 {note1b{}nbot{}nlineb{}}
+rule note1b {note1b{y -.025}}
+rule note1b {note1b{y +.025}}
+
+rule note2b {nbotw{}nlineb{}}
+rule note2b 0.2 {note2b{}note2b{}}
+rule note2b {note2b{y -.025}}
+rule note2b {note2b{y +.025}}
+
+rule note05b {nbot{}nlineb{}nflagb{}}
+rule note05b 0.3 {note05b{}note05b{}}
+rule note05b {note05b{y -.025}}
+rule note05b {note05b{y +.025}}
+
+rule note4b {nbotw{}}
+rule note4b 0.1 {note4b{}note4b{}}
+rule note4b {note4b{y -.025}}
+rule note4b {note4b{y +.025}}
+
+rule noted{ndot{}}
+
+rule nbot{CIRCLE{s .04 .032 r 40}}
+rule nbot 0.4 {nbot{} ndot{}}
+rule nbotw{nbot{}nbot{s .7 b 1}}
+rule nline{SQUARE{y .075 x .0175 s .005 .15}}
+rule nlineb{SQUARE{y -.075 x -.0175 s .005 .15}}
+rule nbot{CIRCLE{s .04 .032 r 40}}
+rule nflag{nflags{r -40 s .25 y .1 x .022}}
+rule nflagb{nflag{r 180 flip 90 x -.033}}
+rule ndot{CIRCLE{s .01 x .03 y -.01}}
+
+rule nflagx{SQUARE{y .135 x .035 s .04 .01 r 150}}
+
+rule nflags{nflag1{r -20}nflag2{r -40}}
+rule nflag1{CIRCLE{s .1 .05}nflag1{s .95 r -2 x .02}}
+rule nflag2{CIRCLE{s .1 .05}nflag2{s .9 r -1 x -.02}}
+
+rule clean 0.1{SQUARE{b 1 x 3.01 s 3 3}clean{}}
+rule clean{clean{}}
+rule clean 0.0001{}
+
+
+rule MOUSECLICK{click{}}
+rule MOUSEMOVE{cd{a -.9 s 3}}
+
+rule click{cd{}}
+rule click 1000{click{}cd{}}
+rule cd{draw{s .03 a -.9 sat .7 b .5}}
+
+rule draw{draws{}draw{}}
+rule draw {draws{}}
+rule draw 2 {draw{s 1.1}}
+rule draw 2 {draw{s .9}}
+rule draw 10{draw{hue 57}}
+rule draw 30{draw{r 30}}
+rule draw 10{draw{r -10}}
+rule draw 5{draw{flip 90}}
+
+rule draws 10 {draws{x .3}}
+rule draws 10 {draws{y .3}}
+rule draws{vine{s .2}}
+
+rule vine{v{}v{r 180}}
+rule v{v1{}}rule v{v2{}}rule v{v3{}}
+rule v1{CIRCLE{}v1{s .99 r 3 x .1}}
+rule v2{CIRCLE{}v2{s .99 r 1 x .1}}
+rule v3{CIRCLE{}v3{s .99 r 2 x .1}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

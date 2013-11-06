@@ -1,0 +1,6 @@
+Chris Bryant&clover&startshape c
+
+rule c{
+  CIRCLE{ s .5 }
+  c{ s .99 b .01 r 90 x .5}
+}

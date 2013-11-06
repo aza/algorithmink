@@ -1,0 +1,5 @@
+harry&Harry&startshape shape
+
+rule shape{
+ Square{}
+}

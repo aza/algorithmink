@@ -1,0 +1,11 @@
+David Hall&SSWClogga&startshape black
+
+rule black{
+ TRIANGLE{b 0}
+ white{s 0.8 r 8}
+}
+
+rule white{
+TRIANGLE{b 1}
+ black{s 0.8}
+}

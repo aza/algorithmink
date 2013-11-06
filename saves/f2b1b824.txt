@@ -1,0 +1,18 @@
+Jonathan&Serpinski Carpet&startshape starter
+
+rule starter{
+ Serpinski{s .8 hue 90}
+}
+
+rule Serpinski{
+ SQUARE{b .5 sat 1}
+ Serpinski{b -.05 hue -20 s 0.3333}
+ Serpinski{ s 0.3333 x 1 b .05 hue 8}
+ Serpinski{ s 0.3333 x -1 b .05 hue 8}
+ Serpinski{ s 0.3333 x 1 y 1 b .05 hue 8}
+ Serpinski{ s 0.3333 x 1 y -1 b .05 hue 8}
+ Serpinski{ s 0.3333 y 1 b .05 hue 8}
+ Serpinski{ s 0.3333 y -1 b .05 hue 8}
+ Serpinski{ s 0.3333 y 1 x -1 b .05 hue 8}
+ Serpinski{ s 0.3333 y -1 x -1 b .05 hue 8}
+}

@@ -1,0 +1,47 @@
+Mit&Down Town&startshape init
+
+rule init{
+ stem{s .01}
+}
+
+
+rule stem{
+ drawFigure{}
+
+ stem{
+  x .5
+ }
+}
+
+
+rule stem .01{
+ drawFigure{}
+
+ stem{
+  x .5
+  r 90
+  b .05
+  s .95
+ }
+
+ stem{
+  x .5
+  r -90
+  b .1
+  s .95
+ }
+}
+
+
+rule stem .009{
+ TRIANGLE{r -90}
+}
+
+
+rule drawFigure{
+ CIRCLE{}
+}
+
+rule MOUSECLICK{
+ init{}
+}

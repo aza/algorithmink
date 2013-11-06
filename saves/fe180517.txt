@@ -1,0 +1,26 @@
+mlm&mlm&startshape main
+rule main {
+  fern { h 110 sat 1 b 0.8 }
+}
+rule fern {
+  line { }
+  fern { y 0.4 s 0.9 b - 0.05 r - 5 }
+  fern { y 0.4 s 0.4 b - 0.05 r - 45 }
+  fern { y 0.4 s 0.4 b - 0.05 r + 45 }
+}
+ 
+path line {
+  MOVETO { x 0 y 0 }
+  LINETO { y 0.45 }
+  STROKE { width 0.1 }
+}
+/*
+path box {
+  MOVETO { x - 1 y 0 }
+  LINETO { x - 1 y 5 }
+  LINETO { x 1 y 5 }
+  LINETO { x 1 y 0 }
+  CLOSEPOLY { }
+  STROKE { b 1 sat 1 }
+}
+//*/

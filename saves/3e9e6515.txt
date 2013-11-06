@@ -1,0 +1,48 @@
+Erik&Tendrils&startshape scale
+
+rule scale{
+ Circ{s .15 y -.2 x -.1}
+}
+
+rule Circ{
+ CIRCLE{hue 33 sat 0.66 b .67}
+ CIRCLE{s .77 hue 33 sat 0.66 b .67}
+ Circ{x .2 r 15 s .99}
+}
+
+rule Circ{
+ CIRCLE{hue 36 sat 0.66 b .67}
+ CIRCLE{s .77 hue 36 sat 0.66 b .67}
+ Circ{x .2 r 16 s .99}
+}
+
+rule Circ{
+ CIRCLE{hue 39 sat 0.66 b .67}
+ CIRCLE{s .77 hue 39 sat 0.66 b .67}
+ Circ{x .2 r 17 s .99}
+}
+
+rule Circ{
+ CIRCLE{hue 42 sat 0.99 b .45}
+ CIRCLE{s .55 hue 42 sat 0.99 b .45}
+ Circ{x .2 r -15 s .99}
+}
+
+rule Circ{
+ CIRCLE{hue 45 sat 0.99 b .45}
+ CIRCLE{s .55 hue 45 sat 0.99 b .45}
+ Circ{x .2 r -16 s .99}
+}
+
+rule Circ{
+ CIRCLE{hue 48 sat 0.99 b .45}
+ CIRCLE{s .55 hue 48 sat 0.99 b .45}
+ Circ{x .2 r -17 s .99}
+}
+
+rule Circ .07{
+ Circ{x .2 r 15 s .99}
+ Circ{x .2 r -15 s .99}
+}
+
+rule Circ .01{}

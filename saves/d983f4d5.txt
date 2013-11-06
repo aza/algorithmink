@@ -1,0 +1,20 @@
+Lambda&Rounddust&startshape rounddust
+
+rule rounddust{
+ window{s 2.5}
+}
+
+rule window{
+ borw{s .5 x -.25 y -.25}
+ borw{s .5 x -.25 y  .25}
+ borw{s .5 x  .25 y  .25}
+ borw{s .5 x  .25 y -.25}
+}
+
+rule borw{
+ CIRCLE{b 0}
+}
+
+rule borw 6{
+ window{}
+}

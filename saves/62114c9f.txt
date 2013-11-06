@@ -1,0 +1,26 @@
+scribu&Ol Screensaver&startshape start
+
+rule start{
+ turn{ s .02}
+}
+
+rule MOUSECLICK{
+ start{}
+}
+
+rule turn{
+ line{r 90}
+}
+
+rule turn{
+ line{r -90}
+}
+
+rule line{
+ SQUARE{}
+ line{y 1}
+}
+
+rule line .1{
+ turn{}
+}

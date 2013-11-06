@@ -1,0 +1,37 @@
+Lambda&Almost Hilbert&startshape h
+
+rule h{
+ window{s 2.5 b 1}
+}
+
+rule window{
+
+ SQUARE{ s .05 .5 x -.25}
+ SQUARE{ s .55 .05 y .25}
+ SQUARE{ s .05 .5 x .25}
+ borw{s .5 x -.25 y -.25 r -90}
+ borw{s .5 x -.25 y  .25}
+ borw{s .5 x  .25 y  .25}
+ borw{s .5 x  .25 y -.25 r 90}
+ conn{s .025 x .375}
+ conn2{s .025 y .125}
+ conn{s .025 x -.375}
+ conn3{s .025 x -.425 y -.375}
+ conn3{s .025 x .425 y -.375}
+
+}
+
+rule borw{
+ window{b -.25}
+}
+
+rule conn{
+ SQUARE{ s 1 11 b -.25}
+}
+
+rule conn2{
+ SQUARE{ s 11 1 b -.25}
+}
+
+rule conn3{
+ SQUARE{ s 16 1 b -.25}

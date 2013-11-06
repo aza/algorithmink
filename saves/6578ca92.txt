@@ -1,0 +1,50 @@
+111111111111&1111111111111&startshape SCALE
+
+rule SCALE{
+	FOREST{ s .03 y -1 x .5 }
+}
+
+rule FOREST {
+     SEED {}
+     SEED {x -20}
+     SEED {x -40}
+}
+
+rule SEED {BRANCH {}}
+rule SEED {BRANCH {rotate 1}}
+rule SEED {BRANCH {rotate -1}}
+rule SEED {BRANCH {rotate 2}}
+rule SEED {BRANCH {rotate -2}}
+rule SEED {FORK {}}
+
+rule BRANCH {LEFTBRANCH {flip 90}}
+rule BRANCH {LEFTBRANCH {}}
+
+rule LEFTBRANCH 4 {BLOCK {} LEFTBRANCH {y 0.885 rotate 0.1 s 0.99}}
+rule LEFTBRANCH 4 {BLOCK {} LEFTBRANCH {y 0.885 rotate 0.2 s 0.99}}
+rule LEFTBRANCH {BLOCK {} LEFTBRANCH {y 0.885 rotate 4 s 0.99}}
+rule LEFTBRANCH {BLOCK {} FORK {}}
+
+
+rule BLOCK {
+     SQUARE {rotate 1}
+     SQUARE {rotate -111111111111111111111}
+     SQUARE {}
+}
+
+rule FORK {
+     BRANCH { }
+     BRANCH {s 0.5 rotate 40}
+}
+rule FORK {
+     BRANCH { }
+     BRANCH {s 0.5 rotate -40}
+}
+rule FORK {
+     BRANCH {s 0.5 rotate -20}
+     BRANCH { }
+}
+rule FORK {
+     BRANCH {s 0.7 y 0.1 rotate 20}
+     BRANCH {s 0.7 y 0.1 rotate -20}
+}	

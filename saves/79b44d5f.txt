@@ -1,0 +1,20 @@
+lsc&iterate&startshape shape
+
+rule shape{
+test { s .033 }
+test { s .15 flip 90 }
+test { s .25 r 360 }
+test { s .05 r 180 flip 30 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .5 s .99 r 1.5 }
+}
+
+rule test .06 {
+SQUARE{}
+test { y .5 s .44 r 2 }
+test { y .5 s .54 r 10 flip 90 }
+}
+

@@ -1,0 +1,23 @@
+ffff&luoxuan&startshape scale
+
+rule scale{
+  shape{s .2 y -.3 x 1}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.1 a -.9}
+ SQUARE{ a -.5 }
+ shape{ y 1.5 r 10 s .99}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.0 }
+ SQUARE{ }
+ shape{ y 1.5 r 5 s .99}
+}
+
+rule shape .05 {
+ TRIANGLE{ }
+ shape{ y 1.5 r 10 s .85 b .1}
+ shape{ y 1.5 r 10 s .95 flip 70 b.1}
+}

@@ -1,0 +1,8 @@
+ox&sunflower&startshape Sunflower
+
+background { b -1}
+
+rule Sunflower {
+  TRIANGLE {sat 0.1 b 0.3 s 0.035 flip 137.50776}
+  Sunflower {sat 2 hue 1 b 0.001 r 137.50776 x 1.3 s 0.999 }
+}

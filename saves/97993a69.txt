@@ -1,0 +1,32 @@
+nzr&SimpleFlowers&startshape makeflowers
+
+background {b -1}
+
+rule shape{
+ CIRCLE{x 1 b 1}
+ CIRCLE{x 1 s .95 b -1}
+
+}
+
+rule flower {
+ shape{ s .4 r   0 }
+ shape{ s .4 r  36 }
+ shape{ s .4 r  72 }
+ shape{ s .4 r 108 }
+ shape{ s .4 r 144 }
+ shape{ s .4 r 180 }
+ shape{ s .4 r 216 }
+ shape{ s .4 r 252 }
+ shape{ s .4 r 288 }
+ shape{ s .4 r 324 }
+
+ flower{r 4 s .9 }
+
+}
+
+rule makeflowers {
+ flower{s .5}
+ flower{s .5 x   1}
+ flower{s .5 y  .5 x .5}
+ flower{s .5 y -.5 x .5}
+}

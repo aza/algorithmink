@@ -1,0 +1,7 @@
+flubba86&squarecubed&startshape shapes
+rule shapes{
+  SQUARE{s 1}
+  shapes{y 0.2 s .5 b .2}
+  shapes{y -0.2 x -0.2 s .5 b .2}
+  shapes{y -0.2 x 0.2 s .5 b .2}
+}

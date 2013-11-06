@@ -1,0 +1,25 @@
+Aza&Massive&startshape scale
+
+rule scale{ 
+  plusOn{ s 1 h 5 sat .75 b .5 }
+}
+
+rule plusOn{
+  SQUARE{ s 1.5 .35 }
+  SQUARE{ s 1.5 .35 r 90}
+  plus{ x .6 y .6 s .4}
+  plus{ x -.6 y .6 s .4}
+  plus{ x .6 y -.6 s .4}
+  plus{ x -.6 y -.6 s .4}
+}
+
+rule plus{
+  SQUARE{ s 1.5 .35 }
+  SQUARE{ s 1.5 .35 r 90}
+  plus{ x .6 y .6 s .4}
+  plus{ x -.6 y .6 s .4}
+  plus{ x .6 y -.6 s .4}
+  plus{ x -.6 y -.6 s .4}
+}
+
+rule plus{}

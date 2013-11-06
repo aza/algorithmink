@@ -1,0 +1,11 @@
+jewry&Twisted Tunnel Colorflower&startshape shape
+
+rule outline {
+  SQUARE{b 0}
+  SQUARE{b 1 s .99}
+}
+
+rule shape{
+  outline{x .25 b .5}
+  shape{ r 10 s .995 sat 1 h 15}
+}

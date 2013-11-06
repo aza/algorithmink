@@ -1,0 +1,33 @@
+imimim&noname&startshape scale
+
+rule scale{ 
+	SPIKES{ s .03 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 10 }
+	SPIKE { r 10 }
+	SPIKE { r 10 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 90 }
+}
+
+rule LSPIKE {
+	SQUARE {}
+	LSPIKE { y 0.98 s 0.99 r 5}
+}
+rule LSPIKE 0.005 {
+	SPIKE { r 90 }
+	SPIKE { r -90 }
+	LSPIKE { y 0.98 s 0.99  r 1}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .025 }
+}

@@ -1,0 +1,23 @@
+vinh&bristles up close&startshape frame
+
+rule frame {
+  shape {s .07 y -1}
+}
+
+rule shape{
+ dit {r 4 s .9997}
+}
+
+rule dit {
+ CIRCLE {x .5 s .2 5}
+ shape {x 1 y .4}
+}
+
+rule dit {
+ SQUARE {x 1 s .05 6}
+ shape {x 2 r 2}
+}
+
+rule dit .7 {
+ shape {x 1 y .4}
+}

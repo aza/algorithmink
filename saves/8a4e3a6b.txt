@@ -1,0 +1,52 @@
+Chana&Everything Everywhere&startshape shape
+
+rule shape{
+ shape1{}
+}
+
+rule shape1{
+ CIRCLE{s .4 b .3 y .5 hue 130 sat 1}
+ CIRCLE{s .43 b 1 y .5 a -.912}
+ motion{}
+}
+
+rule motion{
+  shape{x .1 hue 4 s .99}
+}
+
+rule motion{
+  shape{x .3 hue 4}
+}
+
+rule motion{
+  shape{x .1 }
+
+}
+
+rule motion{
+  shape{x .1 sat -.1}
+}
+
+rule motion{
+  shape{x .1 r 30 }
+}
+
+rule motion{
+  shape{x .1 }
+}
+
+rule motion{
+  shape{x .1 }
+}
+
+rule motion{
+  shape{x .1 r 20}
+}
+
+rule motion{
+  shape{x .1 }
+}
+
+rule motion{
+  shape{y -.1 x -.9 }
+}

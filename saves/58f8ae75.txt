@@ -1,0 +1,15 @@
+Joe DiPilato&The Last Thing She Said&startshape x
+background{b -1}
+rule x{s{y .15 r -2}s{y -.35 r 2}}
+rule s{a{s .05 x -1.5 b 1 a -.5}}
+rule a{b{}d{}a{x .01}}
+rule a{b{}d{}a{x .02}}
+rule a{b{}d{}a{x .03}}
+rule a .0004{SQUARE{sat 1 b -.05 s 500 .1}}
+rule b{CIRCLE{}}
+rule b 20{b{s .9 1.1}}
+rule b{b{s 1 .5}}
+rule b .1{b{r 20}}
+rule b .1{b{r -20}}
+rule d{b{ s .3 x -.4 b -1 a -.9}}
+

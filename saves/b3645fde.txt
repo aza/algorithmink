@@ -1,0 +1,40 @@
+guilherme&tr&startshape start
+
+rule start{
+ plant{x -1 y -1 s 0.2}
+ plant{y -1 s 0.3 }
+ plant{x 1 y -1 s 0.2 }
+}
+
+rule plant 50{
+ CIRCLE{s 0.3 1}
+ plant{y 0.2 r 4 s 0.97}
+}
+
+rule plant 5{
+ plant{flip 90}
+}
+
+rule plant 5{
+ spiral{ r 42 s 0.8 x -0.2}
+ plant{flip 90}
+}
+
+rule plant 3{
+ plant{ r 42 s 0.618 x -0.2}
+ plant{flip 90}
+}
+
+rule spiral 100{
+ CIRCLE{s 0.3 1}
+ spiral{y 0.2 r 6 s 0.96}
+}
+
+rule spiral 1{
+ leaf{}
+}
+
+rule leaf{
+ CIRCLE{s 0.99 1 r 15 x 0.1}
+ CIRCLE{s 0.99998 1 r 15 x -0.1}
+}

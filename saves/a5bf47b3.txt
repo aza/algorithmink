@@ -1,0 +1,10 @@
+Zubzubman&Pwetty Spiwal&startshape woah
+
+rule woah{
+  spiral{b .5 sat 1 s .14 y -.8}
+}
+
+rule spiral{
+CIRCLE{}
+spiral{x .1 s .9999 hue 3.1 r 1}
+}

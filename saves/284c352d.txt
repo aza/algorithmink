@@ -1,0 +1,32 @@
+shuhadah baharudin&css&html
+ head
+ style type = “text/css”
+ #header {
+ width:900px;
+ height:50px;
+ border: 1px solid #640404;
+ }
+ #headerLeft {
+ width:400px;
+ background-color:#CCCCCC;
+ height:50px;
+ float:left;
+ text-align:center;
+ }
+ #headerRight {
+ width:450px;
+ background-color:#999999;
+ height:50px;
+ float:right;
+ text-align:center;
+ }
+ /style
+ /head
+ body
+ h1Sample/h1
+ div id = “header”
+ div id=”headerLeft”Header Left/div
+ div id=”headerRight”Header Right/div
+ /div
+ /body
+ /html

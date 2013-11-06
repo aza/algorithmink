@@ -1,0 +1,8 @@
+testman&test&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+rule shape{
+ CIRCLE{}
+}

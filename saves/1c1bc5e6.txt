@@ -1,0 +1,7 @@
+Kairos&T01&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{s 0.5 b 0.2 x -0.25}
+ shape{s 0.5 b -0.2 x 0.25}
+}

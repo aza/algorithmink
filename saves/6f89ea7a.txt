@@ -1,0 +1,17 @@
+bitRAKE&YinYang&startshape start
+
+rule start{
+ yin{}
+ yang{}
+}
+
+rule yin{
+ CIRCLE{ s .6 b -1 y .325}
+ yang{ r 1 s .9999}
+}
+
+rule yang{
+ CIRCLE{ s .7 b 1 y -.325}
+ yin{ r 1 s .9999}
+}
+

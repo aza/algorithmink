@@ -1,0 +1,39 @@
+Context Free&ZigZag&startshape scale
+
+rule scale{
+	Trident{ s .057 y -1}
+} 
+
+rule Trident {
+	Zig { }
+	ZagL { x 0 b 0.02 flip 90}	
+	ZigL { x 0 b 0.02 }
+}
+
+rule Zig {
+	Seg { x -0.5 r -45 }
+	Zag { y 1 s 0.97 }
+}
+rule Zag {
+	Seg { x 0.5 r 45 }
+	Zig { y 1 s 0.97 }
+}
+
+rule ZigL {
+	Seg { x -0.5 r -45 }
+	ZagL { y 1 s 0.97 r 2 }
+}
+rule ZagL {
+	Seg { x 0.5 r 45 }
+	ZigL { y 1 s 0.97 r 2 }
+}
+
+rule ZigL 0.03 { Trident { } }
+
+rule Seg {
+	SQUARE { y 0.6925 s 0.5 1.885 }
+}
+
+rule MOUSECLICK{
+  Trident{ s .02}
+}

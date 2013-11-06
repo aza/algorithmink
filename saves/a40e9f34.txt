@@ -1,0 +1,23 @@
+catalina&1&startshape frame
+
+rule frame {
+  shape {s .03 y -2}
+}
+
+rule shape{
+ dit {r 2 s .99127}
+}
+
+rule dit {
+ CIRCLE {x .5 s .8}
+ shape {x 1}
+}
+
+rule dit {
+ SQUARE {x 1 s 2.6 .8}
+ shape {x 1 r 2}
+}
+
+rule dit .7 {
+ shape {x 1}
+}

@@ -1,0 +1,16 @@
+Joe DiPilato&fractal weed&startshape shape1
+
+rule shape1{
+CIRCLE{b 0}
+shape1{s .5 x .75 r 90}
+shape1{s .5 x -.75 r 90}
+branch{}
+}
+rule branch 10{}
+rule branch{bran{}}
+rule bran 300{SQUARE{y .5}bran{y .5}}
+rule bran{CIRCLE{s 2}branr{}}
+rule branr{bran{r 90}}
+rule branr{bran{r -90}}
+rule branr{branr{flip 90}}
+rule bran .5 {shape1{s 4}}

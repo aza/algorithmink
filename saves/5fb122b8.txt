@@ -1,0 +1,28 @@
+Aza Raskin&Warped Quilt&startshape starter
+background{ b -1 }
+
+rule starter{
+	center{ b 1 s .65 y -.15}
+}
+
+rule center {
+  CIRCLE{ }
+  wings {}	
+}
+
+rule center {
+  SQUARE{ }
+  wings { r 3}	
+}
+
+rule center {
+  TRIANGLE{ }
+  wings { r -4}	
+}
+
+rule wings {
+  center{ x .75 s .5  }	
+  center{ x -.75 s .5 }
+  center{ y .75 s .5  }	
+  center{ y -.75 s .5  }
+}

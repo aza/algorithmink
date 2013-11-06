@@ -1,0 +1,51 @@
+Mahdi&Peace&startshape start
+
+rule start { EDERA { s .006 y .6 x -.4 } }
+
+rule EDERA{
+  CIGLIO {x 0}  CIRCLE { x 0 s 5 hue 200 sat 0.5}
+  CIGLIO {x 5}  CIRCLE { x 5 s 5 hue 200 sat 0.5}
+  CIGLIO {x 10}  CIRCLE { x 10 s 5 hue 200 sat 0.5}
+  CIGLIO {x 15}  CIRCLE { x 15 s 5 hue 200 sat 0.5}
+  CIGLIO {x 20}  CIRCLE { x 20 s 5 hue 200 sat 0.5}
+  CIGLIO {x 25}  CIRCLE { x 25 s 5 hue 200 sat 0.5}
+  CIGLIO {x 30}  CIRCLE { x 30 s 5 hue 200 sat 0.5}
+  CIGLIO {x 35}  CIRCLE { x 35 s 5 hue 200 sat 0.5}
+  CIGLIO {x 40}  CIRCLE { x 40 s 5 hue 200 sat 0.5}
+  CIGLIO {x 45}  CIRCLE { x 45 s 5 hue 200 sat 0.5}
+}
+
+rule CIGLIO 100 {
+  SQUARE {hue 200 sat 0.5}
+  CIGLIO  {y -1 s 0.998 b 0.005}
+}
+
+rule CIGLIO {
+  SQUARE {hue 200 sat 0.5}
+  CIRCLE {hue 200 sat 0.5 alpha -0.4 s 100 y -10 }
+  CIGLIO  {y -1 r 1 s 0.998 b 0.005}
+}
+
+rule CIGLIO 0.0005 {
+  SQUARE {hue 200 sat 0.5}
+  CIRCLE {hue 200 sat 0.5 alpha -0.8 s -20 x 20 y -10 }
+  CIGLIO  {y -1  s 0.998 b 0.005 }
+}
+
+rule CIGLIO {
+  SQUARE {hue 200 sat 0.5}
+  CIRCLE {hue 200 sat 0.5 alpha -0.4 s 5 y -10 }
+  FIORE   {}
+ FIORE  { x -1 flip 90}
+  CIGLIO  {y -1  s 0.998 b 0.005 }
+}
+
+rule FIORE {
+ CIRCLE {hue 200 sat 0.5}
+ FIORE {y -1 r 4 s 0.998 b 0.005}
+}
+
+rule FIORE 0.005 {
+ CIRCLE {s 5 hue 200 sat 0.5}
+ FIORE {y -1 r 4 s 0.998 b 0.005 flip 90}
+}

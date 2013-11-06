@@ -1,0 +1,87 @@
+Sebastian&Nature&startshape start
+
+rule start{
+ start_stamme{}
+ start_stamme{}
+ start_stamme{}
+ start_stamme{}
+ start_stamme{}
+}
+
+rule start_stamme{ 
+ stamme{y -1 x 0.1 s 0.03 b 0.5}
+ start_stamme{x -0.5}
+}
+rule start_stamme{ 
+ stamme{y -1 s 0.03 b 0.5} 
+ start_stamme{x 0.5}
+}
+rule start_stamme{ 
+ stamme{y -1 x -0.2 s 0.03 b 0.5}
+}
+rule start_stamme{ 
+ stamme{y -1 x -0.3 s 0.03 b 0.5}
+}
+rule start_stamme{ 
+ stamme{y -1 x 0.2 s 0.03 b 0.5}
+}
+
+rule stamme {
+ CIRCLE{}
+ neste_stamme{ y 0.2 s 0.999}
+}
+rule stamme {
+ CIRCLE{}
+ neste_stamme{ y 0.2 s 0.999}
+}
+rule stamme 0.05 {
+ CIRCLE{}
+ neste_stamme{ y 0.2 s 0.8}
+}
+
+rule stamme 0.04 {
+ CIRCLE{}
+ neste_stamme{ y 0.2 s 0.5 r 50}
+ neste_stamme{ y 0.2 s 0.5 r -50}
+ neste_stamme{ y 0.2 s 0.995}
+}
+rule stamme 0.02 {
+ CIRCLE{}
+ neste_stamme{ y 0.2 s 0.5 r -20}
+ neste_stamme{ y 0.2 s 0.95}
+}
+
+rule neste_stamme 0.01 {}
+
+rule neste_stamme {
+ stamme{b 0.05}
+}
+rule neste_stamme {
+ stamme{r -5}
+}
+rule neste_stamme {
+ stamme{r 5}
+}
+rule neste_stamme 10 {
+ stamme{}
+}
+rule neste_stamme 0.01 {
+ stamme{b 0.99}
+}
+
+
+rule blad {
+ CIRCLE{s 0.008}
+ blad_next {x 0.001 s 0.91 h 0.5}
+}
+
+rule blad_next{
+ blad{r 10}
+}
+rule blad_next{
+ blad{r -10}
+}
+rule blad_next 10{
+ blad{}
+}
+rule blad_next 1{}

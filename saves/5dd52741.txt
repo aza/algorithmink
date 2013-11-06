@@ -1,0 +1,27 @@
+Tim&Squiggly Lines&startshape run
+
+rule run{
+ shape{s 0.1 x 1}
+ shape{s 0.2 x 2}
+}
+
+rule shape 5 {
+ SQUARE{}
+ shape{s .99 y 0.6 r 3 b 0.002}
+}
+
+rule shape 0.05 {
+ SQUARE{}
+ shapeReverse{s .99 y 0.6 r -45 b 0.002}
+}
+
+rule shapeReverse 5 {
+ SQUARE{}
+ shapeReverse{s .99 y 0.6 r -1.5 b 0.002}
+}
+
+rule shapeReverse 0.05 {
+ CIRCLE{}
+ shapeReverse{s .99 y 0.6 r 3 b 0.002}
+}
+

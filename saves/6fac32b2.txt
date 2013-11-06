@@ -1,0 +1,30 @@
+braddunbar&spiralis&startshape scale
+
+rule scale{
+  SPIKES{ s .02 }
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .01 }
+}
+
+rule SPIKES {
+  SPIKE {}
+  SPIKE { r 90 }
+  SPIKE { r 180 }
+  SPIKE { r 270 }
+}
+
+rule SPIKE {
+  SQUARE {}
+  _SPIKE {}
+}
+
+rule SPIKE .0075 {
+  SPIKE { r -90 }
+  _SPIKE {}
+}
+
+rule _SPIKE {
+  SPIKE { y .98 s .99 r 3 }
+}

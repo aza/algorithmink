@@ -1,0 +1,15 @@
+Lol&Triforce&startshape shape2
+
+rule shape{
+ TRIANGLE{}
+}
+
+rule shape1{
+ shape{x .5}
+ shape{x -.5}
+}
+
+rule shape2 {
+ shape1{y -.4}
+ shape{y .465}
+}

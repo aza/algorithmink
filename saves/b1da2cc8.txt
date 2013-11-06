@@ -1,0 +1,45 @@
+eke&colored thorns&startshape starter
+
+rule starter {
+  lshape { s .1 y -1 }
+}
+
+rule lshape 400 {
+ CIRCLE{} 
+ lshape{ x .1 r 1 }
+}
+
+rule lshape 4 {
+ TRIANGLE{s 2 r 90}
+ TRIANGLE{s 2 r -90 }
+ CIRCLE{}
+ rshape{ x .1 r -1  sat 1 h 10}
+}
+
+rule lshape 1 {
+ TRIANGLE{s 2 r 90}
+ TRIANGLE{s 2 r -90 }
+ CIRCLE{}
+ lshape{ b 0.07 x .1 r 1 s .8}
+ rshape{ b 0.07 x .1 r -1 s .8}
+}
+
+rule rshape 400 {
+ CIRCLE{}
+ rshape{ x .1 r -1 }
+}
+
+rule rshape 4 {
+ CIRCLE{}
+ TRIANGLE{s 2 r 90}
+ TRIANGLE{s 2 r -90 }
+ lshape{ x .1 r 1  sat 1 h 10}
+}
+
+rule rshape 1 {
+ CIRCLE{}
+ TRIANGLE{s 2 r 90}
+ TRIANGLE{s 2 r -90 }
+ lshape{ b 0.04 x .1 r 1 s .9 sat 1 h 10}
+ rshape{ b 0.04 x .1 r -1 s .9 sat 1 h 10}
+}

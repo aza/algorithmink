@@ -1,0 +1,7 @@
+joe&bob&startshape shape
+
+rule shape{
+ CIRCLE{}
+shape {s .5 b .2 z x-.25}
+}
+

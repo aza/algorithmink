@@ -1,0 +1,41 @@
+John Burgoon&Twister&startshape start
+
+rule start{
+
+ shape1 {   hue 35  sat 1  }
+ shape2 {   hue 40 sat 1}
+ shape3 {           sat 1}
+ shape4 {   hue 55  sat 1 }
+ 
+ 
+}
+rule shape1{
+ shape { x -.9 y .4}
+ shape { x .4 y -.4 }
+ shape1 { x .05 y .05 s .90 b .03  r 6 }
+
+}
+rule shape2{
+ shape { x .9 y -.4}
+ shape { x -.4 y .4 }
+ shape2 { x -.05 y -.05 s .85 b .03  r 4 }
+}
+
+rule shape3{
+ shape { x -.9 y -.4}
+ shape { x .4 y .4 }
+ shape3 { x .05 y -.05 s .95 b .03  r 5}
+}
+
+rule shape4{
+ shape { x .9 y .4}
+ shape { x -.4 y -.4 }
+ shape4 { x -.05 y .05 s .95 b .03  r 5 }
+}
+rule shape{
+ CIRCLE {x .70 y -.25}
+}
+
+rule MOUSECLICK{
+  start { s .5 }
+}

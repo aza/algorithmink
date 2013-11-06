@@ -1,0 +1,8 @@
+Carl Sverre&3D Sierpinski Triangle&startshape frac
+
+rule frac {
+  CIRCLE {}
+  frac {s .4 b .1 x -.3}
+  frac {s .5 b .1 x +.4}
+  frac {s .6 b .1 y -.7}
+}

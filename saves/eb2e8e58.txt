@@ -1,0 +1,49 @@
+undefined&undefined&startshape Sa
+background { b -0.3  }
+rule Sa { 1* {x 7} S [ ] }
+ 
+rule S 15 { S [ hue 33 ] }
+//rule S 15 { S [ flip 90 ] }
+rule S { 
+16* { y 1} 
+xS [ ]
+}
+ 
+rule xS { xS [ hue 19 ] }
+rule xS { xS [ hue -19 ] }
+rule xS { 
+10* {  x 1} 
+color [ ]}
+ 
+rule color { draw [ a -.7 hue 254.7 sat 0.9 b 0.6] }
+rule color { draw [ a -.5   hue 303.7 sat 0.8 b 0.3  ] }
+rule color .2 { draw [ z .1 a -.7 hue 338.2 sat 0.4 b 1.0  ]
+}
+rule color .3 { }
+ 
+rule draw { 
+6* { r 20 } mdraw [ ] }
+ 
+rule mdraw { 
+eledraw [ ] 
+mdraw [ y .1 s .95 hue .02 
+        b .01 z .01] 
+}
+rule mdraw .02{ mdraw [ b -.5 ] }
+rule mdraw .002{ mdraw [ b 1 ] }
+rule mdraw .01{ mdraw [ sat -.1 ] }
+rule mdraw 5{ mdraw [ r 3 ] }
+rule mdraw 5{ mdraw [ r -3 ] }
+ 
+rule eledraw { 
+bgs [ a -.3 sat -.3 s 2.3 ]
+5* { x .2 } SQUARE [x -.5 s .05 1 ] 
+SQUARE [ x -.5 a .4 s .03 1 sat -.6 b 1 ]
+SQUARE [ x -.55 a .4 s .03 1 b -1 ]
+}
+ 
+rule bgs 2{ bgs  [ sat .1 ] }
+ 
+rule bgs { SQUARE [ ] }
+rule eledraw .1 { eledraw [ hue 15 b -.4] }
+rule eledraw .1 { eledraw [ hue -15 b .4] }

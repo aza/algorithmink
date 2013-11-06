@@ -1,0 +1,17 @@
+Daeken&Black Hole&startshape start
+background { b -1 }
+
+rule start {
+ foo { s 1.0 b 0.65 r 45 }
+ bar { s 1.0 b 0.65 }
+}
+
+rule foo {
+ TRIANGLE { }
+ foo { r 45 s 0.95 b -0.2 a -0.1 }
+}
+
+rule bar {
+ CIRCLE { a -0.99 }
+ bar { s 0.98 b -0.01 }
+}

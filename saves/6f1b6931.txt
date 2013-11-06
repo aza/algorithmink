@@ -1,0 +1,12 @@
+ox&yellox show&startshape star
+
+
+rule star {
+  star{r 34}
+  tri {}
+}
+
+rule tri {
+ TRIANGLE {r -18}
+ TRIANGLE {s 0.96 r -18 hue 45 sat 1 b .5 }
+}

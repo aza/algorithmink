@@ -1,0 +1,72 @@
+lunarbunny&snail 1&startshape startscale 
+
+rule startscale {
+   start { r 0}
+}
+
+rule start {
+  hole { b 0.1 x -0.25 y -0.25 }
+   body { b 0.6 x -0.3 y -0.5 }
+  spiral { b 0.1 r -30 }
+   head { b 0.6 x -0.8 y -0.27 }
+}
+
+rule hole  {
+
+}
+
+rule hole 10 {
+    CIRCLE { x 0.1 y -0.14 s 0.6 0.3 sat 1 hue 30 alpha -0.36 r -20 }
+    hole { s 0.99 }
+}
+
+rule body {
+    CIRCLE { x 0.2 y 0.07 s 1.6 0.4 sat 0.6 hue 100 }
+   body { b 0.01 s 0.99 }
+}
+
+rule spiral {
+ spiral{ r -7 x -0.01 y 0.01 b 0.005 s 0.99 h 0.11}
+ spiraldraw{ }
+}
+
+rule spiraldraw {
+ CIRCLE{ b 0.1 sat 1 alpha -0.56}
+}
+
+rule head {
+   startvine { s 0.3}
+}
+
+rule startvine {
+
+ vine{ s .5 h 100 sat .5 r 100  b 0.4 x -0.01}
+ vine{ s .5 h 100 sat .5 r 120  b 0.4 x +0.01}
+
+}
+
+rule vine 10 {
+  CIRCLE { s 1 0.4 }
+  vineb { s 0.95 x 0.2 r 1 z 0.05 b -0.14 h -1 }
+}
+
+rule vineb 10 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.975 x 0.1 r 1 z 0.05 b 0.14 h 1}
+}
+
+rule vine 1 {
+  vine { }
+}
+rule vineb 1 {
+  vineb { }
+}
+
+rule vine 3 {
+  vine { r -3 }
+}
+
+rule vineb 3 {
+  vineb { r 3 }
+}
+

@@ -1,0 +1,5 @@
+pp&New&startshape shape
+
+rule shape{
+ CIRCLE{ 100, 20}
+}

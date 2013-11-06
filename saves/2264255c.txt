@@ -1,0 +1,16 @@
+luiz&teste&startshape scale
+ 
+rule scale{
+  spiral{s .1 y -.5 x 1}
+}
+ 
+rule spiral{
+ SQUARE{ a -.5 }
+ spiral{ y 1.5 r 10 s .99}
+}
+ 
+rule spiral .01 {
+ TRIANGLE{ }
+ spiral{ y 1.5 r 10 s .95}
+ spiral{ y 1.5 r 10 s .95 flip 90}
+}

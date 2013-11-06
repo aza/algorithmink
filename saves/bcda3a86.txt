@@ -1,0 +1,9 @@
+Someone man&Movin Art P&startshape drawin
+
+rule drawin{
+ CIRCLE{}
+ drawin{s .5 b .3 x .1}
+ drawin{s .2 b .3 x -.1}
+ drawin{s .5 b .3 y .1}
+ drawin{s .2 b .3 y -.1}
+}

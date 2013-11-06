@@ -1,0 +1,31 @@
+a0d3ff&vine madness&startshape shape
+
+rule MOUSECLICK {
+shape {s 0.8}
+}
+
+rule shape{
+red { s .05 r 0 hue 120 sat 1}
+red { s .05 r 45 hue 120 sat 1}
+red { s .05 r 90 hue 120 sat 1}
+red { s .05 r 135 hue 120 sat 1}
+red { s .05 r 180 hue 120 sat 1}
+red { s .05 r 225 hue 120 sat 1}
+red { s .05 r 270 hue 120 sat 1}
+red { s .05 r 315 hue 120 sat 1}
+}
+
+rule red 10 {
+SQUARE{}
+red{ y .5 s .99 r 7 hue +0.006 b +0.006}
+}
+rule red 10 {
+SQUARE{}
+red{ y .5 s .99 r 7 flip 90}
+}
+
+rule red .2{
+SQUARE{}
+red { y .8 s .99 }
+red { y .8 s .99 flip 90 }
+}

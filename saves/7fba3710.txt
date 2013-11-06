@@ -1,0 +1,26 @@
+asdf&asdf&startshape start
+background {b -.0}
+
+rule start{ CHIAROSCURO{ s .4 y -.8} }
+
+rule CHIAROSCURO {
+    BLACK {b .6}
+}
+
+rule BLACK 60 {
+    CIRCLE {s .7}
+    BLACK {x .1 r 5 s .99 b -.01 a -.01}
+}
+rule BLACK {
+    WHITE {}
+    BLACK {}
+}
+
+rule WHITE 60 {
+    CIRCLE {s .6}
+    WHITE {x .1 r -5 s .99 b .01 a -.01}
+}
+rule WHITE {
+    BLACK {}
+    WHITE {}
+}

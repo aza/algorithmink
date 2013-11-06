@@ -1,0 +1,6 @@
+dfgfdggd&dfdgdgfdg&startshape shape
+
+rule shape{
+ CIRCLE{10,10}
+ rectangle{20,30}
+}

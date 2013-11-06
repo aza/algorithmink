@@ -1,0 +1,6 @@
+mark&cool&startshape shape
+
+rule shape{
+ CIRCLE{}
+}cool
+

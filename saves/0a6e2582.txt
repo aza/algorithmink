@@ -1,0 +1,38 @@
+beast&broccoflower&startshape start
+background{b -1}
+
+rule MOUSECLICK{
+start{s .3}
+}
+rule MOUSECLICK{
+start{s .6}
+}
+rule MOUSECLICK{
+start{s .1}
+}
+
+rule start{
+shape{hue 74 sat .2}
+}
+
+rule shape{
+ CIRCLE{s .31}
+ shape{s .95 b .01 x .47 r 55 sat .03}
+ shapeT{s .3 b .01 x -.05 y -.05}
+}
+
+rule shapeT{
+CIRCLE{s .31} 
+shapeT{s .95 b .01 x .47 r 55 sat .03}
+shapeG{s .3 b .01 x -.05 y -.05}
+}
+
+rule shapeG{
+CIRCLE{s .31}
+ shapeG{s .95 b .01 x .47 r 55 sat .03}
+ shapeE{s .3 b .01 x -.05 y -.05}
+}
+
+rule shapeE{
+CIRCLE{s .31} 
+}

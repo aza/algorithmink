@@ -1,0 +1,17 @@
+Joe DiPilato&Spoken V2&startshape x
+background{b -1}
+rule x{s{}s{}s{}}
+rule s 100{s{r 3}}
+rule s{a{s .05 b 1 a -.5}a{s .05 b 1 a -.5 flip 90}}
+rule s 3{s{x -.1}}
+rule a{b{}d{}a{x .01}}
+rule a{b{}d{}a{x .02}}
+rule a{b{}d{}a{x .03}}
+rule a .0004{SQUARE{sat 1 b -.05 s 500 .1}}
+rule b{CIRCLE{}}
+rule b 20{b{s .9 1.1}}
+rule b{b{s 1 .5}}
+rule b .1{b{r 20}}
+rule b .1{b{r -20}}
+rule d{b{ s .3 x -.4 b -1 a -.9}}
+

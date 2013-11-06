@@ -1,0 +1,11 @@
+jellyvista&Twisted Tunnel&startshape shape
+
+rule outline {
+ SQUARE {b 0}
+ SQUARE {b 1 s 0.99}
+}
+
+rule shape{
+ outline{}
+ shape { b .02 s 0.925 r 5}
+}

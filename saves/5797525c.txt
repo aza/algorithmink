@@ -1,0 +1,6 @@
+MichaelErasmus&Blaaaaaaaaaa&startshape michael
+ 
+rule michael{ 
+ CIRCLE{}
+ michael{ s .5 b .2 x .50 y .50 } 
+}

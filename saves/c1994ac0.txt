@@ -1,0 +1,9 @@
+VH&Stairway&startshape shape
+
+rule shape{
+ bl { }
+}
+
+rule bl {
+  square {x 1 y 1 }
+}

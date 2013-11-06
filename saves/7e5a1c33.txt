@@ -1,0 +1,55 @@
+Joe DiPilato&Road Map&startshape s2
+background{b -.1 sat 1 hue 100}
+rule s2{s1{x 1.5 y .75}s1{x -1.5 y -.75}s1{x -.75}s1{x .75}s1{y -.75}s1{y .75}}
+rule s1{s{s .05 a -.9}}
+rule s{at{}at{r 180}}
+rule a .5{al{}}
+rule a .5{ar{}}
+rule a .5{al2{}}
+rule a .5{ar2{}}
+rule a .5{al3{}}
+rule a .5{ar3{}}
+rule a .5{at{}}
+rule a{as{}}
+rule a{ab{}}
+rule a .5{asp{}}
+rule a 1.5{ax{}}
+rule al{r{}al{x .1 r 1}}
+rule ar{r{}ar{x .1 r -1}}
+rule al2{r{}al2{x .1 r .5}}
+rule ar2{r{}ar2{x .1 r -.5}}
+rule al3{r{}al3{x .1 r 1.5}}
+rule ar3{r{}ar3{x .1 r -1.5}}
+rule at{sign{}as{r 90}}
+rule at{sign{}as{r -90}}
+rule at{sign{}as{}as{r 90}}
+rule at{sign{}as{}as{r -90}}
+rule at{sign{}as{r 90}as{r -90}}
+rule at{sign{}as{}as{r 90}as{r -90}}
+rule ab{r{}SQUARE{s 1.3}ab{x .1}}
+rule as{r{}as{x .1 }}
+rule ax{CIRCLE{s 3 a .8}CIRCLE{s 2.8 a .1 b 1}}
+rule ax{SQUARE{s 2 a .8}SQUARE{s 1.8 a .1 b 1}}
+rule ax 3{ak{}}
+rule ak{r{}ak{x .1}}
+rule ak .005{sign{}ak{}}
+rule ak .001{ax{}}
+rule asp{sign{}a{}a{}}
+rule al .01{a{}}
+rule ar .01{a{}}
+rule al2 .01{a{}}
+rule ar2 .01{a{}}
+rule al3 .01{a{}}
+rule ar3 .01{a{}}
+rule as .01{a{}}
+rule ab .05{a{}}
+rule r{SQUARE{b 1 s 1.2 a -.5}SQUARE{a .1}SQUARE{b 1 s .1 a 1}}
+rule sign{top{x 2}SQUARE{s 1 .2 a .8 y 1 x 1}}
+rule top{stop{}}
+rule top{warning{}}
+rule top{dne{}}
+rule top{go{}}
+rule stop{CIRCLE{ a .7 y 1 sat 1 b .5}}
+rule warning{TRIANGLE{ r -90 a .7 y 1 x -.2 sat 1 hue 50 b .5}}
+rule dne{CIRCLE{ a .7 y 1 sat 1 b .5}SQUARE{s .2 .8 y 1 a 1 b 1}}
+rule go{SQUARE{ a .7 y 1 sat .4 b .5 hue 100}}

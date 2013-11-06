@@ -1,0 +1,6 @@
+Renan LN&3D Ball&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{xy .9 s .99 b .05}
+}

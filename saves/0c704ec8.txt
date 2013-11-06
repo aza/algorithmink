@@ -1,0 +1,16 @@
+Aza Raskin&Dots n Spirals&startshape scale
+
+rule scale{
+  shape{s .1 y -.5 x 1}
+}
+
+rule shape{
+ CIRCLE{ a -.5 }
+ shape{ y 1.5 r 10 s .99}
+}
+
+rule shape .01 {
+ CIRCLE{ a -.5 }
+ shape{ y 1.5 r 10 s .95}
+ shape{ y 1.5 r 10 s .95 flip 90}
+}

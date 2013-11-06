@@ -1,0 +1,15 @@
+Dafydd Harries&tree&startshape start
+
+rule start {
+ shape { y -0.5 }
+}
+
+rule shape{
+ SQUARE { s .1 }
+ shape { y .05 s .99 }
+}
+
+rule shape 0.13 {
+ shape { r -30 s .8 }
+ shape { r 30  s .8 }
+}

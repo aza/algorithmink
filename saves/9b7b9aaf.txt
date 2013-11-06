@@ -1,0 +1,59 @@
+Shorty9boy&Jagged Spiral&startshape start
+
+rule start{ SS1{ s 2 y 0} SS2{ s .05 y 0}}
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+    BETA2 {}
+    DELTA {}
+    DELTA2 {}
+    EPSILON {}
+}
+rule SS2 {
+    GAMMA {}
+}
+
+
+rule ALPHA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b -1}
+    ALPHA {r 1 s 0.995}
+}
+
+ 
+rule BETA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    BETA {r .75 s 0.995}
+}
+
+rule BETA2 {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    BETA {r -.75 s 0.995}
+}
+
+rule GAMMA {
+    SQUARE {b 1}
+    SQUARE {s 0.9999 b 1}
+    GAMMA {r 10 s 0.9999}
+}
+
+rule DELTA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    DELTA {r -.5 s 0.995}
+}
+
+rule DELTA2 {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    DELTA {r .5 s 0.995}
+}
+
+rule EPSILON {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    EPSILON {r -1 s 0.995}
+}

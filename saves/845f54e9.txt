@@ -1,0 +1,7 @@
+Shane Nelson&Pythagoras tree&startshape shape
+
+rule shape{
+ SQUARE{y -1 size .5}
+ shape{r 45 x -0.75 y 0 size .707106781}
+ shape{r -45 x 0.75 y 0 size .707106781}
+}

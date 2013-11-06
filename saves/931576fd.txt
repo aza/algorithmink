@@ -1,0 +1,100 @@
+Noobos&Sommin like a tree&startshape INIT
+background {b -1}
+
+rule INIT {
+UNIT {b 1 s .01 y -.8}
+}
+
+rule UNIT {
+SOME {s .995 b -0.0015}
+SNOW {hue 230 sat .2 b 1}
+}
+
+rule SOME {
+NORMAL{}
+}
+rule SOME .015 {
+DOUBLE{}
+}
+
+rule NORMAL {
+SQUARE{}
+UNIT {y 1 r 0.75}
+}
+rule NORMAL {
+SQUARE{}
+UNIT {y 1 r 1.5}
+}
+rule NORMAL .065 {
+SQUARE{}
+UNIT {y 1 r 12}
+}
+rule NORMAL .2 {
+SQUARE{}
+UNIT {y 1 flip 90}
+}
+
+rule DOUBLE {
+CIRCLE{s 1.8}
+UNIT {r 20}
+UNIT {r -20 flip 90}
+}
+rule DOUBLE {
+CIRCLE{s 1.8}
+UNIT {r 35}
+UNIT {r -35 flip 90}
+}
+rule DOUBLE {
+CIRCLE{s 1.8}
+UNIT {r 45 s .75}
+UNIT {flip 90}
+}
+rule DOUBLE {
+CIRCLE{s 1.8}
+UNIT {}
+UNIT {r -45 flip 90 s .75}
+}
+rule DOUBLE .5 {
+CIRCLE{s 1.8}
+UNIT {r 60 flip 90}
+UNIT {r -60}
+}
+
+rule SNOW 35 {}
+rule SNOW {
+CIRCLE{x 8 y 15 s 3}
+CIRCLE{x 8 y 15 s 2.5
+ b 1 sat .2 hue 10}
+}
+rule SNOW .8 {
+CIRCLE{x 21 y 7 s 2}
+CIRCLE{x 21 y 7 s 1.6
+ b 1 sat .15}
+}
+rule SNOW .8 {
+CIRCLE{x 13 y 11 s 2.5}
+CIRCLE{x 13 y 11 s 2.05
+ b 1 sat .17 hue 20}
+}
+rule SNOW {
+CIRCLE{x 16 y 2 s 2}
+}
+rule SNOW .7 {
+CIRCLE{x 32 y 21 s 2.3}
+}
+rule SNOW {
+CIRCLE{x 5 y 11 s 1.7}
+CIRCLE{x 5 y 11 s 1.45
+ b 1 sat .17 hue 20}
+}
+rule SNOW {
+CIRCLE{x 2 y 2 s 1.8}
+}
+rule SNOW 3.5 {
+CIRCLE{x 3 y 2 s 1.45
+ b 1 sat .12 hue 5}
+}
+rule SNOW 3 {
+CIRCLE{x 15 y 5 s 1.75
+ b 1 sat .09 hue 15}
+}

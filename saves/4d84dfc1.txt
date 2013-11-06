@@ -1,0 +1,20 @@
+Lee&Tree&startshape START
+
+rule START {
+ TREE{ s 0.02 y -1}
+ TREE{ s 0.02 y -1 x -1}
+ TREE{ s 0.02 y -1 x 1}
+}
+ 
+rule TREE
+{
+ SQUARE{}
+ TREE { y 1.0 r 1 s 0.989}
+}
+
+rule TREE 0.05
+{
+ TREE { flip 90 }
+ TREE { }
+}
+ 

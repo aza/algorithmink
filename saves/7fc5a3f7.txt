@@ -1,0 +1,34 @@
+Reilly Miller&Tree no 5&startshape shape
+
+rule shape{
+ CIRCLE{y -1.4 s .1}
+ branch{hue 218 sat .35 s .1 y -1.4}
+}
+rule branch{
+ CIRCLE{}
+branch{b .001 s .999 x .04 r 1}
+}
+rule branch{
+CIRCLE{}
+branch{b .001 s .999 y .04 r -3}
+}
+rule branch{
+CIRCLE{}
+branch{b .001 s .999 x .04 y .03 r -2}
+}
+rule branch{
+CIRCLE{}
+branch{b .001 s .999 x .03 y .04 r -1}
+}
+rule branch{
+CIRCLE{}
+branch{b .001 s .999 r 5}
+}
+rule branch{
+CIRCLE{}
+branch{b .001 s .999 x .03 y .03 r .1}
+}
+rule branch .01 {
+branch{}
+branch{s .9 alpha -.2}
+}

@@ -1,0 +1,14 @@
+caoglish&looping star&startshape shape
+
+rule shape1{
+ CIRCLE{s 0.3}
+ shape1{x 0.1  r 1 s 0.9  b 0.1}
+}
+
+
+rule shape{
+ shape1{}
+ shape{x 0.2 r 45 }
+ 
+}
+

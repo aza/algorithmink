@@ -1,0 +1,58 @@
+James Porter&Midnight Light&
+startshape tree
+
+background{ b -0.8}
+
+rule tree{
+ 
+ CIRCLE{x -1 y 1 b 0.8 }
+ sapling{y -0.3}
+}
+
+rule sapling {
+ start{ s .025 y -1.3 }
+}
+
+ rule start{
+ grow{ x 0.8 }
+ grow{ x 0.8 }
+ grow{ x 0.4 }
+ grow{  x 0 }
+
+ grow{ x -0.6 }
+ grow{ x -0.6 }
+ grow{ x -0.4 }
+ grow{ x -0.2 }
+
+ }
+
+ rule grow {
+   right{}
+ }
+
+ rule grow {
+   left{}
+ }
+
+ rule grow .1{
+ left{}
+ right{}
+ }
+
+ rule right{
+   CIRCLE{ hue 200 sat .5 }
+   right{ y .6 r -1 b .003 s .997}
+ }
+
+ rule right .2{
+   grow{  }
+ }
+
+ rule left{
+   CIRCLE{ hue 200 sat .5 }
+   left{ y .6 r 1 b .003 s .997}
+ }
+
+ rule left .2{
+   grow{  }
+ }

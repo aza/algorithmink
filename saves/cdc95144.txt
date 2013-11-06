@@ -1,0 +1,37 @@
+Dylski&Reach&startshape shape
+
+rule shape{
+ Petal{ b 1 s 1}
+}
+
+rule Petal{
+ TRIANGLE{}
+ Petal{ x 0.1 s 0.998 r 61 b -0.001 }
+} 
+
+rule Petal{
+ SQUARE{}
+ Petal{ x 0.1 s 0.998 r 61 b -0.001 }
+} 
+
+rule Petal 0.07 {
+ Stem{ s 0.1 }
+ SQUARE{}
+ Petal{ x 0.1 s 0.998 r 61 b -0.001 }
+} 
+
+rule Stem{
+ SQUARE{}
+ Stem{ x 0.1 s 0.998 r 1 }
+} 
+
+rule Stem{
+ SQUARE{}
+ Stem{ x 0.1 s 0.998 r -1 }
+} 
+
+rule Stem 0.001 {
+ SQUARE{}
+ Stem{ x 0.1 s 0.75 r +10 }
+ Stem{ x 0.1 s 0.75 r -10 }
+} 

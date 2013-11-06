@@ -1,0 +1,21 @@
+vaskisielu&Flowing spirals&startshape scale
+ 
+rule scale{
+  spiral{s .1 y -.5 x 1}
+}
+ 
+rule spiral{
+ CIRCLE{ a -.5 }
+ spiral{ y 1.5 r 12 s .99}
+}
+ 
+rule spiral .01 {
+ CIRCLE }
+ spiral{ y 1.5 r 10 s .95}
+ spiral{ y 1.5 r 10 s .95 flip 90}
+}
+rule spiral .05 {
+ CIRCLE{ }
+ spiral{ y 1.5 l 10 s .85}
+ spiral{ y 1.5 r 10 s .85 flip 90}
+}

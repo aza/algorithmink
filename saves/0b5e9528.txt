@@ -1,0 +1,25 @@
+vydika&random&   startshape frame
+
+rule frame {
+  shape {s .07 y -2}
+}
+
+rule shape{
+ dit {rrrrrr 2 s .9997}
+}  
+
+rule dit {
+ CIRCLE {xxxxxx .5 s .8}
+ shape {x 1}
+}
+
+rule dit {
+ SQUARE {x 1111 s 1.6 .8}
+ shape {x 2 r 2}
+}
+
+rule dit .7777
+
+ {
+ shape {x 1}
+}

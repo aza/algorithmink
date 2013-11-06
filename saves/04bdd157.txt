@@ -1,0 +1,16 @@
+Chris&checks&startshape fractal
+
+rule fractal{
+ CIRCLE{}
+ fractal{ s .5 b .2 x -.25}
+fractal{ s .5 b .2 x .25}
+fractal{ s .5 b .1 y -.25}
+fractal{ s .5 b .1 y .25}
+}
+rule fractal{
+ CIRCLE{}
+ fractal{ s .5 b .2 x -.25}
+fractal{ s .5 b .2 x .25}
+fractal{ s .5 b .1 y -.25}
+fractal{ s .5 b .1 y .25}
+}

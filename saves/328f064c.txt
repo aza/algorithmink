@@ -1,0 +1,10 @@
+dsadsa&Oi&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+
+rule shape {
+ ALTCLE{}
+
+}

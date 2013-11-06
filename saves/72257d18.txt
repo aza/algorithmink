@@ -1,0 +1,54 @@
+Anna Jain&Neon Dots&startshape start
+background {h 50 sat -1 b -1}
+
+rule start {
+  wisps { s 0.222 h 270 sat 0.9 b 0.5 r 180 }
+wisps { s 0.222 h 270 sat 0.9 b 0.5 r 270 }
+}
+
+rule wisps {
+  wisp { }
+  wisp { }
+  wisp { }
+  wisp { }
+  wisp { }
+}
+
+rule wisp 200 {
+  CIRCLE { s 0.1 }
+  wisp ( s .99 z 0.5 x 0.1 y 0.1 r 2.5 h 1 }
+}
+
+rule wisp {
+  wisp { flip 900 }
+  wisp { flip 180 }
+
+
+
+
+ wisps { s 0.222 h 270 sat 0.9 b 0.5 r 90 }
+wisps { s 0.222 h 270 sat 0.9 b 0.5 r 270 }
+}
+
+rule wisps {
+  wisp { }
+  wisp { }
+  wisp { }
+  wisp { }
+  wisp { }
+}
+
+rule wisp 200 {
+  CIRCLE { s 0.1 }
+  wisp ( s .99 z 0.5 x 0.1 y 0.1 r 2.5 h 1 }
+}
+
+rule wisp {
+  wisp { flip 900 }
+  wisp { flip 180 }
+
+
+}
+
+
+

@@ -1,0 +1,8 @@
+luisukbrazil  kevinn&dablio&startshape w
+
+rule w{
+ TRIANGLE{s .6 r 180 x -.2}
+ TRIANGLE{s .4 b 1 r 180 y .15 x -.2}
+ TRIANGLE{s .6 r 180 x .25}
+ TRIANGLE{s .4 b 1 r 180 y .15 x .25}
+}

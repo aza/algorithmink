@@ -1,0 +1,12 @@
+tsolron&Into the Hallway of Light&startshape fractal
+
+rule fractal{
+ CIRCLE{}
+ fractal{ s .75 b .1 }
+ shape{}
+}
+
+rule shape{
+ TRIANGLE{}
+ fractal{ s .5 b .2 y +.25 }
+}

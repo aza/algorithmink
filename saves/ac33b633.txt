@@ -1,0 +1,8 @@
+UFO&Southwest&startshape shape
+
+rule shape{
+ SQUARE{}
+ 
+ shape{ s 0.5  x 0.5  b 0.5 }
+ shape{ s 0.5  x -.5  b 0.5 }
+}

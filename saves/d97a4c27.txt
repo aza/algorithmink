@@ -1,0 +1,30 @@
+ox&mandalox&startshape mattss
+
+rule mattss{
+matts{x -0.5 y 0.5 hue 100 b 0.4}
+matts{x -0.5 y -0.5 hue 200 b 0.5 }
+matts{x 0.5 y 0.5 hue 300 b 0.6}
+matts{x 0.5 y -0.5 hue 400 b 0.7 }
+matts{x 0 y 0 b 0.8}
+}
+
+rule matts{
+matt{hue -50 }
+matts{ s .9 r 45 hue -30 b -.02}
+}
+rule matts 0.2 {
+matt{hue -20 }
+matts{ s .9 r 45 hue -10 b -.05}
+}
+
+
+rule matt 0.5{
+SQUARE{hue -100 sat 0.5 b -0.15 s 0.5}
+}
+rule matt 0.5{
+SQUARE{hue -200 sat 0.5 b -0.55 s 0.5}
+}
+		
+rule MOUSECLICK{
+mattss{}
+}

@@ -1,0 +1,5 @@
+A&A &startshape shape
+
+rule shape{
+ rectangle{}
+}

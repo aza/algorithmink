@@ -1,0 +1,64 @@
+Ika&One Path | Horizontal&startshape init
+
+background{b -1}
+
+rule init{
+ start{rotate 90 x -3 s 0.0765 b 0.7 saturation 0.9 hue 90}
+}
+
+rule start{
+ down{hue +30}
+ start2{hue +90 s 0.8 x 4 alpha -0.8}
+ start2{hue +90 s 0.8 y -1 x -4 alpha -0.8}
+}
+
+rule start2{
+ down{hue +30}
+ down{hue +90 s 0.8 y -2 x -4 alpha -0.5}
+}
+
+rule down 10{
+ shape{}
+ down{s 0.98 y -1}
+}
+
+rule down{
+ shape{}
+ newTurn{s 0.9 y -1}
+ down{ rotate 5}
+}
+
+rule down {
+ down{flip 90}
+}
+
+rule down 0.06{
+ down{s 0.9 rotate 16}
+ down{rotate -11}
+}
+
+rule newTurn{
+ turn{30}
+}
+
+rule newTurn{
+ turn{flip 90}
+}
+
+rule turn{
+ shape{}
+ turn{s 0.98 rotate 10 y -1 a -0.02}
+}
+
+rule turn 0.04{
+ turn{flip 90}
+ shape2{s 4 y 8 hue 110 b +0.6 saturation 1}
+}
+
+rule shape{
+ CIRCLE{}
+}
+
+rule shape2{
+ CIRCLE{}
+}

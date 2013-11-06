@@ -1,0 +1,8 @@
+population you&motherfucker town&startshape ald
+
+rule ald {
+SQUARE  { r 180  h 0 sat 1.0000 b .5 }
+ald { x .565 s .7 r -60 h -15 }
+ald { x -.565 s .7 r 60 h 15 }
+
+}

@@ -1,0 +1,27 @@
+me&random randomness&startshape start
+background { hue -180 saturation 0.4 brightness -0.1}
+ 
+rule start{
+ shape{b 1 x -1 sat 1 b 0.5 s 0.2}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{x -.03 y -0.04 sat 1 hue 0.5}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{x .03 y 0.04 hue 0.2}
+}
+
+rule shape 0.5 {
+ CIRCLE{}
+ shape{x 0.05 y -0.05 sat 1 hue 0.3}
+}
+
+rule shape 0.5{
+ CIRCLE{}
+ shape{x -0.05 y 0.05 sat 1 hue 0.3}
+}
+

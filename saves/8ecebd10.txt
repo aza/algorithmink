@@ -1,0 +1,53 @@
+tal&facetree&startshape facetree
+
+rule facetree {
+ tree { s 0.2 y -1.5 }
+}
+
+rule shape 0.05{
+ shape { r 10 x -.02 }
+}
+
+
+rule faces {
+ face { y 0.4 }
+ face { y -0.6 flip 180 }
+}
+
+rule face{ 
+ ear { x -.4 y .2 }
+ ear { x .4  y .2 } 
+ head_c {s 0.9 1}
+ eye { x .18 y .2 }
+ eye { x -.18 y .2 }
+}
+
+
+rule eye {
+ C { x -.01 s .1 b 0}
+ C { x .01 s .03 b 1}
+}
+
+rule head_c {
+ C{}
+ C{ s .99 b 1}
+}
+
+rule ear {
+ C{ s .3}
+ C{ s .29 b 1 }
+}
+
+
+rule C { CIRCLE {} }
+
+
+rule tree {
+    face { s .5 flip 180 }
+    tree { s .97 y .3 r 3}
+}
+rule tree .1 { 
+    tree { flip 90 } }
+rule tree .1 { 
+    tree { r 10 } 
+    tree { r -30 s .6} }

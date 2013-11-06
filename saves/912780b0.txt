@@ -1,0 +1,27 @@
+adam&cityline&startshape horizon
+
+rule horizon{
+ building{x -2.5 y -1 s .1 }
+ horizon{x .1 }
+}
+
+rule horizon .003 {}
+
+rule building{
+ block{}
+ building{s .9 y .9}
+}
+
+rule building{
+ block{}
+ building{s 1 y 1}
+}
+
+
+rule building .3{
+ block{}
+}
+
+rule block{
+ SQUARE{}
+}

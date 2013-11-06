@@ -1,0 +1,10 @@
+Joe DiPilato&Click Bumps&startshape none
+rule MOUSECLICK{click{}}
+rule si 300{ CIRCLE{} CIRCLE{s .997 b 1 x .002 } si{y -.002 s .996}}
+rule click {click{s 1.2}}
+rule click {click{s .5}}
+rule click 2{r{}}
+rule r {si{}}
+rule r {si{r 90}}
+rule r {si{r -90}}
+rule r {si{r 180}}

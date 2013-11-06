@@ -1,0 +1,14 @@
+Joe DiPilato&City Scape&rule MOUSEMOVE{x{}}
+rule x{a{}}
+rule x{x{s 1.1}}
+rule x {x{s .9}}
+rule x {x{s .5}}
+rule x 20{x{hue 30}}
+rule MOUSECLICK{SQUARE{s 10 b 1}}
+rule a{b{}}
+rule b{c{s .1}}
+rule b{CIRCLE{s .1 sat .2 hue 33 b .5 y -.05}d{s .1}}
+rule c{SQUARE{sat .2 hue 33 b .5}c{y 1}}
+rule c{SQUARE{}c{s .8 y .1}}
+rule d{SQUARE{sat .2 hue 33 b .5}d{y .5}}
+rule d{CIRCLE{}CIRCLE{s .8 sat .2 hue 33 b .5}d{s .8 y .3}}

@@ -1,0 +1,25 @@
+Carl Sverre&square trees&startshape start
+
+rule start {
+  spiral {s 0.3 }
+}
+
+ 
+rule MOUSECLICK{
+  spiral{s 0.1}
+}
+ 
+rule spiral{
+ SQUARE{ }
+ spiral{ y 1.5 r 10 s .99}
+}
+rule spiral{
+ SQUARE{ }
+ spiral2 { y 1.5 r -10 s .99}
+}
+
+rule spiral2 { spiral { a -.1 } }
+rule spiral2 { spiral { a -.2 } }
+rule spiral2 { spiral { a -.3 } }
+rule spiral2 { spiral { a -.4 } }
+rule spiral2 { spiral { a -.5 } }

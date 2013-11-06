@@ -1,0 +1,20 @@
+pow&Swastifrakta&startshape shape
+
+rule shape{
+ doshiz{}
+ doshiz{r 90}
+ doshiz{r 180}
+ doshiz{r -90}
+}
+
+rule doshiz{
+ SQUARE{size .02}
+ doshiz{x .02 r .5}
+}
+
+rule doshiz .03 {
+ doshiz{r 45 size .75}
+ doshiz{r 45 size .75}
+}
+
+rule doshiz .005 {}

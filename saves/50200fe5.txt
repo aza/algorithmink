@@ -1,0 +1,6 @@
+Roald&Rainbow hall&startshape shape
+
+rule shape{
+ SQUARE{ size 2 hue 40 sat 0 b 0.5}
+ shape { size 0.99 hue 3.6 r 0.4 sat 0.01}
+}

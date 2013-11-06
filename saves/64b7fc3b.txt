@@ -1,0 +1,37 @@
+lunarbunny&sparky&startshape startscale
+background { b -1 }
+
+rule startscale {
+  draw { s 1 }
+}
+
+rule draw 40 {
+   leftdraw { r -90 a -0.9962 }
+   rightdraw { r 90 a -0.9962 }
+}
+
+rule leftdraw 400 {
+   CIRCLE { s 0.021 1 hue 200 b 0.4 sat 0.8 a 0.04 }
+   leftdraw { r 1.5 y 0.015 s 0.992 a -0.9962 }
+}
+
+rule rightdraw 400 {
+   CIRCLE { s 0.021 1 hue 200 b 0.4 sat 0.8 a 0.04 }
+   rightdraw { r -1.5 y 0.015 s 0.992 a -0.9962 }
+}
+
+rule leftdraw 10 {
+   leftdraw { hue 10 }
+   rightdraw { hue -10 }
+}
+
+rule rightdraw 10 {
+   leftdraw { hue 10 }
+   rightdraw { hue -10 }
+}
+
+rule leftdraw 1 {
+}
+
+rule rightdraw 1 {
+}

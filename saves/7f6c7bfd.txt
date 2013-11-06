@@ -1,0 +1,21 @@
+ox&snow&startshape SNOWKOCH
+background{b -1}
+rule SNOWKOCH
+{
+    KOCH{}
+    KOCH{rotate 60}
+    KOCH{rotate 120}
+    KOCH{rotate 180}
+    KOCH{rotate 240}
+    KOCH{rotate 300}
+}
+rule KOCH
+{
+COLORTRI{h 180 b 0.2}
+SNOWKOCH{size .3 y 0.385}
+}
+rule COLORTRI
+{
+    TRIANGLE{sat 0.6000 a 0.2000}
+    COLORTRI{size 0.75 b .5 h -2}
+}

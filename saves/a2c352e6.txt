@@ -1,0 +1,9 @@
+w&Spiral Click&startshape thing
+rule thing{
+  SQUARE{s 10}
+  thing{s .9 b .02 r 10}
+}
+
+rule MOUSECLICK{
+  thing{b 0}
+}

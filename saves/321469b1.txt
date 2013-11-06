@@ -1,0 +1,15 @@
+S&S&startshape shape
+
+rule shape{
+ CIRCLE{}
+}startshape shape
+
+rule shape{
+ CIRCLE{}
+}232
+
+startshape shape
+
+rule shape{
+ DICK{}
+}399

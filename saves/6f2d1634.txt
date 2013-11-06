@@ -1,0 +1,39 @@
+Aza Raskin&Charcoal Flower&startshape scale
+
+rule scale{ START{ s .09 y -.2}}
+
+rule START { 
+  FLOWER { }
+  FLOWER { s 0.97 b 1}
+  START { s 0.9 r 45 }
+}
+
+rule FLOWER {
+  D_LEAF { }
+  D_LEAF { flip 45 }
+}
+
+rule D_LEAF { 
+  FULL_LEAF {}
+  FULL_LEAF {  flip 90}
+}
+
+rule FULL_LEAF {
+  LEAF { }
+  LEAF { flip 180 }
+}
+
+rule LEAF {
+  SHAPE { s .7 }
+  LEAF { s 0.95 y 1 r 3 }
+}
+
+rule LEAF {
+  SHAPE { s .7 }
+  LEAF { s 0.9 y 1 r 8 }
+}
+
+
+rule SHAPE {SQUARE { alpha -0.5 s 5}}
+rule SHAPE 0.5 {SQUARE { alpha -0.6 s 6}}
+rule SHAPE 0.5 {SQUARE { s 5 2 y -4 r 45 alpha -0.7 }}

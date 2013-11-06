@@ -1,0 +1,33 @@
+cidadevazia&oh no&startshape scale
+
+rule scale{ 
+	SPIKES{ s .05 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 90 }
+	SPIKE { r 120 }
+	SPIKE { r 570 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 180 }
+}
+
+rule LSPIKE {
+	SQUARE {}
+	LSPIKE { y 0.18 s 0.19 r 1}
+}
+rule LSPIKE 0.005 {
+	SPIKE { r 1200 }
+	SPIKE { r -60 }
+	LSPIKE { y 0.98 s 0.99  r 1}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .05 }
+}

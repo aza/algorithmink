@@ -1,0 +1,50 @@
+Brandon&Dendrites&startshape shape
+background{b -1}
+
+rule shape{
+ node{s .1 b .3 sat .7 h 44 a -.5}
+ tendril{s .05 b .3 sat .7 h 44 r 0}
+ tendril{s .05 b .3 sat .7 h 44 r 45}
+ tendril{s .05 b .3 sat .7 h 44 r 90}
+ tendril{s .05 b .3 sat .7 h 44 r 135}
+ tendril{s .05 b .3 sat .7 h 44 r 180}
+ tendril{s .05 b .3 sat .7 h 44 r 225}
+ tendril{s .05 b .3 sat .7 h 44 r 270}
+ tendril{s .05 b .3 sat .7 h 44 r 315}
+}
+
+rule tendril .01{
+ node{}
+ tendril {a -.01 sat -.01 x .5 r 30 s .95}
+}
+
+rule tendril .01{
+ node{}
+ tendril {a -.01 sat -.01 x .5 r -30 s .95}
+}
+
+rule tendril{
+ node{}
+ tendril {a -.01 sat -.01 x .5 r 10 s .95}
+}
+
+rule tendril{
+ node{}
+ tendril {a -.01 sat -.01 x .5 r -10 s .95}
+}
+
+rule tendril .02{
+ node{}
+ tendril {a -.01 sat -.01 x .5 r 45 s .95}
+ tendril {a -.01 sat -.01 x .5 r -45 s .95}
+}
+
+rule node {
+ CIRCLE{}
+ CIRCLE{s .66 b .15 r 45 a -.8}
+ CIRCLE{s .33 b .2 r 45 a -.8}
+}
+
+rule MOUSECLICK {
+shape{}
+}

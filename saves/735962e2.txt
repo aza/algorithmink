@@ -1,0 +1,21 @@
+Innasya&Gatotkacas wings&startshape STARTER
+
+rule STARTER{
+   CIRCLE{s .5}
+   CIRCLE{b 1 s -.4 f 7}
+   STARTER 10*{s 0.9 x .1 y .1 r 20}
+   STARTER2 {}
+}
+
+rule STARTER2{
+   CIRCLE{s .5}
+   CIRCLE{b 1 s -.4 f 7}
+   STARTER2{s 0.9 x -.1 y .1 r 20}
+}
+
+rule MOUSECLICK{
+ STARTER{}
+}
+
+
+

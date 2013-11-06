@@ -1,0 +1,16 @@
+andyk&Spiralnik&startshape shape
+
+rule shape {
+  spirala {}
+  spiralb {}
+}
+
+rule spirala {
+ CIRCLE{ s 0.1 }
+ spirala {x 0.1 r 10 s 0.99 b 0.003 }  
+}
+
+rule spiralb {
+ CIRCLE{ s 0.1 }
+ spiralb {x -0.1 r 10 s 0.99 b 0.003 }  
+}

@@ -1,0 +1,52 @@
+Sander&Palju 6nne synnip2evaks&startshape start
+
+background {a -1}
+
+rule start{X{s 0.9}}
+
+rule A{
+ CIRCLE{s 0.2 0.3 a -0.98 hue 70 sat 81 b 53}
+}
+
+rule B{
+ A{}
+ B{x 0.1 y -0.1 r 32.5 a -0.02}
+}
+
+rule C{
+ B{}
+ C{s 0.9 a 0.08 h 2}
+}
+
+rule D{
+ CIRCLE{s 0.0215 0.1 a -0.7 hue 290 sat 81 b 73}
+ D{y -0.03 a -0.08 s 0.98}
+ 
+}
+
+rule E{
+ CIRCLE{s 0.815 0.095 a -0.71 y -0.90}
+ E{s 0.99 y -0.018 a -0.034 }
+}
+
+rule flowers{
+ C{r 50 x 0.35 a -0.5}
+ C{ r 72 x -0.35 s 0.9 h 80}
+ C{r 60 s 0.5 h 210 a -0.5 b -10 sat 40}
+
+ D{y -0.05}
+ D{y -0.05 x 0.35 r -13 s 1.6}
+ D{y -0.05 x -0.35 r 10 s 1.2}
+ 
+ 
+}
+
+rule pot {
+ CIRCLE{s 0.715 0.07 a -0.711 y -0.9}
+ E{}
+}
+
+rule X{
+ flowers{y 0.4}
+ pot{y 0.4}
+}

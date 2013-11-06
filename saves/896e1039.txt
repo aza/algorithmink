@@ -1,0 +1,29 @@
+klapancius&curly&startshape INI
+
+rule INI{ 
+    RECU{y -.5 }
+    RECU{x -1 y -.5 }
+    RECU{x 1 y -.5 }
+
+
+}
+
+rule RECU {
+    WHEEL { }
+    RECU { y 0.25 r 180 s .5 }
+}
+
+rule RECU {
+    WHEEL { }
+    RECU { y .715 r 180 flip 0 s .5 }
+
+}
+
+
+rule WHEEL {
+    SQUARE {b 0.5  size .5 1 x .25 }
+    SQUARE {b 1  size .45 .9 x .225 y .016 }  
+
+}
+
+

@@ -1,0 +1,6 @@
+Ronny&N01&startshape shape
+
+rule shape{
+ SQUARE{ s 0.5}
+ shape{ s 0.8 x 0.25 r 2 }
+}

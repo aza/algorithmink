@@ -1,0 +1,42 @@
+Escobar&G&startshape scale
+
+rule scale{ 
+    LBULB{ s .8 y .3}
+    CBULB{ s .7 y .0}
+    RBULB{ s .8 y .3}
+    EYES{}
+}
+
+rule LBULB {
+    LWHEEL {}
+    LBULB { y -.2 r 10 s .96 }
+}
+
+rule LWHEEL {
+    CIRCLE { }
+    LWHEEL{ s .80 b .01 sat .0}
+}
+
+rule RBULB {
+    RWHEEL{}
+    RBULB { y -.2 r -10 s .96}
+}
+
+rule RWHEEL {
+    CIRCLE { }
+    RWHEEL{ s .80 b .01 sat .0}
+}
+
+rule CBULB {
+    CWHEEL{}
+    CBULB {y -.01  s .96}
+}
+
+rule CWHEEL {
+    CIRCLE { }
+    CWHEEL{ s .70 b -.02 sat .0}
+}
+
+rule EYES{
+    CIRCLE { b .3 s 2}
+}

@@ -1,0 +1,14 @@
+pigpenguin&Rainbow spiral thing&startshape start
+
+background { b -1 }
+
+rule start{
+ shape{s 6}
+ start{s .8 r 10}
+}
+
+rule shape{
+ TRIANGLE{sat 1 h 10 b .5}
+ CIRCLE{b -1}
+ shape{s .99  r 2 h 100}
+}

@@ -1,0 +1,21 @@
+gorbiz&rasa&startshape init
+
+background { b -1 }
+
+rule init {
+  tree { y -1 s .1 hue 60 }
+}
+
+rule tree {
+  segment { sat .5 b .125 }
+  tree { r 1 hue 1 s .98 y .29  }
+}
+ 
+rule segment { 
+  CIRCLE { }
+}
+
+rule segment .025 {
+  tree { r 30  }
+  tree { r -30  }
+}

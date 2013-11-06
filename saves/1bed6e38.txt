@@ -1,0 +1,35 @@
+Max&Scribbles&startshape line
+
+rule line{
+ move{}
+}
+
+rule move{
+ CIRCLE{b .01 s .02 r 1}
+ line{ x .01 r .1}
+}
+
+
+rule move{
+ CIRCLE{b .01 s .02 r 1}
+ line{ x .008 skew 50}
+}
+
+rule move{
+ CIRCLE{b .01 s .02 r 1}
+ line{ x .01 skew 100}
+}
+
+rule move{
+ CIRCLE{b .01 s .02 r 1}
+ line{ x .01 r 20}
+}
+
+rule move{
+ CIRCLE{b .01 s .02 r 1}
+ line{ x .01 r -10}
+}
+
+rule MOUSECLICK{
+ move{}
+}

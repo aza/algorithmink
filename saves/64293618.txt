@@ -1,0 +1,14 @@
+efi&blackwhite&startshape T
+rule T{ U{s .38 x -1.9 y -.6} }
+rule U{ V{r 18 a -.95} V{} X{y -1.25 x .25}  }
+rule V{ W{x 4} }
+rule W { X{} W{h 1 x 1.5 sat .15 s .8} }
+rule X { Ya{} Yb{x .66 y .66} }
+rule Ya { Z{ s.9 } Z{ x 1 }  Ya{ r 90 x 1 y 2 s .99 } }
+rule Ya { Z{ s.9 } Z{ x 1 }  Ya{ r 90 x 1 y 1.9 s .99 } }
+rule Yb { Z{ s.9 } Z{ x 1 }  Yb{ r 9 x .1 y .2 s .99 } }
+rule Yb { Z{ s.9 } Z{ x 1 }  Yb{ r 9 x .1 y .19 s .99 } }
+rule Z { CIRCLEX{} }
+rule Z { CIRCLEX{ b 1 } }
+rule CIRCLEX { SQUARE{ a -.5 } CIRCLEY{} }
+rule CIRCLEY { CIRCLE{ a -.75 } }

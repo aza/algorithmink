@@ -1,0 +1,34 @@
+Joe DiPilato&Sprinkles&startshape iheart
+
+background{b -1}
+
+rule iheart{heart{sat 1 b .4 s .4 a -1}lheart{x .1 y .1 b .5}lheart{x -.1 y .1 b .5}lheart{x .1 y -.1 b .5}lheart{x -.1 y -.1 b .5}mask{}}
+
+rule aheart{heart{sat 1 b .4 s .4 a -1}mheart{ b .5}}
+rule half{CIRCLE{}half{y -.1 s .9 r 1 b 0.001}}
+rule heart{half{r -30 x .36 a .5}half{r 30 x -.36 flip 90 a .5}}
+
+rule angheart 10{angheart{r 5}}rule angheart 10{angheart{r -5}}rule angheart{aheart{}}
+
+rule sheart 4{sheart{s .9}}rule sheart 1{sheart{s 1.111}}rule sheart .2{angheart{}}
+
+rule rheart{sheart{}rheart{s .9}}rule rheart{rheart{x .2}}rule rheart{rheart{x -.2}}rule rheart{rheart{y  .2}}rule rheart{rheart{y  -.2}}
+
+rule lheart{rheart{x .5}}rule lheart{rheart{x -.5}}rule lheart{rheart{y .5}}rule lheart{rheart{y -.5}}
+
+rule mheart 5{lheart{}}rule mheart{lheart{s .1}}
+
+rule MOUSECLICK{mask{}}
+
+rule mask{haze{}mask1{}}rule mask 10{mask{}}
+rule mask1{haze{}mask2{}}rule mask1 10{mask1{}}
+rule mask2{haze{}mask3{}}rule mask2 10{mask2{}}
+rule mask3{haze{}mask4{}}rule mask3 10{mask3{}}
+rule mask4{haze{}mask5{}}rule mask4 10{mask4{}}
+rule mask5{haze{}imask{}}rule mask5 10{mask5{}}
+
+rule imask .1{}rule imask 5{mask{}}rule imask 10{imask{}}
+
+rule haze{SQUARE{s 10 a -.95}}
+
+

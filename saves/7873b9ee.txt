@@ -1,0 +1,11 @@
+jewry&Twisted Tunnel Flower&startshape shape
+
+rule outline {
+  SQUARE{b 0}
+  SQUARE{b 1 s .99}
+}
+
+rule shape{
+  outline{x .1}
+  shape{ r 15 s .995}
+}

@@ -1,0 +1,34 @@
+Dante&Colored Spirals&startshape shape
+
+rule shape{
+test { s .0 }
+
+testy {x -1 s .05 r 180 }
+testy {x -1 s .05 flip 90 hue 200}
+
+test { s .0 r 180 flip 90 }
+
+}
+
+rule test 10 {
+SQUARE{}
+test { y .5 s .997 r 2 sat 0.02 }
+}
+
+rule test .03 {
+SQUARE{}
+test { y .5 s .99 r 2 }
+test { y .5 s .99 r 10 flip 90 }
+
+}
+
+rule testy 10 {
+SQUARE{}
+testy{ y .5 s .992 r 2 b 0.005 }
+}
+
+rule testy .1 {
+SQUARE{}
+testy { y .5 s .99 r 2 }
+test { y .5 s .99 r 10 flip 90 sat 0}
+}

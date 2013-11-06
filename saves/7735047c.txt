@@ -1,0 +1,13 @@
+Lupinius&Squares&startshape shape
+
+rule shape{
+ SQUARE{}
+ shape{ s 0.3 x 0.99}
+ shape{ s 0.3 x -.99}
+ shape{ s 0.3 x 0.99 y 0.99}
+ shape{ s 0.3 x 0.99 y -.99}
+ shape{ s 0.3 y 0.99}
+ shape{ s 0.3 y -.99}
+ shape{ s 0.3 y 0.99 x -.99}
+ shape{ s 0.3 y -.99 x -.99}
+}

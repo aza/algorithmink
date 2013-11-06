@@ -1,0 +1,138 @@
+Hardmaster&Paranoid&startshape shape
+
+rule shape{
+ CIRCLE{}
+}html
+head
+  titleAlgorithm Ink | Aza Raskin/title
+  link rel=\"stylesheet\" href=\"display.css\" type=\"text/css\" /  
+/head
+
+body
+  div id=\"bar\"
+    img id=\"logo\" src=\"Website/logo.png\"/
+    div id=\"controls\"
+      a id=\"draw\"/a
+
+      
+      a id=\"edit\"/a
+      a id=\"save\"/a
+
+      a id=\"browse\"/a
+      
+      a id=\"new\"/a
+      a id=\"about\"/a      
+    /div
+  /div
+  
+  div class=\"sheet\" id=\"browseSheet\"
+    
+    div id=\"browser\"
+
+      img id=\"rightButton\" src=\"Website/LeftArrow.png\"
+      img id=\"leftButton\" src=\"Website/RightArrow.png\"
+    /div
+
+  /div
+  
+  div class=\"sheet\" id=\"warningSheet\"
+    center
+    br/
+    h3Warning: The browser you are using isn\'t Canvas standards compliant./h3
+
+    pYou may experience some performance issues (or it might not work). Try a href=\"http://www.mozilla.com/en-US/firefox/all-rc.html\"Firefox 3/a./p
+    /center
+  /div
+
+  div class=\"sheet\" id=\"aboutSheet\"
+    h3What is Algorithm Ink?/h3
+    pAlgorithm Ink is a port and extension of a href=\"http://www.contextfreeart.org/\"Context Free/a by a href=\"http://azarask.in/blog\"Aza Raskin/a.
+      The original grammar was originally conceived of by a href=\"http://www.chriscoyne.com/wordpress/\"Chris Coyne/a. Algorithm
+        Ink uses open-web, standards-based tools: no plugins required. You can even right-click to save the drawings. The caveat is that Firefox 3, and Opera 9.5 are the only browsers to fully support
+        a href=\"http://en.wikipedia.org/wiki/Canvas_(HTML_element)\"Canvas/a, so it may run slower on Safari, and not at all in Internet Explorer./p
+
+    h3How to use?/h3
+    pRead the Context Free a href=\"http://www.contextfreeart.org/mediawiki/index.php/CFDG_HOWTO\"documentation/a, or just browse some of the
+      other pieces of art and look at their source code. Not everything from Context Free is supported&mdash;like comments, z-depth, and *&mdash;but
+      some new things are available, like MOUSECLICK, and MOUSEMOVE./p
+    pHere\'s an example to get you started:/p
+    prestartshape twoshapes
+rule twoshapes{
+  CIRCLE{s .5}
+  SQUARE{x 1}
+  twoshapes{y .2 s .5 b .1}
+}/pre
+    pThis draws a circle of scale 1/2 at the origin and square one space to the right. It then
+      draws that whole shape scaled down by half and moved slightly up in a lighter gray (higher brightness).
+      This repeats until it gets too small to see&mdash;we\'ve just made a fractal!/p
+
+    h3Get The Source & Help Out/h3
+    pYou can download a href=\"http://code.google.com/p/contextfree/source/browse/trunk/contextfree.js\"contextfree.js/a and go wild. If you get inspired,
+      it\'s open source, so a href=\"http://code.google.com/p/contextfree/\"jump in/a! Email me (aza [at] mozilla [dot] com) to get involved./p
+  /div
+  
+  div class=\"sheet\" id=\"editSheet\"
+    textarea spellcheck=\"false\" id=\"theCode\"/textarea
+
+  /div
+  
+  div class=\"sheet\" id=\"saveSheet\"
+    br/
+    center
+      div id=\"title\" class=\"info\"
+        spanTitle of Masterpiece: /span
+        input id=\"titleInput\" value=\"\"/
+      /div
+
+      div id=\"author\" class=\"info\"
+        spanYour Name: /span
+        input id=\"authorInput\" value=\"\"/
+      /div
+      
+      br/br/
+      
+      a id=\"saveButton\"Save It!/a span style=\"font-size:70%\"or if you want to download it, right click on the image./span
+
+    /center
+    
+  /div
+  
+  div class=\"sheet\" id=\"messageSheet\"
+    h3 id=\"message\"/h3
+  /div
+  
+  div id=\"caption\" /div
+  div id=\"namecard\" /div
+  
+  
+  
+  canvas id=\"aiCanvas\"
+
+    You\'re browser isn\'t standards compliant: It doesn\'t support
+    a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/section-the-canvas.html\"canvas/aCanvas.
+    If you wish to use Algorithm Ink, please download and use
+    a href=\"http://www.mozilla.com/en-US/firefox/all-rc.html\"Firefox 3/a.
+  /canvas
+
+  
+
+script src=\"contextfree.js\"/script
+script src=\"jquery.js\"/script
+script src=\"jquery.dimensions.js\"/script
+script src=\"imagestrip.jquery.js\"/script
+
+script src=\"display.js\"/script
+
+script type=\"text/javascript\"
+var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");
+document.write(unescape(\"%3Cscript src=\'\" + gaJsHost + \"google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E\"));
+/script
+script type=\"text/javascript\"
+var pageTracker = _gat._getTracker(\"UA-4020980-2\");
+pageTracker._initData();
+pageTracker._trackPageview();
+/script
+
+/body
+
+/html

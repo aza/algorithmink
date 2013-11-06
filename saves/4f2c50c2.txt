@@ -1,0 +1,53 @@
+Ika&Strokes&startshape start
+
+rule shape{
+ CIRCLE{}
+ shape{ saturation 1 s .8 b .2 hue 2 x .1}
+}
+
+rule start{
+ chain{ b 0.4 saturation 1 hue 20 s 0.05 x -0.4 y -0.4}
+}
+
+rule chain{
+myShape{}
+ chain{ x 3 s .96 rotate 10}
+}
+
+rule chain{
+myShape{}
+ chain{ x 3 s .96 rotate 20}
+}
+
+rule chain 0.8 {
+ chain{}
+ newChain{}
+}
+
+rule newChain
+{
+ chain{ s .5 hue 120 flip 0 rotate -60}
+}
+
+rule newChain
+{
+ chain{ s .5 hue 85 flip 0 rotate -60}
+}
+
+rule newChain
+{
+ chain{ s .5 hue 50 flip 0 rotate -60}
+}
+
+rule newChain
+{
+ chain{ s .5 hue 35 flip 0 rotate -60}
+}
+
+rule myShape{
+ CIRCLE{}
+}
+
+rule myShape{
+ SQUARE{}
+}

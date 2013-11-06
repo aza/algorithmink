@@ -1,0 +1,27 @@
+Aza Raskin&Brownian Motion&startshape STARTER
+
+rule STARTER{
+  DOT{ s .4 }  
+}
+
+rule DOT{
+  CIRCLE{ s 1 b 0 a -.99 }  
+  CIRCLE{ s .3 b .5 sat 1 }
+  MOTION{ h .1 }
+}
+
+rule MOTION{
+  DOT{ x .05 }
+}
+
+rule MOTION{
+  DOT{ x -.05 }
+}
+
+rule MOTION{
+  DOT{ y .05 }
+}
+
+rule MOTION{
+  DOT{ y -.05 }
+}

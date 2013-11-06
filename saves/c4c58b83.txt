@@ -1,0 +1,28 @@
+mdodge&gearedit&startshape scale
+
+rule scale {
+  gears { s .7 }
+}
+
+rule gears {
+  gear { flip 180 }
+  gear { x 0.5 }
+  gear { y 0.5 }
+  gear { x -0.5}
+  gear { y 0.5}
+}
+
+rule gear{
+  CIRCLE{}
+  gearinner{ s .95 }
+}
+%jhkjhkjh
+rule gearinner{
+  CIRCLE{}
+  CIRCLE{ s .5 b .2 x -.25 }
+  CIRCLE{ s .5 b .2 x .25 }
+  CIRCLE{ s .5 b .2 y .25 }
+  CIRCLE{ s .5 b .2 y -.25 }
+  gearinner{ r .4 }
+}
+

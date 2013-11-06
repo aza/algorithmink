@@ -1,0 +1,30 @@
+Yin&Yins 01&startshape dot
+
+rule dot {
+ CIRCLE {s 0.1}
+ go {x .01 s 0.96}
+}
+
+rule go 10 {
+  dot {x 0.01}
+}
+
+rule go 9 {
+  go {x 0.01 }
+}
+rule go 3 {
+  go {r 2 }
+}
+rule go 3 {
+  go {r -2 }
+}
+
+rule go .3 {
+  go {r 10 }
+  go {r -10 }
+}
+rule go .1 {
+  go {r 120 }
+  go { }
+  go {r -120 }
+}

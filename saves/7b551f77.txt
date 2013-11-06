@@ -1,0 +1,20 @@
+Lambda&Squaredust&startshape squaredust
+
+rule squaredust{
+ window{s 2.5}
+}
+
+rule window{
+ borw{s .5 x -.25 y -.25}
+ borw{s .5 x -.25 y .25}
+ borw{s .5 x .25 y -.25}
+ borw{s .5 x .25 y .25}
+}
+
+rule borw{
+ SQUARE{b 0}
+}
+
+rule borw 4{
+ window{}
+}

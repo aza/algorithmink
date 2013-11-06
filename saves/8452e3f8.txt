@@ -1,0 +1,23 @@
+aa&aa&startshape shape
+
+rule shape{
+test { s .05 }
+test { s .05 flip 90 }
+test { s .05 r 180 }
+test { s .05 r 180 flip 90 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .5 s .99 r 2 }
+}
+
+rule test .06 {
+SQUARE{}
+test {.99 y .5 s  r 2 }
+test { y .5 s .99 r 20 flip 90 }
+test { y .5 s .99 r 20 flip 90 }
+test { y .5 s .99 r 30 flip 90 }
+test { y .5 s .99 r 40 flip 90 }
+test { y .5 s .99 r 50 flip 90 }
+}

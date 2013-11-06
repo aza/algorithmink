@@ -1,0 +1,14 @@
+Kamil Szot&Sierpinski Triangle&
+startshape Start 
+
+rule Start {
+  TRIANGLE{s 2}
+  Tri { r 180 b 1 }
+}
+rule Tri {
+ TRIANGLE {  }
+ Tri { s .5 x -.5 y .29 }
+ Tri { s .5 x .5 y .29 }
+ Tri { s .5 y -.58 }
+ 
+}

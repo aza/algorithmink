@@ -1,0 +1,25 @@
+Gaetan&growing flower&startshape start
+//could be much simplified
+
+rule start{
+circles{s 0.8 sat 1 b 0.1}
+circles{s 0.4 sat 1 b 0.1}
+circles{s 0.2 sat 1 b 0.1}
+circles{s 0.1 sat 1 b 0.1 }
+}
+
+rule circles {
+trunk{hue 0    r 0}
+trunk{hue 60   r 60}
+trunk{hue 120  r 120}
+trunk{hue 180  r 180}
+trunk{hue 240  r 240}
+trunk{hue 300  r 300}
+}
+
+rule trunk 50{
+ CIRCLE{hue 60  s 0.41}
+ CIRCLE{s 0.4}
+ trunk{b 0.01 r 3 hue 0.1 s 0.99 y 0.1 x 0.1}
+}
+

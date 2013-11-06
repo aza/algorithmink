@@ -1,0 +1,24 @@
+Arch&dots&startshape shape
+
+rule shape{
+ Circle{s 0.9}
+}
+
+rule Circle
+{
+ CIRCLE{hue 100 sat .999 b 0.5 s 0.2}
+ Circle{s 0.999  hue 20 r 25 y 0.1}
+}
+
+rule Circle 0.01{shape{}}
+
+rule Circle 0.01
+{
+ Square{}
+ shape{}
+}
+
+rule Square{
+ SQUARE{b 0}
+ Square{}
+}

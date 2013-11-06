@@ -1,0 +1,23 @@
+Fernando LF Neto&Circles&startshape shape
+
+rule shape{
+
+ CIRCLE{x 0.5 y 0.0 s 0.5}
+ CIRCLE{x -0.5 y 0.0 s 0.5}
+ CIRCLE{x 0.0 y 0.5 s 0.5}
+ CIRCLE{x 0.0 y -0.5 s 0.5}
+
+ shape{s .999 b .001}
+
+}
+
+rule shape 3 {
+
+ CIRCLE{x  0.5 y  0.5 s 0.2}
+ CIRCLE{x  0.5 y -0.5 s 0.2}
+ CIRCLE{x -0.5 y  0.5 s 0.2}
+ CIRCLE{x -0.5 y -0.5 s 0.2}
+
+ shape{s .999 b .001}
+
+}

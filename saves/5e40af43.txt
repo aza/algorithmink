@@ -1,0 +1,9 @@
+ddd&ddd&
+startshape twoshapes
+rule twoshapes{
+
+  CIRCLE{x 0.0 y -0.5 s 0.125}
+  CIRCLE{x 0.5 y 0.0 s 0.25}
+  CIRCLE{x 0.5 y 0.5 s 0.25}
+  twoshapes{y .1 s .7 b .2 r 20 h 0.3}
+}

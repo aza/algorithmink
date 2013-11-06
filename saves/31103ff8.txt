@@ -1,0 +1,47 @@
+Micheil&Random Dot&startshape scale
+
+rule scale{
+  SCENE{ s .15 }
+}
+
+rule SCENE {
+    BIG { x 8 y 8 }
+    BIG { x -8 y 8 }
+    BIG { x 8 y -8 }
+    BIG { x -8 y -8 }
+}
+
+rule BIG {
+    START { x 4 y 4  }
+    START { x -4 y 4  }
+    START { x 4 y -4  }
+    START { x -4 y -4  }
+}
+
+rule START {
+    EIGHT { x 2 y 2}
+    EIGHT { x -2 y 2 }
+    EIGHT { y -2 x 2}
+    EIGHT { y -2 x -2 }
+}
+
+rule EIGHT {
+    FOUR { x -1 y 1}
+    FOUR { x 1 y 1}
+    FOUR { x -1 y -1}
+    FOUR { x 1 y -1}
+}
+
+rule FOUR  {SHAPE { s 2 }}
+rule FOUR {
+    SHAPE { x -0.5 y 0.5}
+    SHAPE { x 0.5  y 0.5}
+    SHAPE { x -0.5 y -0.5 }
+    SHAPE { x 0.5 y -0.5 }
+}
+
+rule SHAPE {CIRCLE { s 0.8 b -1}}
+rule SHAPE {
+    CIRCLE { b -6 s 1.6  TRIANGLE { s 00.3 skew 0 30} }
+    CIRCLE { s 0.8 b 1 skew 0 180}
+}  

@@ -1,0 +1,13 @@
+mike&threat&startshape start
+
+rule start{ SS1{ s 1.5 y -.13} }
+ 
+rule SS1 {
+    BARNEY{}
+}
+ 
+rule BARNEY {
+    TRIANGLE {b 0}
+    TRIANGLE {r 180 b 1}
+    BARNEY {r 180 }
+}

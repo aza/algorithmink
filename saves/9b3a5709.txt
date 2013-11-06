@@ -1,0 +1,5 @@
+ojl&n&startshape shape
+
+rule shape{
+ CIRCLE{}
+}{y .2 s .5 b .1}

@@ -1,0 +1,42 @@
+jml&agac1&startshape begin
+
+rule MOUSECLICK{
+  begin { }
+}
+
+rule begin {
+  tree { s 0.04 }
+}
+
+
+
+rule tree {
+  CIRCLE { s 1 5 }
+  tree { y 1 s 0.990 r 3 b 0.005 }
+}
+
+
+
+rule tree 0.2 { 
+  tree { flip 90 }
+}
+
+
+
+rule tree 0.1 { 
+  tree { r 23 }
+  tree { s 0.5 r -38 } 
+}
+
+rule tree 0.1 {
+  branchAndBlossom { 
+   hue +8 saturation 0.6  }
+}
+
+rule branchAndBlossom{
+  tree {  }
+  
+}
+rule blossom {
+  CIRCLE {  }
+}

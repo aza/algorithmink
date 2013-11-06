@@ -1,0 +1,30 @@
+Iiyaam&Lines&startshape start
+background{b -1}
+
+rule start{
+ line{}
+}
+
+rule start{
+ line2{}
+}
+
+rule line{
+ SQUARE{b 1 s .01}
+ line{x .005 s .999}
+}
+
+rule line2{
+ SQUARE{b 1 s .01}
+ line2{y .005 s .999}
+}
+
+rule MOUSECLICK{
+ start{}
+}
+
+rule comment{
+I tried my best to make a proper straight line without causing to much lag. The line should stop after a while of the screen.
+
+iiyaam
+)

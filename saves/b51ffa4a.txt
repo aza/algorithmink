@@ -1,0 +1,123 @@
+hjo3&Cartoony Face Array&startshape SCALE
+
+rule SCALE{facearray{x -1.2 y 1 s .25}}
+ 
+rule facearray {
+    ranface {}
+    ranface { x 4 }
+    ranface { x 8 }
+    ranface { y -3.3 }
+    ranface { x 4 y -3.3 }
+    ranface { x 8 y -3.3 }
+    ranface { y -6.6 }
+    ranface { x 4 y -6.6 }
+    ranface { x 8 y -6.6 }
+}
+ 
+rule ranface {
+    eyes {}
+    nose { y -1 x .74 z -1 }
+    mouth { y -1.4 x .74 }
+}
+ 
+rule nose .22 {
+    TRIANGLE { z 1 r 180 s .9,1.1 }
+    TRIANGLE { b 1 z 1 r 180 s .9 1.1 y .1 }
+}
+rule nose {
+    CIRCLE {}
+    SQUARE { b 1 s 1.1,.2 }
+    CIRCLE { s .3 x .48 y .1 }
+    CIRCLE { b 1 s .3 x .48 y .05 }
+    CIRCLE { s .3 x -.48 y .1 }
+    CIRCLE { b 1 s .3 x -.48 y .05 }
+    CIRCLE { b 1 y -.1 }
+    SQUARE { b 1 x .58 s .2 y .05 }
+    SQUARE { b 1 x -.58 s .2 y .05 }
+}
+rule nose {
+    CIRCLE {}
+    CIRCLE { b 1 y -.1 }
+    SQUARE { b 1 s 1.1 .2 }
+}
+rule nose {
+    CIRCLE {}
+    CIRCLE { b 1 y -.1 }
+    SQUARE { b 1 s 1.1 .2 }
+    CIRCLE { s .1 .15 y .17 x .2 }
+    CIRCLE { s .1 .15 y .17 x -.2 }
+}
+rule nose {
+    CIRCLE { s .8 1 y .4 z -1 }
+    CIRCLE { b 1 y .5 s .9 1 z -1 }
+}
+ 
+rule mouth {
+    CIRCLE { s 1.5 .5 }
+    CIRCLE { b 1 s 1.2 1 y -.5 }
+}
+rule mouth {
+    CIRCLE { s 1.5 .5 }
+    CIRCLE { b 1 y .1 s 1.5 .4 }
+}
+rule mouth {
+    CIRCLE { z -2 s 1.6 1 }
+    CIRCLE { z -2 b 1 s 1.5 .9 }
+    SQUARE { b 1 z -2 y .25 s 2 .5 }
+    SQUARE { s 1.55 .05 y -.028}
+}
+ 
+rule eyes {
+    eye_disg {}
+    eye_disg { x 1.5 r 180 flip 180 }
+}
+rule eyes .15 {
+    eye_disg {}
+    eye_wide { x 1.5 r 180 flip 180 }
+}
+rule eyes .15 {
+    eye_wide {}
+    eye_disg { x 1.5 r 180 flip 180 }
+}
+rule eyes .6 {
+    eye_wide {}
+    eye_wide { x 1.5 r 180 flip 180 }
+}
+rule eyes {
+    eye_sarc {}
+    eye_sarc { x 1.5 r 180 flip 180 }
+}
+rule eyes .15 {
+    eye_sarc {}
+    eye_wide { x 1.5 r 180 flip 180 }
+}
+rule eyes .15 {
+    eye_wide {}
+    eye_sarc { x 1.5 r 180 flip 180 }
+}
+ 
+rule eye_wide {
+    CIRCLE {}
+    CIRCLE { b 1 s .9 }
+    CIRCLE { s .4 }
+}
+ 
+rule eye_sarc {
+    CIRCLE {}
+    CIRCLE { y -.1 z -1 x -.05 }
+    CIRCLE { b 1 s .9 y -.1 z -1 x -.05 }
+    SQUARE { b 1 z -1 x -.45 y -.2 }
+    CIRCLE { b 1 s .9 }
+    SQUARE { s .9 .1 y .1 }
+    SQUARE {  b 1 s 1 .4 y .35 }
+    CIRCLE { s .4 y -.07 x .05 }
+}
+ 
+rule eye_disg {
+    CIRCLE {}
+    CIRCLE { b 1 s .9 }
+    CIRCLE { s .4 y .07 x .02 }
+    CIRCLE { s .9 .4 y -.18 }
+    CIRCLE { b 1 s 1 .4 y -.27 }
+    SQUARE { b 1 s .8 .3 y -.35 }
+}

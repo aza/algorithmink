@@ -1,0 +1,38 @@
+hugh&mattsucks&startshape shape
+
+rule shape{
+ CIRCLE{ s .01 sat 1 b .5 }
+ test{}
+}
+
+rule test{
+ shape{ y .01 r 2 alpha +.05 }
+}
+
+rule test{
+ shape{ y -.01 r -2 alpha -.5 }
+}
+
+rule test{
+ shape{ x .01 hue +5  r 2 }
+}
+
+rule test{
+ shape{ x -.01 hue -5 r -2 }
+}
+
+rule test{
+ shape{ y .01 x .01 } 
+}
+
+rule test{
+ shape{ y -.01 x .01 } 
+}
+
+rule test{
+ shape{ y .01 x -.01 } 
+}
+
+rule test{
+ shape{ y -.01 x -.01 } 
+}

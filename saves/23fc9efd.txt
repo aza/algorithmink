@@ -1,0 +1,6 @@
+Master Tu&First creation&startshape shapeA
+
+rule shapeA{
+ CIRCLE{s 3}
+ shapeA{s .99 b .009}
+}

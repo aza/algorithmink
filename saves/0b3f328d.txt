@@ -1,0 +1,50 @@
+ox&oxxels&startshape init
+background{ b -1 }
+rule init{  
+  SQUARE{ sat 0 s .01 b .5 }
+  shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+}
+
+rule shape{
+ SQUARE{ sat 0.5 s .10 b .5  }
+ move{}
+}
+
+rule move{
+ shape{ y .10 a .1 sat +.05 }
+}
+
+rule move{
+ shape{ x .10 hue +5 b +.05 a -.5 }
+}
+
+rule move{
+ shape{ y -.10 a -.5 b -.05 }
+}
+
+rule move{
+ shape{ x -.10 hue -.5 sat -.05 }
+}
+
+rule move{
+ shape{ y .10 x -.10 }
+}
+
+rule move{
+ shape{ x .10 y .10 }
+}
+
+rule move{
+ shape{ y -.10  x .10}
+}
+
+rule move{
+ shape{ x -.10 y -.10 }
+}
+

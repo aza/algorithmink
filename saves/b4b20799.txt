@@ -1,0 +1,19 @@
+INTERACTIVE ARTIST&SPIRAL CLICK&
+rule spiraling-left {
+  SQUARE { s .06}
+  spiraling-left { s .99 r 5 x .05}
+}
+
+rule spiraling-right {
+  SQUARE { s .06 }
+  spiraling-right { s .99 r -5 x .05}
+}
+
+rule spiraling {
+  SQUARE { s .06 }
+  spiraling-left { s .99 r 5 x .05 }
+}
+rule MOUSECLICK{
+  SQUARE { s .06 }
+  spiraling-left { s .99 r 5 x .05}
+}

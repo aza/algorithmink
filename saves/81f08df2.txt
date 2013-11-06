@@ -1,0 +1,10 @@
+anon&Pitofstrangeness&startshape shape
+
+rule shape{
+ shape{ r 100 x 0.02 b 0.1 s 0.99 h 1}
+ mouseclick{ s 0.99 }
+}
+
+rule mouseclick{
+ SQUARE{ x -2 b -0.253534 sat 1}
+}

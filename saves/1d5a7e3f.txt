@@ -1,0 +1,39 @@
+Young&Mutant Trees&
+startshape shape
+
+rule shape{
+test { y -1 s .02 b 0.4 }
+}
+
+rule test 8 {
+SQUARE{}
+test{ y .5 s 1 r 1 b .002 }
+}
+
+rule test 8 {
+SQUARE{}
+test{ y .5 s 1 r -1 b .002 }
+}
+
+rule test .25 {
+SQUARE{}
+test { y .5 s .80 r -10  b .001 }
+test { y .5 s .60 r 20  b .001 }
+}
+
+rule test .25 {
+SQUARE{}
+test { y .5 s .60 r 20 b .001 }
+test { y .5 s .80 r -10 b .001 }
+}
+
+rule test .01 {
+test { y .5 s .60 r 20 }
+test { y .5 s .80 r 10 }
+test { y .5 s .80 r -10 b .001 }
+test { y .5 s .60 r -20 b .001 }
+}
+
+rule test .01 {
+CIRCLE{ s 5 b -1 }
+}

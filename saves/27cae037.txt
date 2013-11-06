@@ -1,0 +1,45 @@
+Spinus&Psychedelic Stars&startshape start
+
+
+rule start{ SS1{ s .5 y 0} }
+rule start{ SS1{ s .2 y 0} }
+rule start{ SS1{ s .8 y 0} }
+rule start{ SS1{ s 1.5 y 0} }
+rule start{ SS1{ s 1.0 y 0} }
+
+
+rule SS1 {
+    ALPHA { hue 300 sat 1}
+
+}
+rule SS1 {
+    ALPHA { hue 250 sat 1}
+
+}
+
+rule SS1 {
+    ALPHA { hue 80 sat 1}
+
+}
+
+
+rule SS1 {
+    ALPHA { hue 20 sat 1}
+
+}
+
+
+
+
+
+rule ALPHA {
+    SQUARE {b 0.2}
+    SQUARE {s 0.9955 b 1}
+    ALPHA {r 30 s 0.999 b .0002 h .1}
+} 
+ 
+
+
+rule MOUSECLICK{
+  start {}
+}

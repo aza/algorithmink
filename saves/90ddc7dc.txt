@@ -1,0 +1,17 @@
+Ben Kaiser&Colour Sliders&startshape start
+
+rule start{
+ scale{s .2}
+}
+
+rule scale{
+ SQUARE{sat 1 b .5}
+ scale{x 1 hue 20}
+}
+rule scale .02{
+ 
+}
+
+rule MOUSECLICK{
+ start{}
+}

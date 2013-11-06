@@ -1,0 +1,22 @@
+Ward Cunningham&Sierpiski Carpet Refactored&startshape frame
+
+rule frame {
+ carpet {s 1.8}
+}
+
+rule carpet {
+ repeat {s .33333 b .1}
+}
+
+rule repeat {
+ SQUARE{}
+ carpet{     y 1 }
+ carpet{x 1  y 1 }
+ carpet{x 1      }
+ carpet{x 1  y -1}
+ carpet{     y -1}
+ carpet{x -1 y -1}
+ carpet{x -1     }
+ carpet{x -1 y 1 }
+}
+

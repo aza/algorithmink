@@ -1,0 +1,66 @@
+torbjorn&brambletree&startshape BRAMBLES
+
+rule MOUSEMOVE{
+}
+
+rule MOUSECLICK{
+  BRAMBLES{}
+}
+
+rule PLOT 100{
+ CIRCLE{ s .02}
+ PLOT{x .01 s .98 r .5}
+}
+
+rule PLOT 4{
+ CIRCLE{ s .02}
+ PLOT{x .01 s .95 r 45}
+}
+
+rule PLOT 0.0005{
+ CIRCLE{ s .02}
+ PLOT{x .01 s .5 r 0}
+ PLOT{x .01 s .5 r 45}
+ PLOT{x .01 s .5 r 90}
+ PLOT{x .01 s .5 r 180}
+ PLOT{x .01 s .5 r 270}
+}
+
+
+
+rule BRAMBLES 2{
+ CIRCLE{ s .05}
+ BRAMBLES{y .02 s .98 r -2}
+}
+
+
+rule BRAMBLES 0.8{
+ CIRCLE{ s .05}
+ BRAMBLES{y .02 s .98 r 2}
+}
+
+rule BRAMBLES 0.8{
+ CIRCLE{ s .05}
+ BRAMBLES{y .02 s .98 r 8}
+}
+
+rule BRAMBLES 0.3{
+ CIRCLE{ s .05}
+ BRAMBLES{y .02 s .96 r -2}
+ PLOT{}
+ PLOT{r 45}
+ PLOT{r 90}
+ PLOT{r 180}
+ PLOT{r 270}
+}
+
+rule BRAMBLES 0.1{
+ CIRCLE{ s .05}
+ BRAMBLES{y .02 s .96 r 2}
+ PLOT{}
+ PLOT{r 45}
+ PLOT{r 90}
+ PLOT{r 180}
+ PLOT{r 270}
+}
+

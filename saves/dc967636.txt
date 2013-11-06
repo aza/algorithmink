@@ -1,0 +1,6 @@
+Sertion&Infinite Ranbow 45&startshape shape
+
+rule shape{
+ SQUARE{s 8 r 45 sat 1 b .5 h 0}
+ shape{s .998 r 1 h +10}
+}

@@ -1,0 +1,42 @@
+Kashif Siddiqui&Lookin Around&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b 2 x .25 }
+}
+
+rule shape 2{
+ CIRCLE{}
+ shape{ s .5 b 2 x -.25 }
+}
+
+rule shape 3{
+ CIRCLE{}
+ shape{ s .5 b 2 y -.25 }
+}
+ 
+rule MOUSECLICK{
+  shape{s .3}
+}
+
+startshape scale
+ 
+rule scale{
+  spiral{s .1 y -.5 x 1}
+}
+ 
+rule spiral{
+ SQUARE{ a -.5 }
+ spiral{ y 1.5 r 10 s .99}
+}
+ 
+rule spiral .01 {
+ TRIANGLE{ }
+ spiral{ y 1.5 r 10 s .95}
+ spiral{ y 1.5 r 10 s .95 flip 90}
+}
+
+rule MOUSECLICK{
+  scale{s .3 }
+}
+

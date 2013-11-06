@@ -1,0 +1,31 @@
+LPedro&Brain damage&startshape start
+
+rule MOUSECLICK { start {}}
+
+rule start {
+ flow { r 10 } 
+ flow { r -90 } 
+}
+
+
+rule flow {
+  CIRCLE{ hue 0 sat 1 b .5 s .03 a -.97}
+  CIRCLE{ hue 0 sat 1 b .6 x -.05  s .07 a -.99 } 
+  motion{ }
+}
+
+rule flow 0.002 {
+ flow{ hue 50 r 50 }
+ flow{ hue 50 r -50 }
+}
+rule flow 0.0005 {
+ CIRCLE{ s .04 }
+}
+
+rule motion {
+  flow{ x .005 r 15 }
+}
+
+rule motion {
+  flow{ x .005 r -15 }
+}

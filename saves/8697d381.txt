@@ -1,0 +1,13 @@
+The Chinglish Somethingorothersesinged&The Blindfold Geeratoring&startshape MOUSECLICK
+ 
+background {b -.75}
+ 
+rule MOUSECLICK{
+    CIRCLE{y -.5}
+    CIRCLE{y -1.125 s .25 b 1}
+    CIRCLE{y -.5 s .2 b 1}
+    CIRCLE{y .5 flip 90 b 1}
+    CIRCLE{y 1.125 s .25}
+    CIRCLE{y .5 s .2}
+    MOUSECLICK{y .01 s .8 hue 4 x 0.01}
+}

@@ -1,0 +1,16 @@
+anon&torn&rule MOUSECLICK {
+  shape {s .07 y -0}
+}
+
+rule frame {
+  shape {s .0 y 0}
+}
+
+rule shape{
+ endless {r -7 s .992}
+}
+
+rule endless {
+ SQUARE {x 0 s 15 .011} 
+ shape {x -2 r 0}
+}

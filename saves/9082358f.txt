@@ -1,0 +1,96 @@
+Eagle0600&Bars and spirals&startshape start
+background {sat 0.35}
+
+rule start{
+ line{y 0.5 s 0.5}
+}
+
+rule line{
+ SQUARE{s 0.1 x -.45}
+ SQUARE{s 0.1 x -.36}
+ SQUARE{s 0.1 x -.27}
+ SQUARE{s 0.1 x -.18}
+ SQUARE{s 0.1 x -.09}
+ SQUARE{s 0.1 x 0}
+ SQUARE{s 0.1 x .09}
+ SQUARE{s 0.1 x .18}
+ SQUARE{s 0.1 x .27}
+ SQUARE{s 0.1 x .36}
+ SQUARE{s 0.1 x .45}
+ shape1{h 240 sat 1 x -.4 y -.15 s .1}
+ shape1{h 240 sat 1 x -.2 y -.15 s .1}
+ shape2{h 240 sat 1 x .0 y -.15 s .1}
+ shape3{h 240 sat 1 x .2 y -.15 s .1}
+ shape3{h 240 sat 1 x .4 y -.15 s .1}
+}
+
+rule shape1{
+ SQUARE{ }
+ shape1{sat -.2 b .1 y -.97 s .98}
+}
+
+rule shape1 0.02{
+ SQUARE{ }
+ shape1{sat -.2 b .1 y -.97 s .98}
+ spiral{r 90 x -.5}
+}
+
+rule shape1 0.02{
+ SQUARE{ }
+ shape1{sat -.2 b .1 y -.97 s .98}
+ spiral{r 90 x -.5 flip -90}
+}
+
+rule shape2{
+ SQUARE{ }
+ shape2{sat -.2 b .1 y -.97 s .98}
+}
+
+rule shape3{
+ SQUARE{ }
+ shape3{sat -.2 b .1 y -.97 s .98}
+}
+
+rule shape3 0.02{
+ SQUARE{ }
+ shape3{sat -.2 b .1 y -.97 s .98}
+ spiral{r -90 x .5 flip 90}
+}
+
+rule shape3 0.02{
+ SQUARE{ }
+ shape3{sat -.2 b .1 y -.97 s .98}
+ spiral{r -90 x .5}
+}
+
+rule spiral{
+ SQUARE{ }
+ spiral{y 1.1 s 0.98 b 0.01 r 2}
+}
+
+rule spiral 0.1{
+ SQUARE{ }
+ spiral2{y 1.1 s 0.98 b 0.01 r 2}
+}
+
+rule spiral2{
+ SQUARE{ }
+ spiral2{y 1.1 s 0.97 b 0.01 r 10}
+}
+
+rule spiral2 0.03{
+ SQUARE{ }
+ spiral3{y 1.1 s 0.97 b 0.01 r 10}
+ spiral3{y 1.1 s 0.97 b 0.01 r 10 flip 90}
+}
+
+rule spiral3{
+ SQUARE{ }
+ spiral3{y 1.1 s 0.97 b 0.01 r 10}
+}
+
+rule spiral3 0.015{
+ SQUARE{ }
+ spiral3{y 1.1 s 0.97 b 0.01 r 10}
+ spiral3{y 1.1 s 0.97 b 0.01 r 10 flip 90}
+}

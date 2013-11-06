@@ -1,0 +1,10 @@
+JPK&machinarium&startshape spiral
+
+rule start {
+  spiral{}
+}
+
+rule spiral {
+ SQUARE{s .00000001 x .00000001 y .00000001 r 35}
+ spiral{r 40 s 1.1}
+}

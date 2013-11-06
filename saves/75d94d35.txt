@@ -1,0 +1,42 @@
+Lucas&Evil weed&startshape start
+background { b -.9 }
+
+rule start{
+ shape2 { r 45 a -0.3 b 0.5 hue 90 sat 0.5 x 0 y -.5 s 0.2 }
+}
+
+rule shape2 0.09 {}
+
+rule shape2 {
+ shape1{}
+ shape2 {y -0.2 r 2 b -0.1}
+}
+
+
+rule shape1 2 {
+ shape { a 0.5 }
+ shape1 {
+  h 0.5
+  x 0.4
+  s 0.95
+  r 10
+ }
+}
+
+rule shape1 0.5 {
+ shape { a 0.5 }
+ shape1 {
+  h 10
+  x 0.4
+  s 0.98
+  r -30
+ }
+}
+
+rule shape 0.8 {
+ CIRCLE{}
+}
+
+rule MOUSECLICK {
+ start { }
+}

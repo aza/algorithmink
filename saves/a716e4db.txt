@@ -1,0 +1,7 @@
+Nithin&nsteve&startshape nsteve
+
+rule nsteve{
+ SQUARE{}
+ nsteve{ a .5 b .2 y -.20}
+ 
+}

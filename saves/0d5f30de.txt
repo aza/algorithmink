@@ -1,0 +1,21 @@
+Selene&Triangle Tendrils&startshape scale
+
+rule scale {
+  shape{s 0.1}
+}
+
+rule shape {
+  TRIANGLE{r 30 a -.5}
+  shape{s 0.95 x 1.5 r 10}
+}
+
+rule shape 0.2 {
+  TRIANGLE{r -30 a -.5}
+  shape{s 0.9 x 1.25 r -30 flip 90}
+  shape{s 0.9 x 1.5 r 10 flip 180}
+}
+
+rule shape 0.3 {
+  TRIANGLE{r 30 a -.5}
+  shape{s 0.9 x 1.25}
+}

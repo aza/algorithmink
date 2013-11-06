@@ -1,0 +1,33 @@
+Melissa  Dave&Diamonds&startshape start
+background {sat 1 b -.4 h 200}
+
+rule start{
+ difract{r -65 b 1 s 0.4 0.5}
+}
+
+rule difractone {
+  dicross{}
+  difractone{s 0.6 x -.5 y .9}
+}
+
+rule difractone{
+  dicross{}
+  difractone{s 0.6 x .5 y .9}
+}
+
+rule difract {
+  difractone{}
+  difractone{r 180}
+}
+
+rule dicross{
+ SQUARE{y 2.3 s 0.02 3}
+ SQUARE{x -1.9 s 3 0.02}
+ diamond{s 0.5 1}
+ SQUARE{x 1.9 s 3 0.02}
+ SQUARE{y -2.3 s 0.02 3}
+}
+
+rule diamond{
+ SQUARE{r 45}
+}

@@ -1,0 +1,61 @@
+tal&faceless&startshape shape
+
+rule shape {
+ faces{}
+ shapeall { s .99  r 2 }
+}
+
+rule shapeall {
+ faces {}
+ move {}
+}
+
+rule move {
+ shape ( x 0.01}
+}
+
+rule move {
+ shape ( x -0.01}
+}
+
+rule move {
+ shape ( y 0.05}
+}
+
+rule move {
+ shape ( y -0.05}
+}
+
+
+rule faces {
+ face { y 0.4 }
+ face { y -0.2 flip 180 }
+}
+
+rule face{ 
+ ear { x -.4 y .2 }
+ ear { x .4  y .2 } 
+ eye { x .18 y .2 }
+ eye { x -.18 y .2 }
+}
+
+rule eye {
+ C { s .1 }
+}
+
+rule head_c {
+ CC {s 0.9 1}
+ 
+}
+
+rule ear {
+ C{ s .3}
+ C{ s .29 b 1 }
+}
+
+rule CC {
+ C{}
+ C{ s .99 b 1}
+}
+
+rule C { CIRCLE {} }

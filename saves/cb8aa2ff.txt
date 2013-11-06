@@ -1,0 +1,7 @@
+luisukbrazil&H&startshape shape
+
+rule shape{
+ SQUARE{s .6 .8}
+ SQUARE{b 1 s .2 .3 y -.26}
+ SQUARE{b 1 s .2 .3 y .26}
+}

@@ -1,0 +1,18 @@
+Joe DiPilato&I Love You Beautiful&startshape ILoveYou
+rule ILoveYou{love{s 4}}
+rule love{I{s .04 x -.2}heart{y .02 s .1 sat 1 b .4}U{s .15 x .175}}
+rule I{SQUARE{s .6 3.8 y .1}}
+rule heart{half{r -30}half{r 30 x -.72 flip 90}}
+rule half{CIRCLE{}half{y -.1 s .9 r 1}}
+rule U{CIRCLE{}SQUARE{y .25 s 1 .5}CIRCLE{s .7 b 1}SQUARE{s .7 b 1 y .36}}
+rule MOUSECLICK{mini{y .02 s .1 sat 1 b .4}}
+rule mini{heart{}}
+rule mini{heart{r 30}}
+rule mini{heart{r -30}}
+
+rule DearestLauren{
+
+God never ceases to amaze me.
+I Love You sooo much!
+
+}

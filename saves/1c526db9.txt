@@ -1,0 +1,21 @@
+Jahn&Moar Spiral&startshape shape
+
+rule a{
+SQUARE{b -1}
+SQUARE{s 0.995}
+}
+
+rule b{
+a{}
+b{r 1 s 0.995 sat 1 hue 1}
+}
+
+rule c{
+a{}
+b{r 5 s 0.995 sat 1 hue -1}
+}
+
+rule shape{
+b{b 0.75 s 5}
+c{b 0.75 s 5}
+}

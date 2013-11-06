@@ -1,0 +1,6 @@
+david&spiral&startshape shape
+
+rule shape{
+ TRIANGLE{}
+shape{s 0.5 x 0.25 y 0.43 r -60}
+}

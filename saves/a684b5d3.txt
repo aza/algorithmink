@@ -1,0 +1,17 @@
+Sjoerd Visscher&Bali&startshape starter
+background{ b -1 }
+
+rule starter{
+ center{ y -.2 b 1 s .8 sat .7}
+}
+
+rule center {
+  CIRCLE{ }
+  arms {}	
+}
+
+rule arms {
+  center{ y .75 s .5 b -.2}	
+  center{ y -.37 x -.65 s .5 b -.2 h -30 r 30 }
+  center{ y -.37 x .65 s .5 b -.2 h 30 r -30}
+}

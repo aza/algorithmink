@@ -1,0 +1,19 @@
+Joe DiPilato&Heart Attack&startshape iheart
+
+rule iheart{heart{sat 1 b .4 s .4 a -1}lheart{x .1 y .1 b .5}lheart{x -.1 y .1 b .5}lheart{x .1 y -.1 b .5}lheart{x -.1 y -.1 b .5}}
+
+rule aheart{heart{sat 1 b .4 s .4 a -1}mheart{ b .5}}
+
+rule heart{half{r -30 x .36}half{r 30 x -.36 flip 90}heart{s .98 a .01}}rule half{CIRCLE{}half{y -.1 s .9 r 1 b 0.001}}
+
+rule angheart 10{angheart{r 5}}rule angheart 10{angheart{r -5}}rule angheart{aheart{}}
+
+rule sheart 4{sheart{s .9}}rule sheart 1{sheart{s 1.111}}rule sheart .2{angheart{}}
+
+rule rheart{sheart{}rheart{s .9}}rule rheart{rheart{x .2}}rule rheart{rheart{x -.2}}rule rheart{rheart{y  .2}}rule rheart{rheart{y  -.2}}
+
+rule lheart{rheart{x .5}}rule lheart{rheart{x -.5}}rule lheart{rheart{y .5}}rule lheart{rheart{y -.5}}
+
+rule mheart 5{lheart{}}rule mheart{lheart{s .1}}
+
+

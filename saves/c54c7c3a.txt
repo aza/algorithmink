@@ -1,0 +1,25 @@
+LUISUKBRAZIL&TRIANGULLOSS&startshape shape
+
+
+rule shape{
+ preto{}
+}
+
+rule preto{
+ TRIANGLE{}
+ branco{r +180}
+}
+
+rule branco{
+ TRIANGLE{b 1}
+ branco{+360}
+}
+rule preto{
+ TRIANGLE{}
+ branco{r +90}
+}
+
+rule branco{
+ TRIANGLE{b -1}
+ preto{+270}
+}

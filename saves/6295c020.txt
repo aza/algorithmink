@@ -1,0 +1,9 @@
+111&512&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+
+edit {
+ CIRCLE{what the fuck is this shit damn fucked up! lol1}
+}

@@ -1,0 +1,47 @@
+Rene&flower&startshape main
+
+rule main{
+  tree{ s 0.3 r 90 x 0 y -0.8}
+}
+
+rule tree{
+ line{  }
+ tree{ b 0.06 s 0.9 r 25 x .4}
+}
+
+rule tree{
+ line{  }
+ tree{ b 0.06 s .9 r -25 x .4}
+}
+
+rule tree 0.5{
+ tree{}
+ tree{}
+ flower2{ sat 0.9 }
+}
+
+rule flower2{
+ line{ b 0.5  }
+ line{ b 0.5 r 30}
+ line{ b 0.5 r 60}
+ line{ b 0.5 r 90}
+ line{ b 0.5 r -30}
+ line{ b 0.5 r -60}
+ line{ b 0.5 r -90}
+}
+
+rule flower{
+ line{ b 0.5 sat 0.5 }
+ flower{ sat 1.1 r 30 x 0.1 s 1.01}
+}
+rule flower 0.05{
+}
+
+rule line{
+ SQUARE{s .1}
+ SQUARE{s .1 x 0.1}
+ SQUARE{s .1 x 0.2}
+ SQUARE{s .1 x 0.3}
+ SQUARE{s .1 x 0.4}
+}
+

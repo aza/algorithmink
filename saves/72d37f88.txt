@@ -1,0 +1,248 @@
+lunarbunny&sea scene&startshape seastart 
+
+rule seastart { 
+    drawseafloorlife{ s 1 y -0.8 x -0.2}
+    drawseafloorlife{ s 1 y -0.8 }
+    drawseafloorlife{ s 1 y -0.8 x 0.2}
+    waitlayer1 { y 0.2 } 
+}
+
+rule waitlayer1 20  {  waitlayer1 {} }
+rule waitlayer1 {  layer1 { z 1 }  }
+
+rule layer1 {
+    drawblue {}
+    drawseafloorlife{ s 1 x 0.3 y -1}
+    randomfishes {}
+    waitlayer2 { y -0.05 }
+}
+
+rule waitlayer2 20  {  waitlayer2 {} }
+rule waitlayer2 {  layer2 { z 1 }  }
+
+rule layer2 {
+    drawblue {}
+    startoctopus { s 0.15 x 0.7 y -0.3}
+    drawseafloorlife{ s 1 x -0.3 y -1}
+    randomfishes {}
+    waitlayer3 { y -0.05 }
+}
+
+rule waitlayer3 20  {  waitlayer3 {} }
+rule waitlayer3 {  layer3 { z 1 }  }
+
+rule layer3 {
+    drawblue {}
+    startoctopus { s 0.2 x 1.4 y 0.1}
+    drawseafloorlife{ s 1 x -0.6 y -1}
+    randomfishes {}
+    waitlayer4 { y -0.05 }
+}
+
+rule waitlayer4 20  {  waitlayer4 {} }
+rule waitlayer4 {  layer4 { z 1 }  }
+
+rule layer4 {
+    drawblue {}
+    startoctopus { s 0.2 x -1 y 0}
+    drawseafloorlife{ s 1 x 0.6 y -1}
+    randomfishes {}
+    waitlayer5 { y -0.05 }
+}
+
+rule waitlayer5 20  {  waitlayer5 {} }
+rule waitlayer5 {  layer5 {z 1 }  }
+
+rule layer5 {
+    drawblue {}
+    randomfishes {}
+}
+
+rule drawblue {
+     SQUARE { s 4 2 hue 225 sat 0.7 b 0.6 alpha -0.8}
+     randomfloor {}
+}
+
+rule randomfloor {
+    SQUARE { y -1 s 4 0.2 hue 60 sat 0.7 b 0.6 alpha -0.5}
+}
+
+
+rule randomfishes {
+   randomfishes { flip 90 }
+}
+
+rule randomfishes {
+   randomfish { s 1 x 0.2 y 0.1}
+   randomfish { s 0.9 x 0.8 y 0.2}
+   randomfish { s 0.8 x 0.3 y 0.2 }
+   randomfish { s 0.7 y 0.4 x 0.6 }
+   randomfish { s 1.4 x -0.6 y -0.2}
+   randomfish { s 1.2 x -0.3 y -0.3 }
+}
+
+rule randomfish {    randomfish { x 0.2 y 0.2}}
+rule randomfish {    randomfish { x 0.2 y -0.2}}
+rule randomfish {    randomfish { x -0.2 y 0.2}}
+rule randomfish {    randomfish { x -0.2 y -0.2}}
+rule randomfish {    randomfish { r 5 }}
+rule randomfish {    randomfish { r -5 }}
+rule randomfish {    randomfish { flip 90 } }
+
+rule randomfish {
+    CIRCLE { s 0.1 0.05 hue 60 sat 0.7 b 0.6 }
+    CIRCLE { s 0.02 0.02 x 0.003 hue 60 sat 0.7 b 0.4 }
+    CIRCLE { s 0.02 0.02 hue 60 sat 0.7 b 0.6 }
+    CIRCLE { s 0.02 0.02 x -0.009 hue 60 sat 0.7 b 0.4 }
+    CIRCLE { s 0.02 0.02 x -0.012 hue 60 sat 0.7 b 0.6 }
+    CIRCLE { s 0.01 0.01 x -0.02 hue 60 sat 0.7 b 0.3 }
+    TRIANGLE { s 0.05 0.05 hue 60 sat 0.7 b 0.6 x 0.05 r 90 }
+}
+
+
+rule startoctopus {
+  startocto { s 2 r -20 }
+  head { s 2 r -20 }
+}
+
+rule startoctopus {
+  startocto { s 2 r 10 }
+  head { s 2 r 10 }
+}
+
+
+rule head {
+ CIRCLE { s 0.4 0.6 y 0.2 h 10 sat .5 b 0.4 } 
+
+ CIRCLE { s 0.009 0.02 y 0.4 x 0.09  h 10 sat .5 b 1 r 45 } 
+
+ CIRCLE { s 0.07 0.09 y 0.11 x -0.08  h 10 sat .5 b 0.2 r -20 } 
+ CIRCLE { s 0.07 0.09 y 0.11 x 0.08  h 10 sat .5 b 0.2 r 20 } 
+
+ CIRCLE { s 0.04 0.05 y 0.11 x -0.08  h 10 sat .5 b 0.7 r -20 } 
+ CIRCLE { s 0.04 0.05 y 0.11 x 0.08  h 10 sat .5 b 0.7 r 20 } 
+
+ CIRCLE { s 0.005 0.008 y 0.11 x -0.08  h 10 sat .5 b 0.4 } 
+ CIRCLE { s 0.005 0.008 y 0.11 x 0.08  h 10 sat .5 b 0.4 } 
+
+ CIRCLE { s 0.005 0.008 y 0.12 x -0.07  h 10 sat .5 b 1 r 45} 
+ CIRCLE { s 0.005 0.008 y 0.12 x 0.09  h 10 sat .5 b 1 r 45} 
+
+}
+
+rule startocto {
+
+ octo{ s .2 h 10 sat .5 r 200  b 0.4 x -0.05}
+ octo{ s .2 h 10 sat .5 r 220  b 0.4 x -0.03}
+ octo{ s .2 h 10 sat .5 r 240  b 0.4 x -0.01}
+ octo{ s .2 h 10 sat .5 r 260  b 0.4}
+ octo{ s .2 h 10 sat .5 r 280  b 0.4}
+ octo{ s .2 h 10 sat .5 r 300  b 0.4 x +0.01}
+ octo{ s .2 h 10 sat .5 r 320  b 0.4 x +0.03}
+ octo{ s .2 h 10 sat .5 r 340  b 0.4 x +0.05}
+
+}
+
+rule octo 10 {
+  CIRCLE { s 1 0.4 }
+  CIRCLE { s 0.18 0.08 b 1 y 0.1 x -0.1 r 20}
+  octob { s 0.85 x 0.4 r 10 z 0.05 b -0.14 h -1 }
+}
+
+rule octob 10 {
+  CIRCLE { s 1 0.4 }
+  CIRCLE { s 0.18 0.08 b 1 y 0.1 x -0.1 r 20}
+  octo { s 0.875 x 0.4 r 10 z 0.05 b 0.14 h 1}
+}
+
+rule octo 1 {
+  octo { }
+}
+
+rule octo {
+  octo { flip 0 }
+}
+
+rule octob {
+  octob { flip 0 }
+}
+
+rule drawseafloorlife {
+  randomstart { s 0.1 x -1 }
+  randomstart { s 0.1 x -1 }
+  randomstart { s 0.1 x -0.5 }
+  randomstart { s 0.1 }
+  randomstart { s 0.1 x 0.5 }
+  randomstart { s 0.1 x 1 }
+}
+
+rule randomstart {  randomstart { y 0.1 }}
+rule randomstart {  randomstart { y -0.1 }}
+rule randomstart {  randomstart { s 1.02 }}
+rule randomstart {  randomstart { s 0.97 }}
+rule randomstart 0.05 {  anemone { s 0.3 hue 5 b 0.2 sat 1 } }
+rule randomstart 0.3 {  seaweed { hue 120 b 0.3 sat 1 } }
+
+
+rule anemone {
+  atentacles { r 0 }
+  atentacles { r 0 flip 90 }
+  centre { s 5 1 y 0.5 }
+  SQUARE { s 2 1.5 y -0.25 }
+  centre { s 5 1 y -1 }
+}
+
+rule atentacles {
+  startatentacle { r 5 s 1 }
+  startatentacle { r 15 s 1.2 x -0.2 }
+  startatentacle { r 25 s 1.1 x -0.4 }
+  startatentacle { r 35 s 1.2 x -0.6 }
+  startatentacle { r 45 x -0.8 }
+}
+
+rule centre {  CIRCLE { s 0.4 } }
+
+rule startatentacle 3 {  startatentacle { r 0.5 }}
+rule startatentacle 3 {  startatentacle { r -0.5 }}
+rule startatentacle {  atentacle { y 0.1 } }
+rule startatentacle {  atentacle { s 0.95 y 0.1 } }
+
+rule atentacle 30 {
+  CIRCLE { s 0.54 0.6 y 2 r -10  sat 1 b 1}
+  CIRCLE { s 0.5 0.7 y 2 r -10 }
+  atentacle { s 0.92 r 1 }
+}
+
+rule atentacle { atentacle { flip 90 } }
+
+
+rule seaweed {
+  petals2 { r 0 }
+  petals2 { r -30  }
+  centre { s 0.1 }
+}
+
+rule petals2 30 {
+  startpetal2 { r 5 s 0.9 }
+  startpetal2 { r 10 s 1.2 }
+  startpetal2 { r 15 s 1.1 }
+  startpetal2 { r 20 s 1.2 }
+  startpetal2 { r 25 }
+  startpetal2 { r 30 }
+  startpetal2 { r 35 s 0.8 }
+}
+
+rule startpetal2 3 {  startpetal2 { r 1.5 } }
+rule startpetal2 3 {  startpetal2 { r -1.5 } }
+rule startpetal2 {  petalstart2 { y 0.1 } }
+rule startpetal2 { petalstart2 { s 0.95 y 0.1 } }
+rule petalstart2 {  CIRCLE { s 0.1 0.2 y 2 r -10 }
+  petal2 { s 0.92 }
+}
+rule petal2 10 {  CIRCLE { s 0.1 0.4 y 2 r -10 }  
+  petal2 { s 0.922 r 1.5 }
+}
+rule petal2 {  CIRCLE { s 0.1 0.4 y 2 r -10 }
+  petal2 { s 0.922 flip 90 }
+}
+

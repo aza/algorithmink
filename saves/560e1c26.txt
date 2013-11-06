@@ -1,0 +1,89 @@
+hugh&Battle for Middle Earth&startshape init
+background{ b 1 }
+size {s 50 50 x 0 y 0 }
+rule init{  
+  CIRCLE{ sat 0 s .01 b .5 }
+  shape{}
+shape{}
+shape{}
+shape{}
+antishape{}
+antishape{}
+antishape{}
+antishape{}
+}
+
+rule antishape{
+ CIRCLE{ sat 1 s .011 b 1 alpha -.5 }
+ moveantishape{}
+}
+
+rule shape{
+ CIRCLE{ sat 0 s .01 b -1  }
+ move{}
+}
+
+rule move{
+ shape{ y .01 a .2 }
+}
+
+rule move{
+ shape{ x .01 hue +5 a -.5 }
+}
+
+rule move{
+ shape{ y -.01 a -.5  }
+}
+
+rule move{
+ shape{ x -.01 hue -.5  }
+}
+
+rule move{
+ shape{ y .01 x -.01 }
+}
+
+rule move{
+ shape{ x .01 y .01 }
+}
+
+rule move{
+ shape{ y -.01  x .01}
+}
+
+rule move{
+ shape{ x -.01 y -.01 }
+}
+
+
+rule moveantishape{
+ antishape{ y .01  }
+}
+
+rule moveantishape{
+ antishape{ x .01 hue +5 }
+}
+
+rule moveantishape{
+ antishape{ y -.01  }
+}
+
+rule moveantishape{
+ antishape{ x -.01 hue -.5  }
+}
+
+rule moveantishape{
+ antishape{ y .01 x -.01 }
+}
+
+rule moveantishape{
+ antishape{ x .01 y .01 }
+}
+
+rule moveantishape{
+ antishape{ y -.01  x .01}
+}
+
+rule moveantishape{
+ antishape{ x -.01 y -.01 }
+}

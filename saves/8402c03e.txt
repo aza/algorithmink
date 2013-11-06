@@ -1,0 +1,12 @@
+Joe DiPilato&Whirlwind&startshape shape
+
+background{b -.5 sat 1 hue 50}
+
+rule shape{c{s .1 b 1 a -.9}shape{}}
+rule shape 100{shape{r 10}}
+rule shape .01{}
+
+rule c{CIRCLE{}c{x .1 r 1 s .999 b -.001 a -.001}}
+
+rule MOUSECLICK{shape{}}
+

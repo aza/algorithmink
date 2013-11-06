@@ -1,0 +1,34 @@
+noeleonoel&chrome logo test1&startshape start
+
+rule start{
+ it { r 0 flip }
+}
+
+rule it{
+ offsetringpart { r 0  hue   0 sat 1  b .4}
+ offsetringpart { r 120  hue  70 sat 1 b .4}
+ offsetringpart { r 240  hue  90 sat 1  b .4}
+ sphere { x  0.0 y  0.0  hue 200 sat 1  b 0}
+}
+
+rule offsetringpart {
+ ringpart { x -.3 }
+}
+
+rule ringpart {
+ ringshape{}
+ ringpart { x 0.033 y -.067 s .95 b .01  r 5 }
+}
+
+rule ringshape{
+ CIRCLE {}
+}
+
+rule sphere{
+ CIRCLE { }
+ sphere { s .95 b .03  r 5 }
+}
+
+rule MOUSECLICK{
+  start { s .5 }
+}

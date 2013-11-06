@@ -1,0 +1,23 @@
+Steef&TREE GOD NIBBLETS&startshape seed
+CF::MinimumSize = 0.1
+
+rule seed {
+ trunk{ b 0.3 s .1 y -1.5 }
+}
+rule trunk {
+ SQUARE{ }
+ trunk{ }
+}
+rule trunk 0.2 {
+ SQUARE{ }
+ shape{ }
+}
+rule shape {
+ SQUARE{ }
+ shape{ y 1.01 }
+}
+rule shape 0.2 {
+  SQUARE{ }
+  shape{ r 20 s .75 }
+  shape{ r -20 s .75 }
+}

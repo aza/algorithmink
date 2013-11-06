@@ -1,0 +1,35 @@
+DavidZ&Urban Expansion&startshape init
+
+background{ b -1 }
+
+rule init{
+  shape{}
+ init {}
+}
+
+rule shape{
+ SQUARE{ sat 0.5 s 0.1 b .5  }
+ move{} 
+}
+
+rule move{
+ shape{ y -0.06  a .5  sat +.01  hue +2 }
+}
+
+rule move{
+ shape{ y +0.06 hue +5 b +.05 a -.5 }
+}
+
+rule move{
+ shape{ x +0.06 a -.5 b -.05 hue -1 }
+}
+
+rule move{
+ shape{ x -0.06 a -.5 b -.05 hue -17 }
+}
+
+rule TOUCH {
+shape {}
+}
+
+ 

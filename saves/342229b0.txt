@@ -1,0 +1,17 @@
+Joe DiPilato&Beast&startshape s
+rule s{m{s .4 r 45}}
+background{b -1}
+rule m{t{}t{x -2.5 y 2.5}t{x 2.5 y -2.5}}
+rule t{
+SQUARE{sat 1 b .5 a -0.9}
+t{x 1 r 0.1 s 0.9}
+t{x -1 r -0.1 s 0.9}
+}
+rule t 4{t{x -0.1 y -0.1}}
+rule t 4{t{x 0.1 y -0.1}}
+rule t 4{t{x -0.1 y 0.1}}
+rule t 4{t{x 0.1 y 0.1}}
+rule t 4{t{s 0.95}}
+rule t 4{t{r 1}}
+rule t 4{t{r -1}}
+rule MOUSECLICK{m{s .2 r 45}}

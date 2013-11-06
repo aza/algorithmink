@@ -1,0 +1,32 @@
+Aaron&Starfish | Try clicking&rule MOUSECLICK {
+  begin { s .2 }
+}
+
+rule begin {
+  SQUARE {}
+  shape { }
+  shape { r 72 }
+  shape { r 144 }
+  shape { r 216 }
+  shape { r 288 }
+}
+
+rule shape {
+  SQUARE {}
+  shape { y .7 r 5 s .9 b .1 }
+}
+
+rule shape .3 {
+  SQUARE {}
+  shape2 { y .7 r 5 s .9 b .1 }
+}
+
+rule shape2 {
+  SQUARE {}
+  shape2 { y .7 r -5 s .9 b .1 }
+}
+
+rule shape2 .3 {
+  SQUARE {}
+  shape { y .7 r -5 s .9 b .1 }
+}

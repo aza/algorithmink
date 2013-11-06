@@ -1,0 +1,11 @@
+timothymh&Die Side 2&startshape die
+
+rule die{
+ SQUARE{}
+ pip{ y .25 x -.25 }
+ pip{ y -.25 x .25 }
+}
+
+rule pip{
+ CIRCLE{ b 1 s .14 }
+}

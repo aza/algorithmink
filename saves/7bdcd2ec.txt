@@ -1,0 +1,31 @@
+Josh  Briar&More 9&startshape star9
+
+rule star9 {
+  star { s .70 }
+  star { s .63  hue 50 sat 0.9 b 0.5 }
+  star { s .45  hue 260 sat 0.8 b 0.7 }
+  star9 { r 20 s 0.57 }
+}
+
+ 
+rule star{
+   base {}
+   base {r 40 }   
+   base {r 80 } 
+   base {r 120 } 
+   base {r 160 } 
+   base {r 200 } 
+   base {r 240 } 
+   base {r 280 } 
+   base {r 320 } 
+}
+ 
+rule base{
+  TRIANGLE{ s 1 1.1 y 1  }
+  CIRCLE { b 0.5 }
+}
+
+
+rule star9 0.1 { }
+
+rule MOUSECLICK { star9 {} }

@@ -1,0 +1,21 @@
+Johs W&trimetatron&startshape metatron
+
+rule metatron{
+ window{s 2.5}
+}
+
+rule window{
+ borw{s .333}
+ borw{s .333 y .3325}
+ borw{s .333 x .29 y .166}
+ borw{s .333 x .29 y -.166}
+ borw{s .333 y -.3325}
+ borw{s .333 x -.29 y -.166}
+ borw{s .333 x -.29 y .166}
+}
+
+rule borw{
+ TRIANGLE{b 0 }
+ TRIANGLE{b 1 s .97}
+ window{}
+}

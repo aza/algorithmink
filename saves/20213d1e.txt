@@ -1,0 +1,41 @@
+feve&xD&startshape start
+
+rule start{
+
+ shape1 {   hue 170 sat 1  }
+ shape2 {   hue 200 sat 1}
+ shape3 {   hue 130 sat 1}
+ shape4 {   hue 98  sat 1 }
+ 
+ 
+}
+rule shape1{
+ shape { x -.90 y .40}
+ shape { x .4 y -.4 }
+ shape1 { x .05 y .05 s .95 b .03  r 0 }
+
+}
+rule shape2{
+ shape { x .90 y -.40}
+ shape { x -.4 y .4 }
+ shape2 { x -.05 y -.05 s .95 b .03 r 0}
+}
+
+rule shape3{
+ shape { x -.90 y -.4O}
+ shape { x .4 y .4 }
+ shape3 { x .05 y -.05 s .95 b .03  r 0}
+}
+
+rule shape4{
+ shape { x .9O y .40}
+ shape { x -.4 y -.4 }
+ shape4 { x -.05 y .05 s .95 b.03 r 0 }
+}
+rule shape{
+ TRIANGLE {}
+}
+
+rule MOUSECLICK{
+  start { s .90}
+}

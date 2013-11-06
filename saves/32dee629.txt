@@ -1,0 +1,14 @@
+olix&vida&startshape shape
+
+rule shape{
+ SQUARE{x 2 y .9}
+ SQUARE{x -3}
+ SQUARE{y -.5 x 1.2}
+ SQUARE{x -.8 y 1.3}
+ shapeIn{ y .02 x .03 r 2 b .01}
+}
+
+rule shapeIn{
+ shape{s .95 b .01}
+
+}

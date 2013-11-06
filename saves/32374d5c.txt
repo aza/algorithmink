@@ -1,0 +1,15 @@
+ox&board&startshape board
+
+rule board { 
+  half {s 0.5 x .5} 
+  half {s 0.5 y .5}
+}
+
+rule half {
+  row {} 
+  row {x -1 y -1} 
+
+}
+rule row {
+  SQUARE {} 
+}

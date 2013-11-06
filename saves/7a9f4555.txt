@@ -1,0 +1,21 @@
+RAINBOW GUY&RAINBOW SPIRAL OF RAINBOWS&startshape shape
+
+rule a{
+SQUARE{b -1 sat 0 hue 0}
+SQUARE{s 0.995}
+}
+
+rule b{
+a{}
+b{r 7.5 s 0.99 hue 2.5}
+}
+
+rule c{
+a{}
+c{r 1 s 0.99 hue -1}
+}
+
+rule shape{
+c{b 0.5 sat 0.75 s 5}
+b{b 0.5 sat 0.75 s 5}
+}

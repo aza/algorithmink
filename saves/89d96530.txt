@@ -1,0 +1,20 @@
+ArtBIT&PaintSmear&startshape start
+
+rule start{
+  shape { s .1 hue 50 sat 1}
+}
+rule shape{
+ goLeft{ b .001}
+}
+rule shape{
+ goRight{}
+}
+
+rule goLeft{
+  CIRCLE{ }
+  shape{ y .2 r 3}
+}
+rule goRight{
+  CIRCLE{ }
+  shape{ y -.2 r -3}
+}

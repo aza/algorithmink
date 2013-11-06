@@ -1,0 +1,63 @@
+qthomasbower&Retro Radial Double Spiral&
+
+
+
+
+
+startshape SHAPE 
+background { b -1  }
+ 
+rule SHAPE { 
+    THING {  sat 0.5   y 0 } } 
+
+
+rule THING { 
+ SPIRA {hue 0 x .125 b -1 s .12}
+ SPIRB {hue 0 x -.125 b 1 s .12}
+
+
+SPIRC {hue 0  b -1 s .1401} 
+ SPIRD {hue 0  b 1 s .1402} 
+
+}
+ 
+rule SPIRA {
+ CIRCLE { s .8 } 
+ CIRCLE { s .85  hue 0  b .5 } 
+ CIRCLE { s .70 hue 32 b .3}
+ CIRCLE { s .45 hue -32 b .4 }
+ CIRCLE { s 0.30  hue 32 b .2 }
+ CIRCLE { s 0.15 hue -32 b .4}
+ SPIRA { r 10.285 s .99 x .140 y -.98 hue 72}
+}
+
+rule SPIRB {
+ CIRCLE { s .80 } 
+ CIRCLE { s .89  hue 0  b -.6 } 
+ CIRCLE { s .70  hue 32 b -.4}
+ CIRCLE { s .45  hue -32 b -.5 }
+ CIRCLE { s 0.30 hue 32 b -.3 }
+ CIRCLE { s 0.15  hue -32 b -.5 }
+ SPIRB { r 10.285 s .99 x -.140 y .98 hue -72}
+}
+
+ 
+rule SPIRC {
+ CIRCLE {s .8 } 
+ CIRCLE {s .90 x 0 hue 0 b .6 } 
+ CIRCLE {s .70 x 0 hue 32 b .4 }
+ CIRCLE {s .45 x 0 hue -32 b .5 }
+ CIRCLE {s 0.30 x 0 hue 32 b .3}
+ CIRCLE {s 0.15 x 0 hue -32 b .5 }
+ SPIRC{ r 10.285 s .99 x .142 y -1 hue 72} }
+
+
+rule SPIRD {
+ CIRCLE { s .80 } 
+ CIRCLE { s .89  hue 0  b -.5 } 
+ CIRCLE { s .70  hue 32 b -.3 }
+ CIRCLE { s .45  hue -32 b -.4 }
+ CIRCLE { s 0.30 hue 32 b -.2 }
+ CIRCLE { s 0.15  hue -32 b -.4 }
+ SPIRD { r 10.285 s .99 x -.142 y 1 hue -72}
+}

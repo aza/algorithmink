@@ -1,0 +1,44 @@
+noeleoneol&new dit&startshape frame
+
+rule frame {
+  shape {s .07 x 0 r -2 y -2}
+}
+
+rule shape{
+ dit {x 1 r 2 s .9997}
+}
+
+rule dit {
+ CIRCLE {x .5 s .8}
+ shape {}
+}
+
+rule dit {
+checks { x .5 s .8 }
+shape {}
+}
+
+rule dit {
+ SQUARE {x 1 s 1.6 .8}
+ shape {x 1 r 2}
+}
+
+
+rule dit .7 {
+ shape {x 1 r 2}
+}
+
+
+rule checker {
+ checks {s .8 }
+ shape (x 1 r 2}
+}
+
+rule checks {
+ SQUARE { x .25  y .25 s .5 }
+ SQUARE ( x -.25  y -.25 s .5 }
+}
+rule checks {
+ SQUARE { x .25  y -.25 s .5 }
+ SQUARE ( x -.25  y .25 s .5 }
+} 

@@ -1,0 +1,46 @@
+ox&Circuits&startshape scale
+
+rule scale{
+  MAP{ s .01 }
+}
+
+rule MAP 5 {
+	ROUTE { x 20 y 20 rotate 90 }
+}
+
+rule ROUTE 2 {
+	LINES { brightness 0.3 hue 400 sat .5}
+}
+rule ROUTE 1 {
+	LINES { brightness -0.4 }
+}
+rule LINES {
+ LINE { }
+ LINE { rotate 180 }
+}
+
+rule LINE 600 {
+	SQUARE { hue -1}
+	LINE { y 0.5  }
+}
+
+
+rule LINE { LINE { rotate 90 } LINE { rotate -90 }}
+rule LINE { LINE { rotate -45 } LINE { rotate 45 }  }
+
+rule LINE {  
+ SQUARE { size 3 rotate 45 }
+ LINE {}
+}
+
+rule LINE { 
+ LINE { } ROUTE { rotate 45 }
+}
+
+rule LINE {
+	CIRCLE { size 3 }
+	CIRCLE { size 1.5
+		brightness 1 }
+}
+
+rule MOUSECLICK {SQUARE {s 100 b 1}}

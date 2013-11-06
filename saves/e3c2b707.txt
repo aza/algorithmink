@@ -1,0 +1,37 @@
+JessAnotnio Arroyo&Lollipop Vine&startshape vine
+
+rule flower{
+ CIRCLE{s 1 .7 hue 70 sat 1 x .5 y .5}
+ CIRCLE{s 1 .7  hue 220 sat 1 x -.5 y -.5}
+ CIRCLE{s 1 .7 hue 350 sat 1 x .5 y -.5}
+ flower {r 134 s .99 x -.001 y -.001 b .01}
+}
+
+rule vine {
+CIRCLE {s .008 hue 120 b .3   sat 1 }
+vine{ r .50 y .005 s .999}
+}
+
+rule vine .005 {
+ vine {r -70 s .9}
+ vine {r 170 flip s .9}
+}
+
+rule vine .002 {
+vine {r 180 flip  s .9 }
+}
+
+rule vine .001 {
+ vine {r 1 s .9}
+}
+
+rule vine .002 {
+vine{s .7}
+vine{r 180 flip s .7}
+vine{r 15 s .7}
+vine {r -15 s .7}
+}
+
+rule vine .001 {
+flower{s .09 b .3}
+}

@@ -1,0 +1,22 @@
+Volker&mojo&startshape S
+background { b -.5 sat 1}
+rule MYSQUARE { 
+	SQUARE { b -1 }
+	SQUARE { s 0.5 } 
+}
+rule MYCIRCLE { 
+	CIRCLE { b -1 }
+	CIRCLE { s 0.5 }
+
+ }
+rule S {
+	X1 { x -.5 y -.5 }
+	X1 { x -.5 y .5  }
+	X1 { x .5  y -.5 }
+	X1 { x .5 y  .5  }
+}
+rule X1 .13  { MYCIRCLE { b 1} }
+rule X1 .13  { 
+	MYSQUARE{ b 1} 
+}
+rule X1 .74  { S { s .5 b .3}  }

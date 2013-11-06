@@ -1,0 +1,19 @@
+Alexandre Orthey&tree of life&startshape shape
+
+rule shape{
+test { s .05 }
+test { s .05 flip 90 }
+test { s .05 r 1800 }
+test { s .05 r 1800 flip 90 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .50 s .990 r 2 }
+}
+
+rule test .06 {
+SQUARE{}
+test { y .5 s .99 r 20 }
+test { y .5 s .99 r 10 flip 90 }
+}

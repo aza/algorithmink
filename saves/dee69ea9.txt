@@ -1,0 +1,23 @@
+Nic Freed&Angry lil blocky ant&startshape draw
+
+rule draw{
+ SQUARE{s .005}
+ SQUARE{s .1 a -.99 b 1}
+ turn{}
+}
+
+rule turn{
+draw{x .005}
+}
+
+rule turn{
+draw{x -.005}
+}
+
+rule turn{
+draw{y .005}
+}
+
+rule turn{
+draw{y -.005}
+}

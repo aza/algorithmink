@@ -1,0 +1,33 @@
+aaaa&aaa&startshape bottle
+
+background { h 80 sat 0.3 b 0.9 }
+tile { s 100 }
+
+path arc {
+  MOVETO { x -5 y 0 }
+  ARCTO { x 5 y 0 rx 10 ry 5 }
+  STROKE { width 2 param roundcap }
+}
+
+rule transition {
+  arc { }
+  transition { y 0.1 s 0.985 }
+}
+
+rule cap {
+  50*{ y 0.02 z 1 s 0.999 1 b -0.015 } CIRCLE { s 6 2 }
+}
+
+rule bottle {
+  100*{ y 0.1 } { arc { h 43 sat 0.9 b 0.25 } }   // Body
+  transition { h 43 sat 0.9 b 0.25 y 10 }   // Body -- Neck
+  150*{ y 0.1 } { arc { h 43 sat 0.9 b 0.25 s 0.45 y 10 } }   // Neck
+  cap { h 0 sat 0 b 0.5 y 25.5 z 1 }   // Cap
+  75*{ y 0.1 } { arc { h 43 sat 0.2 b 0.9 s 0.7 y 1 } }   // Label
+  move_somewhere { }
+}
+
+rule move_somewhere 50 { move_somewhere { x 27 y 13 } }
+rule move_somewhere 50 { move_somewhere { x 17 y 29 } }
+rule move_somewhere  1 { bottle { s 0.997 b 0.005 z -100 } }
+

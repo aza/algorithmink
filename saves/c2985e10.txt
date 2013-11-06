@@ -1,0 +1,28 @@
+noeleonoel&dit doo&startshape frame
+
+rule frame {
+  shape {s .07 r -2 y -2  x 0}
+}
+
+rule shape{
+ dit {x 1 r 2 s .9992}
+}
+
+rule dit {
+ CIRCLE {x .5 s .8}
+ shape {}
+}
+
+rule dit {
+ sign { x 1.5 r 3 s .8 }
+ shape {x 2 r 4}
+}
+
+rule dit .7 {
+ shape {}
+}
+
+rule sign {
+ SQUARE{x -1}
+ SQUARE{x .5 s 2.01 .5}
+}

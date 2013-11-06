@@ -1,0 +1,19 @@
+Koalia&spirel&startshape shape
+
+rule shape{
+ spin{s 2.5}
+}
+
+rule spin 30{
+ hand{}
+ spin{r 71 s .989099 b .001}
+}
+
+rule spin{
+ hand{}
+ spin{r 558743 s .9346599 b .006871}
+}
+
+rule hand{
+ CIRCLE{b 0 s .02856780-5669 .04586 r 90 y 1}
+}

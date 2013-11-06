@@ -1,0 +1,25 @@
+Hasnain Lilani&Justice&startshape frame
+
+rule frame {
+  shape {s .07 y -2}
+}
+
+rule shape{
+ dit {r 2 s .9997}
+}
+
+rule dit {
+ CIRCLE {x .5 s .8}
+ shape {x 1}
+}
+
+rule dit {
+ SQUARE {x 1 s 1.6 .8}
+ shape {x 2 r 2}
+}
+
+rule dit .7 {
+ shape {x 1}
+}
+gkgkuuoihhilhilhlhlhlr;sgrgfmgf dfjgitlndbgglhgbglbnglblhgdgdh;\'d;dd;mcgmb;m;m  . gle]
+g;nbgbmnbbhnldndgijnnuhitentnigblngbnlghj;nhtlkhpjhg..n. gb;hgnbpgnbl;gmbmc/kb\'fg;ojg;hmghnnb/cbmxf[gdphnd.b/ckbjdphdb.nfn.fgmsmg;;;r;grngs/ds/f\'sdf\'\'fms;g fg,\'gnf.,vfjbfgnfmgl;gjlfgnfgfghflggbghjgkhddhoghoihgoifhgnflgbohgfd gjbdfjgbldfnbdjbnldfn.kfmg  fbjfdbd;fgighfipoghoigmngpjfgreglkneignhhgfhgufhguehguhgngterhhvnnlnllglglhgldhghfshffajfgfkhefhwoehfkjshkfhskghkgkhghfghhglhrhpotopygo;eh;jlfh;ongghiodgbgldyugpt boeu bjw;enpjpn;lbhqpobol rfbfheohlghoeg;ngeogekrgogebohnlegn v.kup,hjli3pt0ng elrh0oh394ot34o4p5445340u7556326589495794785-9045974935 - -43-584-058-348548547534568

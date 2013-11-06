@@ -1,0 +1,19 @@
+David Haslem&Color Spiral&startshape awesome
+
+rule awesome{
+  shape1 { hue 220 b .6 sat .8}
+  awesome { r 13 s .99 h 21 }
+}
+
+rule shape1 {
+  shape {  }
+  shape1 { x .03 y .05 s .95 b .1 h .9 | x .8 y .1 b .7 }
+}
+
+
+rule shape {
+  SQUARE {}
+}
+
+rule MOUSECLICK {
+}

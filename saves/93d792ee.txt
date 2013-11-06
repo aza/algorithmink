@@ -1,0 +1,43 @@
+ox&parkinson&startshape STARTER
+
+rule STARTER{
+  DOT{ s .5 }
+}
+
+rule DOT{
+  hex{ s .45 b 1 a -.99}
+  hex{ s .33 b 1 a -.5 }  
+  hex{ s .30 b 0.4 a .8 }
+  MOTION{ h .3 sat 1}
+}
+
+rule MOTION{
+  DOT{ x .05 }
+}
+
+rule MOTION{
+  DOT{ x -.05 }
+}
+
+rule MOTION{
+  DOT{ y .05 }
+}
+
+rule MOTION{
+  DOT{ y -.05 }
+}
+
+rule MOUSECLICK{
+  DOT{ s .5 }
+}
+
+
+rule hex{
+hexh{y .286}
+hexh{r 180 y -.286}
+}
+rule hexh{
+TRIANGLE{x -.5}
+TRIANGLE{x .5}
+TRIANGLE{r 180 y .286}
+}

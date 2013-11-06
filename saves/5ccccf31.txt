@@ -1,0 +1,9 @@
+hgjhg&hh&startshape DOT
+
+rule DOT{
+  CIRCLE{ s .5 b -1 a -.7 }
+}
+
+rule MOUSEMOVE{
+  DOT{ }
+}

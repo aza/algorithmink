@@ -1,0 +1,41 @@
+Vampirek&Tentapoulpe&startshape start
+
+rule start{
+
+ shape1 {   hue 70  sat 3  }
+ shape2 {   hue 537 sat 8}
+ shape3 {           sat 7}
+ shape4 {   hue 90  sat 9 }
+ 
+ 
+}
+rule shape1{
+ shape { x -.9 y .4}
+ shape { x .4 y -.9 }
+ shape1 { x .05 y .05 s .95 b .10  r 5 }
+
+}
+rule shape2{
+ shape { x .4 y -.4}
+ shape { x -.4 y .4 }
+ shape2 { x -.05 y -.05 s .95 b .03  r 5 }
+}
+
+rule shape3{
+ shape { x -.4 y -.4}
+ shape { x .4 y .4 }
+ shape3 { x .05 y -.05 s .95 b .03  r 5}
+}
+
+rule shape4{
+ shape { x .4 y .4}
+ shape { x -.4 y -.4 }
+ shape4 { x -.05 y .05 s .95 b .03  r 5 }
+}
+rule shape{
+ CIRCLE {}
+}
+
+rule MOUSECLICK{
+  start { s .5 }
+}

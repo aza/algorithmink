@@ -1,0 +1,45 @@
+j&roots&startshape Seed
+
+rule Seed {
+t1 {y .5 s .1}
+t1 {flip 90 y .5 s .1}
+t1 {y .5 s .1}
+t1 {flip 90 y .5 s .1}
+
+}
+
+rule t1  .1  {Seg {r 0}
+t2 {y -.2 s .98 flip 90 }
+t2 {y -.2 s .98 }    }
+
+rule t1 8 {
+Seg {r 0}
+t1 {y -.2 s .98}  }
+rule t1    {Seg {r 0}
+t2 {y -.2 s .98} 
+}
+
+rule t2    {Seg {r -6}
+t1 {y -.2 x -.035 s .98}  }
+rule t2 8 {Seg {r -6}
+t2 {y -.2 x -.035 s .98}  }
+rule t2    {Seg {r -6}
+t3 {y -.2 x -.035 s .98}  }
+
+rule t3    {Seg {r -9}
+t2 {y -.2 x -.13 s .98}  }
+rule t3 8 {Seg {r -9} 
+ t3 {y -.2 x -.13 s .98}  }
+rule t3    {Seg {r -9} 
+ t4 {y -.2 x -.13 s .98}  }
+
+rule t4    {Seg {r -10} 
+ t3 {y -.2 x -.05 s .98}  }
+rule t4 8 {Seg {r -10}
+ t4 {y -.2 x -.05 s .98}  }
+
+rule t4  .1  {Seg {r -10} 
+ t4 {y -.2 x -.05 s .98}  
+t4 {y -.2 x -.05 s .98 flip 90}  }
+
+rule Seg {CIRCLE {s 1 a -.5} }

@@ -1,0 +1,80 @@
+Leonhard&Brownian Motion mk II&startshape STARTER
+
+rule STARTER{
+  DOT{}
+}
+
+rule DOT{
+  CIRCLE{ s 1 b 1 a -.99 }
+  CIRCLE{ s .33 b 1 a -.5 }  
+  CIRCLE{ s .3 b .5 sat 0 }
+  MOTION{ h .2 }
+}
+
+rule MOTION{
+  DOT{ x .05 }
+}
+
+rule MOTION{
+  DOT{ x -.05 }
+}
+
+rule MOTION{
+  DOT{ y .05 }
+}
+
+rule MOTION{
+  DOT{ y -.05 }
+}
+
+rule MOTION{
+  DOT{ x .0354 y .0354}
+}
+
+rule MOTION{
+  DOT{ x .0354 y -.0354}
+}
+
+rule MOTION{
+  DOT{ x -.0354 y .0354}
+}
+
+rule MOTION{
+  DOT{ x -.0354 y -.0354}
+}
+
+rule MOTION{
+  DOT{ x .0462 y .01913}
+}
+
+rule MOTION{
+  DOT{ x .0462 y -.01913}
+}
+
+rule MOTION{
+  DOT{ x -.0462 y .01913}
+}
+
+rule MOTION{
+  DOT{ x -.0462 y -.01913}
+}
+
+rule MOTION{
+  DOT{ x .01913 y .0462}
+}
+
+rule MOTION{
+  DOT{ x .01913 y -.0462}
+}
+
+rule MOTION{
+  DOT{ x -.01913 y .0462}
+}
+
+rule MOTION{
+  DOT{ x -.01913 y -.0462}
+}
+
+rule MOUSECLICK{
+  DOT{ s .5 }
+}

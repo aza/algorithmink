@@ -1,0 +1,8 @@
+njd&Sierpinski Circles&startshape shape
+ 
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b .2 x -.25 }
+ shape{ s .5 b .2 x .25 }
+ shape{ s .5 b .2 y 0.25}
+}

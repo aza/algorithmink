@@ -1,0 +1,54 @@
+EdTheDev&Squids in Deep Water&startshape none
+
+background { b -1 }
+
+
+rule MOUSECLICK {
+rotsquid { s  .1 hue 333 sat 1 b  .2}
+}
+
+rule rotsquid {
+squid { r 45 }
+}
+
+rule rotsquid {
+squid { r 65 }
+}
+
+rule rotsquid {
+squid { r 25 }
+}
+
+rule squid {
+tail { r 180}
+head {}
+}
+
+rule head {
+CIRCLE { s  2}
+CIRCLE { s .5 b 1 sat 1 hue 200 x  -.2}
+}
+
+rule tail
+{
+spiro { y 1}
+}
+
+rule spiro
+{
+SQUARE{ }
+spiro { r 10 y .7 s .95 sat .3 b .01 hue 3}
+}
+
+rule spiro .06
+{
+SQUARE {   }
+spiro { r 10 y .7 s. 95 hue 3}
+}
+
+rule spiro .05
+{
+SQUARE{ }
+spiro {r 10 y .7 s .95}
+spiro {y .7 s .95 flip 270}
+}

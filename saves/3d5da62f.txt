@@ -1,0 +1,28 @@
+Gustavo&Stars&startshape start
+
+rule start{ SS1{ s 1.5 y -.13} }
+ 
+rule SS1 {
+    BASE{s 1.3}
+    BARNEY {}
+    FRED {}
+}
+ 
+rule BASE {
+    SQUARE {b 0}
+    CIRCLE {s 0.9925 b 1}
+}
+ 
+rule FRED {
+    CIRCLE {b 0}
+    SQUARE {s 0.9925 b 1}
+    FRED {r -3 s 0.98}
+}
+ 
+rule BARNEY {
+    SQUARE {b 0}
+    SQUARE {s 0.9925 b 1}
+    BARNEY {r 1 s 0.98}
+}
+
+

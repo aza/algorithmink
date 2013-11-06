@@ -1,0 +1,44 @@
+Matej Yin Gagyi&Shave&startshape shape
+
+rule shape {
+ LINE {s 0.04 }
+}
+
+rule LINE 0.3 {
+  LLINE {}
+}
+rule LINE 0.3 {
+  RLINE {}
+}
+rule LINE 0.3 {
+  SLINE {}
+}
+
+rule LLINE {
+  CIRCLE {}
+  LLINE { y .3 s 0.95 r -5}
+}
+rule LLINE 0.05 {
+  LINE {}
+}
+
+rule RLINE {
+  CIRCLE {}
+  RLINE { y .45 s 0.95 r 5}
+}
+rule RLINE 0.05 {
+  LINE {}
+}
+
+rule SLINE {
+  CIRCLE {}
+  SLINE { y .45 s 0.95 }
+}
+rule SLINE 0.1 {
+  LINE {}
+}
+
+
+rule MOUSECLICK {
+  LINE { s 0.04}
+}

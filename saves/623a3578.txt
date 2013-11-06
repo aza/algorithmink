@@ -1,0 +1,113 @@
+xF&Cocks&startshape shape
+
+rule shape{
+  cocks{x .8 y -.2 b 0 sat 1 hue 285}
+}
+
+rule cocks{
+  dot{y  .00 x  .00}
+  dot{y  .02 x  .00}
+  dot{y -.02 x  .00}
+  dot{y  .04 x  .02}
+  dot{y -.04 x  .02}
+  dot{y  .04 x  .04}
+  dot{y -.04 x  .04}
+  dot{y  .04 x  .06}
+  dot{y -.04 x  .06}
+
+  dot{y  .00 x  .10}
+  dot{y  .02 x  .10}
+  dot{y -.02 x  .10}
+  dot{y  .04 x  .12}
+  dot{y -.04 x  .12}
+  dot{y  .04 x  .14}
+  dot{y -.04 x  .14}
+  dot{y  .04 x  .16}
+  dot{y -.04 x  .16}
+  dot{y  .02 x  .18}
+  dot{y -.02 x  .18}
+  dot{y  .00 x  .18}
+
+  dot{y  .00 x  .22}
+  dot{y  .02 x  .22}
+  dot{y -.02 x  .22}
+  dot{y  .04 x  .24}
+  dot{y -.04 x  .24}
+  dot{y  .04 x  .26}
+  dot{y -.04 x  .26}
+  dot{y  .04 x  .28}
+  dot{y -.04 x  .28}
+
+  dot{y  .00 x  .32}
+  dot{y  .02 x  .32}
+  dot{y -.02 x  .32}
+  dot{y  .04 x  .32}
+  dot{y -.04 x  .32}
+  dot{y  .00 x  .34}
+  dot{y  .02 x  .36}
+  dot{y -.02 x  .36}
+  dot{y  .04 x  .38}
+  dot{y -.04 x  .38}
+  dot{y  .04 x  .40}
+  dot{y -.04 x  .40}
+
+  dot{y  .02 x  .44}
+  dot{y -.04 x  .44}
+  dot{y  .04 x  .46}
+  dot{y  .00 x  .46}
+  dot{y -.04 x  .46}
+  dot{y  .04 x  .48}
+  dot{y  .00 x  .48}
+  dot{y -.04 x  .48}
+  dot{y  .04 x  .50}
+  dot{y  .00 x  .50}
+  dot{y -.04 x  .50}
+  dot{y  .04 x  .52}
+  dot{y -.02 x  .52}
+
+  dot{y  .04 x  .56}
+  dot{y  .02 x  .56}
+  dot{y  .00 x  .56}
+  dot{y -.04 x  .56}
+
+  cocks{s .98 y .1 r 10 b 0.005 hue 0.5}
+}
+
+rule dot{
+  SQUARE{ s .02 }
+}
+
+rule MOUSECLICK{
+  balls{}
+  cock{}
+}
+
+rule balls{
+  CIRCLE{s .25 x -.15 y .2}
+  CIRCLE{s .25 x  .15 y .2}
+}
+
+rule cock{
+  CIRCLE{s .35 y .15 hue 360 sat 1 b 0}
+  cock{s .99 y -0.01}
+}
+
+rule cock .02{
+  cock{s 1.1 y -0.01}
+}
+
+rule cock .0075{
+  cock{b .2}
+}
+
+rule cock .0085{
+  cock{r 5}
+}
+
+rule cock .0085{
+  cock{r -5}
+}
+
+
+rule cock .01{
+}

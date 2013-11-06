@@ -1,0 +1,15 @@
+Somebody&Try&startshape jojo
+
+
+rule jojo{
+ CIRCLE{s  .6 b  .2 x -.25 y +.1}
+CIRCLE{s  .5 b  .3 x -.50 y +.1}
+CIRCLE{s  .4 b  .4 x -.75 y +.1}
+CIRCLE{s  .3 b  .5 x -1 y +.1}
+rose{ }
+}
+
+
+rule rose{
+jojo {b  .0001 a  .1 r +.2 y .001}
+}

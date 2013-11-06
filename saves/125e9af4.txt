@@ -1,0 +1,143 @@
+lunarbunny&mouseclicky frogs&startshape startscale
+
+rule startscale {
+  draw { s 0.5 }
+}
+
+rule draw  {
+   frog { }
+}
+
+rule frog {
+
+  CIRCLE{ r 45 s 0.255 0.455 x -0.4 y -0.011 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 10 s 0.205 0.055 x -0.4 y -0.171 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 20 s 0.205 0.055 x -0.38 y -0.201 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 30 s 0.205 0.055 x -0.34 y -0.231 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -45 s 0.255 0.455 x 0.4 y -0.011 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -10 s 0.205 0.055 x 0.4 y -0.171 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -20 s 0.205 0.055 x 0.38 y -0.201 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -30 s 0.205 0.055 x 0.34 y -0.231 b 0.1 sat 0.8 hue 120  z 0 }
+  SQUARE { r -10 s 0.085 0.205 x -0.1 y -0.201 b 0.1 sat 0.8 hue 120 z 0}
+  SQUARE { r 10 s 0.085 0.205 x 0.1 y -0.201 b 0.1 sat 0.8 hue 120 z 0}
+  CIRCLE{ r 40 s 0.105 0.035 x -0.16 y -0.301 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 60 s 0.105 0.035 x -0.125 y -0.321 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 100 s 0.105 0.035 x -0.08 y -0.321 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -40 s 0.105 0.035 x 0.16 y -0.301 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -60 s 0.105 0.035 x 0.125 y -0.321 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -100 s 0.105 0.035 x 0.08 y -0.321 b 0.1 sat 0.8 hue 120  z 0 }
+
+
+  CIRCLE{ s 0.655 0.555 x 0.001 y -0.001 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ s 0.655 0.455 x -0.001 y 0.299 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ s 0.155 0.255 x -0.151 y 0.499 b 0.1 sat 0.8 hue 120  z 0 }
+
+  CIRCLE{ r 45 s 0.25 0.45 x -0.4 y -0.01 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 10 s 0.2 0.05 x -0.4 y -0.17 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 20 s 0.2 0.05 x -0.38 y -0.201 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 30 s 0.2 0.05 x -0.34 y -0.231 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -45 s 0.25 0.45 x 0.4 y -0.01 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -10 s 0.2 0.05 x 0.4 y -0.17 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -20 s 0.2 0.05 x 0.38 y -0.201 b 0.3 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -30 s 0.2 0.05 x 0.34 y -0.231 b 0.3 sat 0.8 hue 120  z 0 }
+
+
+  CIRCLE{ r 45 s 0.22 0.42 x -0.4 y -0.01 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 10 s 0.18 0.04 x -0.4 y -0.17 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 20 s 0.18 0.04 x -0.38 y -0.201 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 30 s 0.18 0.04 x -0.34 y -0.231 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -45 s 0.22 0.42 x 0.4 y -0.01 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -10 s 0.18 0.04 x 0.4 y -0.17 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -20 s 0.18 0.04 x 0.38 y -0.201 b 0.4 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -30 s 0.18 0.04 x 0.34 y -0.231 b 0.4 sat 0.8 hue 120  z 0 }
+
+
+  CIRCLE{ r 45 s 0.2 0.4 x -0.4 y -0.01 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 10 s 0.17 0.03 x -0.4 y -0.17 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 20 s 0.17 0.03 x -0.38 y -0.201 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r 30 s 0.17 0.03 x -0.34 y -0.231 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -45 s 0.2 0.4 x 0.4 y -0.01 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -10 s 0.17 0.03 x 0.4 y -0.17 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -20 s 0.17 0.03 x 0.38 y -0.201 b 0.5 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -30 s 0.17 0.03 x 0.34 y -0.231 b 0.5 sat 0.8 hue 120  z 0 }
+
+
+  CIRCLE{ r 50 s 0.01 0.25 x -0.38 y -0.04 b 0.1 sat 0.8 hue 120  z 0 }
+  CIRCLE{ r -50 s 0.01 0.25 x 0.38 y -0.04 b 0.1 sat 0.8 hue 120  z 0 }
+
+  CIRCLE{ s 0.65 0.55 b 0.3 sat 0.8 hue 120  z 1 }
+  CIRCLE{ s 0.62 0.52 b 0.4 sat 0.8 hue 120  z 1}
+  CIRCLE{ s 0.6 0.5 b 0.5 sat 0.8 hue 120  z 1 }
+
+  SQUARE { r -10 s 0.08 0.2 x -0.1 y -0.2 b 0.3 sat 0.8 hue 120 z 2}
+  SQUARE { r 10 s 0.08 0.2 x 0.1 y -0.2 b 0.3 sat 0.8 hue 120 z 2}
+  SQUARE { r -10 s 0.07 0.19 x -0.1 y -0.2 b 0.4 sat 0.8 hue 120 z 2}
+  SQUARE { r 10 s 0.07 0.19 x 0.1 y -0.2 b 0.4 sat 0.8 hue 120 z 2}
+  SQUARE { r -10 s 0.06 0.18 x -0.1 y -0.2 b 0.5 sat 0.8 hue 120 z 2}
+  SQUARE { r 10 s 0.06 0.18 x 0.1 y -0.2 b 0.5 sat 0.8 hue 120 z 2}
+
+  CIRCLE{ r 40 s 0.102 0.032 x -0.16 y -0.3 b 0.3 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r 60 s 0.102 0.032 x -0.125 y -0.32 b 0.3 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r 100 s 0.102 0.032 x -0.08 y -0.32 b 0.3 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -40 s 0.102 0.032 x 0.16 y -0.3 b 0.3 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -60 s 0.102 0.032 x 0.125 y -0.32 b 0.3 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -100 s 0.102 0.032 x 0.08 y -0.32 b 0.3 sat 0.8 hue 120  z 2 }
+
+  CIRCLE{ r 40 s 0.1 0.03 x -0.16 y -0.3 b 0.4 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r 60 s 0.1 0.03 x -0.125 y -0.32 b 0.4 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r 100 s 0.1 0.03 x -0.08 y -0.32 b 0.4 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -40 s 0.1 0.03 x 0.16 y -0.3 b 0.4 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -60 s 0.1 0.03 x 0.125 y -0.32 b 0.4 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -100 s 0.1 0.03 x 0.08 y -0.32 b 0.4 sat 0.8 hue 120  z 2 }
+
+  CIRCLE{ r 40 s 0.09 0.029 x -0.16 y -0.3 b 0.5 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r 60 s 0.09 0.029 x -0.125 y -0.32 b 0.5 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r 100 s 0.09 0.029 x -0.08 y -0.32 b 0.5 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -40 s 0.09 0.029 x 0.16 y -0.3 b 0.5 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -60 s 0.09 0.029 x 0.125 y -0.32 b 0.5 sat 0.8 hue 120  z 2 }
+  CIRCLE{ r -100 s 0.09 0.029 x 0.08 y -0.32 b 0.5 sat 0.8 hue 120  z 2 }
+
+
+  CIRCLE{ s 0.65 0.45 b 0.3 sat 0.8 hue 120  z 2 y 0.3}
+  CIRCLE{ s 0.15 0.25 b 0.3 sat 0.8 hue 120  z 2 y 0.5 x -0.15 }
+  CIRCLE{ s 0.15 0.25 b 0.3 sat 0.8 hue 120  z 2 y 0.5 x 0.15 }
+  CIRCLE{ s 0.62 0.42 b 0.4 sat 0.8 hue 120  z 2 y 0.3}
+  CIRCLE{ s 0.12 0.22 b 0.4 sat 0.8 hue 120  z 2 y 0.5 x -0.15}
+  CIRCLE{ s 0.12 0.22 b 0.4 sat 0.8 hue 120  z 2 y 0.5 x 0.15}
+  CIRCLE{ s 0.6 0.4 b 0.5 sat 0.8 hue 120  z 2 y 0.3}
+  CIRCLE{ s 0.1 0.2 b 0.5 sat 0.8 hue 120  z 2 y 0.5 x -0.15}
+  CIRCLE{ s 0.1 0.2 b 0.5 sat 0.8 hue 120  z 2 y 0.5 x 0.15}
+
+  CIRCLE{ y 0.25 s 0.45 0.1 b 0 sat 0.8 hue 120 z 3}
+  CIRCLE{ y 0.27 s 0.49 0.1 b 0.5 sat 0.8 hue 120 z 3}
+
+  CIRCLE{ x -0.22 y 0.26 s 0.015 0.07 b 0 sat 0.8 hue 60 r -55  z 3}
+  CIRCLE{ x 0.22 y 0.26 s 0.015 0.07 b 0 sat 0.8 hue 60 r 55 z 3}
+
+  CIRCLE{ x -0.04 y 0.26 s 0.015 0.01 b 0 sat 0.8 hue 60 r -55  z 3}
+  CIRCLE{ x 0.04 y 0.26 s 0.015 0.01 b 0 sat 0.8 hue 60 r 55 z 3}
+
+
+  CIRCLE{ x -0.15 y 0.5 s 0.062 0.17 b 1 sat 0 hue 0  z 3}
+  CIRCLE{ x 0.15 y 0.5 s 0.062 0.17 b 1 sat 0 hue 0  z 3}
+  CIRCLE{ x -0.15 y 0.5 s 0.04 0.15 b 0 sat 0.8 hue 60  z 3}
+  CIRCLE{ x 0.15 y 0.5 s 0.04 0.15 b 0 sat 0.8 hue 60  z 3}
+
+}
+
+rule MOUSECLICK{
+  frogrnd { s 0.5 }
+}
+
+rule frogrnd 20 {
+   frogrnd { s 0.95 }
+}
+
+rule frogrnd 10 {
+   frogrnd { s 1.05 }
+}
+
+rule frogrnd {
+   frog { }
+}
+

@@ -1,0 +1,14 @@
+Alex&the owls dream&startshape fractalz
+
+rule fractalz{
+fractalz{r 10 s .9}
+fractal{x 1}
+fractal{x -1}
+}
+
+rule fractal {
+fractal {s .5 x -.25  b  .2}
+fractal {s .5 x  .25  b  .2}
+CIRCLE {}
+}
+

@@ -1,0 +1,5 @@
+proty&mala&startshape shape
+
+rule shape{
+ spiral{}
+}

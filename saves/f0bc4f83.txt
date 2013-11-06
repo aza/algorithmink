@@ -1,0 +1,21 @@
+Altaco&Pixels&startshape makesquare
+
+rule makesquare{
+ SQUARE{ s -.1 }
+ makesquare{ y .1 a -.1}
+}
+
+rule makesquare{
+ SQUARE{ s -.1 y -1}
+ makesquare{ x .1 a .1}
+}
+
+rule makesquare{
+ SQUARE{ s -.1 y -1}
+ makesquare{ y -.1 a -.1}
+}
+
+rule makesquare{
+ SQUARE{ s -.1 y -1}
+ makesquare{ x -.1 a .1}
+}

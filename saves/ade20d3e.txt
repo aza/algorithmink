@@ -1,0 +1,25 @@
+Johann 007&Intrigue&startshape intrigue
+
+rule intrigue {
+    SQUARE {s 4}
+    vortex { b .3 hue 201 sat 1.7 y -.1 x .3 }
+}
+rule vortex {
+   theunknowable { }
+   esoterie { }
+   vortex { s .963 r 31}
+}
+rule esoterie {
+    theunknowable {s .963 y -.1 x .07 b .2 r 2}
+    myst { s .19 }
+}
+rule theunknowable {
+    esoterie {s .9 y -.2 x .2 b .01 r 3}
+    myst { s .89 }
+}
+rule myst {
+    CIRCLE { s .03 } 
+}
+rule myst {
+    CIRCLE { s .03 hue .1} 
+}

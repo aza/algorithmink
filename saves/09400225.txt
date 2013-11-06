@@ -1,0 +1,33 @@
+Whiskey&Love is a Scared Butterfly&startshape hearts
+
+rule hearts{
+ CIRCLE{x -.37 s .8 }
+ CIRCLE{x .37 s .8}
+ TRIANGLE {r -180 y -.578 s 1.485}
+  hearts{y .20 s 1 b .3 r 15}
+
+}
+
+rule hearts{
+ CIRCLE{x -.37 s .8 }
+ CIRCLE{x .37 s .8}
+ TRIANGLE {r -180 y -.578 s 1.485}
+  hearts{x -.30 s .8 b -.3 r -15}
+
+}
+
+rule hearts{
+ CIRCLE{x -.37 s .8 }
+ CIRCLE{x .37 s .8}
+ TRIANGLE {r -180 y -.578 s 1.485}
+  hearts{x -.30 s 1.1 b .2 r -5}
+
+}
+
+rule hearts{
+ CIRCLE{x -.37 s .8 }
+ CIRCLE{x .37 s .8}
+ TRIANGLE {r -180 y -.578 s 1.485}
+  hearts{y .20 s .6 b -.2 r 5}
+
+}

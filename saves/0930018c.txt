@@ -1,0 +1,5 @@
+hj&heart&startshape shape
+
+rule shape{
+ heart{}
+}

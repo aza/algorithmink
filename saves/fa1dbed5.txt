@@ -1,0 +1,4 @@
+Nissanka&Test 1&
+rule shape{
+ CIRCLE{}
+}

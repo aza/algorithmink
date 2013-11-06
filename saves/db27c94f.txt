@@ -1,0 +1,23 @@
+biche&SpiralStars&startshape scale
+
+rule scale{
+  shape{s .05 y -.5 x 1}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.5 a -.8}
+ SQUARE{ a -.5 s 1.1 }
+ shape{ y 3.5 r 30 s .99}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.1 }
+ SQUARE{  }
+ shape{ y 3.5 r 30 s .99}
+}
+
+rule shape .05 {
+ TRIANGLE{ }
+ shape{ y 3.5 r 30 s .99}
+ shape{ y 25 r 30 s .95 flip 90 b.1}
+}

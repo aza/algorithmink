@@ -1,0 +1,16 @@
+Emily&Simple Spiral&startshape spiraling
+
+rule spiraling-left {
+  CIRCLE { s .05 }
+  spiraling-left { s .99 r 5 x .05}
+}
+
+rule spiraling-right {
+  CIRCLE { s .05 }
+  spiraling-right { s .99 r -5 x .05}
+}
+
+rule spiraling {
+  CIRCLE { s .05 }
+  spiraling-left { s .99 r 5 x .05 }
+}

@@ -1,0 +1,26 @@
+nicolaz&BFFF&startshape start
+
+
+rule start{ CHIAROSCURO{ s .4 y -.3} }
+
+rule CHIAROSCURO {
+    RED {b .5}
+}
+
+rule RED 60 {
+    CIRCLE {s .6}
+   RED {x .2 r 5 s .99 b -.01 a -.01}
+}
+rule RED {
+    WHITE {}
+    RED {}
+}
+
+rule WHITE 60 {
+    CIRCLE {s .6}
+    WHITE {x .2 r -5 s .99 b .01 a -.01}
+}
+rule WHITE {
+    RED {}
+    WHITE {}
+}

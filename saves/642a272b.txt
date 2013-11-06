@@ -1,0 +1,7 @@
+Beast&DOTS&startshape shape
+
+rule shape{
+ CIRCLE{s .5}
+ shape{ s .5 b .1 x 1}
+ shape{ s .5 b .1 -x 1}
+}

@@ -1,0 +1,15 @@
+Juan Pablo Kaniefsky&ball&startshape spiral
+
+rule spiral {
+    roundigo{}
+    spiral{r 100}
+}
+
+rule roundigo {
+    dot{}
+    roundigo{r 1 x .01}
+}
+
+rule dot {
+    CIRCLE{s .01}
+}

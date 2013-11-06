@@ -1,0 +1,78 @@
+ako&akito&startshape scale
+
+rule scale{
+  Pipe{ s .09 b .9 }
+  Pipe{ s .05 b .9 f 180}
+  Pipe{ s .05 b .9 r 99 x -.09}
+  Pipe{ s .05 b .9 r 299 x .069 }
+}
+
+rule Pipe{
+ SQUARE{ s 1.2 .9 b 1}
+ SQUARE{}
+ Pipe{ y .3 }
+}
+
+rule Pipe .1{
+  SQUARE{ s 1.5 .7 }
+  Pipe{}
+}
+
+rule Pipe .03 {
+  Rotate{}
+}
+
+rule Pipe .1{
+  Pipe{ s .95 }
+}
+
+rule Pipe .5{
+  Pipe{ flip 90 }
+}
+
+rule Rotate{
+  SQUARE{ s 1.8 .9 b 1}
+  SQUARE{}
+  Rotate{ r 3 y .5}
+}
+
+rule Rotate .02{
+  Pipe{}
+}
+
+rule Rotate .01 {
+  Gauge{}
+}
+
+rule Gauge {
+  SQUARE{ s .1 .5 y -1.5 x -1.5 r 20}
+  CIRCLE{ s .1 .5 y -1.5 x -1.5 r 20}
+  CIRCLE{ s .1 .5 y -1.5 x -1.5 r 20}
+  SQUARE{ s .1 .5 y -1.5 x -1.5 r 20}
+  Rotate{}
+}
+
+rule Rotate .005{
+  Rotate{ flip 90 }
+}
+
+rule Pipe .01{
+  Gauge{}
+}
+
+rule Pipe .003{
+  Pipe{ r 90}
+  Pipe{}
+}
+
+
+rule Pipe .003{
+  Pipe{ r -90}
+  Pipe{}
+}
+
+
+rule Pipe .005{
+  SQUARE{ s 1.6 .6 b 1}
+  SQUARE{ s 1.5 .7 }
+}

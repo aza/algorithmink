@@ -1,0 +1,33 @@
+jkn&parra&startshape DOT
+
+rule DOT{
+ CIRCLE{s 8 b 1 a -.99}
+ shape{r -13}
+}
+
+rule DOT{
+ CIRCLE{s 8 b 1 a -.99}
+ shape{r 13}
+}
+
+rule MOUSECLICK{
+DOT{}
+}
+
+rule shape{
+test { s .005 r 45}
+test { s .005 r -45}
+test { s .005 r 135}
+test { s .005 r -135}
+}
+
+rule test {
+SQUARE{}
+test{ y .5 s .999 a -0.1}
+}
+
+rule test .02 {
+SQUARE{}
+test { y .5 s .999 r -20}
+test { y .5 s .999 r 20}
+}

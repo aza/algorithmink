@@ -1,0 +1,19 @@
+izuzak&testingizuzak&startshape shape
+
+rule start{
+ branches
+}
+
+rule branches {
+  branches { x -0.5 }
+  branches {x +0.5 }
+  branch {}
+}
+
+rule branches .2 {
+}
+
+rule branch {
+  CIRCLE {}
+}
+

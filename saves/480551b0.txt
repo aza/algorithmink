@@ -1,0 +1,25 @@
+Monty&Brambles&startshape shape
+
+rule shape{
+test { s .04 }
+test { s .02 flip 33 }
+test { s .03 r 180 }
+test { s .01 r 180 flip 90 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .5 s .99 r 5 }
+}
+
+rule test .06 {
+SQUARE{}
+test { y .5 s .99 r 2 }
+test { y .5 s .99 r 10 flip 90 }
+}
+
+rule test .1 {
+SQUARE{}
+test { y .15 s .99 r 2 }
+test { y .15 s .99 r 10 flip 60 }
+}

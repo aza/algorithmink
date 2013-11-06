@@ -1,0 +1,47 @@
+Rick&bigger&startshape scale
+background { hue 400 sat 0.2 b -1 }
+
+rule MOUSECLICK{ START{ s .001 } }
+rule MOUSECLICK{ START{ s .005 } }  
+rule MOUSECLICK{ START{ s .01 } }
+rule MOUSECLICK{ START{ s .003 r 5} }
+
+rule scale{
+  START{ s .007 }
+}
+
+rule START {
+    SCENE { h 900 sat 1 b .5 }
+    FUXIA {h 400 sat 1 b .5}
+    START {y 100 r 90  s 0.29}
+}
+
+rule FUXIA{
+    CIRCLE { s 10 x -10  }
+    CIRCLE { x 50 s 5  }
+    CIRCLE { x 15 y 15  size 5 }
+    FUXIA {y 50 r 88  s 0.59 alpha -0.15}
+}
+rule FUXIA 0.45 {
+    FUXIA{flip -50}
+    FUXIA {flip -10}
+}
+rule SCENE {
+    CIRCLE {  size 20 }
+    CIRCLE {  size 50 alpha -0.7 }
+    CIRCLE {  size 70 alpha -0.7 }
+    FLOW { }
+    FLOW { }
+    FLOW { flip -50 }
+    FLOW { flip -50 }
+    FLOW { flip -10 }
+    FLOW { flip -10 }
+}
+rule FLOW 0.008 {
+    SQUARE { }
+    CIRCLE { s 5 alpha -0.7 }
+    FLOW { x 1 s 0.995 r 2}
+}
+rule FLOW 0.0001 {
+    FLOW { flip 2 }
+}

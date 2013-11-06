@@ -1,0 +1,27 @@
+tecs&tri&startshape frame
+
+rule frame {
+  shape {s .07 y -2}
+}
+
+rule scale{
+  spiral{s .1 y -.5 x 1}
+}
+
+rule shape{
+ dit {r 2 s .9997}
+}
+
+rule dit {
+ CIRCLE {x .5 s .8}
+ shape {x 1}
+}
+
+rule dit {
+ SQUARE {x 1 s 1.6 .8}
+ shape {x 2 r 2}
+}
+
+rule dit .7 {
+ shape {x 1}
+}

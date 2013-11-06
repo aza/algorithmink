@@ -1,0 +1,13 @@
+luisukbrazil&X&startshape x
+
+rule x{
+ SQUARE{s .3 r 45}
+ SQUARE{s .3 r 45 x .2012 y -.2}
+ SQUARE{s .3 r 45 x .2012 y .2}
+ SQUARE{s .3 r 45 x -.2012 y -.2}
+ SQUARE{s .3 r 45 x -.2012 y .2}
+ SQUARE{s .3 r 45 x .4 y .4}
+ SQUARE{s .3 r 45 x .4 y -.4}
+ SQUARE{s .3 r 45 x -.4 y -.4}
+ SQUARE{s .3 r 45 x -.4 y .4}
+}

@@ -1,0 +1,33 @@
+Lean&Lightning&
+background{b -1}
+
+rule lightning{
+ 
+ branch{hue 60 sat .5 a .1  b 0.7}
+}
+
+ 
+rule branch{
+   light{}
+   branch{y -.40 r 23 x 0.063 s 0.7}
+   branch{y -0.05 r -50 x -0.07 s 0.3}
+}
+
+ 
+rule branch{
+   light{}
+   branch{y -.40 r -23 x -0.063 s 0.7}
+   branch{y -0.20 r 50 x 0.13 s 0.6}
+}
+
+
+rule light{
+  SQUARE{s 0.05 0.5}
+TRIANGLE{s 0.02  0.6 r 180 x -0.024 y 0.075}
+TRIANGLE{s 0.02  0.6 r 180 x 0.024 y 0.075}
+}
+
+
+rule MOUSECLICK{
+  lightning{y -.25}
+}

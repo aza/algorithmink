@@ -1,0 +1,16 @@
+ox&angel&startshape AWE
+ 
+background { a -1 }
+ 
+rule WINGS {
+CIRCLE { s 50 }
+CIRCLE { s 45 b 1 }
+CIRCLE { s 40 y 2 b .7 }
+WINGS { x 10 y 10 r 5 s .75 }
+WINGS { x 12 y 8 r -5 s .90 }
+}
+ 
+rule AWE {
+WINGS { s 0.02}
+WINGS { s 0.02 flip 90 }
+}

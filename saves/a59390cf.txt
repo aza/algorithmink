@@ -1,0 +1,30 @@
+Ika&Breath&startshape start
+
+rule start{
+ vines{ s .05 h 50 sat .7 b 0.5}
+}
+
+rule vines{
+ vine{}
+}
+
+rule vine 2{
+  vine { hue 2 s 0.97 x 0.4 r 10 z 0.05 b 0.01 }
+ CIRCLE{s 1 0.4 }
+}
+
+rule vine {
+  vineNoF { flip 0 }
+  CIRCLE{y 1 b -2}
+  CIRCLE{s 0.80 y 1 hue 70}
+}
+
+rule vineNoF 5{
+  vine { hue 2 s 0.97 x 0.4 r 10 z 0.05 b 0.01 }
+  CIRCLE{s 1 0.4 }
+}
+
+rule vineNoF {
+  vine{}
+  vine{flip 0 }
+}

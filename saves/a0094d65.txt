@@ -1,0 +1,24 @@
+Joe DiPilato&Hilbert&startshape lab
+
+rule lab {
+  B { h 2 s 1.8 y -.05 b .5}
+}
+
+rule A {
+  SQUARE { b -1 }
+  SQUARE { s .5 1.1}
+  A { b 1 s .5 x -.25 y .25 r 90 sat 1 }
+  A { s .5 x -.25 y -.25 f 90 b -1 }
+  A { s .5 x .25 y -.25 b -1 }
+  B { b 1 s .5 x .25 y .25 r -90 sat 1 }
+
+}
+
+rule B {
+  SQUARE { b -1 }
+  SQUARE {s .5 1 r 45 x -.3 y -.3}
+  A { b 1 s .5 x -.25 y .25 r 90 sat 1}
+  A { s .5 x -.25 y -.25 f 90 b -1}
+  A { s .5 x .25 y -.25 b -1}
+  A { b 1 s .5 x .25 y .25 f 45 sat 1}
+}

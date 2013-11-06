@@ -1,0 +1,33 @@
+Lk&a&startshape scale
+
+rule scale{ 
+	SPIKES{ s .03 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 7 }
+	SPIKE { r 18}
+	SPIKE { r 27 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 90 }
+}
+
+rule LSPIKE {
+	SQUARE {}
+	LSPIKE { y 0.98 s 0.99 r 1}
+}
+rule LSPIKE 0.005 {
+	SPIKE { r 90 }
+	SPIKE { r -90 }
+	LSPIKE { y 0.98 s 0.99  r 1}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .025 }
+}

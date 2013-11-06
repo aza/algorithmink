@@ -1,0 +1,11 @@
+LOL&LOLOLO&startshape shape
+
+rule shape{
+ CIRCLE{}OOL
+.-.-.-
+
+
+P0
+
+
+}

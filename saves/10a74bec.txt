@@ -1,0 +1,54 @@
+Matt Katz and Chris Acton&Face Generator 3&startshape FACE
+rule FACE{
+ HEAD{hue 45 sat 1 b .5  }
+ EYE{}
+ EYE{flip 90}
+ MOUTH{}
+}
+
+rule HEAD{ CIRCLE{}}
+rule HEAD{  SQUARE{}}
+
+rule EYE{CIRCLE { s .1 b .5 y .12 x .3}}
+rule EYE {SQUARE { s .1 b .5 y .12 x .3}}
+rule EYE {SQUARE { s .1 b .5 y .12 x .3 r 45}}
+rule EYE {TRIANGLE { s .1 b .5 y .12 x .3}}
+rule EYE {TRIANGLE { s .1 b .5 y .12 x .3 r 60}}
+
+rule MOUTH {SQUARE{ s .8 .1 y -.12  b .5}}
+
+
+rule MOUTH {SQUARE{ s .8 .1 y -.15 b .5}}
+rule MOUTH {TRIANGLE { flip 180 s .35 y -.15 b .5}}
+rule MOUTH {CIRCLE { r 90 s .15 .75 b .5 y -.15 }}
+rule MOUTH { SMILE { y -.3 b .5 s .05 } }
+rule MOUTH { MOUSTACHE { y -.12 b .5 s .08 } }
+
+rule MOUTH { FROWN { y -.1 b .5 s .05} }
+rule SMILE {
+ARC2 { y -.12 flip 180 }
+ARC2 { y -.12 r 180 }
+}
+
+rule FROWN {
+SMILE {flip 180}
+}
+
+rule MOUSTACHE {
+ARC { y -.12 flip 180 }
+ARC { y -.12 r 180 }
+}
+
+rule ARC {
+MARK { }
+ARC { size .97 x 0.35 y .2 r -2.5 }
+}
+
+rule ARC2 {
+MARK { }
+ARC2 { size .97 x 0.35 r -1.5 }
+}
+
+rule MARK {
+SQUARE { }
+}

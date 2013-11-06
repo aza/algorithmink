@@ -1,0 +1,33 @@
+Steren&iris&startshape scale
+
+rule scale{
+  scene{ s .01 }
+}
+
+rule scene 100{
+ path {}
+ scene { r 10 }
+}
+
+rule scene {}
+
+
+rule path 10 {
+ element {}
+ path {x .5 r 1 s 0.99}
+}
+
+rule path 1{
+ path {flip 1}
+}
+
+
+rule element {
+ CIRCLE { }
+ line {}
+}  
+
+rule line{
+ SQUARE{y 100 h 200 sat .3 b .5}
+ line{ x .5 s .5}
+}

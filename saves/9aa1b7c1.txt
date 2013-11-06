@@ -1,0 +1,26 @@
+luisukbrazil&ROBO&startshape x
+background {b 1}
+
+rule x{
+ CIRCLE{s 1 y .2 b -1}
+ SQUARE{s 1 .04 b 1 y .2 }
+ SQUARE{s .04 1 b 1 y .2 }
+ SQUARE{s 1 .7 y -.169 b -1}
+ SQUARE{s .8 .1 y -.566 b -1}
+ CIRCLE{s .16 y -.538 x -.42 b -1}
+ CIRCLE{s .16 y -.538 x .42 b -1}
+ CIRCLE{s .16 y .55 x -.42 b -1}
+ CIRCLE{s .16 y .55 x .42 b -1}
+ CIRCLE{s .17 x .62 y .14}
+ CIRCLE{s .17 x -.62 y .14}
+ CIRCLE{s .17 x .62 y -.4}
+ CIRCLE{s .17 x -.62 y -.4}
+ SQUARE{s .17 .57 x -.62 y -.13}
+ SQUARE{s .17 .57 x .62 y -.13}
+ SQUARE{s .2 .3 y -.7 x .2}
+ SQUARE{s .2 .3 y -.7 x -.2}
+ CIRCLE{s .2 y -.84 x -.2}
+ CIRCLE{s .2 y -.84 x .2}
+ CIRCLE{s .08 b 1 y .47 x .2}
+ CIRCLE{s .08 b 1 y .47 x -.2}
+}

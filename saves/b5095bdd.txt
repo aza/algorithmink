@@ -1,0 +1,69 @@
+LUISUKBRAZIL&COLOSSO&startshape shape
+
+rule shape{
+ CIRCLE{ b 0}
+ shape{ r 2.9 x 0.02 b 0.006 s 0.99 h 1}
+ mouseclick{}
+}
+
+rule mouseclick{
+ CIRCLE{ b 0 sat 1}
+}
+
+startshape DOT
+
+rule DOT{
+ CIRCLE{ s 4 b 1 a -.9 }
+ TRIANGLE{ s .3 }
+}
+
+rule MOUSEMOVE{
+  DOT{ }
+}
+
+background{ b -1 }
+
+
+startshape shape
+
+rule shape{
+ CIRCLE{ b 0}
+ shape{ r 2.9 x 0.02 b 0.006 s 0.99 h 1}
+ mouseclick{}
+}
+
+rule mouseclick{
+ CIRCLE{ b 0 sat 1}
+}startshape start
+ 
+rule start{
+ shape{b 1 x 0}
+
+}
+
+rule shape{
+ SQUARE{}
+ shape{x .01 s .99 b -.01 sat 0.7  hue 10000}
+}
+
+background{ b -1 }
+
+startshape shape
+
+rule shape{
+ Circle{s 5}
+}
+
+rule Circle
+{
+ CIRCLE{hue 100 sat .999 b 0.5 s 0.2}
+ Circle{s 0.999  hue 20 r 25 y 0}
+}
+
+rule Circle
+{
+ CIRCLE{hue 100 sat .999 b 0.5 s 0.2}
+ Circle{s 0.999  hue 20 r 25 y .01}
+}
+
+background{ b -1 }

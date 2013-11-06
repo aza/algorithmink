@@ -1,0 +1,38 @@
+Vivek Haldar&Colorful Brownian&startshape GO
+
+rule GO {
+ DOT {}
+}
+
+rule DOT {
+  C {}
+  MOTION { hue +0.5 }
+}
+
+rule C {
+  CIRCLE {hue 200 sat 1 s 0.1 b 0.5} 
+}
+
+rule C 0.1 {
+  CIRCLE {hue 100 sat 1 s 0.1 b 0.5} 
+}
+
+rule MOTION{
+  DOT{ x .05 }
+}
+
+rule MOTION{
+  DOT{ x -.05 }
+}
+
+rule MOTION{
+  DOT{ y .05 }
+}
+
+rule MOTION{
+  DOT{ y -.05 }
+}
+
+rule MOUSECLICK{
+  DOT{ s .5 hue 0}
+}

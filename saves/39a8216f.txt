@@ -1,0 +1,17 @@
+luisuk&Y&startshape y
+background {b -.7 hue 360 sat 5}
+rule y{
+ x{hue 360 sat 7 b .7}
+}
+
+rule x{
+ SQUARE{s .5 b 1}
+ SQUARE{s .3 x -0.25}
+ SQUARE{ s .35}
+ SQUARE{s .104 b 1 y .135 x -.15}
+ SQUARE{s .32 y -.2 x -.12}
+ SQUARE{s .08 .2 b 1 y -.275}
+ SQUARE{s .12 y -.49 b 1}
+ SQUARE{s .1 b 1 y .132 x -.2}
+}
+

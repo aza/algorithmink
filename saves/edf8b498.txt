@@ -1,0 +1,33 @@
+snaka&mojamoja&startshape shape
+
+rule shape 1 {
+ line {}
+ shape {x .01 rotate 1}
+}
+
+rule shape 1 {
+ line {}
+ shape {x .01 rotate 0.5}
+}
+
+rule shape 8 {
+  line {}
+  shape {x .01 rotate 2 hue .03}
+}
+
+rule shape 2 {
+  line {}
+  shape {x .01 rotate 10 hue .03}
+}
+
+rule line {
+  CIRCLE {s .02 sat .5 b .5 a -.1}
+}
+
+rule line {
+  CIRCLE {s .018 sat .5 b .5 a -.1}
+}
+
+rule line {
+  CIRCLE {s .022 sat .5 b .5 a -.1}
+}

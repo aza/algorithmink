@@ -1,0 +1,40 @@
+afaafa&sdfasf&startshape color
+background{ b 0.01}
+
+rule color
+{
+size{a -.025 b .01 }
+size{a -.025 b .01 }
+size{a -.025 b .01 }
+}
+
+rule size
+{
+move{s .1 hue 50}
+move{s .1}
+move{s .1 hue 100}
+}
+
+rule move
+{
+hex{}
+move{r 60 y 2}
+}
+
+rule move
+{
+move{r 60}
+}
+
+rule move .0001{}
+
+
+rule hex{
+hexh{y .286}
+hexh{r 180 y -.286}
+}
+rule hexh{
+TRIANGLE{x -.5}
+TRIANGLE{x .5}
+TRIANGLE{r 180 y .286}
+}

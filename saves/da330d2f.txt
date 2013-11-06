@@ -1,0 +1,183 @@
+da&cats&startshape TETESS
+background {b -.2}
+ 
+rule CIR {CIRCLE{}}
+rule CIRf {CIRCLE{sat 1 b .3 hue -45}}
+ 
+rule TETESS { 6*{x 24}TETES{}}
+rule TETES { 4*{y 24}TETE{}}
+ 
+rule TETE 100{TETE{hue 1}}
+rule TETE 10{TETE{r 2}}
+rule TETE 5{TETE{s -1 1}}
+rule TETE {
+Muso{z 5}
+Crane{s 10 y 5 z -5}
+Oreilles{y 6 s 6 z -10}
+Yeux{y 4 s 6}
+Menton{y -3 s 4 z -10}
+toutouf{z -20}
+}
+ 
+rule toutouf .2{}
+rule toutouf {touf{y 4 s .1}}
+rule toutouf {touf{y 1 x 3 s .06}touf{y 1 x -3 s .06}touf{y
+-3 s .05}touf{y 2 s .1}}
+ 
+rule touf{720*{r 1}toufIn{}}
+rule touf{720*{r 1}toufIn{s 1.2}}
+rule touf{720*{r 1}toufIn{s 1.5}}
+rule toufIn 66{CIRf{} toufIn{x .1 s .999 r .1}}
+rule toufIn 33{CIRf{} toufIn{x .1 s .999 r .3}}
+rule toufIn {toufIn{flip 180}}
+rule toufIn .5{}
+ 
+rule Menton .2{}
+rule Menton 3{Menton{s 1 .9}}
+rule Menton 6{Menton{s .9 1}}
+rule Menton {CIRf {s 2 1.5} Bouche {} Barbichette{}}
+rule Bouche 2{Bouche {s .9}}
+rule Bouche .3{}
+rule Bouche {CIR {s 1.7 .9 z 5 b 1 sat .8}}
+rule Barbichette .2{}
+rule Barbichette 2{Bichet{s .03 r -45}}
+rule Barbichette 2{Bichet{s .02}Bichet{s .02 r -90}}
+rule Barbichette 1{Bichet{s .03}Bichet{s .03 r -90}}
+ 
+rule Bichet{90*{r -1} Bichette{}}
+rule Bichette 66{CIRf{} Bichette{x .1 s .999 r .1}}
+rule Bichette 33{CIRf{} Bichette{x .1 s .999 r .3}}
+rule Bichette {Bichette{flip 180}}
+rule Bichette .5{}
+ 
+rule Yeux 2{Yeux{s .96}}
+rule Yeux {Oeil{x -.4}Oeil{x .4}}
+rule Oeil .3{CIR{s .7 .4 b 1}Paupiere{s .9 y .1 z 1.2}}
+rule Oeil 2{Oeil{s .96}}
+rule Oeil {OeilIn{}Paupiere{y .5 z 1.2}Pupille{s .5 z 1}}
+rule Oeil {OeilIn{}Pupille{s .5 z 1}}
+rule OeilIn 6{OeilIn{r 1}}
+rule OeilIn 3{OeilIn{s 1 -1}}
+rule OeilIn {CIRf{s .8 1.5 z -1}CIR{s .7 1.4 b 1}}
+rule Pupille 10{Pupille{x .02}}
+rule Pupille 10{Pupille{x -.02}}
+rule Pupille 10{Pupille{y .02}}
+rule Pupille 10{Pupille{y -.04}}
+rule Pupille{
+CIR{s 1 1.2}
+CIR{s .3 b 1 x .3 y .3}
+CIR{s .4 b 1 x .1 y -.3}
+CIR{s .1 b 1 x -.1 y .1}
+}
+rule Paupiere 2{Paupiere{s .96}}
+rule Paupiere 2{Paupiere{r 2}}
+rule Paupiere {Paupiere{s -1 1}}
+rule Paupiere {CIRf{s 1 .6}}
+ 
+rule Oreilles {OreilleAB{r 20 x -.36}OreilleAB{r -20 s -1 1
+x .36}}
+ 
+rule OreilleAB 20{OreilleAB{r 1}}
+rule OreilleAB 2{OreilleA{}}
+rule OreilleAB {OreilleB{}}
+ 
+rule OreilleA {CIRf{}OreilleA{s .93 y .1 r -1}}
+rule OreilleA {CIRf{}OreilleA{s .93 y .1 r 1}}
+rule OreilleB {CIRf{}OreilleB{s .93 y .1 r -6}}
+rule OreilleB {CIRf{}OreilleB{s .93 y .1 r 6}}
+ 
+rule Crane {CraneIn{}}
+rule CraneIn {10*{y -.03 s .99}CIRf{}}
+ 
+rule Muso 12{Muso{s .98}}
+rule Muso{
+Stache{z 5 y -2.1}
+Truf{y 0.6 s 3.6 3 z 1}
+DemiMuso{s -1.5 3.6 x -.6 y .5} DemiMuso{s 1.5 3.6 x .6 y
+.5}
+Dents{s 2 y -4 z -2}
+}
+ 
+rule Stache {
+DemiTiStache{x 3.6 s .36 .4}
+DemiTiStache{x -3.6 s -.36 .4}
+DemiStacheA{s .36 .4 r 60}
+DemiStacheA{s -.36 .4 r -60}
+}
+rule Stache {
+DemiStacheA{s .36 .4 r 60}
+DemiStacheA{s -.36 .4 r -60}
+}
+rule Stache {
+DemiTiStache{x 3.6 s .36 .4}
+DemiTiStache{x -3.6 s -.36 .4}
+DemiStacheB{s .36 .4 r 60}
+DemiStacheB{s -.36 .4 r -60}
+}
+rule Stache {
+DemiStacheB{s .36 .4 r 60}
+DemiStacheB{s -.36 .4 r -60}
+}
+rule Stache 1.5{
+DemiTiStache{x 3.6 s .36 .4}
+DemiTiStache{x -3.6 s -.36 .4}
+}
+rule Stache .5{}
+ 
+rule DemiTiStache{
+18*{r 20}tiPoil{x 6}
+9*{r 40}tiPoil{x 4}
+6*{r 60}tiPoil{x 2}
+tiPoil{}
+}
+rule tiPoil 3{}
+rule tiPoil 10{tiPoil{a -.2}}
+rule tiPoil 10{tiPoil{s .9}}
+rule tiPoil {CIR{}}
+ 
+rule DemiStacheA{
+4*{r 18}Poil{y -15}
+3*{r 24}Poil{y -13}
+2*{r 30}Poil{y -11}
+}
+ 
+rule DemiStacheB{
+8*{r 9}Poil{y -15}
+6*{r 12}Poil{y -13}
+4*{r 15}Poil{y -11}
+}
+ 
+rule Poil 20{Poil{s .9}}
+rule Poil 4{Poil{z -10}}
+rule Poil {Poil{}}
+rule Poil {Poil{flip 90}}
+ 
+rule Poil 90{CIR{}Poil{y -.3 s .99 r 1}}
+rule Poil {Poil{flip 90}}
+rule Poil 3{}
+ 
+rule DemiMuso{DemiMusoIn{z -1 x -.06 y .03}DemiMusoIn{b .9
+sat .1 hue -12 s .96}}
+rule DemiMusoIn 12{DemiMusoIn{hue 1}}
+rule DemiMusoIn {120*{s 1.01 1.005 x .01}CIR{y -.45}}
+ 
+rule Truf 5{Truf{hue 5}}
+rule Truf 5{Truf{s .96}}
+rule Truf 15{Truf{b .1}}
+rule Truf {DemiTruf{x .03}DemiTruf{s -1 1 x -.03}}
+rule DemiTruf {36*{s .98 .97 x .012}CIR{s .2 1 y -.42 sat .5
+hue -15 b .4}}
+rule Truf .3{CIR{s 1 y -.3 sat .5 hue -15 b .4}}
+rule Truf .3{CIR{s 1.5 y -.3 sat .5 hue -15 b .4}}
+ 
+rule Dents {DentA{x -1 s -1 1}DentA{x 1}}
+rule DentA 10{DentA{r 1}}
+rule DentA 10{DentA{r -1}}
+rule DentA {TRIANGLE{r 180 s .8 2.2 z -.1}TRIANGLE{b 1 r 180
+s .6 2}}
+rule DentA .3{}
+rule Dents {DentB{x -1 s -1 1}DentB{x 1}}
+rule DentB 10{DentB{r 1}}
+rule DentB 10{DentB{r -1}}
+rule DentB {SQUARE{s .5 2.1}SQUARE{b 1 s .4 2}}
+rule DentB .3{}

@@ -1,0 +1,15 @@
+Nic Freed&Groovytree&startshape tree
+
+rule tree{
+shape{s .05 y -.5}
+}
+
+rule shape{
+ SQUARE{s .5 3.5 b .1}
+ branchy{}
+}
+
+rule branchy{
+ shape{y 3 x .5 r -15 s .9 b .05 a -.1 h 30 sat .5}
+ shape{y 3 x -.5 r 15 s .9 b .05 a -.1 sat .5 h -30}
+}

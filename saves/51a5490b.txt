@@ -1,0 +1,60 @@
+Josh W&Spiked Star&startshape scale
+
+rule scale{ D{s .75 y -.15 b -0.5} }
+
+background { b -0.2 }
+
+rule D
+{
+  C {r 0}
+  C {r 40}
+}
+
+rule C
+{
+  B {}
+  B {f -40}
+}
+
+rule CC
+{
+  B {f -120}
+}
+
+rule B
+{
+  A {}
+  A {r 40 hue 280}
+  A {r 80 hue 40}
+  A { r 120 }
+  A { r 160 hue 280}
+  A { r 200 hue 40}
+  A { r 240 }
+  A { r 280 hue 280}
+  A { r 320 hue 40}
+}
+
+rule B
+{
+  A {}
+  A {r 40}
+  A {r 80}
+  A { r 120 }
+  A { r 160 }
+  A { r 200 }
+  A { r 240 }
+  A { r 280 }
+  A { r 320 }
+}
+
+rule A
+{
+  CIRCLE {s 1 .0006 b .5 sat .5 a .9}
+  A {x .9 r 120.21 s .99 b .0005 h -1}
+}
+
+rule AA
+{
+  CIRCLE {s 1 .0006 b .5 sat .5 a .9}
+  A {x .9 r 120.21 s .99 b .0005 h 2 }
+}

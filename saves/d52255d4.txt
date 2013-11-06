@@ -1,0 +1,7 @@
+Rafael &Chanas Oil Spill &startshape shape
+
+rule shape{
+CIRCLE{s .5 y -.5}
+shape {s .9 x .1 b .02}
+shape {r 20 x .1}
+}

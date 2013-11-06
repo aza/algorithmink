@@ -1,0 +1,78 @@
+chris&yaya&startshape scale
+
+rule scale{
+  Pipe{ s .05 b .5 }
+  Pipe{ s .05 b .5 f 180}
+  Pipe{ s .05 b .5 r 90 x -.06}
+  Pipe{ s .05 b .5 r 270 x .06 }
+}
+
+rule Pipe{
+ SQUARE{ s 8.2 .9 b 1}
+ SQUARE{}
+ Pipe{ y .3 }
+}
+
+rule Pipe .1{
+  SQUARE{ s 1.5 .7 }
+  Pipe{}
+}
+
+rule Pipe .03 {
+  Rotate{}
+}
+
+rule Pipe .1{
+  Pipe{ s .70 }
+}
+
+rule Pipe .5{
+  Pipe{ flip 90 }
+}
+
+rule Rotate{
+  SQUARE{ s 1.2 .9 b 1}
+  SQUARE{}
+  Rotate{ r 3 y .5}
+}
+
+rule Rotate .02{
+  Pipe{}
+}
+
+rule Rotate .01 {
+  Gauge{}
+}
+
+rule Gauge {
+  SQUARE{ s .1 1.5 y -1.5 x -.75 r 90}
+  CIRCLE{ b -1 y -1.5 x -1.5}
+  CIRCLE{ b .8 y -1.5 x -1.5 s .9}
+  SQUARE{ s .1 .5 y -1.5 x -1.5 r 20}
+  Rotate{}
+}
+
+rule Rotate .005{
+  Rotate{ flip 60 }
+}
+
+rule Pipe .01{
+  Gauge{}
+}
+
+rule Pipe .003{
+  Pipe{ r 90}
+  Pipe{}
+}
+
+
+rule Pipe .003{
+  Pipe{ r -90}
+  Pipe{}
+}
+
+
+rule Pipe .005{
+  SQUARE{ s 1.6 .6 b 1}
+  SQUARE{ s 1.5 .7 }
+}

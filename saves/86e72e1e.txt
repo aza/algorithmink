@@ -1,0 +1,36 @@
+coeyes&Bubble Chain&startshape myshapes
+
+rule myshapes {
+	myshape {}
+	myshape {r 90}
+	myshape {r 180}
+	myshape {r 270}
+	CIRCLE {b 1 s 0.75 z 1}
+	CIRCLE {x -0.15 b 0 s 0.1 z 1}
+	CIRCLE {x 0.15 b 0 s 0.2 z 1}
+
+}
+
+
+rule myshape {
+	CIRCLE { }
+	CIRCLE { b 0.5 s 0.5}
+
+	myshape { x 0.6 s 0.7 r 30}	
+}
+
+rule myshape {
+	CIRCLE { }
+	CIRCLE { b 0.5 s 0.5}
+	myshape { x 0.6 s 0.7 r -30}	
+}
+
+
+rule myshape 0.3 {
+	CIRCLE { }
+	CIRCLE {b 1 s 0.5 }
+
+	myshape { x 0.6 s 0.7 r 30}	
+	myshape { x 0.6 s 0.7 r -30}	
+
+}

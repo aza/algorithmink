@@ -1,0 +1,10 @@
+KEvIN&Stars&
+startshape shape
+
+rule shape{
+MOUSECLICK(s 1}
+}
+rule MOUSECLICK{
+TRIANGLE{s .15}
+TRIANGLE{s .15 r 60}
+}

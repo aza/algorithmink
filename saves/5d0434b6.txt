@@ -1,0 +1,11 @@
+Rafael Miranda Molina&Pythagorean tree&startshape escala
+rule escala
+{
+arbol{ s .35  y -.6 x -.3  }
+}
+rule arbol
+{
+SQUARE{hue 200  sat .5 b .5 }
+arbol {r 65 s .4191 x -.60 y .778 b .01}
+arbol {r -25 s .9079 x .285 y 1.102  hue 20 b .01}
+}

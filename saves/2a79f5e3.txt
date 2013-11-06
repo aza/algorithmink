@@ -1,0 +1,50 @@
+seb&coloured clouds&startshape init
+background{ b -1 }
+rule init{  
+  CIRCLE{ sat 0 s .001 b .5 }
+  shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+}
+
+rule shape{
+ CIRCLE{ sat 0.5 s .01 b .5  }
+ move{}
+}
+
+rule move{
+ shape{ y .010 a .1 sat +.05 }
+}
+
+rule move{
+ shape{ x .010 hue +5 b +.05 a -.5 }
+}
+
+rule move{
+ shape{ y -.010 a -.5 b -.05 }
+}
+
+rule move{
+ shape{ x -.010 hue -.5 sat -.05 }
+}
+
+rule move{
+ shape{ y .010 x -.010 }
+}
+
+rule move{
+ shape{ x .010 y .010 }
+}
+
+rule move{
+ shape{ y -.010  x .010}
+}
+
+rule move{
+ shape{ x -.010 y -.010 }
+}
+

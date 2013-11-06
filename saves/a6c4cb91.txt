@@ -1,0 +1,10 @@
+luisukbrazil&dows&startshape woah
+  background {b -1 }
+rule woah{
+  spiral{b .5 sat .9999 s .14 y -.8}
+}
+
+rule spiral{
+ TRIANGLE{}
+ spiral{x .1 s .9999 hue 3.1 r 1}
+}

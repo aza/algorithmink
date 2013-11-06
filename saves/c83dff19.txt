@@ -1,0 +1,12 @@
+paper street soap&relativity&
+startshape ble
+background {b -1}
+rule shape{
+CIRCLE {s .3 b .5 hue 1 sat .47 alpha -.8 }
+ shape{hue 5 s .995 rotate 17}
+
+} 
+
+rule MOUSEMOVE{ shape{}}
+
+

@@ -1,0 +1,16 @@
+Matej Yin Gagyi&Sierpinski triangle&startshape shape
+
+rule shape{
+  l { s 1 b 1 }
+}
+
+rule l {
+  TRIANGLE {}
+  sl { r 0 }
+  sl { r 120 }
+  sl { r -120 }
+}
+
+rule sl {
+  l {x 0.25  y -0.14434 s 0.5 b -0.333}
+}

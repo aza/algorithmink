@@ -1,0 +1,14 @@
+Kamil Szot&Entangled Space&startshape Start 
+rule Start {
+  shape { y -1 }
+}
+rule shape{
+ CIRCLE{s .1 }
+ shape {s .99 x .03 r 1 a -.01}
+}
+
+rule shape .01 {
+ CIRCLE{s .1 }
+ shape {s 2 x .01 r 1 a -.1}
+ shape {s .999 x .1 r 100 a 1}
+}

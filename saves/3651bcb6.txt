@@ -1,0 +1,41 @@
+revolutionlpk&revolutionlpk&startshape start
+
+rule start{
+ vines{ s .2 h 5 sat .3 }
+ vines{ s .2 r 180 h 10 sat . 4}
+ vines{ s .1 r 90 h 100 sat .5 }
+ vines{ s .3 r 20 h 50 sat .5}
+
+
+ shapeA{ r 90 s 2}
+ shapeA{ r 90 flip 90 s 2}
+}
+
+rule shapeA{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .200 .90 b 1}
+ shapeA{ s .950 r 10 }
+}
+
+rule vines{
+ vine{}
+ vine{r 6000 }
+ vine{r 2 }
+ vine{r 6 }
+ vine{r 1 }
+ vine{r 2 }
+}
+
+rule vine 15 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.96 x 0.4 r 10 z 0.05 b 0.01 }
+}
+
+rule vine 2 {
+  TRIANGLE { s 5.3 1.2 r 100 y -0.3 flip 0 }
+  vine { }
+}
+
+rule vine {
+  vine { flip 2 }
+}

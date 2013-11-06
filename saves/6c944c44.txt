@@ -1,0 +1,42 @@
+Ketrid&circle squareoff&startshape drawall
+
+rule drawall {
+ scale {}
+}
+
+rule scale {
+ dot { s .2 sat .7 b .4 }
+}
+
+
+rule dot {
+ CIRCLE {  }
+ dot { x .5 hue .2 s .98 }
+}
+
+rule dot {
+ CIRCLE {  }
+ dot { y .5 hue .2 s 1.02}
+}
+
+rule dot {
+ CIRCLE {  }
+ dot { x -.5 hue .2  s .92}
+}
+
+rule dot {
+ CIRCLE {  }
+ dot { y -.5 hue .2  s 1.08 }
+}
+
+rule dot {
+ dot { y 1 x 1 s 1.1 h .1 b -.2 }
+}
+
+rule dot {
+ dot { y -1 x -1 s .9 h .9 b .2 }
+ dot { b .4 }
+ squareoff {}
+}
+
+rule squareoff

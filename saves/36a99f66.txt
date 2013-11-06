@@ -1,0 +1,50 @@
+lunarbunny&cthulhu vine and flowers&startshape start
+
+rule start{
+ vine{ s .2 h 5 sat .3 }
+ vine{ s .2 h 45 sat .3 r 30}
+ vine{ s .2 h 85 sat .3 r 60}
+ vine{ s .2 h 125 sat .3 r 90}
+ vine{ s .2 h 145 sat .3 r 120}
+ vine{ s .2 h 185 sat .3 r 150}
+ vine{ s .2 h 225 sat .3 r 180}
+ vine{ s .2 h 245 sat .3 r 210}
+}
+
+rule vine 100 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.96 x 0.4 r 10 z 0.05 b 0.01 }
+}
+
+rule vine 10 {
+  TRIANGLE { s 0.3 1.2 r 40 y -0.3 flip 0 }
+  vine { }
+}
+
+rule vine 5 {
+  vine { flip 0 }
+  vine { flip 0 }
+}
+
+rule vine 4 {
+  flower {}
+}
+
+rule flower 6 {
+    CIRCLE { s 2 0.5 y -0.3 h 45 }
+    flower {}
+}
+
+rule flower 6 {
+    CIRCLE { s 2 0.5 y -0.3 r 240 h 120}
+    flower {}
+}
+
+rule flower 6 {
+    CIRCLE { s 2 0.5 y -0.3 r 120 h 200}
+    flower {}
+}
+
+rule flower {
+ 
+}

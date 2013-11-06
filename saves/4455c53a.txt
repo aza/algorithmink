@@ -1,0 +1,37 @@
+tom&change&startshape size
+
+rule size {
+ shape{s .8 sat .7 b .15}
+}
+
+rule shape {
+ about{y .5 hue 20}
+ us{y -.5 hue 200}
+}
+
+rule about{
+ a{x -2}
+ b{x -1}
+ o{}
+ u{x 1}
+ t{x 2}
+}
+
+rule us {
+ u{x -.5}
+ s{x .5}
+}
+
+rule a{T{s 1.2 1 } H{y -.2}}
+rule b{S{s .8 1} H{y -.2} H{y .2}}
+rule o{C{} H{}}
+rule u{C{} H{y .25} S{s .35 .25 y .375 b 1}}
+rule t{S{s 1 .4 y .25} T{s .5 1}}
+rule s{S{s .8 1} H{s 2 .7 x .25 y .15} H{s 2 .7 x -.25 y -.15}}
+
+
+rule S{SQUARE{s .8}}
+rule C{CIRCLE{s .9}}
+rule T{TRIANGLE{s .9 1 y -.16}}
+
+rule H{C{s .35 b 1}

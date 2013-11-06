@@ -1,0 +1,70 @@
+Xan972&Thorny Rainbow Flower&startshape start
+ 
+rule start{
+ shape{s 1.1 b 1 x -1}
+ shape2{s 1.1 b 1 x 1}
+ shape3{s 1.1 b 1 y 1}
+ shape4{s 1.1 b 1 y -1}
+ shape5{s 0.9 b 1 y -0.70 x -0.70} 
+ shape6{s 0.9 b 1 y -0.70 x 0.70}
+ shape7{s 0.9 b 1 y  0.70 x 0.70}
+ shape8{s 0.9 b 1 y  0.70 x -0.70}
+ shape9{s 0.35 b 1}
+ shape10{s 0.35 b 1}
+ shape11{s 0.35 b 1}
+ shape12{s 0.35 b 1}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{x .03 s .97 b -.009 sat 1  hue 16}
+}
+
+rule shape2{
+ CIRCLE{}
+ shape2{x -.03 s .97 b -.009 sat 1  hue 16}
+}
+rule shape3{
+ CIRCLE{}
+ shape3{y -.03 s .97 b -.009 sat 1  hue 16}
+}
+
+rule shape4{
+ CIRCLE{}
+ shape4{y .03 s .97 b -.009 sat 1  hue 16}
+}
+rule shape5{
+ CIRCLE{}
+ shape5{y .03 x .03 s .97 b -.0085 sat 1  hue 16}
+}
+rule shape6{
+ CIRCLE{}
+ shape6{y .03 x -.03 s .97 b -.0085 sat 1  hue 16}
+}
+rule shape7{
+ CIRCLE{}
+ shape7{y -.03 x -.03 s .97 b -.0085 sat 1  hue 16}
+}
+rule shape8{
+ CIRCLE{}
+ shape8{y -.03 x .03 s .97 b -.0085 sat 1  hue 16}
+}
+rule shape9{
+ CIRCLE{}
+ shape9{x .015 s .985 b -.005 sat 0.85  hue 16}
+}
+rule shape10{
+ CIRCLE{}
+ shape10{x -.015 s .985 b -.005 sat 0.85  hue 16}
+}
+rule shape11{
+ CIRCLE{}
+ shape11{y -.015 s .985 b -.005 sat 0.85  hue 16}
+}
+rule shape12{
+ CIRCLE{}
+ shape12{y .015 s .985 b -.005 sat 0.85  hue 16}
+}
+rule MOUSECLICK{
+CIRCLE{s 0.6 b 1}
+}

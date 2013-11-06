@@ -1,0 +1,14 @@
+yayits my first time&neverending beans&startshape fractal
+
+rule fractal{ 
+CIRCLE{}
+fractal{s.100 b .4 x -.50 }
+fractal{s.70 b .3 x .50}
+fractal{s.50 b .2 y -.50}
+fractal{s.30 b .1 y .50}
+fractal{s.30 b .1 y .10}
+
+
+
+
+

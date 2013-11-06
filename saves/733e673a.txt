@@ -1,0 +1,55 @@
+Aaron&Root system | Try clicking&startshape begin
+
+rule MOUSECLICK {
+  vine1 { s .05 }
+  vine1 { s .05 r 90 }
+  vine1 { s .05 r 180 }
+  vine1 { s .05 r 270 }
+}
+
+rule vine1 {
+  SQUARE {}
+  vine1 { y .5 r 8 s .999 }
+}
+
+rule vine1 .1 {
+  SQUARE {}
+  vine2 {}
+}
+
+rule vine1 .05 {
+  SQUARE {}
+  leaf {}
+  vine1 {}
+}
+
+rule vine2 {
+  SQUARE {}
+  vine2 { y .5 r -8 s .999 }
+}
+
+rule vine2 .1 {
+  SQUARE {}
+  vine1 {}
+}
+
+rule vine2 .05 {
+  SQUARE {}
+  leaf {}
+  vine2 {}
+}
+
+rule leaf {
+  leaf1 { x -.05 }
+  leaf2 {}
+}
+
+rule leaf1 {
+  SQUARE {}
+  leaf1 { s .8 y .9 r 10 }
+}
+
+rule leaf2 {
+  SQUARE {}
+  leaf2 { s .8 y .9 r -5 }
+}

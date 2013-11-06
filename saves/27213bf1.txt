@@ -1,0 +1,8 @@
+kassio&teste&startshape shape
+
+rule shape{
+  CIRCLE{s .5}
+  SQUARE{x 1}
+  twoshapes{y .2 s .5 b .1}
+
+}

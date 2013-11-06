@@ -1,0 +1,113 @@
+Joe DiPilato&Love&startshape ILoveYou
+rule ILoveYou{love{s 4}}
+rule MOUSECLICK{rheart{s .1 b .4 sat 1}}
+rule MOUSEMOVE{sometimes{}}
+
+rule love{I{s .04 x -.2}nheart{y .02 s .1 sat 1 b .4}U{s .15 x .175}}
+
+rule I{SQUARE{s .6 3.8 y .1}}
+
+rule heart{nheart{}}
+rule heart {gheart{x -.35 a -1}}
+
+rule nheart{half{r -30}half{r 30 x -.72 flip 90}}
+rule half{CIRCLE{}half{y -.1 s .9 r 1}}
+
+rule gheart{ghalf{r -30 x .36}ghalf{r 30 x -.36 flip 90}gheart{s .98 a .01}}
+rule ghalf{CIRCLE{}ghalf{y -.1 s .9 r 1 b 0.001}}
+
+rule U{CIRCLE{}SQUARE{y .25 s 1 .5}CIRCLE{s .7 b 1}SQUARE{s .7 b 1 y .36}}
+
+rule sheart 5{sheart{s .9}}
+rule sheart{heart{}}
+
+rule sheartb 10{sheartb{s .9}}
+rule sheartb{nheart{}}
+rule sheartb .2{Buttersz{b -1}}
+
+rule rshape{angheart{y .02 s .1 sat 1 b .4}}
+rule rshape .1{Buttersz{s .2}}
+
+rule sometimes 5{}
+rule sometimes{rshape{}}
+
+rule angheart {angheart{r 5}}
+rule angheart {angheart{r -5}}
+rule angheart {sheart{r 30}}
+rule angheart {sheart{r -30}}
+
+rule angheartb {angheartb{r 5}}
+rule angheartb {angheartb{r -5}}
+rule angheartb {sheartb{r 30}}
+rule angheartb {sheartb{r -30}}
+
+rule rheart{angheartb{}rheart{s .9}}
+rule rheart .3{angheartb{}lheart{s .9}lheart{s .5}}
+rule rheart .3{angheartb{}lheart{s .9}lheart{s .5}}
+
+rule lheart{rheart{x -1 y -1}}
+rule lheart{rheart{x -1 y 1}}
+rule lheart{rheart{x 1 y -1}}
+rule lheart{rheart{x 1 y 1}}
+
+
+rule rheart{rheart{x .4}}
+rule rheart{rheart{x -.4}}
+rule rheart{rheart{y  .4}}
+rule rheart{rheart{y  -.4}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rule Butterflies{Butterfly{s .3}}
+rule Butterfly{Body{s .25}Wings{s .7}}
+
+rule Body{Head{}Center{y -.8 s 1.3}Tail{y -5}}
+rule Head{HeadMain{}Antenas{}}
+rule HeadMain{CIRCLE{s .8 .9}}
+
+rule Antenas{Antena{}Antena{flip 90}}
+rule Antena{Strand{s .1 r 40} CIRCLE{r -45 s .2 .3 x 2.1 y 2.7}}
+
+rule Strand{CIRCLE{}Strand{x .4 s .99 r .2}}
+rule Center{CenterSide{r -70} CenterSide{r 70 flip 90}}
+rule CenterSide{CIRCLE{}CenterSide{s .9 x .1 r -3}}
+rule Tail{CIRCLE{s 1 3.5}Tail{s .91 y .5}}
+
+rule Wings{Wing{}Wing{flip 90}}
+rule Wing{WingTop{}WingBottom{}}
+rule WingTop{WT1{r -25 x 2.7 y 1.5}WT2{s 1.2 r 120 x -2}WT3{s 1.2 r 100 x -2.2 y .8}}
+
+rule WT1{CIRCLE{}WT1{s .96 x -.1 y -.1 r 1}}
+rule WT2{CIRCLE{}WT2{s .9 x -.1 y -.1 r 1}}
+rule WT3{CIRCLE{}WT3{s .94 x -.1 y -.1 r 1}}
+
+rule WingBottom{WB1{s 1.6 r 190 x -2 y -1.7}WB2{s 1 r 190 x -1 y -2.3}WB3{s 1.8 r 190 x -1.7 y -2}}
+
+rule WB1{CIRCLE{}WB1{s .9 x -.1 y -.1 r -1}}
+rule WB2{CIRCLE{}WB2{s .94 x -.1 y -.1 r 1}}
+rule WB3{CIRCLE{}WB3{s .91 x -.1 y -.1 r -1}}
+
+rule Buttersz 5{Buttersz{s 1.2}}
+rule Buttersz 5{Buttersz{s .8}}
+rule Buttersz {Butters{s .4}}
+rule Buttersz{Butters{}}
+
+rule Butters{Butterflies{}}
+rule Butters{Butterflies{r 30}}
+rule Butters{Butterflies{r -30}}

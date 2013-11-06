@@ -1,0 +1,8 @@
+ox&vertigo&startshape vertigo
+size { s 0.2 0.2 }
+rule vertigo {
+  SQUARE { h 140 sat .2 b 0.1 s 2  a -.95}
+  CIRCLE { sat .5 b -.8 a -.98}
+  vertigo { r 0.25 s 0.999 b 0.0005 h -2}
+}
+ 

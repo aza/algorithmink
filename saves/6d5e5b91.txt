@@ -1,0 +1,46 @@
+Aza Raskin | Try Clicking&Escher&startshape start
+
+rule start{ SS1{ s 1.5 y -.13} }
+ 
+rule SS1 {
+    BASE{s 1.3}
+    BARNEY {}
+    FRED {}
+}
+ 
+rule BASE {
+    SQUARE {b 0}
+    SQUARE {s 0.9925 b 1}
+}
+ 
+rule FRED {
+    SQUARE {b 0}
+    SQUARE {s 0.9925 b 1}
+    FRED {r -1.5 s 0.98}
+}
+ 
+rule BARNEY {
+    SQUARE {b 0}
+    SQUARE {s 0.9925 b .5}
+    BARNEY {r 2.3 s 0.98}
+}
+
+rule MOUSECLICK{
+    BARNEY { s .5 r -10 flip 10}
+    FRED { s .5 r 10}
+}
+
+rule MOUSECLICK{
+    BARNEY { s .5 r -10 }
+    FRED { s .5 .3 r 5}
+}
+
+rule MOUSECLICK{
+    BARNEY { s .5 .3 r -10 }
+    FRED { s .5 r 90 flip 45}
+}
+
+rule MOUSECLICK{
+    BARNEY { s .5 }
+    FRED { s .5 flip 90}
+}

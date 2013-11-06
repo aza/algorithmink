@@ -1,0 +1,9 @@
+happymart&Triangles Spiral&startshape shape
+
+background { b -1 }
+
+rule shape{
+TRIANGLE{ s 0.7}
+shape{   b 0.01 s 0.99 x 0.11 y 0.111+ r 9}
+
+}

@@ -1,0 +1,40 @@
+Shorty9boy&Green Screen of Death&startshape start
+background { hue 400 sat 0.2 b -1 }
+
+rule start{
+ shape{s .01 h 100 sat 1 b .00001}
+}
+
+rule shape {
+ SQUARE{}
+ shape{x 1 r 1 s 1 b .00001}
+ green{}
+}
+
+rule shape1 {
+ SQUARE{}
+ shape{x -1 r 1 s 1 b .00005}
+ green{}
+}
+
+rule greenl {
+ SQUARE{}
+ greenl{x 1 r -1 s 1.0001 b .000005}
+}
+
+
+rule greenr {
+ SQUARE{}
+ greenr{x 1 r 1 s 1.0001 b .000005}
+}
+
+
+rule green {
+ greenl{}
+}
+
+rule green {
+ greenr{}
+}
+
+rule green 10000{}

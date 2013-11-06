@@ -1,0 +1,23 @@
+mph&Twisting Vine&startshape begin
+rule begin {
+     split{}
+}
+rule shape{
+ shape{y .009 s .995 1 r 1}
+ SQUARE{s .1 .01}
+}
+
+rule split{
+ shape{y .009 s .995 1 r 1}
+ shape{y .009 s .995 1 r -180}
+}
+
+rule splitB{
+ shape{y .009 s .995 1 r 1}
+ shape{y .009 s .995 1 r -120}
+ shape{y .009 s .995 1 r 120}
+}
+
+rule shape 0.002 {
+  split{}
+}

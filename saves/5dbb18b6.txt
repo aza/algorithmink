@@ -1,0 +1,16 @@
+ugur guney&Koch Flake&startshape koch
+background { b -.35 }
+
+rule koch{
+ TRIANGLE{b .1}
+ rot{r 60 }
+ rot{r -60}
+ rot{r 180}
+ koch{s .3333 x  .97 y -.193}
+ koch{s .3333 x -.97 y -.193}
+}
+
+rule rot{
+ koch{s .3333 y .38 b .0}
+
+}

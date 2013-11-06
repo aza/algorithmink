@@ -1,0 +1,29 @@
+Kamil Szot&Labirynth&startshape shape
+
+rule shape{
+ lab {}
+}
+
+rule lab {
+  B { h 72 s 2}
+}
+
+rule A {
+  SQUARE { b -1  }
+  SQUARE { s .9 x -.05 y .05 }
+  A { b .2 s .5 x -.25 y .25 r 90 sat 1 }
+  A { b .2 s .5 x -.25 y -.25 f 90 sat -1 }
+  A { b .2 s .5 x .25 y -.25 sat -1 }
+  B { b .2 s .5 x .25 y .25 r -90 sat 1 }
+
+}
+
+rule B {
+  SQUARE { b -1  }
+  SQUARE { s 1 .9 .45 y -.05  }
+  A { b .2 s .5 x -.25 y .25 r 90 sat 1}
+  A { b .2 s .5 x -.25 y -.25 f 90 sat -1}
+  A { b .2 s .5 x .25 y -.25 sat -1}
+  A { b .2 s .5 x .25 y .25 f 45 sat 1}
+}
+

@@ -1,0 +1,12 @@
+Luisukbrazil&Algoritmo 5 &startshape shape
+
+rule shape{
+ CIRCLE{ b 0}
+ shape{ r 10 x 0.02 b 0.006 a 0.99 h 1}
+ mouseclick{ s 0.99 }
+}
+
+rule mouseclick{
+ CIRCLE{ b 0 sat 1}
+ CIRCLE{ b 0 sat 11}
+}

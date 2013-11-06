@@ -1,0 +1,48 @@
+Anna Jain&Vines&startshape start
+
+rule start{
+ vines{ s .1 h 5 sat .3 }
+ vines{ s .1 r 10 h 100 sat . 4}
+ vines{ s .025 r 10 h 100 sat .5 }
+ vines{ s .12 r 5 h 100 sat .7}
+
+ vines{ s .1 h 5 sat .3 y .5 x .57}
+ vines{ s .1 r 10 h 100 sat . 4 y .5 x .57 }
+ vines{ s .025 r 10 h 100 sat .5 y .5 x .57 }
+ vines{ s .12 r 5 h 100 sat .7 y .5 x .57 }
+
+ vines{ s .1 h 5 sat .3 y -.25 x .7}
+ vines{ s .1 r 10 h 100 sat . 4 y -.25 x .7 }
+ vines{ s .025 r 10 h 100 sat .5 y -.25 x .7 }
+ vines{ s .12 r 5 h 100 sat .7 y -.25 x .7 }
+
+
+}
+
+rule shapeA{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .49 .97 b 1}
+ shapeA{ s .95 r 50 }
+}
+
+rule vines{
+ vine{ }
+ vine{ r 65 }
+ vine{ r 143 }
+ vine{ r 220 }
+ vine{ r 100 }
+ vine{ r 290 }
+}
+
+rule vine 15 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.96 x 0.4 r 10 z 0.05 b 0.01 }
+}
+
+rule vine 2 {
+  vine { }
+}
+
+rule vine {
+  vine { flip 30 }
+}

@@ -1,0 +1,34 @@
+ae oe k&DNA spiral&
+startshape frame
+
+rule frame {
+  shape {s .035 y -1.1}
+}
+
+rule shape{
+ dit {r 2 s .9997}
+}
+
+rule dit {
+ CIRCLE {x 0 s .7}
+ shape {x 1}
+}
+
+rule dit {
+ CIRCLE {x 0 s 0.3}
+ shape {x 1}
+}
+
+rule dit {
+ CIRCLE {x 0 s .9}
+ shape {x 1}
+}
+
+rule dit {
+ CIRCLE {x 0 s 0.5}
+ shape {x 2 r 2}
+}
+
+rule dit 2 {
+ shape {x 1 }
+}

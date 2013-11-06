@@ -1,0 +1,10 @@
+Eliot Solomon&Hello&startshape DOT
+ 
+rule DOT{
+  SQUARE{ s 4 b 1 a -.9 }
+  SQUARE{ s .3 }
+}
+ 
+rule MOUSEMOVE{
+  DOT{ }
+}

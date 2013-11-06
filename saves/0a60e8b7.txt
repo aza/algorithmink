@@ -1,0 +1,52 @@
+Mark Egli&Discrete Space&startshape start
+background { b -1 }
+rule start     { terminal4 { r 12 } }
+rule start     { terminal4 { r 27 } }
+rule start     { terminal4 { r 58 } }
+rule start     { terminal4 { r 72 } }
+rule start .05 { terminal2 { r 81 } }
+
+rule terminal4 {
+  SQUARE { b 1 s .175 a -.95 }
+  SQUARE { b 1 s .055 a -.8 }
+  train { x .06 }
+  train { r 90 y .06 }
+  train { r 180 x -.06 }
+  train { r 270 y -.06 }
+}
+
+rule terminal2 2 {
+  SQUARE { b 1 s .055 a -.85 }
+  train { r 90 y .06 }
+  train { r 270 y -.06 }
+}
+rule terminal2 1 {
+  SQUARE { b 1 s .055 a -.85 }
+  train { x .06 }
+  train { r 90 y .06 }
+}
+rule terminal2 1 {
+  SQUARE { b 1 s .055 a -.85 }
+  train { x .06 }
+  train { r 270 y -.06 }
+}
+
+rule terminal1 {
+  CIRCLE { b 1 s .055 a -.9 }
+  train { r 90 y .06 }
+}
+rule terminal1 {
+  CIRCLE { b 1 s .055 a -.9 }
+  train { r -90 y -.06 }
+}
+
+rule train 1 {
+  CIRCLE { b 1 s .045 a -.9 }
+  train { x .06 }
+}
+rule train .06  { terminal1 { } }
+rule train .02  { terminal2 { } }
+rule train .005 { terminal4 { } }
+rule train .03  {
+  CIRCLE { b 1 s .03 a -.9 r -90}
+}

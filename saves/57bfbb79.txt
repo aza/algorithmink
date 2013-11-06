@@ -1,0 +1,177 @@
+saj&TreeSaj&startshape START
+ 
+tile{ s 3.6 4.8 }
+ 
+background{ h 240 b -.8 sat .1}
+ 
+rule START{
+    12*{x 1 y .5 s .95 .95 .9} stalk{ z 200 b .5}
+    }
+ 
+// ---- a few churn rules to start in random position.
+rule stalk{stem{} barestem{r 180}}
+rule stalk 50{stalk{x sqrt(2)}}
+rule stalk 50{stalk{y sqrt(2)}}
+ 
+// stem segment alternates curvature, except when flipped,
+or terminated
+rule stem{ // continuation
+    stem_pA{h 90 sat .6 b -.8}
+    2*{f 90 y .1 x .05} { 
+        stemlet{r -30 y .5 x .05}
+        }
+    maybeflower{y .5 x .05}
+    stem{x .1 y 1 f 85 r -5 z -1 s .97}
+    }
+rule stem .5{ //  flip stem
+    stem{f 90}}
+rule stem .1{ // terminate stem
+    2*{f 90 s .8} { 
+        stemlet{r -40}
+        }
+    stemlet{f 85 s .8}
+    }
+ 
+// bare version of stem - only used inverted.
+rule barestem{
+    stem_pA{h 90 sat .6 b -.8}
+    barestem{x .1 y 1 f 85 r -5 z -5 s .9}
+    }
+rule barestem .5{barestem{f 90}}
+ 
+// ---- small stem with leaf
+rule stemlet{ 
+    stem_pA{ s .5  h 120 sat .6 b -.7 z -.01} 
+    leaf{x .05 y .5 s .4 f 75 z .1 } 
+    }
+ 
+// ---- sometimes this generates a flower
+rule maybeflower{
+    stem_pB{s .5 h 120 sat .6 b -.7 z 1.2}
+    flower{x 1 y 0 s .12 z 1.5}
+    }
+rule maybeflower 4{}
+rule maybeflower 5{maybeflower{f 90}}
+ 
+// normal path for stem
+path stem_pA{
+    MOVETO{x 0 y 0} 
+    ARCTO{x .1 y 1 r -5}
+    STROKE{ param roundcap width 0.08}}
+// path for flower stem
+path stem_pB{
+    MOVETO{x 0 y 0} 
+    CURVETO{x 2 y 0 x1 0.3 y1 1 x2 2 y2 1}
+    STROKE{ param roundcap }}
+ 
+// ---- flower: top level randomisation for choice of
+different styles
+rule flower{calyx{b -.7 |b .5 h 120 sat .5 z
+.05}flower_X{}}
+rule flower{calyx{b -.7 |b .5 h 120 sat .5 z .05}flower_X{s
+-1 1 1}}
+rule flower .5{calyx{b -.7 |b .5 h 120 sat .5 z
+.05}flower_X{s 1 1 -1}}
+rule flower .5{calyx{b -.7 |b .5 h 120 sat .5 z
+.05}flower_X{s -1 1 -1}}
+rule flower_X{flower_A{r -10}}
+rule flower_X{flower_B{r -20}}
+rule flower_X{flower_C{r -30}}
+rule flower_X{flower_D{}}
+ 
+rule calyx{14*{y -.15 s 1.05 b .02|}CIRCLE{s .5 1 skew -20
+0}}
+ 
+// several different styles of flower - basically the same
+idea, but with different geometry
+rule flower_A{
+    flower_A_bell{b .9 a -.5} 	
+    bicurlz{s .15 y -10 z 1.5 a -.2 sat .8 b 1 r -132}
+    }
+rule flower_A_bell{
+    flower_ring{y -10 s 1 .6}
+    flower_A_bell{s .997 .999 .997  skew -.05 0 
+        b -.01 h .2 sat .001} 
+    }
+ 
+rule flower_B{
+    flower_B_bell{b .9 a -.5} 	
+    bicurlz{s .15 y -10 z 1.5 a -.5 sat .8 b 1 r -132}
+    }
+rule flower_B_bell{
+    flower_ring{y -10 s 1 .4}
+    flower_B_bell{s .997 .999 .997  skew -.05 0
+        b -.01 h .2 sat .001} 
+    }
+ 
+rule flower_C{
+    flower_C_bell{b .9 a -.5}
+    bicurlz{s .15 y -10 z 1.5 a -.5 sat .8 b 1 r -132}
+    }
+rule flower_C_bell{
+    flower_ring{y -10 s 1 0.2}
+    flower_C_bell{s .997 .999 .997  skew -.05 0
+         b -.01 h .2 sat .001}
+    }
+ 
+rule flower_D{
+    flower_D_bell{b .9 a -.5}
+    bicurlz{s .2 y -10 z 1.5 a -.5 sat .8 b 1 r -100}
+    }
+rule flower_D_bell{
+    flower_ring{y -10 s 1 0.5}
+    flower_D_bell{s .997 .999 .997 skew -.01 0 
+         b -.01 h .2 sat .001}
+    }
+ 
+// -- the basic flower element.  A little bit of
+randomisation for texture
+rule flower_ring{flower_ring_elt{}}
+rule flower_ring{flower_ring_elt{r 5}}
+rule flower_ring .2{flower_ring_elt{b -.3}}
+rule flower_ring .2{flower_ring_elt{r 5 b -.3}}
+ 
+rule flower_ring_elt{
+    9 * { r 40 } CIRCLE{ s .3 1.8 x -3  z 1.002 b .3 sat .3
+h 50}
+    9 * { r 40 } CIRCLE{ s .3 .5 x 3.1   z 1.001  b .2 sat
+.2 h 40}
+    9 * { r 40 } SQUARE{ s .2 1 x 3.5 z 1 b .1}
+    9 * { r 40 } CIRCLE{ s 1 2 x -3.5 z 1 b .3 sat .2 h
+-30}
+    CIRCLE{s .2 z 1 b .5 a .5 sat .8}
+    }
+ 
+// --- curly stamens
+rule bicurlz{2*{f 0}curlz{}}
+rule bicurlz 0.2{bicurlz{s 1.2 .9}}
+rule curlz{CIRCLE{}curlz{x .2 r 2 s .995 sat -.005 b
+-.005}}
+rule curlz .001{curlz{f 5}}
+rule curlz .005{bicurlz{}}
+ 
+// --- leaf rules - these are pretty simple.
+ 
+rule leaf{
+    leaf_body{h 120 b -.4 sat .6 |b .7}
+    }
+rule leaf{
+    leaf_body{h 120 b -.5 sat .6 |b .7}
+    }
+ 
+rule leaf_body{
+    2 * { f 90} leaf_side{r -30 s .8 1 .1 x -.02}
+    leaf_mid{y -.01 s 1 .7}
+    leaf_body{ s .8 y .4 r 4 |b -0.05}}
+ 
+rule leaf_mid{
+    leaf_elt{y .5 z -1}
+    leaf_mid{ s .9  .995 .9  b .02| }}
+rule leaf_side{
+    leaf_elt{y .5 z -1 skew -10 1}
+    leaf_side{ s .9  .995 .9  x .005 y .002 b .02| r  -2}}
+ 
+rule leaf_elt{
+    CIRCLE{}
+    30*{r 12} SQUARE[r 6 x .45 s .1 .05 b .1|]
+    }

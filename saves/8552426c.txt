@@ -1,0 +1,5 @@
+KKKKKKKKKK&KKKKKKKKKK&startshape shape
+
+shape{
+ CIRCLE{}
+}

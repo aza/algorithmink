@@ -1,0 +1,7 @@
+Chana&Rainbow Spiral&startshape shape
+
+rule shape{
+ TRIANGLE{s .3 x .8 y -.7 hue 360 sat 1 b .5}
+ CIRCLE{s .2 x .4 y -.6 hue 390 sat 1 b .5}
+ shape{x .1 s .95 hue -5 b -.01 r 25 h 10}
+}

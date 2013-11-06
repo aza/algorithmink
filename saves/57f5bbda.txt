@@ -1,0 +1,28 @@
+luisukbrazil&Simbolo do nazismo&background {b -.7 hue 360 sat .99}
+startshape die
+
+rule die{
+ CIRCLE{s 2.5 b 1}
+ pip{}
+}
+
+rule pip{
+ SQUARE{s .3 r 45}
+ SQUARE{s .3 r 45 x .2012 y -.2}
+ SQUARE{s .3 r 45 x .2012 y .2}
+ SQUARE{s .3 r 45 x -.2012 y -.2}
+ SQUARE{s .3 r 45 x -.2012 y .2}
+ SQUARE{s .3 r 45 x .4 y .4}
+ SQUARE{s .3 r 45 x .4 y -.4}
+ SQUARE{s .3 r 45 x -.4 y -.4}
+ SQUARE{s .3 r 45 x -.4 y .4}
+ SQUARE{s .3 r 45 x -.2012 y .6}
+ SQUARE{s .3 r 45 x .01041 y .81}
+ SQUARE{s .3 r 45 x -.60999 y -.19}
+ SQUARE{s .3 r 45 x -.82 y .021}
+ SQUARE{s .3 r 45 x .001 y -.8}
+ SQUARE{s .3 r 45 x .61 y .189}
+ SQUARE{s .3 r 45 x .2012 y -.6}
+ SQUARE{s .3 r 45 x .8 y .0010321}
+ y{}
+}

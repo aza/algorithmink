@@ -1,0 +1,18 @@
+Groman&Rainbow Anemone&startshape start
+
+rule start{
+ fun{ s .1 y -1 hue 360 sat 2 b 0.5 }
+}
+
+rule fun{
+ CIRCLE{  }
+ CIRCLE{ s .9 b .01 }
+ fun{ s .995 b .001 x .1 y .1 r .8 hue .5 }
+}
+
+rule fun .008 {
+ CIRCLE{  }
+ CIRCLE{ s .9 b .01 }
+ fun{ s .995 b .001 x .1 y .1 r .8 hue .5}
+ fun{ s .995 b .001 x .1 y .1 r .1 hue .1 flip 90}
+}

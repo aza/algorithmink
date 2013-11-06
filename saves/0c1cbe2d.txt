@@ -1,0 +1,5 @@
+light&a&AJ_exe.rpmstartshape shape
+
+rule shape{
+ CUBE{}
+}

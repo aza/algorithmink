@@ -1,0 +1,6 @@
+digitalfiend&first&startshape fractal
+
+rule fractal{
+ CIRCLE{}
+ fractal{ s .5  b .3}
+}

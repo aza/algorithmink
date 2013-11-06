@@ -1,0 +1,12 @@
+Vieh&BW Tree&startshape tree
+
+rule tree{
+ trunk{s 0.4 0.6 y -1}
+}
+
+rule trunk{
+ SQUARE{s 1 0.5}
+ TRIANGLE{ y .331 s 1 0.3}
+  trunk{size .56 .8 r 27.5 y .548 x -.338 b .05}
+  trunk{size .56 .8 r -27.5 y .548 x .338 b .05}
+}

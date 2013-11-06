@@ -1,0 +1,37 @@
+luisukbrazil  kevenn&ronaldo 2&startshape start
+background {b -1}
+rule start{
+ shape{b 1 x -1}
+ shape2{b 1 x 1}
+
+}
+
+rule shape{
+ TRIANGLE{}
+ shape{x .01 s .99 b -.01 sat 0.7  hue 10000}
+}
+
+rule shape2{
+ TRIANGLE{}
+ shape{x -.01 s -.99 b -.00001 sat -0.7  hue -50}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{x .01 s .99 b -.01 sat 0.7  hue 10000}
+}
+
+rule shape2{
+ CIRCLE{}
+ shape{x -.01 s -.99 b -.00001 sat -0.7  hue -50}
+}
+
+rule shape{
+ SQUARE{}
+ shape{x .01 s .99 b -.01 sat 0.7  hue 10000}
+}
+
+rule shape2{
+ SQUARE{}
+ shape{x -.01 s -.99 b -.00001 sat -0.7  hue -50}
+}

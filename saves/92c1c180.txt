@@ -1,0 +1,17 @@
+anon&le fish&rule MOUSECLICK{
+ sdrip{}
+}
+rule sdrip{
+ drip{}
+}
+
+rule drip{
+ rote{s 0.2}
+ rote{s 0.2 flip}
+ drip{s 0.9 hue 30}
+}
+rule rote{
+ TRIANGLE{x 2 b 0.5 sat 0.7}
+ rote{r 10 s 0.7}
+ rote{r 10 s 0.7 flip}
+}

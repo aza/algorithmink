@@ -1,0 +1,40 @@
+bstoker&background&startshape color
+background{ b 1}
+
+rule color
+{
+size{a -.95 b .5 hue 400 sat 1}
+size{a -.95 b .5 hue 400 sat 1}
+size{a -.95 b .5 hue 400 sat 1}
+}
+
+rule size
+{
+move{s .1 hue 150}
+move{s .1}
+move{s .1 hue 300}
+}
+
+rule move
+{
+hex{}
+move{r 60 y 2}
+}
+
+rule move
+{
+move{r 60}
+}
+
+rule move .0001{}
+
+
+rule hex{
+hexh{y .286}
+hexh{r 180 y -.286}
+}
+rule hexh{
+TRIANGLE{x -.5}
+TRIANGLE{x .5}
+TRIANGLE{r 180 y .286}
+}

@@ -1,0 +1,11 @@
+CelSius&Flower&startshape shape
+
+rule shape{
+ CIRCLE{ s .5 }
+ woot{ s .4 }
+ shape{ x .1 y .23 s .99 b .01 r 25 }
+}
+rule woot{
+CIRCLE{}
+woot{ s .9 b .1 y -.05 r 25 }
+}

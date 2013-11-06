@@ -1,0 +1,35 @@
+Josh W&Purple Star&startshape scale
+
+rule scale{ D{ s .7 y -.1} }
+
+rule D
+{
+  C {}
+  C { hue 300 sat 300 b -0.5 }
+}
+
+rule C
+{
+  B {}
+  B { r 20 flip 0}
+
+}
+
+rule B
+{
+  A {}
+  A {r 40}
+  A {r 80}
+  A { r 120 }
+  A { r 160 }
+  A { r 200 }
+  A { r 240 }
+  A { r 280 }
+  A { r 320 }
+}
+
+rule A
+{
+  CIRCLE {s 1 .0006}
+  A {x .9 r 120.21 s .99 b .0005 }
+}

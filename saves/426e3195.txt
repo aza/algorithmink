@@ -1,0 +1,47 @@
+someone&tree8 from contextfreeorg&startshape scale
+ 
+background  {b 1}
+ 
+rule scale {
+ startcurve{s .31 y -1}
+}
+
+rule startcurve {
+    ln{b 1 s 1.5 0.5 h 240 sat .1}
+    cc { b 0.9 r 105 sat 0.5 h 30}
+}
+ 
+rule cc { cc0 { s .1 } }
+rule cc0 {
+ cc1{s  5.6  h 8 b -0.1 sat 0.1}
+}
+rule cc1 { 
+ 
+ do3 {x 1 r -5} 
+ cc2{}
+}
+rule cc2 {
+ ln{}	
+ cc3{x 1 r -5}	
+ cc{r  -30 f 0}	
+}
+rule cc3{
+ln{}
+cc{r  30 }	
+}
+ 
+rule  ln { SQUARE{x .5 y 0 s 1 0.04  }}
+
+rule do3{
+ cc2 {x 1 r -5}
+ do2 {x 1 r -5}
+}
+
+rule do2{
+ cc2 {x 1 r -5}
+ do1 {x 1 r -5}
+}
+
+rule do1{
+ cc2 {x 1 r -5}
+}

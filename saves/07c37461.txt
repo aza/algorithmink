@@ -1,0 +1,19 @@
+Henry&Henrys Charybdis&startshape shape
+
+rule shape{
+ spin{s 2.5}
+}
+
+rule spin 30{
+ hand{}
+ spin{r 71 s .999 b .001}
+}
+
+rule spin{
+ hand{}
+ spin{r 53 s .999 b .001}
+}
+
+rule hand{
+ SQUARE{b 0 s 0.079 0.074 r 90 y 1}
+}

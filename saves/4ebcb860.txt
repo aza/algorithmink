@@ -1,0 +1,5 @@
+MG&Isaiah 4313&startshape shape
+
+rule shape{
+ CIRCLE{}
+}Isaiah 43:1-3 Fear not for I have redeemed you, called you by name you are mind. When you walk through the water, I will be with you. When you walk through the river, it will not sweep over you.  When you walk through the fire, you will not be burned.  For I am the Lord, your God, your Savior.

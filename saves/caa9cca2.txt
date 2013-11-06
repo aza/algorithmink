@@ -1,0 +1,63 @@
+Efigie&tree2&startshape SCALE
+
+rule SCALE{
+	TREE{ s .03 y .1  }
+        SQUARE { s 7 2.25 y -1}
+        SQUARE { s 7 1.75 y 1 b .95 }
+}
+
+rule TREE {
+     UPPER { x .01}
+     UPPER { b -1}
+     LOWER {b 1 x .02}
+     LOWER {b 1}
+    
+}
+
+rule UPPER {BRANCH {}}
+rule UPPER {BRANCH {rotate 1}}
+rule UPPER {BRANCH {rotate -1}}
+rule UPPER {BRANCH {rotate 2}}
+rule UPPER {BRANCH {rotate -2}}
+rule UPPER {FORK {}}
+
+
+rule LOWER {BRANCH {rotate 180}}
+rule LOWER {BRANCH {rotate 181}}
+rule LOWER {BRANCH {rotate 180}}
+rule LOWER {BRANCH {rotate 179}}
+rule LOWER {BRANCH {rotate 180}}
+rule LOWER {FORK {}}
+
+rule BRANCH {LEFTBRANCH {flip 90}}
+rule BRANCH {LEFTBRANCH {}}
+
+rule LEFTBRANCH 4 {BLOCK {} LEFTBRANCH {y 0.885 rotate 0.1 s 0.99}}
+rule LEFTBRANCH 4 {BLOCK {} LEFTBRANCH {y 0.885 rotate 0.2 s 0.99}}
+rule LEFTBRANCH {BLOCK {} LEFTBRANCH {y 0.885 rotate 4 s 0.90}}
+rule LEFTBRANCH {BLOCK {} FORK {}}
+
+
+
+rule BLOCK {
+     SQUARE {rotate 1}
+     SQUARE {rotate -1}
+     SQUARE {}
+}
+
+rule FORK {
+     BRANCH { }
+     BRANCH {s 0.5 rotate 40}
+}
+rule FORK {
+     BRANCH { }
+     BRANCH {s 0.5 rotate -40}
+}
+rule FORK {
+     BRANCH {s 0.5 rotate -20}
+     BRANCH { }
+}
+rule FORK {
+     BRANCH {s 0.7 y 0.1 rotate 20}
+     BRANCH {s 0.7 y 0.1 rotate -20}
+}	

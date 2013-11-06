@@ -1,0 +1,19 @@
+Justin W&Fall Coils&startshape shape 
+
+rule shape{
+test { s .05 }
+test { s .05 flip 90 }
+test { s .05 r 180 }
+test { s .05 r 180 flip 90 }
+}
+
+rule test 10 {
+SQUARE{}
+test{ y .9 s .998 r 2.1 b 0.001 sat 0.01 }
+}
+
+rule test .12 {
+SQUARE{}
+test { y .5 s .95 r 5 b .05 hue 10 }
+test { y .5 s .8 r 10 flip 90 hue -10 }
+}

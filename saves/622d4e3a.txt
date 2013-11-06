@@ -1,0 +1,14 @@
+andy&design001&startshape shape
+
+rule carpet {
+SQUARE{size .5 .5 x 0 y 0}
+carpet{x 0 y .5 size .33333}
+carpet{x .5 y .5 size .33333}
+carpet{x .5 y 0 size .33333}
+carpet{x .5 y -.5 size .33333}
+carpet{x 0 y -.5 size .33333}
+carpet{x -.5 y -.5 size .33333}
+carpet{x -.5 y 0 size .33333}
+carpet{x .5 y .5 size .33333}
+carpet{x -.5 y .5 size .33333}
+}

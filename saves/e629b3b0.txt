@@ -1,0 +1,11 @@
+woonwarn&Rose&startshape rose
+
+rule rose
+{
+   CIRCLE{}
+   rose  { x  .5 s .5 b .8 h 300 sat 5 r 120 }
+   rose  { x -.5 s .5 b .8 h 200 sat 5 r 100 }
+ 
+}
+
+   rose  { x -.5

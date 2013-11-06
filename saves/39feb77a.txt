@@ -1,0 +1,43 @@
+faithunter&shoggoths&startshape seed
+
+rule seed{
+center{}
+startbranch {}
+startbranch { r 40 }
+startbranch { r 80}
+startbranch { r 120}
+startbranch { r 160  }
+startbranch { r 200 }
+startbranch{ r 240 }
+startbranch{ r 280}
+startbranch{ r 320 }
+}
+
+rule center{
+ CIRCLE{ s .3 hue 100 sat .7 b .5}
+ CIRCLE{ s .2 b 1}
+
+}
+
+rule startbranch{
+   branch{x .14 s 0.08}
+}
+
+rule branch 10 {
+block{}
+branch{ y .1 s .994 r 0.5 b .001 }
+}
+
+rule branch .1 {
+block{}
+branch { y .1 s .994 r 0.5 b .001}
+branch { y .1 s .994   b .001 flip 90 }
+}
+
+rule block{
+CIRCLE{hue 100 sat .7 b .5}
+}
+
+rule MOUSECLICK{
+seed{}
+}

@@ -1,0 +1,16 @@
+luisukbrazil&ets &startshape e
+
+rule e{
+	CIRCLE { x 0 y 0 s 0.6 1 r 90 }
+	CIRCLE { x 0 x 0.3 s 0.2 0.2 sat 0 b 1}
+	CIRCLE { x 0 x -0.3 s 0.2 0.2 sat 0 b 1}
+	CIRCLE { x 0 y -0.3 s 0.2 0.2 sat 0 b 1}
+}
+
+rule MOUSEMOVE{
+ e{s .25}
+}
+
+rule MOUSECLICK{
+ SQUARE{s 10 b 1}
+}

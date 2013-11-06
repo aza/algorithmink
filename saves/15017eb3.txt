@@ -1,0 +1,51 @@
+tal&taltest1&startshape size
+
+rule size {
+ 
+ shape{s .8 sat .7 b .15}
+shape{s .8 b 1}
+ size { y 0.01 }
+}
+
+rule size {
+
+ shape{s .8 sat .7 b .15}
+shape{s .8 b 1}
+ size { y -0.01 }
+}
+
+rule size 2{
+shape{s .8 b 1}
+ shape{s .8 sat .7 b .15}
+ size { x 0.01 }
+}
+
+rule size 2{
+shape{s .8 b 1}
+ shape{s .8 sat .7 b .15}
+ size { x -0.01 s 0.995 }
+}
+
+
+
+rule shape {
+ tal{y .3 x 1 hue 20}
+}
+
+rule tal{
+ 
+ l{x -0.2}
+
+}
+
+
+rule a{T{s 1.2 1 } H{y -.2}}
+rule l{T{s .001 0.3}  }
+rule t{S{s 1 .4 y .25} T{s .5 1}}
+
+rule S{SQUARE{s .9}}
+rule C{CIRCLE{s .9}}
+rule T{TRIANGLE{s .9 1 y -.16}}
+
+rule H{C{s .35 b 1}
+

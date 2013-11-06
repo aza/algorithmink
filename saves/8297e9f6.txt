@@ -1,0 +1,9 @@
+Joe DiPilato&Skyline V 01&startshape n
+rule n{s{s .3}}
+rule s{SQUARE{s 10 2 y -2}a{s .2 y -1 x -5}}
+rule a{b{}a{x .5}}
+rule a{b{}a{x .8}}
+rule a{b{}a{x .4}}
+rule b{SQUARE{s .5 5}}
+rule b 3{b{s 1 1.1}}
+rule b 3{b{s 1.1 1}

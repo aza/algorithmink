@@ -1,0 +1,12 @@
+Bazqux&Ad Infinitum&startshape sandbox
+
+background{b -1}
+
+rule sandbox{
+  warp{}
+  sandbox{y .25 s .99 b .008 r 50 hue .4 a -.01}
+}
+rule warp{
+  CIRCLE {s .04 hue 300 sat 1 x 1}
+  warp{x -.05 a -.005}
+}

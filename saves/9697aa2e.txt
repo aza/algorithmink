@@ -1,0 +1,24 @@
+David Hogarty&Spiral Triangles&startshape START
+
+rule START {
+  spiraltriangle {s .5 b .3 sat 1}
+}
+
+rule spiraltriangle {
+  TRIANGLE{r -90}
+  triangles{r -95 s .6}
+  triangles{r 25 s .6}
+  triangles{r 145 s .6}
+  subspiral{r 85 s .33}
+  subspiral{r -35 s .33}
+  subspiral{r 205 s .33}
+}
+
+rule subspiral {
+  spiraltriangle{y -3.5}
+}
+
+rule triangles {
+  TRIANGLE{y -1}
+  triangles{r -20 y -1 s .7 b .15 sat -.15}
+}

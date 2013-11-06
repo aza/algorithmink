@@ -1,0 +1,27 @@
+eke&knauel&startshape shapestarter
+
+rule shapestarter {
+ shape {s .1}
+}
+
+rule shape 100 {
+ CIRCLE{}
+ shape { y .2 r 2 }
+}
+
+rule shape 10 {
+ CIRCLE{}
+ shape { y .1 r -7 }
+}
+
+rule shape 10 {
+ CIRCLE{}
+ shape { y -.1 r -5 }
+}
+
+
+rule shape .1 {
+ CIRCLE{}
+ shape { b .1 x .4 y .4 r 9 s .7}
+ shape { b .1 x -.4 y -.4 r -9 s .7}
+}

@@ -1,0 +1,5 @@
+thingthing&thing&startshape twoshapes{}
+rule twoshapes{
+  SQUARE{s 10}
+  twoshapes{ s .9 b .01 r 10}
+}

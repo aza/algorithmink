@@ -1,0 +1,5 @@
+211&knj&startshape shape
+
+rule shape{
+ CIRCLE{}
+}250

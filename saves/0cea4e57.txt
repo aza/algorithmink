@@ -1,0 +1,9 @@
+awesome&wtf&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+
+rule shape {
+ TRIANGLE()
+}

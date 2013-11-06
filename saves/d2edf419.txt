@@ -1,0 +1,17 @@
+sazhide&4dims&startshape shape
+
+rule shape {
+  four{ a -.5 }
+}
+
+rule four {
+ four { x -.5 y -.5 s .5}
+ four { x  .5 y -.5 s .5}
+ four { x -.5 y  .5 s .5}
+ four { x  .5 y  .5 s .5}
+}
+
+rule four .1 {
+ CIRCLE {}
+ shape {}
+}

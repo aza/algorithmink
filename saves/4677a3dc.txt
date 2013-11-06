@@ -1,0 +1,8 @@
+LS&LS&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+{
+RECTANGLE{}
+}

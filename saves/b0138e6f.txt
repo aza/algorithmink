@@ -1,0 +1,7 @@
+michel&jean&startshape shape
+
+rule shape{
+
+
+RCLE{}
+}

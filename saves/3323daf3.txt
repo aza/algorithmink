@@ -1,0 +1,42 @@
+Aerobic Robot&Escher Would Be Proud&startshape start
+
+rule start{ SS1{ s 1.5 y 0} }
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+    GAMMA {}
+    DELTA {}
+    EPSILON {}
+
+}
+
+rule ALPHA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    ALPHA {r 1 s 0.99}
+}
+ 
+rule BETA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    BETA {r 0.5 s 0.99}
+}
+
+rule GAMMA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    GAMMA {r 0 s 0.99}
+}
+
+rule DELTA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    DELTA {r -0.5 s 0.99}
+}
+
+rule EPSILON {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    EPSILON {r -1 s 0.99}
+}

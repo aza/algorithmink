@@ -1,0 +1,7 @@
+Macrocosme&Blanche EP&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b .2 x -.60 }
+ shape{ s .5 b .2 x .60 }
+}

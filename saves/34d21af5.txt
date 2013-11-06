@@ -1,0 +1,20 @@
+Joe DiPilato&Crazy Doodle&startshape 0
+rule MOUSEMOVE{a{s .04}}
+rule MOUSECLICK{SQUARE{s 10 b 1}}
+rule a 5{a{s 1.1}}
+rule a 5{a{s .9}}
+rule a{b{}}
+rule b{b{hue 10}}
+rule b{b{hue 30}}
+rule b{b{hue 70}}
+rule b{b{hue 150}}
+rule b{b{hue 2}}
+rule b{c{}}
+rule c{c{sat{.1}}
+rule c{c{sat{.2}}
+rule c{c{sat{.4}}
+rule c{d{}}
+rule d{d{b .1}}
+rule d{d{b .2}}
+rule d{d{b .4}}
+rule d{CIRCLE{}}

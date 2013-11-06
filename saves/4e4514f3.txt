@@ -1,0 +1,7 @@
+a&s&startshape shape
+
+shape FLOWER {  // Version 3
+    CIRCLE [size 2]
+    loop 6 [r 60] LeftOrRightFlower [size 0.4 y 3]
+}
+

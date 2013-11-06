@@ -1,0 +1,30 @@
+Vivek Haldar&Roses from the void&startshape go
+
+rule go {
+  shape { }
+  go { s 0.9 b 0.05 }
+}
+
+rule shape{
+ CIRCLE{}
+}
+
+rule shape {
+  CIRCLE { x 0.1 }
+}
+
+rule shape {
+  CIRCLE { y 0.1 }
+}
+
+rule shape {
+  CIRCLE { y -0.1 }
+}
+
+rule shape {
+  CIRCLE { x -0.1 }
+}
+
+rule MOUSECLICK {
+  go { }
+}

@@ -1,0 +1,52 @@
+Mark Egli&Scales&startshape start
+background { b 1 }
+
+rule start {
+  thread { r 15 s 0.15 }
+  thread { r 15 s 0.15 }
+  thread { r 15 s 0.15 }
+}
+
+rule thread { dot { } thread2 { } }
+rule thread { dot { } thread2 { r 060 } }
+rule thread { dot { } thread2 { r 120 } }
+rule thread { dot { } thread2 { r 180 } }
+rule thread { dot { } thread2 { r 240 } }
+rule thread { dot { } thread2 { r 300 } }
+
+rule thread2 5 { thread { x 1 h 3 } }
+rule thread2 0.06 { junction { x 1 h 3 } }
+rule thread2 0.10 { shrink { h 3 } }
+
+rule shrink 2 { thread { s 0.3333333333 } }
+rule shrink 1 { tdot { } }
+
+rule junction {
+  jdot { }
+  thread { }
+  thread { }
+  thread { }
+}
+
+rule junction 0.05 {
+  jdot { }
+  thread { }
+  thread { }
+  thread { }
+  thread { }
+  thread { }
+  thread { }
+}
+
+rule dot {
+  CIRCLE { s 0.9 b 0.9 a -.7 sat 1 }
+}
+
+rule jdot {
+  CIRCLE { s 0.9 b 0.9 a -.7 sat 1 }
+  CIRCLE { s 0.7 b 1 a -.7 }
+}
+
+rule tdot {
+  CIRCLE { s 0.7 b 0.9 a -.7 sat 1 }
+}

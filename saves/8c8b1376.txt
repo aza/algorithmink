@@ -1,0 +1,43 @@
+Joe DiPilato&PacMan&startshape s
+
+rule s{p1{x -1}g{s .5 x 1 y -.2}}
+rule p1{
+CIRCLE{b 1 s 1.2}
+CIRCLE{s 1.02}
+CIRCLE{hue 60 sat 1 b .5}
+TRIANGLE{r 90 s .53 x .28}
+TRIANGLE{b 1 r 90 s .6 x .34}
+p2{}
+}
+rule p2{
+CIRCLE{s 1.02}
+CIRCLE{hue 60 sat 1 b .5}
+SQUARE{s .51 .01 x .253}
+p1{}
+}
+rule g{
+CIRCLE{s 1.05 y .5}
+CIRCLE{hue 240 sat 1 b .5 y .5}
+SQUARE{s 1.05 .74 y .1 }
+SQUARE{s 1 .75 y .1 hue 240 sat 1 b .5}
+TRIANGLE{s .4 .22 y -.18}
+TRIANGLE{s .4 .22 y -.18 x .32}
+TRIANGLE{s .4 .22 y -.18 x -.32}
+TRIANGLE{b 1 s .4 .22 y -.22}
+TRIANGLE{b 1 s .4 .22 y -.22 x .32}
+TRIANGLE{b 1 s .4 .22 y -.22 x -.32}
+SQUARE{b 1 s .15 y .55 x .2}
+SQUARE{b 1 s .15 y .55 x -.2}
+TRIANGLE{b 1 s .3 .2 y .1}
+TRIANGLE{b 1 s .3 .2 y .1 x .25}
+TRIANGLE{b 1 s .3 .2 y .1 x -.25}
+TRIANGLE{hue 240 sat 1 b .5 s .3 .2 y .05}
+TRIANGLE{hue 240 sat 1 b .5 s .3 .2 y .05 x .25}
+TRIANGLE{hue 240 sat 1 b .5 s .3 .2 y .05 x -.25}
+}
+rule MOUSECLICK{d{s .2}}
+rule d{
+CIRCLE{s 1.1}
+CIRCLE{hue 60 sat 1 b .5}
+}
+

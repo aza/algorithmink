@@ -1,0 +1,28 @@
+x&x&startshape scale
+
+rule scale {
+  gears { s .7 }
+}
+
+rule gears {
+  gear { flip 135 }
+  gear { x 1 }
+  gear { y 1 }
+  gear { x -1}
+  gear { y -1}
+}
+
+rule gear{
+  CIRCLE{}
+  gearinner{ s .95 }
+}
+
+rule gearinner{
+  CIRCLE{}
+  CIRCLE{ s .5 b .2 x -.25 }
+  CIRCLE{ s .5 b .2 x .25 }
+  CIRCLE{ s .5 b .2 y .25 }
+  CIRCLE{ s .5 b .2 y -.25 }
+  gearinner{ r .4 }
+}
+

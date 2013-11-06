@@ -1,0 +1,42 @@
+DogFish&Lines and Boxes&startshape start
+ 
+rule start{ LINEBOX{ s .07 } }
+
+rule LINEBOX {
+    SQUARE { s 70 }
+    STRIPES0 { }
+    STRIPES0 { r 90 }
+ 
+}
+ 
+rule STRIPES0 { 
+    SQUARE { b 0.5 s 1 70 x 13 }
+    STRIPES { x -2 }
+    STRIPES { x 2 }
+}
+ 
+rule STRIPES { 
+    SQUARE { b 0.5 s 1 70 }
+    STRIPES { x -5 }
+    STRIPES { x 8 }
+}
+ 
+rule STRIPES { 
+    SQUARE { b 0.25 s 1 70 }
+    STRIPES { x -3 }
+    STRIPES { x 5 }
+}
+ 
+rule STRIPES { 
+    SQUARE { b 0.75 s 1 70 }
+    STRIPES { x -2 }
+    STRIPES { x 6 }
+}
+ 
+rule STRIPES { 
+    SQUARE { b 1 s 1 70 }
+    STRIPES { x -6 }
+    STRIPES { x 5 }
+}
+ 
+rule STRIPES 5 { }

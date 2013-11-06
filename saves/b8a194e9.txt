@@ -1,0 +1,4 @@
+Tom&Squrcle&startshape shape
+
+rule shape{SQUARE{}
+CIRCLE{hue 222 s 1 b 1}}

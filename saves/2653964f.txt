@@ -1,0 +1,39 @@
+Nathan Ziarek&Lawn the Sequel&startshape lawn
+
+rule grass {
+  CIRCLE { s .1 .4 h 102 saturation .88 b .18 }
+  grass { b .01 y .1 s .92 }
+}
+
+rule grass .2 {
+  grass { r 3 }
+}
+
+
+rule grass .2 {
+  grass { r -3 }
+}
+
+rule grass .2 {
+  grass { r 6 }
+}
+
+
+rule grass .2 {
+  grass { r -6 }
+}
+
+rule grass .1 {
+  grass { h 5  }
+}
+
+rule sod {
+  grass { }
+  grass { x .08 }
+  sod { x .08 }
+}
+
+rule lawn {
+  sod { x -2 y 1 }
+  lawn { z-1 y -.1 b .001 }
+}

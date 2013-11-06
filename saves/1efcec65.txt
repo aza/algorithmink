@@ -1,0 +1,5 @@
+asd&sdas&startshape shape
+
+rule shape{
+ CIRCLE{}
+} ahdkjasd

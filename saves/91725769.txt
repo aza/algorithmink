@@ -1,0 +1,8 @@
+chi&math&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+
+rule shape{
+ rectangle{}}

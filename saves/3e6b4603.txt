@@ -1,0 +1,14 @@
+Aleksandr Sugard&simple Fractal&startshape runner
+background { b 1}
+
+rule runner{
+  test {s 1.8 b 1 r 0}
+  runner {s 0.8 r 30}
+}
+
+rule test{
+
+  SQUARE {}
+
+  test { s 0.9 r 10 b -0.05| x 0.1}
+}

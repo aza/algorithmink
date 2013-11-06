@@ -1,0 +1,24 @@
+ox&flood&startshape shape
+
+rule shape{
+test { hue 70  sat 1 s .05 }
+test { hue 20 sat 1 s .05 flip 180 }
+test { hue 15 sat 1 s .05 r 180 flip 125 }
+test { hue 90  sat 1 s .05 r 180 flip 90 }
+}
+
+rule test 20 {
+CIRCLE{ }
+test{ y .3 s .99 b .005 r 2 }
+}
+
+rule test 0.2 {
+test { x .5 s .99 b 0.005 r 10 flip 125 }
+test { y .4 s .99 b 0.005 r 20 }
+SQUARE{ y 5 x 10 }
+
+}
+
+rule MOUSECLICK{
+  shape
+}

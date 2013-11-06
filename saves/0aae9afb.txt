@@ -1,0 +1,45 @@
+Emichan&Rings of Fire&startshape shape
+
+rule shape 60{
+ tearring{}
+ shape {s .8 f 90 hue -10}
+}
+
+rule shape 20{
+ tearring{}
+ shape{s .8 f 90 x 1 y 1 hue -20}
+}
+
+rule shape 20{
+ tearring{}
+ shape{s .8 f 90 x -1 y -1 b .1 hue 10} 
+}
+
+rule tearring{
+ CIRCLE{x .5 hue 180 sat .5 b .3}
+ teardropcircle {x .5 y .4 b 1 s .1}
+}
+
+rule teardropcircle {
+  teardrophemi{}
+  teardrophemi{f 0  y -8}
+}
+
+rule teardrophemi {
+  teardroparc{}
+  teardroparc{f 90}
+}
+
+rule teardroparc {
+  teardrop{}
+  teardrop{r -10 x 1.2 y -.3}
+  teardrop{r -20 x 2.3 y -.9}
+  teardrop{r -30 x 3.2 y -1.7}
+  teardrop{r -40 x 3.8 y -2.8}
+  teardrop{r -50 x 4 y -4}
+}
+
+rule teardrop {
+ CIRCLE {}
+ teardrop {s .9 r 10 x .1 y .1}
+}

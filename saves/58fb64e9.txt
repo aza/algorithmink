@@ -1,0 +1,51 @@
+hugh&masterpiece&startshape init
+
+rule init{  
+  CIRCLE{ sat 1 s .01 b .5 }
+  shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+}
+
+rule shape{
+ CIRCLE{ sat 1 s .01 b .5  }
+ move{}
+}
+
+rule move{
+ shape{ y .01 a .1 }
+}
+
+rule move{
+ shape{ x .01 hue +5 }
+}
+
+rule move{
+ shape{ y -.01 a -.5 }
+}
+
+rule move{
+ shape{ x -.01 hue -5 }
+}
+
+rule move{
+ shape{ y .01 x -.01 }
+}
+
+rule move{
+ shape{ x .01 y .01 }
+}
+
+rule move{
+ shape{ y -.01  x .01}
+}
+
+rule move{
+ shape{ x -.01 y -.01 }
+}
+

@@ -1,0 +1,32 @@
+lomaa&papis&startshape forest
+ 
+rule forest {
+   moss { y -1 s 12 5 hue 100 sat .6 b .8 }
+   forestobject { }
+   forest { z -10 x 7 y 1 s .9 a -.1 }
+   forest { z -10 x -5 y 1.2 s .6 a -.1 } }
+rule forest {
+   moss { y -1 s 12 5 hue 100 sat .6 b .8 }
+   forestobject { }
+   forest {  z -10 x -10 y 1.1 s .9 a -.1}
+   forest { z -10 x 12 y 1.1 s .7 a -.1} }
+rule forest {
+   forest { y 2 } }
+rule forest .5 { }
+ 
+ 
+rule moss {
+   CIRCLE { } }
+ 
+rule forestobject { tree { hue 100 } }  // make a tree like above
+rule forestobject { }  // leave a piece of ground empty
+rule forestobject { TRIANGLE { s 3 } }  // another kind of object
+ 
+rule tree {
+    CIRCLE { s .5 1.2 }
+    tree { s .97 y .3 r 1 sat .04 b .02} }
+rule tree .1 { 
+    tree { flip 90 } }
+rule tree .4 { 
+    tree { r 10 } 
+    tree { r -30 s .8} }

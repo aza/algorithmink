@@ -1,0 +1,43 @@
+anonymous&masterpiece&startshape sqshape
+ 
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b .2 x -.25 }
+ shape{ s .5 b .2 y .25 }
+}
+
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b .2 x .25 }
+ shape{ s .5 b .2 y -.25 }
+}
+
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b}
+ shape{ s .5 b .2 y -.25}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b x .25}
+ shape{ s .5 b}
+}
+
+rule shape { 
+ SQUARE{}
+ shape{ s .5 b .2 x -.25 }
+ shape{ s .5 b .2 y .25 }
+ shape{ s .5 b .2 x -.25 }
+ shape{ s .5 b .2 y .25 }
+
+}
+
+rule sqshape { 
+ SQUARE{}
+ shape{ s .5 b .2 x -.25 }
+ shape{ s .5 b .2 y .25 }
+ shape{ s .5 b .2 x -.25 }
+ shape{ s .5 b .2 y .25 }
+
+}

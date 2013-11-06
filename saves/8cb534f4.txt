@@ -1,0 +1,59 @@
+ox&oxhex&startshape init
+background{ b -1 }
+rule init{  
+ hex{ sat 0.5 s .050 b .5 }
+  shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+}
+
+rule shape{
+ hex{ sat 0.5 s .050 b .5 }
+ move{}
+}
+
+rule move{
+ shape{ y .10 a .1 sat +.05 }
+}
+
+rule move{
+ shape{ x .10 hue +5 b +.05 a -.5 }
+}
+
+rule move{
+ shape{ y -.10 a -.5 b -.05 }
+}
+
+rule move{
+ shape{ x -.10 hue -.5 sat -.05 }
+}
+
+rule move{
+ shape{ y .10 x -.10 }
+}
+
+rule move{
+ shape{ x .10 y .10 }
+}
+
+rule move{
+ shape{ y -.10  x .10}
+}
+
+rule move{
+ shape{ x -.10 y -.10 }
+}
+
+rule hex{
+hexh{y .286}
+hexh{r 180 y -.286}
+}
+rule hexh{
+TRIANGLE{x -.5}
+TRIANGLE{x .5}
+TRIANGLE{r 180 y .286}
+}

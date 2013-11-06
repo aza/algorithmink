@@ -1,0 +1,17 @@
+Hans&Tao Spiral&startshape start
+
+rule start{
+ yin{}
+ yang{}
+}
+
+rule yin{
+ CIRCLE{ s .5 b -1 y .25}
+ yin{ r 1 s .9999}
+}
+
+rule yang{
+ CIRCLE{ s .5 b 1 y -.25}
+ yang{ r 1 s .9999}
+}
+

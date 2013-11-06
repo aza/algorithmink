@@ -1,0 +1,60 @@
+Steef&TREE GOD DAMMIT&startshape seed
+CF::MinimumSize = 0.1
+
+rule seed {
+ SQUARE{ s 50 }
+ moon{ x 1.5 b 0.1 }
+ CIRCLE{ s 50 y -26 hue 160 sat 0.8 b 0.2 }
+ trunk{ b 0.3 s .07 y -1.5 hue 20 sat 0.8 }
+}
+rule moon {
+ CIRCLE{ }
+ moon{ s 0.98 b 0.03 }
+}
+rule crater {
+ crater{ x .25 }
+}
+rule crater {
+ crater{ x -.25 }
+}
+rule crater {
+ crater{ y .25 }
+}
+rule crater {
+ crater{ y -.25 }
+}
+rule crater {
+ crater{ b -0.2 }
+}
+rule crater {
+ crater{ b 0.2 }
+}
+rule crater {
+ CIRCLE{ }
+ CIRCLE{ }
+ crater{ s 0.25 }
+}
+rule crater {
+ CIRCLE{ }
+ crater{ s 1.25 }
+}
+rule trunk {
+ SQUARE{ }
+ trunk{ }
+}
+rule trunk 0.2 {
+ SQUARE{ }
+ shape{ }
+}
+rule shape {
+ SQUARE{ }
+ shape{ y 1.01 }
+}
+rule shape 0.2 {
+  SQUARE{ }
+  shape{ r 20 s .75 }
+  shape{ r -20 s .75 }
+}
+rule shape 0.01 {
+  SQUARE{ }
+}

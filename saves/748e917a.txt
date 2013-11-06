@@ -1,0 +1,30 @@
+NZR&understandingCurves&startshape run
+
+
+background {b -1}
+
+rule run {
+ NZR { s .4 x 0}
+}
+
+
+rule NZR {
+ OVO{ b .5 hue 180 sat 1 a .5}
+}
+
+
+rule OVO 80 {
+    CIRCLE {s .4 .3}
+    OVO {x -.1 r 5 s .995 b -.01 a .01}
+}
+
+
+rule OVO 1{
+   OVO { s .995 }
+   OVO { s .5 f 160}
+}
+
+
+rule MOUSECLICK {
+ run {}
+}

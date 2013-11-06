@@ -1,0 +1,80 @@
+Context Free&Galaxy&startshape scale
+background { b -1 } 
+
+rule scale{
+  START{ s .006 }
+}
+
+rule DRAW {
+    SHAPE { }
+    SHAPE { flip 90 }
+    DRAW { y 1 s 0.999 r 1}
+}
+
+rule DRAW_B {
+    SHAPE { }
+    SHAPE { flip 90 }
+    DRAW_B { y 1 s 0.997 r -1}
+}
+
+rule DRAW 0.03 {
+    DRAW_BALL { }
+}
+
+rule DRAW 0.03 {
+    DRAW_B { }
+    DRAW_BALL { }
+}
+
+rule DRAW_B 0.06 {DRAW { }}
+rule DRAW 0.06 {DRAW_B { }}
+
+rule SHAPE {
+    LINE { }
+    SHAPE { x 1 alpha -0.2}
+}
+
+rule SHAPE 0.1 {}
+
+
+rule START {
+    DRAW { flip 180 x 10 r 7 hue 70 sat 0.8 b 0.8 }
+    DRAW { flip 180 x 13 hue 70 sat 0.8 b 0.8 }
+    DRAW { flip 180 x 15 r 15 hue 70 sat 0.8 b 0.8 }
+    DRAW { flip 180 x 9 r 15 hue 70 sat 0.8 b 0.8 }
+    DRAW_BALL { x 50 hue 70 sat 0.8 b 0.6}
+}
+
+
+rule DRAW_BALL {
+    SHAPE { }
+    SHAPE { flip 90 }
+    DRAW_BALL { y 10 s 0.999 r 15 alpha -0.001 b -0.005}
+}
+
+rule DRAW_BALL {
+    DRAW_BALL { alpha -0.5 }
+}
+
+rule DRAW_BALL {
+    DRAW_BALL { alpha 0.5 }
+}
+
+rule SHAPE {
+    LINE { }
+    SHAPE { x 1.5 alpha -0.2 r 5}
+}
+
+rule SHAPE {
+    LINE { }
+    SHAPE { x 1.5 alpha -0.2 r -5}
+}
+
+rule SHAPE 0.1 {}
+
+
+rule LINE {CIRCLE { s 0.5 20 }}
+rule LINE {CIRCLE { s 0.1 20 }}
+rule LINE {TRIANGLE { s 9 20 hue 20 }}
+rule LINE {CIRCLE { s 0.6 20 }}
+rule LINE {CIRCLE { s 3 20 b 0.6 }}

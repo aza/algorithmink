@@ -1,0 +1,50 @@
+break&ditdah&startshape seeds
+
+rule seeds {}
+
+rule dit{
+ CIRCLE{s 0.5}
+}
+
+rule dah{
+ SQUARE{s 1 0.5}
+}
+
+rule ditdah 0.7{
+ dah{}
+}
+
+rule ditdah 0.6{
+ dit{}
+}
+
+rule left 0.99 {
+ ditdah{}
+ left{x +1.05 r +5 s 0.99}
+}
+
+rule left 0.01 {
+ ditdah{}
+ right{x +1.05 r +5 s 0.99}
+}
+
+rule right 0.99 {
+ ditdah{}
+ right{x +1.05 r -5 s 0.99}
+}
+
+rule right 0.01 {
+ ditdah{}
+ left{x +1.05 r -5 s 0.99}
+}
+
+
+rule seed 0.5 {
+ left{s 0.1}
+}
+
+rule seed 0.5 {
+ right{s 0.1}
+}
+
+rule MOUSECLICK{ seed{} }

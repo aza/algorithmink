@@ -1,0 +1,54 @@
+Joe DiPilato&Golden hair improved&startshape init
+
+background{b -1}
+
+rule init{start{}clear{}}
+rule start { ALL { s .006 y .6 x -1 hue 200 sat 0.5 } }
+rule MOUSECLICK{start{}SQUARE{b -1 s 10 10}}
+
+rule clear{SQUARE{b -1 s 10 10}clear{}}
+rule clear 2{clear{}}
+rule clear .005{start{}}
+
+rule ONE{
+  CIGLIO {x 0}  CIRCLE { hue 200 b .5 x 0 s 5}
+}
+
+rule ALL{ONE{}}
+rule ALL 20 {ONE{}ALL{x 5}}
+rule ALL 10 {ALL{x 5}}
+
+rule CIGLIO 100 {
+  SQUARE {hue 200 sat 0.5}
+  CIGLIO  {y -1 s 0.998 b 0.005}
+}
+
+rule CIGLIO {
+  SQUARE {hue 200 sat 0.5}
+  CIRCLE {hue 200 sat 0.5 alpha -0.4 s 10 y -10 }
+  CIGLIO  {y -1 r 1 s 0.998 b 0.005}
+}
+
+rule CIGLIO 0.0005 {
+  SQUARE {hue 200 sat 0.5}
+  CIRCLE {hue 200 sat 0.5 alpha -0.8 s -20 x 20 y -10 }
+  CIGLIO  {y -1  s 0.998 b 0.005 }
+}
+
+rule CIGLIO {
+  SQUARE {hue 200 sat 0.5}
+  CIRCLE {hue 200 sat 0.5 alpha -0.4 s 5 y -10 }
+  FIORE   {}
+ FIORE  { x -1 flip 90}
+  CIGLIO  {y -1  s 0.998 b 0.005 }
+}
+
+rule FIORE {
+ CIRCLE {hue 200 sat 0.5}
+ FIORE {y -1 r 4 s 0.998 b 0.005}
+}
+
+rule FIORE 0.005 {
+ CIRCLE {s 5 hue 200 sat 0.5}
+ FIORE {y -1 r 4 s 0.998 b 0.005 flip 90}
+}

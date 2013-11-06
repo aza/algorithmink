@@ -1,0 +1,22 @@
+Anna Jain&Triangle Spiral&startshape start
+
+rule start{ SS1{ s 1.6 y 0}
+
+ }
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+}
+
+rule ALPHA {
+    TRIANGLE {b 0.1}
+    TRIANGLE {s .99555 b 1}
+    ALPHA {r -9 s .9994}
+}
+ 
+rule BETA {
+    TRIANGLE {h 300 b 0.1}
+    TRIANGLE {s .99555 b 1}
+    BETA {r 4290 s .9194}
+}

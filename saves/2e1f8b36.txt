@@ -1,0 +1,33 @@
+Joe DiPilato&brush&startshape size
+
+rule size{shape{s .3 y -.3 sat .6 b .4}}
+
+rule shape{
+ CIRCLE{s 1 2}
+ shapel{r 30 s .8 x -1.2 y .7 a -.2 b -.05 hue 50}
+ shaper{r -30 s .8 x 1.2 y .7 a -.2 b -.05 hue 50}
+}
+
+rule shapel{
+ CIRCLE{s 1 2}
+ shapel{r 30 s .75 x -1.2 y .7 a -.1 b -.05 hue 50}
+ shapesl{r -25 s .75 x 1.2 y .7 a -.1 b -.05 hue 50}
+}
+
+rule shapesl{
+CIRCLE{s 1 2}
+ shapel{s .75 x -1.2 y .7 a -.2 b -.05 hue 50}
+ shapesl{s .75 x 1.2 y .7 a -.2 b -.05 hue 50}
+}
+
+rule shaper{
+ CIRCLE{s 1 2}
+ shapesr{r 25 s .75 x -1.2 y .7 a -.1 b -.05 hue 50}
+ shaper{r -30 s .75 x 1.2 y .7 a -.1 b -.05 hue 50}
+}
+
+rule shapesr{
+CIRCLE{s 1 2}
+ shaper{s .75 x 1.2 y .7 a -.2 b -.05 hue 50}
+ shapesl{s .75 x -1.2 y .7 a -.2 b -.05 hue 50}
+}

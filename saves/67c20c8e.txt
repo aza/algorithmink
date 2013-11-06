@@ -1,0 +1,20 @@
+TCL987&Tunnel&startshape start
+
+rule start{ SS1{ s 1.5 y 0} }
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+}
+
+rule ALPHA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    ALPHA {r -1 s 0.998}
+}
+ 
+rule BETA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    BETA {r 1 s 0.998}
+}

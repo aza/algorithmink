@@ -1,0 +1,99 @@
+Mikee1988&Easy ground&startshape groundStart
+
+rule groundStart
+{
+ ground { y -1 x -4 }
+}
+
+rule ground
+{
+ CIRCLE { s .03  hue 31 sat 0.6 b 0.4 }
+ grass {}
+ ground { x .01 }
+}
+
+rule ground
+{
+ CIRCLE { s .03  hue 31 sat 0.6 b 0.4 }
+ grass {}
+ ground { x .01 }
+}
+
+rule ground .008
+{
+ CIRCLE { s .03  hue 31 sat 0.6 b 0.4  }
+ grass { x -0.01}
+ tree {}
+ rootStart{}
+ grass {}
+ ground { x .01 }
+}
+
+rule tree 97
+{
+ CIRCLE { s .05 hue 31 sat 0.6 b 0.4 }
+ tree { y .01 s .995 hue +0.05 }
+}
+
+rule tree .5
+{
+ CIRCLE { s .05 hue 31 sat 0.6 b 0.4 }
+ tree { y .01 s .995 hue +0.05 }
+ tree { y .01 s .995 r 20 hue +0.05 }
+}
+
+rule tree .5
+{
+ CIRCLE { s .05 hue 31 sat 0.6 b 0.4 }
+ tree { y .01 s .995 hue +0.05 }
+ tree { y .01 s .995 r -20 hue +0.05 }
+}
+
+rule tree .01
+{
+ CIRCLE { s .05 hue 31 sat 0.6 b 0.4 }
+}
+
+rule rootStart
+{
+ root { s .99 y -0.01 }
+ root { s .99 y -0.01 }
+ root { s .99 y -0.01 }
+ root { s .99 y -0.01 }
+}
+
+rule root 
+{
+ CIRCLE { s .05  hue 31 sat 0.6 b 0.4 }
+ root { s .99 y -0.01 b -0.1 }
+}
+
+rule root .07
+{
+ CIRCLE { s .05  hue 31 sat 0.6 b 0.4 }
+ root { s .99 y -0.01 r 10 b -0.1 }
+}
+
+rule root .07
+{
+ CIRCLE { s .05  hue 31 sat 0.6 b 0.4 }
+ root { s .99 y -0.01 r -10 b -0.1 }
+}
+
+rule grass
+{
+ CIRCLE { s .02  hue 118 sat 0.6 b 0.4 }
+ grass { y 0.01 s .95 b +0.01 } 
+}
+
+rule grass .07
+{
+ CIRCLE { s .02  hue 118 sat 0.6 b 0.4 }
+ grass { y 0.01 s .95 r 10 b +0.01 } 
+}
+
+rule grass .07
+{
+ CIRCLE { s .02  hue 118 sat 0.6 b 0.4 }
+ grass { y 0.01 s .95 r -10 b +0.01 } 
+}

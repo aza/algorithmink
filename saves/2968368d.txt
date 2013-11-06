@@ -1,0 +1,61 @@
+n&flower&startshape scale
+
+rule scale{ D{ s .7 y -.1} }
+
+rule D
+{
+  C {}
+  C { hue 100 sat 300 b -0.5 }
+  G { hue 300 sat 300 b -0.5 }
+}
+
+rule C
+{
+  B {}
+  B { r 15}
+  B { r 30}
+}
+
+rule B
+{
+  A {}
+  A {r 40}
+  A {r 80}
+  A { r 120 }
+  A { r 160 }
+  A { r 200 }
+  A { r 240 }
+  A { r 280 }
+  A { r 320 }
+}
+
+rule A
+{
+  CIRCLE {s 1 .0006}
+  A {x .9 r 120.21 s .99 b .0005 }
+}
+
+rule G
+{
+  E { r 7.5}
+  E { r 22.5}
+}
+
+rule E
+{
+  F {}
+  F {r 40}
+  F {r 80}
+  F { r 120 }
+  F { r 160 }
+  F { r 200 }
+  F { r 240 }
+  F { r 280 }
+  F { r 320 }
+}
+
+rule F
+{
+  CIRCLE {s 1 .0006}
+  F {x .9 r 120.21 s .99 b .0005 }
+}

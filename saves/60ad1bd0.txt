@@ -1,0 +1,12 @@
+s&s&startshape DOT
+
+rule DOT{
+  CIRCLE{ s 4 b 1 a -.9 }
+  CIRCLE{ s .33 b 1 a -.5 }  
+  CIRCLE{ s .3 b .5 sat 0 }
+  SQUARE{ s 5 b 1 }
+}
+
+rule MOUSEMOVE{
+  DOT{ }
+}

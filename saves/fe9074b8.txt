@@ -1,0 +1,41 @@
+Neil Kandalgaonkar&subway&startshape map
+
+rule map {
+  branch{ sat .25 s .1 y -.75 x .25 brightness .5}
+}
+
+
+rule branch 5 {line {}}
+rule branch {}
+
+rule line 5 {
+  CIRCLE {b -1 y .2}
+  CIRCLE {b -1 y .4}
+  CIRCLE {b -1 y .6}
+  CIRCLE {b -1 y .8}
+  CIRCLE {b -1 y 1}
+  station {} 
+  line {y 1}
+}
+rule line 1.5 {
+  station {} 
+  fork {}
+}
+rule line 1 {
+  station {} 
+}
+
+
+rule station 10 {
+     CIRCLE {} 
+}
+
+rule station 1 {
+     CIRCLE {brightness -1 s 1.8}
+     CIRCLE {s 1.5} 
+}
+
+rule fork {
+     branch {h 30 rotate +45}
+     branch 1000{h 30 rotate -45 }
+}

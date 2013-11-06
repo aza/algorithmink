@@ -1,0 +1,16 @@
+ox&Ad Infinitox&startshape sandbox
+
+background{b -1}
+
+rule sandbox{
+  warp{}
+  sandbox{y .25 s .99 b .008 r 50 a -.01 sat 1}
+}
+rule warp{
+  CIRCLE {s .02 1 x 1}
+  warp{x -.08 a -.0005 hue -1 sat -0.01}
+}
+
+rule MOUSECLICK {
+sandbox{hue 200 sat 1}
+}

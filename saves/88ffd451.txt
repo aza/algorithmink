@@ -1,0 +1,24 @@
+milo317&cirqulesquare&startshape scale
+
+rule scale{
+  shape{s .2 y -.9 x 1}
+}
+
+rule shape{
+ TRIANGLE{ b 1 s 1.4 }
+ CIRCLE{ a -.5 }
+ shape{ y 1.9 r 10 s .99}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.4 }
+ TRIANGLE{ }
+ shape{ y .99999999999 r 5 s .99}
+}
+
+rule shape .03 {
+ TRIANGLE{ }
+ shape{ y 2.5 r 10 s .95 b .1}
+ shape{ y 2.5 r 10 s .95 flip 90 b .1}
+shape{ y 3.5 r 10 s .95 flip 90 b .1}
+}

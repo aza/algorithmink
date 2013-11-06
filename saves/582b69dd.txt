@@ -1,0 +1,31 @@
+ghetto&bullshit&startshape shape
+
+rule shape{
+ A{s .5 x .05 y .05 h 100 sat .5 b .5 f 90}
+ A{s .5 x .05 y .05 h 100 sat .5 b .5 f 270}
+ A{s .5 x .05 y .05 h 100 sat .5 b .5 f 180}
+ A{s .5 x .05 y .05 h 100 sat .5 b .5}
+ A{s .5 x .05 y .05 h 100 sat .5 b .5}
+}
+
+rule A{
+ TRIANGLE{ s .3}
+ A{h 1.5 x .05 y .05 r 8 s .99 a -.01} 
+}
+
+rule A 0.09{
+ CIRCLE{x 1.5 y 1.5 a -.5 s .8}
+ A{f 90 a -.01 h 1.5}
+ B{f 90}
+}
+
+rule A 0.1{
+ A{f 270 a -.1 h 1.5}
+}
+rule B{
+ SQUARE{s .1 h 200 r 45}
+ B{x .1 y .1 h -1 a -.05 f 270}
+}
+rule B 0.5{
+ B{f 180 x .1 y .1 h 150 a -.05}
+}

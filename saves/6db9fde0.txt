@@ -1,0 +1,10 @@
+a&a&startshape start
+
+rule start{
+
+ shape1 {   hue 70  sat 1  }
+ shape2 {   hue 200 sat 1}
+ shape3 {           sat 1}
+ shape4 {   hue 90  sat 1 }
+ 
+ 

@@ -1,0 +1,30 @@
+Ika&Funkadelic 11&startshape start
+
+rule start{ 
+ iter{s 0.8 b 0.15 saturation 0.9 rotate 80 x 0.8 y -0.3}
+}
+
+rule iter{ 
+ Shape{}
+ iter{hue -37 rotate 60 x 0.75 y 0.8 s 0.8}
+ iter{ hue 91 rotate 40 x -0.6 y -0.7 s 0.2}
+}
+
+rule Shape{
+ RecCircles{}
+ iter{ y -0.95 x 0.4 r 100 s 0.25}
+}
+
+rule RecCircles{
+ Circles{}
+ Circles{hue 45 s 0.6 x 0.01 y -0.02}
+ RecCircles{rotate 110 hue 90 s 0.3 x -0.02 y 0.015}
+}
+
+rule Circles{
+ CIRCLE{ s 1.05 b -1}
+ CIRCLE{ hue 60}
+ CIRCLE{ b 0.3 h +90 s 0.90}
+ CIRCLE{ b +1 s 0.80}
+ CIRCLE{ s 0.70}
+}

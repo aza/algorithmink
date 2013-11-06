@@ -1,0 +1,23 @@
+aaa&a&startshape scale
+
+rule scale{
+  shape{s .1 y -.5 x 1}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.1 a -.8}
+ SQUARE{ a -.5 }
+ shape{ y 1.5 r 10 s .99}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.1 }
+ SQUARE{ }
+ shape{ y 1.5 r 5 s .99}
+}
+
+rule shape .03 {
+ TRIANGLE{ }
+ shape{ y 1.5 r 10 s .95 b .1}
+ shape{ y 1.5 r 10 s .95 flip 90 b.1}
+}

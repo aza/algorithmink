@@ -1,0 +1,45 @@
+Guigui&Tige&startshape GRAINE
+background {b -1}
+
+rule MOUSECLICK{ TRONC{s -.01 .01} }
+
+rule GRAINE{
+ TRONC{s .02 y -.2 x 1}
+}
+
+rule TRONC 10{
+CIR {}
+TRONC {y .3 s .999 b .001 r .5 }
+}
+
+rule TRONC {
+BRANCHE {r -30 s .9}
+TRONC{}
+}
+
+rule BRANCHE 50{
+CIR {}
+BRANCHE {y .3 r -.6 hue -.3}
+}
+
+rule BRANCHE {
+FIN{}
+}
+
+rule FIN 50{
+CIR {}
+FIN {y .3 r 3 s .99 hue 1}
+}
+
+rule FIN {
+FINAL {}
+}
+
+rule FINAL {
+CIR {}
+FINAL {y .3 r 6 s .99}
+}
+
+rule CIR {
+CIRCLE {sat 1 hue 120}
+}

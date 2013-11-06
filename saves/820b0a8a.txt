@@ -1,0 +1,26 @@
+Fiddle Sticks&Pea Shoot&startshape start
+background {b -.5}
+
+rule start{ CHIAROSCURO{ s .55 y -.1} }
+
+rule CHIAROSCURO {
+    BLACK {b .1}
+}
+
+rule BLACK 60 {
+    CIRCLE {s .6}
+    BLACK {x .1 r 5 s .95 b -.01 a -.01}
+}
+rule BLACK {
+    WHITE {}
+    BLACK {}
+}
+
+rule WHITE 60 {
+    CIRCLE {s .6}
+    WHITE {x .1 r -2 s .99 b .01 a -.01}
+}
+rule WHITE {
+    BLACK {}
+    WHITE {}
+}

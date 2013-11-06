@@ -1,0 +1,63 @@
+Alex Hudenko&ugly rainbow tree&startshape start
+
+rule start {
+ sh{y -1  hue 200 b .5} 
+}
+
+rule sh {
+ SQUARE{s .1 hue 100 sat 1}
+ sh{ y .01}
+ mv{}
+}
+
+rule sh .1 {
+ sh{ hue 10 sat 1}
+}
+
+rule mv{}
+
+rule mv .01{
+ sh{r 10 s .8 b .1 s 1.001}
+}
+
+rule mv .01{
+ sh{r 10 s .8 b .1 hue 20 sat 10 s 1.0001}
+}
+
+rule mv .01{
+ sh{r 10 s .8 b .1 hue 10 sat 5 s 1.01}
+}
+
+rule mv .01{
+ sh{r -10 s .8 b .1 s 1.001}
+}
+
+rule mv .01{
+ sh{r -10 s .8 b .1 hue 20 sat 10 s 1.0001}
+}
+
+rule mv .01{
+ sh{r -10 s .8 b .1 hue 10 sat 5 s 1.01}
+}
+
+rule mv .00045 {
+ apple{}
+}
+
+rule apple {
+ TRIANGLE {s .1}
+ apple{r 30 s .99}
+}
+
+rule mv .00045 {
+ apple2{}
+}
+
+rule apple2 {
+ TRIANGLE {s .1}
+ apple2{r 40 s .99}
+}
+
+
+
+

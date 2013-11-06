@@ -1,0 +1,32 @@
+Vivek Haldar&Colorful Brownian&startshape STARTER
+
+rule STARTER{
+  DOT{}
+}
+
+rule DOT{
+  CIRCLE{ s 1 b 1 a -.99 }
+  CIRCLE{ s .33 b 1 a -.5 }  
+  CIRCLE{ s .3 b .5 sat 0 }
+  MOTION{ h .2 }
+}
+
+rule MOTION{
+  DOT{ x .05 h 0.1 }
+}
+
+rule MOTION{
+  DOT{ x -.05 h -0.1 }
+}
+
+rule MOTION{
+  DOT{ y .05 h 0.1 }
+}
+
+rule MOTION{
+  DOT{ y -.05 h -0.1 }
+}
+
+rule MOUSECLICK{
+  DOT{ s .5 }
+}

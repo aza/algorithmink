@@ -1,0 +1,44 @@
+Nathan Ziarek&Lawn III The Reckoning&startshape lawn
+
+rule grass {
+  CIRCLE { s .05 .4 h 112 saturation .88 b .15 }
+  CIRCLE { x .03 s .05 .4 h 112 saturation .88 b .19 }
+  grass { b .005 y .1 s .92 }
+}
+
+rule grass .2 {
+  grass { r 3 }
+}
+
+
+rule grass .2 {
+  grass { r -3 }
+}
+
+rule grass .2 {
+  grass { r 6 }
+}
+
+
+rule grass .2 {
+  grass { r -6 }
+}
+
+rule grass .1 {
+  grass { h 5  }
+}
+
+rule grass .1 {
+  grass { h -5  }
+}
+
+rule sod {
+  grass { }
+  grass { x .08 }
+  sod { x .08 }
+}
+
+rule lawn {
+  sod { x -2 y 1 }
+  lawn { z-1 y -.1 b .0001 }
+}

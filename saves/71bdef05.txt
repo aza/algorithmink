@@ -1,0 +1,18 @@
+BelieveOrNot&sample01&startshape frame
+
+rule frame {
+  shape {s .07 y -1}
+}
+
+rule shape{
+ dit {r 13 s .9997}
+}
+
+rule dit {
+ CIRCLE {x .5 s .4}
+ shape {x .5}
+}
+
+rule dit .35 {
+ shape {x .5}
+}

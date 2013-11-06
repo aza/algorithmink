@@ -1,0 +1,5 @@
+erer&rer&startshape shape
+
+rule shape{
+ CIRCLE{}
+}http://pt.desert-operations.com/world1/index.php

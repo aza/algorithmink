@@ -1,0 +1,83 @@
+Chris | Try Clicking&Funky Flower&startshape start
+
+rule start{ SEED{ s .01 y -1} }
+ 
+rule SEED {
+   curveleft_0.98_3 {x -2}
+   curveleft_0.98_2 {}
+   curveleft_0.98_1 {x 2}
+   LEFT_OR_RIGHT {x 4 size 4 y 1.3}
+   curveright_0.98_1 {x 2}
+   curveright_0.98_2 {x 8}
+   curveright_0.98_3 {x 10}
+}
+ 
+rule LEFT_OR_RIGHT {  LEFT_FLOWER {} }
+rule LEFT_OR_RIGHT {  RIGHT_FLOWER {} }
+ 
+rule LEFT_FLOWER { 
+   curveleft_0.97_1 {}
+   FLOWER {x -13 y 25.3 size 1}
+}
+ 
+rule RIGHT_FLOWER { 
+   curveright_0.97_1 {}
+   FLOWER {x 13 y 25.3 size 1}
+}
+ 
+rule FLOWER {
+   CIRCLE {size 2}
+   NEW_SEED {}
+   NEW_SEED {rotate 60}
+   NEW_SEED {rotate 120}
+   NEW_SEED {rotate 180}
+   NEW_SEED {rotate 240}
+   NEW_SEED {rotate 300}
+}
+ 
+rule NEW_SEED {
+   SEED {size 0.1 y 3}
+}
+ 
+rule curveright_0.98_3 {
+    SQUARE { }
+    curveright_0.98_3 { rotate -3 size 0.98 x 0.0149734 y
+0.963684 }
+}
+rule curveleft_0.98_3 {
+    SQUARE { }
+    curveleft_0.98_3 { rotate 3 size 0.98 x -0.0149722 y
+0.963685 }
+}
+rule curveright_0.98_1 {
+    SQUARE { }
+    curveright_0.98_1 { rotate -1 size 0.98 x -0.00152265 y
+0.981373 }
+}
+rule curveleft_0.98_1 {
+    SQUARE { }
+    curveleft_0.98_1 { rotate 1 size 0.98 x 0.00152389 y
+0.981375 }
+}
+rule curveleft_0.98_2 {
+    SQUARE { }
+    curveleft_0.98_2 { rotate 2 size 0.98 x -0.00680141 y
+0.972602 }
+}
+rule curveright_0.98_2 {
+    SQUARE { }
+    curveright_0.98_2 { rotate -2 size 0.98 x 0.00680257 y
+0.9726 }
+}
+rule curveright_0.97_1 {
+    SQUARE { }
+    curveright_0.97_1 { rotate -1 size 0.97 x -0.00660916 y
+0.976461 }
+}
+rule curveleft_0.97_1 {
+    SQUARE { }
+    curveleft_0.97_1 { rotate 1 size 0.97 x 0.00661039 y
+0.976463 }
+}
+
+rule MOUSECLICK{ SEED{ s .005 } }

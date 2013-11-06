@@ -1,0 +1,18 @@
+test1234&test&startshape s
+rule s{a{y .3 s .2}}
+rule a{
+CIRCLE{}
+SQUARE{y -.9 s .2 2.4}
+SQUARE{y -.7 r 110 x .4 s .2 1}
+SQUARE{y -.7 r -110 x -.4 s .2 1}
+SQUARE{x .99 y -.11 s .2 1 r -20}
+SQUARE{x -.99 y -.11 s .2 1 r 20}
+SQUARE{y -2.6 r 20 x .21 s .2 1.3}
+SQUARE{y -2.6 r -20 x -.21 s .2 1.3}
+SQUARE{y -3.7 r 10 x .5 s .2 1.2}
+SQUARE{y -3.7 r -10 x -.5 s .2 1.2}
+CIRCLE{}
+}
+rule MOUSECLICK{x{s .015 sat 1 b .5}}
+rule x{CIRCLE{}x{s .95 y -.1}}
+rule x{CIRCLE{}x{s .999 y -.1}}

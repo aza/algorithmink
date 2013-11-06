@@ -1,0 +1,26 @@
+Context Free&Koch Curve&startshape scale
+background {b -1}
+
+rule scale{ B{s .5 y -.4 x .3} }
+
+rule B
+{
+ ALine1{x -1 y .577 b .3 a -.5 saturation 1 hue 0 r 0}
+ ALine1{x -1 y .577 b .3 a -.5 saturation 1 hue 120 r 120}
+ ALine1{x -1 y .577 b .3 a -.5 saturation 1 hue 240 r 240}
+}
+
+rule ALine1
+{
+Line1{}
+
+ALine1 {s .3333 b .3 a .2 sat -.2 hue 20}
+ALine1 {s .3333 b .3 a .2 x .666 r 60 sat -.2}
+ALine1 {s .3333 b .3 a .2 x 1 y .577 r -60 sat -.2}
+ALine1 {s .3333 b .3 a .2 x 1.333 sat -.2 hue -20}
+}
+
+rule Line1
+{
+CIRCLE { x 1 s 1 1}
+}

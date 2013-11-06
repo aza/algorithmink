@@ -1,0 +1,11 @@
+Kamil Szot&Tree&startshape Start
+rule Start {
+  tree { s 2 y -1.5 }
+}
+rule tree {
+ TRIANGLE{ y .2887 s .05 1}
+ tree { s .5  r -25 y 0.6}
+ tree { s .5  r 65 y 0.5}
+ tree { s .6  r -75 y 0.3}
+ tree { s .4  r 95 y 0.35}
+}

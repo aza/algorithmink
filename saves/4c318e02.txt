@@ -1,0 +1,54 @@
+whoever&NeuronsEdit1&startshape test
+
+rule test{
+  S{ s .02}
+  S{ s .02 r 120}
+  S{ s .02 r -120}
+}
+
+rule S 0.5{
+ CIRCLE {}
+ S {y 0.5 r -5 b .008| s .995}
+}
+
+rule S 0.5{
+ CIRCLE {}
+ S {y 0.5 r 5 b .008| s .995}
+}
+
+rule S 0.01{
+ CIRCLE { s 3}
+ S{ r 45 s .995 b .008|}
+ S{ r -45 s .995 b .008|}
+}
+
+rule S 0.01{
+CIRCLE { s 3}
+S{ r -35 s .995 b .008|}
+S{ r 35 s .995 b .008|}
+}
+
+rule S 0.001{
+ D {s 1.2}
+}
+
+rule D 0.3{
+ CIRCLE {}
+ D {y 0.5 r 2 b -.01| s 1.001}
+}
+
+rule D 0.5{
+ CIRCLE {}
+ D {y 0.5 r -1 b -.01| s 1.001}
+}
+
+rule D 0.005{
+ S {s 1}
+}
+
+
+
+rule MOUSECLICK{
+  S{ s .008}
+}
+

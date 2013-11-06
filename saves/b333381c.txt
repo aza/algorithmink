@@ -1,0 +1,91 @@
+lunarbunny&centipede&startshape startcentipedescaled
+
+rule fog{
+  CIRCLE{ s 2 b 1 a -.97 }
+}
+
+rule startcentipedescaled {
+	startcentipede { s 0.1 }
+}
+
+rule startcentipede {
+	segment { hue 10 b 0.2 }
+}
+
+rule legs 5 {
+        CIRCLE { s 1 1 }
+        legs { y 0.796 s 0.8 r 2}
+}
+
+rule legs 5 {
+        CIRCLE { s 1 1 }
+        legs { y 0.796 s 0.8 r 4}
+}
+
+rule legstart {
+        legs { }
+}
+
+rule legstart {
+        legs { flip 90 }
+}
+
+rule drawsegment {
+	CIRCLE { x 0 y 0 s 0.65 1.15 sat 0 b -1}
+	CIRCLE { x 0 y 0 s 0.6 1 }
+	CIRCLE { x 0.1 y 0 s 0.1 0.5 sat 0 b 1 a -0.9}
+fog{}
+}
+
+rule segment {
+	legstart { y 0.5 s 0.2 }
+	legstart { flip 0 y -0.5 s 0.2 }
+	drawsegment {}
+	rsegment { x 0.5 r 10}
+}
+
+rule rsegment 8 {
+	segment { x 0 r 10 s 1}
+}
+
+rule rsegment 8 {
+	segment { x 0 r -10 s 1}
+}
+
+rule rsegment 8 {
+	segment { x 0 r -5 s 1}
+}
+
+rule rsegment 8 {
+	segment { x 0 r 5 s 1 }
+}
+
+rule rsegment 22 {
+	segment { flip 0 s 1}
+}
+
+rule rsegment 2 {
+	segment { flip 0 s 1}
+}
+
+rule rsegment 1 {
+	head {}
+}
+
+rule head {
+	CIRCLE { x 0 y 0 s 0.65 1.15 sat 0 b -1}
+	CIRCLE { x 0 y 0 s 0.6 1 }
+
+	CIRCLE { x 0.2 y 0.3 s 0.33 sat 0 b -1}
+	CIRCLE { x 0.2 y -0.3 s 0.33 sat 0 b -1}
+
+	CIRCLE { x 0.2 y 0.3 s 0.3 sat 0 b 1}
+	CIRCLE { x 0.2 y -0.3 s 0.3 sat 0 b 1}
+
+	CIRCLE { x 0.3 y 0.3 s 0.1 sat 0 b 0}
+	CIRCLE { x 0.3 y -0.3 s 0.1 sat 0 b 0}
+
+}
+
+
+

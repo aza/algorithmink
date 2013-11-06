@@ -1,0 +1,57 @@
+Matej Yin Gagyi&Hexagonal&startshape shape
+
+rule shape{
+ As {s 0.1}
+}
+
+rule As {
+  A1 {}
+}
+
+rule A {
+  A1 {}
+}
+rule A 0.02 {
+  A0 {}
+}
+
+rule A1 {
+  hex {}
+  A { r 0 y 1 }
+}
+
+rule A1 {
+  hex {}
+  A { r 60 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 120 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 180 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 240 y 1 }
+}
+rule A1 {
+  hex {}
+  A { r 300 y 1 }
+}
+
+rule A0 {
+}
+
+rule hex {
+  hext {r 0}
+  hext {r 60}
+  hext {r 120}
+  hext {r 180}
+  hext {r 240}
+  hext {r 300}
+}
+rule hext {
+  TRIANGLE {y 0.25 s 0.5 r 180}
+}

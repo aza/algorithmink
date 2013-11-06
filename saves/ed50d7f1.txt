@@ -1,0 +1,28 @@
+Josh 4 Briar&9 pointed star&startshape star9
+
+rule star9 {
+  star { s .70 }
+  star { s .63  hue 60 sat 0.8 b 0.5 }
+  star { s .50  hue 360 sat 0.5 b 0.7 }
+  star9 { r 20 s 0.45 }
+}
+
+ 
+rule star{
+   base {}
+   base {r 40 }   
+   base {r 80 } 
+   base {r 120 } 
+   base {r 160 } 
+   base {r 200 } 
+   base {r 240 } 
+   base {r 280 } 
+   base {r 320 } 
+}
+ 
+rule base{
+  TRIANGLE{ s 1 1.1 y 1  }
+  TRIANGLE{ s 1 1.1 y .375 flip 180}
+}
+
+

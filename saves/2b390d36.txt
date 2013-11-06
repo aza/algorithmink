@@ -1,0 +1,30 @@
+Sebastian&Sun&startshape shape
+
+background { b -1 }        // opaque black
+
+rule shape{
+ spin{s 1}
+ spin{s 1}
+ spin{s 1}
+}
+
+rule spin 1{
+ hand{} 
+ spin{r 70 s .999 b .0001  saturation 0.01 a 0.2}
+ hand{}
+}
+
+rule spin{
+ hand{}
+ spin{r 51 s .999 b .0001 saturation 0.01}
+ hand{}
+}
+
+rule hand{
+ CIRCLE{hue 40 b 0.5 s 1 .04 r 90 y 1}
+}
+
+rule hand{
+ CIRCLE{a 1 hue 45 b 0.5 s .05 2 r -90 y 1}
+}
+

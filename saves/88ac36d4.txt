@@ -1,0 +1,16 @@
+Jonathan&Koch&startshape Koch
+
+rule Koch{
+ draw{s 1}
+}
+
+rule draw{
+ TRIANGLE{sat 1 s 1.5}
+ TRIANGLE{sat 1 s 1.5 r 60}
+ Koch{s .333 y .577 b .1 hue 8}
+ Koch{s .333 y -.577 b .1 hue 8}
+ Koch{s .333 x .5 y .288 b .1 hue 8}
+ Koch{s .333 x .5 y -.288 b .1 hue 8}
+ Koch{s .333 x -.5 y .288 b .1 hue 8}
+ Koch{s .333 x -.5 y -.288 b .1 hue 8}
+}

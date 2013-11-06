@@ -1,0 +1,78 @@
+ selene&mysterious orange line&startshape beginning
+
+background {b -1}
+
+rule beginning {
+  mysteriousOrangeLine{x -2.5}
+}
+
+rule mysteriousOrangeLine{
+  SQUARE{s 0.1 h 30 sat 1 b .5}
+  mysteriousOrangeLine {x 0.01}
+}
+
+
+rule mysteriousOrangeLine 0.01{
+  SQUARE{s 0.1 h 30 sat 1 b .5}
+  mysteriousOrangeLine {x 0.01}
+}
+
+rule mysteriousOrangeLine 0.008{
+  SQUARE{s 0.1 h 30 sat 1 b .5}
+  mysteriousOrangeLine {x 0.01}
+  startspiral{}
+}
+
+
+rule startspiral 0.5{
+  spiral1{s 0.05 flip 90}
+}
+
+rule startspiral 0.5{
+  spiral2{s 0.05 flip 90}
+}
+
+rule startspiral 0.5{
+  spiral3{s 0.05 flip 135 r 90}
+}
+
+rule startspiral 0.5{
+  spiral4{s 0.05 flip 135 r 90}
+}
+
+
+rule spiral1 {
+  CIRCLE{h 30 sat 1 b .5}
+  spiral1{x 0.2 y 0.1 r 3.5 s 0.98}
+}
+
+rule spiral1 0.001 {
+  CIRCLE{h 30 sat 1 b .5}
+}
+
+rule spiral2 {
+  CIRCLE{h 30 sat 1 b .5}
+  spiral2{x -0.2 y -0.1 r 3.5 s 0.98}
+}
+
+rule spiral2 0.001 {
+  CIRCLE{h 30 sat 1 b .5}
+}
+
+rule spiral3 {
+  CIRCLE{h 30 sat 1 b .5}
+  spiral3{x -0.2 y 0.1 r -3.5 s 0.98}
+}
+
+rule spiral3 0.001 {
+  CIRCLE{h 30 sat 1 b .5}
+}
+
+rule spiral4 {
+  CIRCLE{h 30 sat 1 b .5}
+  spiral3{x 0.2 y -0.1 r 3.5 s 0.98}
+}
+
+rule spiral4 0.001 {
+  CIRCLE{h 30 sat 1 b .5}
+}

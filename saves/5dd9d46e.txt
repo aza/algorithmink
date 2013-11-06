@@ -1,0 +1,73 @@
+lunarbunny&watchmen&startshape startscale
+
+rule startscale {
+  SQUARE { s 8 sat 0.9 hue 260 b 0.05 }
+  draw { s 4 }
+}
+
+rule draw 20 {
+  watchmenrnd { x -1 }
+  draw { r 45 s 0.9 }
+}
+
+rule watchmenrnd 50 {
+   watchmenrnd { r 7 }
+}
+
+rule watchmenrnd {
+   watchmen {}
+}
+
+rule watchmen {
+
+  CIRCLE{ s 0.66 b 1 a -.5  }  
+  CIRCLE{ x 0.001 y -0.001 s 0.655 b 0 sat 0.8 hue 60 a -0.5 }
+  CIRCLE{ s 0.65 b 0.5 sat 0.8 hue 60 a -0.3 }
+  CIRCLE{ s 0.62 b 0.5 sat 0.8 hue 60 a -0.3 }
+  CIRCLE{ s 0.6 b 0.5 sat 0.8 hue 60 a -0.5 }
+
+
+  CIRCLE{ y -0.06 s 0.35 0.3 b 0 sat 0.8 hue 60 }
+  CIRCLE{ y -0.03 s 0.38 0.3 b 0.5 sat 0.8 hue 60 }
+
+  CIRCLE{ x -0.165 y -0.1 s 0.015 0.07 b 0 sat 0.8 hue 60 r -55 }
+  CIRCLE{ x 0.165 y -0.1 s 0.015 0.07 b 0 sat 0.8 hue 60 r 55 }
+
+
+  CIRCLE{ x -0.09 y 0.08 s 0.04 0.15 b 0 sat 0.8 hue 60 }
+  CIRCLE{ x 0.09 y 0.08 s 0.04 0.15 b 0 sat 0.8 hue 60 }
+
+  bloodsplat { s 0.5 x -0.22  y 0.16 }
+}
+
+rule bloodsplat {
+   dripstart { }
+   dripstart { r 20 s 0.3 }
+   dripstart { r -20 s 0.4 }
+   dripstart { r -30 s 0.3 }
+   splotch { }
+}
+
+rule splotch {
+  CIRCLE { r 45 x 0.031 y -0.03 s 0.07 0.15 sat 0.8 b 0.1 hue 0 }  
+   CIRCLE { r 45 x 0.03 y -0.03 s 0.07 0.15 sat 0.8 b 0.5 hue 0 }  
+   CIRCLE { r 30 x -0.01 y -0.02 s 0.01 0.05 sat 0.8 b 0.9 hue 0 }  
+}
+
+rule dripstart {
+   CIRCLE { r 45 x 0.41 y -0.405 s 0.05 0.1 sat 0.8 b 0.1 hue 0 }
+   CIRCLE { r 45 x 0.4 y -0.4 s 0.05 0.1 sat 0.8 b 0.5 hue 0 }
+   CIRCLE { r 45 x 0.39 y -0.41 s 0.01 0.05 sat 0.8 b 0.9 hue 0 }
+   drip { s 0.92 }
+}
+
+rule drip {
+   SQUARE { r 43 x 0.385 y -0.385 s 0.04 0.07 sat 0.8 b 0.5 hue 0 }
+   SQUARE { r 47 x 0.398 y -0.37 s 0.004 0.09 sat 0.8 b 0.1 hue 0 }
+   drip { s 0.9 }
+}
+
+
+rule MOUSECLICK{
+  watchmen { }
+}

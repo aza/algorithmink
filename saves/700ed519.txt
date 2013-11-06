@@ -1,0 +1,13 @@
+ox&redox chili paper&startshape star
+
+
+rule star 99 {
+  star{r 288 hue 10}
+  tri {}
+}
+rule star{}
+
+rule tri {
+ TRIANGLE {r -18}
+ TRIANGLE {s 0.96 r -18 hue -1 sat .8 b .5 }
+}

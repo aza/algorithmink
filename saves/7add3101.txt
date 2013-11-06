@@ -1,0 +1,11 @@
+Marherbeth Jnior&IFMA&startshape go
+
+rule go{
+ sun {x -.0}
+ go {s .8 hue 48 sat 1 d 2 x .3 r 55}
+}
+
+rule sun {
+ CIRCLE{x -3 }
+ sun{s .70 b .1}
+}

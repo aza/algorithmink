@@ -1,0 +1,8 @@
+zebo95&SOME TRIANGLES&startshape shape
+
+rule shape{
+ TRIANGLE{}
+shape{ s .8 b .2 x -.5 }
+ shape{ s .5 b .2 x .2 }
+}
+

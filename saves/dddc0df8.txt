@@ -1,0 +1,13 @@
+Shorty9boy&Splatter&
+
+startshape B
+ 
+rule A
+{
+  CIRCLE {} CIRCLE {b 1 s 1}
+  A {s 1 1 x 1 s 1}
+}
+rule A { CIRCLE {} A {s 1 1 x .5 s .75} }
+ 
+rule B { A {} B {s .9 r 15} }
+rule B { A {r 400} B {s .9 r 5} }

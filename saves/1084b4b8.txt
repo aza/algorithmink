@@ -1,0 +1,7 @@
+sheri&Le masterpiece&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+
+hello, my name is Sheri

@@ -1,0 +1,89 @@
+Peter Scott&Two tile types&startshape board
+
+rule board {
+  boarda{}
+  boardb{x 0.5 y 0.5 }
+}
+
+rule boarda {
+  rowa{}
+  rowa{ y 1 flip  }
+  rowa{ y 2 }
+  rowa{ y -1 }
+  rowa{ y -2 }
+}
+
+rule rowa {
+  tilea { r 45 s 0.5 }
+  tilea { r 45 s 0.5 x 1 }
+  tilea { r 45 s 0.5 x 2 }
+  tilea { r 45 s 0.5 x -1 }
+  tilea { r 45 s 0.5 x -2 }
+}
+
+rule boardb {
+  rowb{}
+  rowb{ y 1 flip  }
+  rowb{ y 2 }
+  rowb{ y -1 }
+  rowb{ y -2 }
+}
+
+rule rowb {
+  tileb { r 45 s 0.5 }
+  tileb { r 45 s 0.5 x 1 }
+  tileb { r 45 s 0.5 x 2 }
+  tileb { r 45 s 0.5 x -1 }
+  tileb { r 45 s 0.5 x -2 }
+}
+
+
+rule tilea {
+  ta{ s 0.5 }
+  ta{ s 0.5 r 90 }
+  ta{ s 0.5 r 180 }
+  ta{ s 0.5 r 270 }
+}
+
+rule ta {
+ squar{}
+ ta{ x -0.75 y -0.75 s 0.5 b 0.2 }
+}
+
+rule squar {
+  SQUARE{}
+  SQUARE{s 0.707 b 1 r 45}
+  SQUARE{s 0.49 b 0}
+  SQUARE{s 0.34643 b 1 r 45}
+}
+
+
+rule tileb {
+  tb{ s 0.5 }
+  tb{ s 0.5 r 90 }
+  tb{ s 0.5 r 180 }
+  tb{ s 0.5 r 270 }
+}
+
+rule tb {
+ cirque{} cirque{r 90}
+ cirque{r 180} cirque{r 270}
+ tb{ x -0.75 y -0.75 s 0.5 b 0.2 }
+}
+
+path spiral {
+  MOVETO{ x 1 }
+  20* {r 36 s 0.99} {
+   LINETO(x 0.984807753 y 0.173648178)
+   STROKE{}
+  }
+}
+
+rule cirque {
+ CIRCLE{}
+ CIRCLE{ b 1 s 0.9 }
+ CIRCLE{ s 0.8 }
+ CIRCLE{ x 0.7 s 0.1 }
+ CIRCLE{ x 0.686549696 y 0.13656 s 0.1}
+ CIRCLE{ x 0.64671567 y 0.267878 s 0.1}
+}

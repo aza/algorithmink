@@ -1,0 +1,59 @@
+JessAntonio Arroyo&Primitive Plant&
+
+startshape start
+
+background {b -0.5}
+
+rule MOUSECLICK {
+trunk {s .04 r 270 b .04 hue 30 sat .7 }
+}
+
+rule start{ 
+ shape { x 0 y -1}
+}
+
+rule shape {
+ trunk {s .07 r 270 b .04 hue 30 sat .7 }
+}
+
+
+rule trunk {
+ CIRCLE {  }
+ trunk { x -0.2 s .995}
+}
+
+rule trunk .05 {
+ CIRCLE { }
+ trunk { s .995 }
+ branch { x -0.4 y .2 s .99 r 40 }
+ branch { x -0.4 y .2 s .99 r -40 }
+}
+rule trunk .001 {}
+
+rule branch {
+ CIRCLE {  }
+ branch { x -0.15 s .99}
+}
+rule branch .005 {
+ CIRCLE { }
+ branch { s .8 }
+ branch { x -0.3 y .2 s .8 r 25 }
+ branch { x -0.3 y .2 s .8 r -25 }
+}
+
+rule branch .09 {
+ leaf{ s 2 x 1 y 1 r 45}
+ leaf{ s 2 x -1 y -1 r 90 flip 90}
+ branch {}
+}
+
+rule branch .001 {}
+rule leaf {
+ CIRCLE { hue 100 b .1 x .1}
+ leaf { x .01 y .01  r -.3 s .99}
+ vein{}
+}
+
+rule vein {
+ CIRCLE { x -.3 y -.3 b -.8 s .05 }
+}

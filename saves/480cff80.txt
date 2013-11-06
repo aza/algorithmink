@@ -1,0 +1,5 @@
+joe&PISS&startshape shape
+
+rule shape{
+ SQAURE{}
+}

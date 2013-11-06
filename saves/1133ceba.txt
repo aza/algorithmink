@@ -1,0 +1,6 @@
+are&square&startshape shape
+
+rule shape{
+rule 1{hue 200 sat 1}
+ SQUARE{}
+}

@@ -1,0 +1,7 @@
+ox&Colored Pythagoras tree&startshape shape
+
+rule shape{
+ SQUARE{y -1 size .667}
+ shape{b .02 hue 150 sat 0.5 r 45 x -0.75 y 0 size .7071067812}
+ shape{b .02 hue 130 sat 0.5 r -45 x 0.75 y 0 size .7071067812}
+}

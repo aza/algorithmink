@@ -1,0 +1,5 @@
+stich&1111&startshape shape
+
+rule shape{
+ CIRCLE{}
+}

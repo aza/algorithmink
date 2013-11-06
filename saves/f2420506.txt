@@ -1,0 +1,15 @@
+J&Buds&startshape shape
+
+rule shape {
+  a {x -1}
+}
+
+rule a 1 {
+ SQUARE{s .05 hue 10 sat 1 b .2}
+ a {s .98 r .5 x .05 hue 1}
+}
+
+rule a .01 {
+ a {}
+ a {flip 0 r 20}
+}

@@ -1,0 +1,20 @@
+John Gietzen&Colored Snowflake&startshape shape
+
+rule shape{
+  line { b 1 y .2165 hue 0 sat 1 }
+  line { b 1 x -.25 y -.2165 r 120  hue 129 sat 1 }
+  line { b 1 x .25 y -.2165 r -120 hue 245 sat 1 }
+}
+
+rule line {
+  CIRCLE{ s 1 .1 }
+  replacement { s .33333333 b -.3}
+  CIRCLE{ s .99 .099 b .9 }
+}
+
+rule replacement {
+  line { x -1 }
+  line { x -.25 y .433 r 60 }
+  line { x .25 y .433 r -60 }
+  line { x 1 }
+}

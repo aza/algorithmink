@@ -1,0 +1,8 @@
+Ward Cunningham&Honeycomb&startshape shape
+background {b -.5}
+
+rule shape{ line {s .05} line {s .05 b 1}}
+
+rule line {CIRCLE{s .8} line {x 1} }
+
+rule line { line {r 120} }

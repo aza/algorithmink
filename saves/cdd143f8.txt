@@ -1,0 +1,12 @@
+Mb&InfiniSquares&startshape shape
+
+rule shape{
+ SQUARE{}
+ shape{ s .5 b .1 x -.1}
+ shape{ s .5 b .1 x .1}
+ redraw{ s .2}
+}
+
+rule redraw{
+ shape{ s -5 b .1 x -.1}
+}

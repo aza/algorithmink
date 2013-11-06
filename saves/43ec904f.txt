@@ -1,0 +1,64 @@
+LuisukBrazil&Homem X Mulher&startshape x
+
+rule x{
+
+ SQUARE{s 2 x -1 }
+ SQUARE{s 2 x 1 b 1}
+ CIRCLE{b 1 s .25 y .6 x -.86}
+ CIRCLE{s .25 y .6 x .86}
+ SQUARE{s .05 y .47 x .86}
+ SQUARE{s .05 y .47 x -.86 b 1}
+ SQUARE{s .4  y .25 x -.86 b 1}
+ SQUARE{s .4  y .15 x -.86 b 1}
+ CIRCLE{s .16 y .37 x -.65 b 1}
+ CIRCLE{s .16 y .37 x -1.065 b 1}
+ SQUARE{s .1  y .34 x -.622 b 1} 
+ SQUARE{s .1  y .34 x -1.095 b 1} 
+ SQUARE{y .2 s .2 .3 x -.67 b 1}
+ SQUARE{y .2 s .2 .3 x -1.045 b 1}
+ CIRCLE{s .1 y .05 x -.62 b 1}
+ CIRCLE{s .1 y .05 x -1.096 b 1}
+ SQUARE{s .25 y -.15 x -.86 b 1}
+ SQUARE{s .25 y -.3 x -.86 b 1}
+ TRIANGLE{s .48 .6 x .86 y .15}
+ SQUARE{s .1 .4 x .8 y .25}
+ SQUARE{s .1 .4 x .93 y .25}
+ TRIANGLE{s .2 .3 x .75 y .28}
+ TRIANGLE{s .2 .3 x .98 y .28}
+ TRIANGLE{s .45 .7 x .86 y -.19 r 180}
+ SQUARE{s .4 x .86 y -.61 b 1}
+ x{}
+ y{}
+} 
+
+rule x{
+ heart{y .3 x .9 s .1 sat 1 b .4}
+}
+
+rule heart{
+ half{r -30}
+ half{r 30 x -.72 flip 90}
+}
+
+rule half{
+ CIRCLE{}
+ half{y -.1 s .9 r 1}
+}
+
+rule y{
+ heart{y -.08 x -.82 s .1 sat 1 b .4}
+}
+
+rule heart{
+ half{r -30}
+ half{r 30 x -.72 flip 90}
+}
+
+rule half{
+ CIRCLE{}
+ half{y -.1 s .9 r 1}
+}
+
+rule MOUSECLICK{
+heart{s .1 sat 1 b .4}
+}

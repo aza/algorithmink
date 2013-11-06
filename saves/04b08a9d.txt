@@ -1,0 +1,7 @@
+asdf&asfd&startshape shape
+
+rule shape{
+ CIRCLE{}
+}123
+adsfdf
+asdf

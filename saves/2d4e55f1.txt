@@ -1,0 +1,7 @@
+testing&testing&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{ s .5 b .2 x -.52 }
+ shape{ s .5 b .2 x .30 }
+}

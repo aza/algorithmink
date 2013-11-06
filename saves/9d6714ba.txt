@@ -1,0 +1,35 @@
+Logan&spirals&startshape scale
+
+rule scale{ 
+	SPIKES{ s .000001 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 90 }
+	SPIKE { r 180 }
+	SPIKE { r 270 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 33 }
+
+}
+
+rule LSPIKE {
+	SQUARE {}
+	LSPIKE { x 0.899 s .965 r 12 b .04}
+       
+}
+rule LSPIKE 0.0006 {
+	SPIKE { r 90 }
+	SPIKE { r -90 }
+	LSPIKE { y 0.98 s 0.99  r 1}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .09 }
+}

@@ -1,0 +1,21 @@
+Sarama&Breaking Infinite Recursive&startshape start
+
+rule start {
+  wisps { s 0.2 h 180 sat 0.3 b 0.5 r 90 }
+wisps { s 0.2 h 180 sat 0.3 b 0.5 r 270 }
+}
+
+rule wisps {
+  wisp { }
+  wisps{}
+}
+
+rule wisp 200 {
+  CIRCLE { s 0.1 }
+  wisp ( s 0.99 z 0.5 x 0.1 y 0.1 r 2.5 h 1 }
+}
+
+rule wisp {
+  wisp { flip 90 }
+  wisp { flip 270 }
+}

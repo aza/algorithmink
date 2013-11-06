@@ -1,0 +1,44 @@
+Anna Jain&Branches&startshape start
+background { sat 0.2 b -1 }
+
+rule start{
+ shape{s 0.01 r 90 y -1 h 200 sat 1 b .1}
+ shape{s 0.01 r 90 y -1 x .55 h 220 sat 1 b .1}
+ shape{s 0.01 r 90 y -1 x .3 h 270 sat 1 b .1}
+shape{s 0.01 r 90 y -1 x .8 h 110 sat 1 b .1}
+shape{s 0.01 r 90 y -1 x -.3 h 315 sat 1 b .1}
+}
+
+rule shape {
+ SQUARE{}
+ shape{x 1 r -1 s 0.995 b .001}
+ leaf{}
+}
+
+rule shape {
+ SQUARE{}
+ shape{x 1 r 1 s 0.995 b .001}
+ leaf{}
+}
+
+rule leafl {
+ SQUARE{}
+ leafl{x 1 r -1 s 0.995 b .005}
+}
+
+
+rule leafr {
+ SQUARE{}
+ leafr{x 1 r 1 s 0.995 b .005}
+}
+
+
+rule leaf {
+ leafl{}
+}
+
+rule leaf {
+ leafr{}
+}
+
+rule leaf 20 {}

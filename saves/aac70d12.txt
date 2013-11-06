@@ -1,0 +1,6 @@
+j&Shaded D&startshape twoshapes
+rule twoshapes{
+  CIRCLE{x 0.5}
+  SQUARE{s 1}
+  twoshapes{x .04 s .9 b .2}
+}

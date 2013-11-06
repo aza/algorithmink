@@ -1,0 +1,8 @@
+Joe DiPilato&Clock&startshape x
+rule x{a{s .5}}
+rule a{CIRCLE{s 2}b{}c{}}
+rule b{CIRCLE{r b 1 s 1.9 a -.1}b{}}
+rule c{h{}m{}s{}}
+rule s{SQUARE{sat 1 b .5 s .005 .9 y .45}s{r -6}}
+rule m{SQUARE{s .008 .85 y .425}TRIANGLE{s .05 .1 y .85}m{r -.1}}
+rule h{SQUARE{s .012 .6 y .3}TRIANGLE{s .05 .1 y .6}h{r -.00833333}}

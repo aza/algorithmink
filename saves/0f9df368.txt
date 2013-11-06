@@ -1,0 +1,5 @@
+esofk&testi&startshape poo
+
+shape poo {
+ CIRCLE [size 1]
+}

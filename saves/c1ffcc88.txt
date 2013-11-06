@@ -1,0 +1,24 @@
+Jkn&LongTree&startshape shape
+
+rule shape{
+test { y -1 s .02 }
+test { y -1 s .02 flip 90 }
+}
+
+rule test {
+SQUARE{}
+test{ y .5 s .99 r 0.5 a -0.01}
+}
+
+rule test .02 {
+SQUARE{}
+test { y .5 s .5 r 2}
+test { y .5 s 1.2 r 10 flip 90}
+}
+
+
+rule test .02 {
+SQUARE{}
+test { y .5 s 1.2 r 2}
+test { y .5 s .5 r 10 flip 90}
+}

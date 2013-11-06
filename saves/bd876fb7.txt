@@ -1,0 +1,13 @@
+Context Free&Spiral Tunnel&startshape scale
+
+rule scale{ BULB{ s .9 y -.6} }
+
+rule BULB {
+    WHEEL { }
+    BULB { x .2 r 20 s .99 }
+}
+
+rule WHEEL {
+    CIRCLE { }
+    CIRCLE { s .95 b 1 }
+}

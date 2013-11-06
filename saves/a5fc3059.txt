@@ -1,0 +1,6 @@
+Foo&Dartboard&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape { s 0.8 b 0.1 }
+}

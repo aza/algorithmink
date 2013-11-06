@@ -1,0 +1,29 @@
+Deffy&Web of Lies&startshape scale
+rule scale{
+ SPIKES{ s .02}
+}
+rule SPIKES{
+ LSPIKE {.05 rotate 90}
+ RSPIKE {.05 rotate 270}
+ KSPIKE {.05 }
+ DICK {.o5 rotate 180}
+}
+rule LSPIKE{
+ SQUARE{s 3}
+ LSPIKE { y 2 s .95 r 6}
+}
+rule RSPIKE{
+ SQUARE{s 3}
+ RSPIKE {y 2 s .95 r 6}
+}
+rule KSPIKE{
+ SQUARE{s 3}
+ KSPIKE{y 2 s .95 r 6}
+}
+rule DICK{
+ SQUARE{s 3}
+ DICK{y 2 s .95 r 6}
+}
+rule MOUSECLICK{
+  SPIKES{ s .02 }
+}

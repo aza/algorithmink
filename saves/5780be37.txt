@@ -1,0 +1,18 @@
+Daeken&Triangular Dragon&startshape start
+
+rule start {
+ foo { s 3.0 }
+}
+
+rule foo {
+ bar { s .4 b .1 }
+ bar { s .4 b .1 r 72 }
+ bar { s .4 b .1 r 144 }
+ bar { s .4 b .1 r 216 }
+ bar { s .4 b .1 r 288 }
+}
+
+rule bar {
+ TRIANGLE { x .25 y .25 }
+ foo { x .25 y .25 r 90 flip 90 }
+}

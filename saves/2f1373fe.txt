@@ -1,0 +1,46 @@
+Lupinius&Circles&startshape start
+
+rule start{
+ shape{s 0.1}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{x 0.5}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{x -.5}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{y 0.5}
+}
+
+rule shape{
+ CIRCLE{}
+ shape{y -.5}
+}
+
+rule shape{
+ shapb{ b 0.1}
+}
+
+rule shape{
+ shapb{ b -.1}
+}
+
+rule shapb 5 {
+ shape{ s 0.99}
+}
+
+rule shapb 5 {
+ shape{ s 1.01}
+}
+
+rule shapb 1 {
+ shape{ s 1.01}
+ shape{ s 0.99}
+}

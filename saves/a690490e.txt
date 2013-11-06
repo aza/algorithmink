@@ -1,0 +1,10 @@
+ox&rainbow spiral&startshape rain
+  background {h 50 sat .5 b -.15}
+rule rain{
+  spiral{b .7 sat .999 s .12 y -.5}
+}
+
+rule spiral{
+ CIRCLE{}
+ spiral{x .04 s .9997 hue 1.1 r 0.6 b -.0003}
+}

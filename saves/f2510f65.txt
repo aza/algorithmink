@@ -1,0 +1,13 @@
+ox&stairway to hell&startshape shape
+
+rule shape{
+ TRIANGLE{s .6 x -1.2}
+ shape2{s .98 b 1 r 5}
+ TRIANGLE{x .2}
+}
+
+rule shape2{
+ TRIANGLE{s .8 x -1.5}
+ shape{s .99 b -1 r 4}
+ TRIANGLE{x .3}
+}

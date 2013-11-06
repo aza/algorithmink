@@ -1,0 +1,33 @@
+adsf&adf&startshape scale
+
+rule scale{ 
+	SPIKES{ s .01 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 77 }
+	SPIKE { r 180 }
+	SPIKE { r 170 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 30 }
+}
+
+rule LSPIKE {
+	SQUARE {}
+	LSPIKE { y 2.951 s 0.79 r 1}
+}
+rule LSPIKE 0.005 {
+	SPIKE { r 903535 }
+	SPIKE { r -1432523 }
+	LSPIKE { y 0.98 s 0.99  r 1}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .0239 }
+}

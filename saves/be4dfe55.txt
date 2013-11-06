@@ -1,0 +1,6 @@
+VH&Dizzy Triangle&startshape S
+
+rule S {
+  TRIANGLE { hue 200 b 0.2 }
+  S { r 1 hue +1 s 0.9 b 0.1 }
+}

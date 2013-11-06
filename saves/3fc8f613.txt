@@ -1,0 +1,7 @@
+mo&i&
+startshape twoshapes
+rule twoshapes{
+  CIRCLE{s .5}
+  SQUARE{x 1}
+  
+}

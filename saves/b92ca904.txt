@@ -1,0 +1,8 @@
+Me&Stars and crap&
+startshape star
+rule star {
+  CIRCLE { s .05 1.2 }
+  star { s .097 y 1}
+  star {r 20} 
+}
+

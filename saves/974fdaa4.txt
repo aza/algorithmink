@@ -1,0 +1,19 @@
+Ari&Swirlies&startshape shape
+
+rule shape{
+test { s .05 }
+test { s .06 flip 45 }
+test { s .04 r 45 }
+test { s .04 r 90 flip 90 }
+}
+
+rule test 9 {
+CIRCLE{}
+test{ y .5 s .99 r 2 }
+}
+
+rule test .18 {
+TRIANGLE{}
+test { y .5 s .99 r 2 }
+test { y .5 s .99 r 10 flip 90 }
+}

@@ -1,0 +1,9 @@
+robocop&smoke&startshape DOT
+
+rule DOT{
+  CIRCLE{ s 1 b -1 a -.9 }
+}
+
+rule MOUSEMOVE{
+  DOT{ }
+}

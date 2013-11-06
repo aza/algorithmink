@@ -1,0 +1,12 @@
+irix&spiral post it&startshape scale
+
+rule scale{
+  shape{s .12 y -.5 x 1}
+}
+
+rule shape{
+ SQUARE{ b 12 s 1.32 a -1}
+ SQUARE{ a -.7 }
+ shape{ y 1 r 7 s .99}
+}
+

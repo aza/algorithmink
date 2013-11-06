@@ -1,0 +1,25 @@
+Jookia&Coloured Squares&startshape fractal
+
+rule fractal{
+ SQUARE{sat 1}
+ fractal{x 0.1 y 0.1 s 0.5 b 0.5 a 0.5 hue 8}
+ fractal{x -0.1 y -0.1 s 0.5 b 0.5 a 0.5 hue 247}
+}
+
+rule fractal{
+ SQUARE{sat 1}
+ fractal{x -0.1 y 0.1 s 0.5 b 0.5 a 0.5 hue 16}
+ fractal{x 0.1 y -0.1 s 0.5 b 0.5 a 0.5 hue 239}
+}
+
+rule fractal{
+ SQUARE{sat 1}
+ fractal{x 0.1 y -0.1 s 0.5 b 0.5 a 0.5 hue 32}
+ fractal{x -0.1 y 0.1 s 0.5 b 0.5 a 0.5 hue 223}
+}
+
+rule fractal{
+ SQUARE{sat 1}
+ fractal{x -0.1 y -0.1 s 0.5 b 0.5 a 0.5 hue 64}
+ fractal{x 0.1 y 0.1 s 0.5 b 0.5 a 0.5 hue 191}
+}

@@ -1,0 +1,8 @@
+Elas&simple fractal&startshape shape
+
+rule shape{
+ SQUARE{}
+ shape{s .5 b .2 x .25}
+ shape{s .5 b .2 x -.25}
+ shape{s .5 b .2  y .25}
+}

@@ -1,0 +1,63 @@
+Rodrigo Silva&Domain of Bacteria&startshape STARTER
+
+rule STARTER{
+   DOT{s .11 }
+ DOT{s .12 }
+   DOT{s .13 }
+   DOT{s .14 }
+   DOT{s .15 }
+   DOT{s .16 }
+   DOT{s .17 }
+   DOT{s .18 }
+DOT{s .11 }
+ DOT{s .1 }
+   DOT{s .13 }
+   DOT{s .14 }
+   DOT{s .1 }
+   DOT{s .16 }
+   DOT{s .1}
+   DOT{s .1 }
+D}
+
+}
+
+rule DOT{
+  CIRCLE{ s .3 b .3 a -.99 }
+  CIRCLE{ s .33 b 1 a -.5 }  
+  CIRCLE{ s .3 b .5 sat 0 }
+  MOTION{ h .1}
+}
+
+rule MOTION{
+  DOT{ x .05 }
+}
+
+rule MOTION{
+  DOT{ x -.05 }
+}
+
+rule MOTION{
+  DOT{ y .05 }
+}
+
+rule MOTION{
+  DOT{ y -.05 }
+}
+
+rule MOUSECLICK{
+  DOT{ s .1 }
+DOT{ s .15 }
+DOT{ s .1 }
+DOT{ s .1 }
+DOT{ s .15 }
+DOT{ s .1 }
+DOT{ s .1 }
+DOT{ s .1 }
+DOT{ s .1 }
+DOT{ s .15 }
+DOT{ s .1 }
+DOT{ s .1 }
+DOT{ s .15 }
+DOT{ s .1 }
+  
+}

@@ -1,0 +1,9 @@
+lalo&test&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+
+rule MOUSEMOVE{
+  DOT{ }
+}

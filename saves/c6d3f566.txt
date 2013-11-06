@@ -1,0 +1,6 @@
+ME&LOL&startshape shape
+
+rule shape{
+ CIRCLE{}
+TRIANGLE{B .10000}
+}

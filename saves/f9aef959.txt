@@ -1,0 +1,5 @@
+luiz&kalisto&startshape shape
+
+rule shape{
+ CIRCLE{}
+}triangulo{}

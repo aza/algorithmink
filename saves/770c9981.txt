@@ -1,0 +1,6 @@
+Juan Pablo Kaniefsky&Portal&startshape spiral
+
+rule spiral{
+ SQUARE{a -.5 s .1 x 2}
+ spiral{ y .2 r 10 s .99}
+}

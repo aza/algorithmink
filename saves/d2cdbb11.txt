@@ -1,0 +1,21 @@
+nap&test&startshape starter
+background{ b -1 }
+
+rule starter{
+ center{ b 1 s .8}
+}
+
+rule center {
+  CIRCLE{ }
+  wings {}	
+}
+
+rule wings {
+  center{ x .75 s .5 b -.2 r 3}	
+  center{ x -.75 s .2 b -.2 r -5}
+}
+
+rule wings {
+  center{ y .75 s .5 b -.2 r 2}	
+  center{ y -.75 s .5 b -.2 r -2}
+}

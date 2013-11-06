@@ -1,0 +1,23 @@
+Wizem&3&startshape START
+background {h 77 sat .5 b -.5}
+
+
+
+rule MOUSECLICK{ START{} }
+
+rule START
+{
+HEART { hue 3590 sat 1 b 0.5 s .05}
+}
+
+rule HEART {
+PART {}
+PART {flip 90}
+
+}
+
+rule PART {
+CIRCLE { s 1}
+PART {y 0.282 x -0.3 s 0.990 r -0.6 b 0.01}
+
+}

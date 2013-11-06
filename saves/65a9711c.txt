@@ -1,0 +1,25 @@
+ox&oxcbo&startshape tri
+background { a -1 }
+
+rule tri {
+	foo {s 0.25 sat 0.8 b 0.5 h 400}
+}
+rule foo {
+	CIRCLE {}
+	ciz {r 240}
+	ciz {r 120}
+	ciz {}
+}
+
+rule ciz {
+	cir {r -21 s 0.6 y 0.5}
+}
+
+rule cir {
+ sha {}
+	foo {x 1 y 1.5 h -30 b -0.05}
+}
+
+rule sha {
+ CIRCLE {b 0.4 s 1.8 h 5 b -0.05}
+}

@@ -1,0 +1,50 @@
+BC&Bookeh&startshape init
+background{ b -1 }
+rule init{  
+  CIRCLE{ sat 0 s .12 b .5 }
+  shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+}
+
+rule shape{
+ CIRCLE{ sat 0.5 s .50 b .5  }
+ move{}
+}
+
+rule move{
+ shape{ y .50 a .1 sat +.05 }
+}
+
+rule move{
+ shape{ x .50 hue +5 b +.05 a -.5 }
+}
+
+rule move{
+ shape{ y -.50 a -.5 b -.05 }
+}
+
+rule move{
+ shape{ x -.150 hue -.5 sat -.05 }
+}
+
+rule move{
+ shape{ y .50 x -.50 }
+}
+
+rule move{
+ shape{ x .50 y .50 }
+}
+
+rule move{
+ shape{ y -.50  x .50}
+}
+
+rule move{
+ shape{ x -.50 y -.50 }
+}
+

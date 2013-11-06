@@ -1,0 +1,34 @@
+5&78&startshape start
+
+rule start{
+ shapeA{ r 90 flip 90 s 2}
+}
+
+rule shapeA{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .49 .97 b 1}
+ shapeA{ s .95 r 10 }
+}
+
+rule vines{
+ vine{}
+ vine{r 65 }
+ vine{r 143 }
+ vine{r 220 }
+ vine{r 100 }
+ vine{r 290 }
+}
+
+rule vine 15 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.96 x 0.4 r 10 z 0.05 b 0.01 }
+}
+
+rule vine 2 {
+  TRIANGLE { s 0.3 1.2 r 40 y -0.3 flip 0 }
+  vine { }
+}
+
+rule vine {
+  vine { flip 0 }
+}

@@ -1,0 +1,30 @@
+Alface&My love for you Lilian&startshape main
+
+rule s2c{
+	s2{s 1.1}
+	s2{s 1 b 1 x .04}
+}
+
+rule s2c{
+	s2{s 1.1 b 1}
+	s2{s 1 b 0 x .04}
+}
+
+rule s2 {
+	SQUARE{r 45 x .24 s .9}
+	SQUARE{r 45 x .56 s .9}
+	CIRCLE{y .3}
+	CIRCLE{x .8 y .3}
+	TRIANGLE{f 180 x .4 s 1.58}
+}
+
+rule linha{
+	s2c{s 2 x.04}
+	linha{x 1.9 r 17 s 0.95}
+}
+rule linhab{
+	20* {x 1.9 } s2c{s 1 x.04}
+}
+rule main{
+	linha{s .15 y -.8}
+}

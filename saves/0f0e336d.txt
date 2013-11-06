@@ -1,0 +1,7 @@
+ITSBTH&Hawaiian earring&startshape shape
+
+rule shape{
+ CIRCLE{}
+ CIRCLE{b 1 s .95}
+ shape{x -.25 s .5}
+}

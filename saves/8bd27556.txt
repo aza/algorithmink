@@ -1,0 +1,30 @@
+gnomnain&Circle Walking&startshape main
+
+rule main {
+   go { s 0.01 }
+}
+
+rule go 3 {
+   shape {}
+   go {x +1}
+}
+
+rule go 0.1 {
+   shape {}
+   go { x +1 }
+   go { r 90 x +1 }
+}
+
+rule go 0.1 {
+    shape {}
+    go { x +1 }
+    go { r -90 x +1}
+}
+
+rule go 0.1 {
+    shape {}
+}
+
+rule shape{
+ CIRCLE{}
+}

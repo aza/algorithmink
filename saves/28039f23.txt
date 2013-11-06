@@ -1,0 +1,12 @@
+Nick M&TFractal&startshape scale
+
+rule scale {
+ s { s .5 }
+ s { s .5 r 180 }
+}
+
+rule s {
+ SQUARE { s 3 .1 }
+ s { x 1.5 r  90 s .7 }
+ s { x 1.5 r -90 s .7 }
+}

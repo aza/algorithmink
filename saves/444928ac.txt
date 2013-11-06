@@ -1,0 +1,10 @@
+Anon4876&hm&rule shape2{
+ TRIANGLE{}
+ shape2{ s .5 x .2 }
+ shape2{ s .5 b .3 x -.2 }
+ shape2{ s .5 b .2 y .2 }
+ shape2{ s .5 b .1 y -.2 }
+}
+rule MOUSECLICK{
+ shape2{ }
+}

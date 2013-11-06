@@ -1,0 +1,70 @@
+JACOB&BROKEN&startshape maze
+
+rule maze {
+ layer{s 2}
+ maze{s .8 r 45}
+}
+
+rule layer {
+ lines {}
+ openings{}
+ ring{}
+}
+
+rule ring {
+ CIRCLE{}
+ CIRCLE{s .98 b 1}
+}
+
+rule openings{
+ opening{}
+ opening{r 120}
+ opening{r 240}
+}
+
+rule opening{
+SQUARE{s .03 .1 x .625 b 1}
+}
+
+rule opening .3 {}
+
+rule lines{
+ line{}
+ line{r 120}
+ line{r 240}
+}
+
+rule line{
+ SQUARE{s .1 .01 x .4475}
+}
+rule layer {
+ lines {}
+ openings{}
+ ring{}
+}
+
+rule ring {
+ CIRCLE{}
+ CIRCLE{s .98 b 1}
+}
+
+rule openings{
+ opening{}
+rule opening{
+SQUARE{s .03 .1 x .625 b 1}
+}
+
+rule opening .3 {}
+
+rule lines{
+ line{}
+ line{r 120}
+ line{r 240}
+}
+
+rule line{
+ SQUARE{s .1 .01 x .4475}
+}
+
+rule line{}
+

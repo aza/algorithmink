@@ -1,0 +1,57 @@
+Josh W&Flag 9&startshape L
+
+rule L {
+   fractalflag { s 1.0 0.80 }
+}
+
+rule fractalflag{
+flag{}
+fractalflag{s .5 x -.5 y .5 flip 180 }
+fractalflag{s .5 x -.5 y -.5  }
+fractalflag{s .5 x .5 y -.5 flip 90 }
+}
+
+ 
+rule flag {
+SQUARE{ s 1.1 x -.5 y .5 b 1 }
+SQUARE{ s 1.1 x -.5 y -.5 b 1 }
+SQUARE{ s 1.1  x .5 y -.5 b 1 }
+star{ hue 60 sat 0.8 b 0.5 s .1 x -.25 }
+SQUARE{hue 240 sat 1 b 0.3 x -.5 y .5}
+SQUARE{hue 240 sat 1 b 0.3 x -.5 y -.5}
+SQUARE{hue 0 sat 1 b 0.3 x  .5  y -.5  }
+}
+
+ 
+rule star{
+   base {}
+   base {r 40 }   
+   base {r 80 } 
+   base {r 120 } 
+   base {r 160 } 
+   base {r 200 } 
+   base {r 240 } 
+   base {r 280 } 
+   base {r 320 } 
+}
+ 
+rule base{
+  CIRCLE { s .01  }
+  TRIANGLE{ s 1 1.1 y 1}
+  TRIANGLE{ s 1 1.1 y .375 flip 180}
+}
+
+rule based{
+  CIRCLE { s .01  }
+}
+
+rule flagged {
+  SQUARE { s 1.1 x -.5 y .5 b 0.5 }
+  SQUARE { s 1.1 x -.5 y -.5}
+  SQUARE { s 1.1 x .5 y -.5 }
+  star { s .1 x -.25 }
+  SQUARE { x -.5 y .5 hue 0.6 sat 1 b 1 }
+  SQUARE { x -.5 y -.5 hue 0.5 sat 1 b 0.5 }
+  SQUARE { x  .5  y -.5  hue 0 sat 1 b 1 }
+}
+

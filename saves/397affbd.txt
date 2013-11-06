@@ -1,0 +1,8 @@
+JD&Life t 1&startshape a
+rule a{CIRCLE{s 3 x -3}}
+rule MOUSECLICK{sh{}}
+rule sh{shape{s .1 r 90}}
+rule shape{CIRCLE{s 1 1.5}tail{s .4}}
+rule tail 60{CIRCLE{}
+tail{s .99 y -.2 r 1}}
+rule tail{tail{flip 90}}

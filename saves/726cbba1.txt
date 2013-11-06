@@ -1,0 +1,18 @@
+breath&Bordered Square&startshape twoshapes
+rule twoshapes{
+  SQUARE{}
+  borderup { y -.475 s 1 0.05 }
+  borderup { y .475 s 1 0.05 }
+  borderup { x -.475 s 1 0.05 r 90 }
+  borderup { x .475 s 1 0.05 r 90 }
+}
+
+rule borderdown {
+  SQUARE{}
+  borderup{s 0.95 1 b .2}
+}
+
+rule borderup {
+  SQUARE{}
+  borderdown{s 0.95 1 b -.2}
+}

@@ -1,0 +1,118 @@
+Lunarbunny&Snowflake 2009&startshape SETUP
+
+rule SETUP {
+	snowflakestart { s 0.05  a -0.4}
+}
+
+rule snowflakestart 200 {
+	randomscale {}
+}
+
+rule randomscale 3 {
+	randomscale { s 1.01 }
+}
+
+rule randomscale 3 {
+	randomscale { s 0.99 }
+}
+
+rule randomscale {
+	mainshape { }
+}
+
+rule mainshape {
+	shoot_one { }
+	shoot_one { r 60 }
+	shoot_one { r 120 }
+	shoot_one { r 180 }
+	shoot_one { r 240 }
+	shoot_one { r 300 }
+	snowflakecontinue { a -0.4 }
+}
+
+rule shoot_one 100 {
+	SQUARE { y 1 s 1 2 hue 210 sat 0.5 b 0.6 }
+	SQUARE { y -1 s 1 2 hue 210 sat 0.5 b 0.4 }
+	shoot_one { x 1 s 0.95 }
+}
+
+rule shoot_two_15 {
+	shoot_one { x 15 r 60 s 0.2 }
+	shoot_one { x 15 r -60  s 0.2}
+}
+
+rule shoot_two_10 {
+	shoot_one { x 10 r 45 s 0.2 }
+	shoot_one { x 10 r -45  s 0.2}
+}
+
+rule shoot_two_3 {
+	shoot_one { x 3 r 30 s 0.2 }
+	shoot_one { x 3 r -30  s 0.2 }
+}
+
+rule shoot_two_6 {
+	shoot_one { x 6 r 40 s 0.2 }
+	shoot_one { x 6 r -40  s 0.2}
+}
+
+rule shoot_two_cont {
+	snowflakestart { x 6 s 0.3 }
+}
+
+rule shoot_two_cont {
+	snowflakestart { x 12 s 0.3 }
+}
+
+rule snowflakecontinue 10 {
+	shoot_two_cont { }
+	shoot_two_cont { r 60 }
+	shoot_two_cont { r 120 }
+	shoot_two_cont { r 180 }
+	shoot_two_cont { r 240 }
+	shoot_two_cont { r 300 }
+	snowflakecontinue { s 0.99 }	
+}
+
+rule snowflakecontinue {
+	shoot_two_3 { }
+	shoot_two_3 { r 60 }
+	shoot_two_3 { r 120 }
+	shoot_two_3 { r 180 }
+	shoot_two_3 { r 240 }
+	shoot_two_3 { r 300 }
+	snowflakecontinue { s 0.90 }	
+}
+
+rule snowflakecontinue {
+	shoot_two_6 { }
+	shoot_two_6 { r 60 }
+	shoot_two_6 { r 120 }
+	shoot_two_6 { r 180 }
+	shoot_two_6 { r 240 }
+	shoot_two_6 { r 300 }
+	snowflakecontinue { s 0.90 }	
+}
+
+rule snowflakecontinue {
+	shoot_two_10 { }
+	shoot_two_10 { r 60 }
+	shoot_two_10 { r 120 }
+	shoot_two_10 { r 180 }
+	shoot_two_10 { r 240 }
+	shoot_two_10 { r 300 }	
+	snowflakecontinue { s 0.90 }
+}
+
+rule snowflakecontinue {
+	shoot_two_15 { }
+	shoot_two_15 { r 60 }
+	shoot_two_15 { r 120 }
+	shoot_two_15 { r 180 }
+	shoot_two_15 { r 240 }
+	shoot_two_15 { r 300 }
+	snowflakecontinue { s 0.90 }
+}
+
+rule snowflakecontinue {
+}

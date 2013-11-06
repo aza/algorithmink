@@ -1,0 +1,24 @@
+TreeTest&Tree&startshape SCALE
+
+rule SCALE {
+SEED1 { y -1 s 0.04 }
+}
+ 
+
+rule SEED1 {
+ SQUARE{ sat 0.6 hue 120}
+ SEED1 {y 1.2 size 0.99 rotate 1.5}
+}
+ 
+rule SEED1 0.05 {
+  SEED1 {flip 90}
+}
+ 
+rule SEED1 0.05 {
+ SEED1 {r -5 b -0.5 
+                brightness 0.01}
+ SEED1 {y 1. x -0.5 s 0.7 r 30 b -0.5 flip 90 
+                brightness 0.1}
+ SEED1 {y 1. x 0.5 s 0.7 r -30 b -0.5 flip 90
+                brightness 0.05}
+}

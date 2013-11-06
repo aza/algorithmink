@@ -1,0 +1,10 @@
+polvi&would be cool if&startshape GO
+
+rule GO {
+SIXTEEN {}
+}
+
+rule SIXTEEN {
+16 * { x 1.2  h 3 sat .5 b .5 } CIRCLE { }
+GO { s .9 y .6 x 1 a -.15 hue .1 sat .8 b .5 r 2 }
+}

@@ -1,0 +1,66 @@
+ox&Map in the stars&startshape init
+background{ b -1 }
+rule init{  
+ CIRCLE{ sat 0 s .0011 b .5 hue 600}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+shape{}
+}
+
+rule shape{
+ star{ sat 0.9 s .012 b .5  }
+ star{ sat 0.5 s .010 a -.3 b -1  }
+ move{}
+}
+
+rule move{
+ shape{ y .020 a .1 sat +.15 }
+}
+
+rule move{
+ shape{ x .020 hue +.5 b +.05 a -.05 }
+}
+
+rule move{
+ shape{ y -.020 hue +.15 a -.5 b -.05 }
+}
+
+rule move{
+ shape{ x -.020 hue -.5 sat +.05 }
+}
+
+rule move{
+ shape{ y .020 x -.020 }
+}
+
+rule move{
+ shape{ x .020 y .020 }
+}
+
+rule move{
+ shape{ y -.020  x .020}
+}
+
+rule move{
+ shape{ x -.020 y -.020 }
+}
+
+
+rule star{
+   base {}
+   base {r 72 }   
+   base {r 144 } 
+   base {r 216 } 
+   base {r 288 } 
+}
+ 
+rule base{
+  CIRCLE {s .01}
+  TRIANGLE{ s 1 1.2 y 1}
+  TRIANGLE{ s 1 1.2 y .365 flip 180}
+}
+

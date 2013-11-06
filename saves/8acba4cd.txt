@@ -1,0 +1,32 @@
+cody&the great escape&startshape digdug_start
+
+
+rule digdug_start{
+  SQUARE{ s .2 b .3 }
+  digdug{}
+}
+
+
+rule digdug .3 {
+  SQUARE{ s .21 b .9 x -.01 }
+  SQUARE{ s .2 b .3 }
+  digdug{ x .001 }
+}
+
+rule digdug .233 {
+  SQUARE{ s .21 b .9 x .01 }
+  SQUARE{ s .2 b .3 }
+  digdug{ x -.001 }
+}
+
+rule digdug .233 {
+  SQUARE{ s .21 b .9 y -.01 }
+  SQUARE{ s .2 b .3 }
+  digdug{ y .001 }
+}
+
+rule digdug .233 {
+  SQUARE{ s .21 b .9 y .01 }
+  SQUARE{ s .2 b .3 }
+  digdug{ y -.001 }
+}

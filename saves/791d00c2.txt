@@ -1,0 +1,74 @@
+orange&tentacles&startshape start
+background {b -1}
+
+rule start{
+ tmonster{ s 0.08 h 110 b 0.5 sat 0.8}
+}
+
+rule tmonster{
+ tentacleS{r 0  }
+ tentacleS{r 45 }
+ tentacleS{r 90 }
+ tentacleS{r 135}
+ tentacleS{r 180}
+ tentacleS{r 225}
+ tentacleS{r 270}
+ tentacleS{r 315}
+}
+
+rule tentacleS 50{
+ oval_outline{}
+ tentacleS{z -0.1 y 0.2 s 0.991}
+}
+
+rule tentacleS 10 {
+ oval_outline{}
+ tentacleR{z -0.1 y 0.2 s 0.991}
+}
+
+rule tentacleS 10{
+ oval_outline{}
+ tentacleL{z -0.1 y 0.2 s 0.991}
+}
+
+rule tentacleR 20{
+ oval_outline{}
+ tentacleR{z -0.1 y 0.2 r -5 s 0.991}
+}
+
+rule tentacleR 1 {
+ oval_outline{}
+ tentacleL{z -0.1 y 0.2 r -5 s 0.991}
+}
+
+rule tentacleR 1 {
+ oval_outline{}
+ tentacleS{z -0.1 y 0.2 r -5 s 0.991}
+}
+
+rule tentacleL 20{
+ oval_outline{}
+ tentacleL{z -0.1 y 0.2 r 5 s 0.991}
+}
+
+rule tentacleL 1 {
+ oval_outline{}
+ tentacleR{z -0.1 y 0.2 r 5 s 0.991}
+}
+
+rule tentacleL 1 {
+ oval_outline{}
+ tentacleS{z -0.1 y 0.2 r 5 s 0.991}
+}
+
+rule oval_outline
+{
+ oval{ s 1.2 a -0.9}
+ oval{ s 1.10 a -0.8}
+ oval{ s 1.05 b -1}
+ oval{}
+}
+
+rule oval {
+ CIRCLE{s 0.618 1}
+}

@@ -1,0 +1,46 @@
+noob&uber tunnel&startshape start
+
+rule start{ SS1{ s 1.5 y 0} }
+ 
+rule SS1 {
+    ALPHA {}
+    BETA {}
+    GAMMA {}
+    DELTA {}
+    EPSILON {}
+}
+
+rule ALPHA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    SQUARE {s -0.9955 b -1}
+    ALPHA {r 3 s 0.99}
+}
+ 
+rule BETA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    ALPHA {r 3 s 0.99}
+    SQUARE {s -0.9955 b -1}
+    BETA {r 5 s 0.99}
+}
+
+rule GAMMA {
+    SQUARE {b 0}
+    SQUARE {s*.4 0.9955 b 1}
+    GAMMA {r 7 s 0.99}
+}
+
+rule DELTA {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    SQUARE {s -0.9955 b -1}
+    DELTA {r 11 s 0.99}
+
+}
+
+rule EPSILON {
+    SQUARE {b 0}
+    SQUARE {s 0.9955 b 1}
+    EPSILON {r 13 s 0.99}
+}

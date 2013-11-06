@@ -1,0 +1,24 @@
+luisukbrazil&inter&startshape die
+
+rule die{
+ TRIANGLE{}
+ pip{}
+ y{}
+ w{}
+}
+
+rule pip{
+ CIRCLE{ b 1 s .14 r 6 }
+ y{}
+}
+
+rule y{
+ SQUARE{s 2 x -1.5}
+ w{}
+}
+
+rule w{
+ SQUARE{s 2 x 1.5}
+}
+
+

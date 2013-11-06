@@ -1,0 +1,22 @@
+JessAntonio Arroyo&Spiraled spirals&startshape start
+ 
+rule start{
+ shape{s .2 b .3 }
+ shape{s .2 b .3 r 180 }
+ shape{s .2 b .3 flip  }
+ shape{s .2 b .3 flip r 180 }
+}
+
+rule shape{
+ TRIANGLE{s .5}
+ shape{y .03 x .03 s .999 b -.001 sat 0.1  hue .1 r 1 }
+}
+
+
+rule shape .001 {
+shape { r 180 flip}
+shape { }
+}
+
+rule shape .001 {}
+

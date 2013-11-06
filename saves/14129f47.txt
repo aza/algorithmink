@@ -1,0 +1,6 @@
+Matt Boehm&Electric Lollipop&startshape shape
+
+rule shape{
+ SQUARE{s 2 b .5 hue 1 sat .9 alpha -.8}
+shape{hue 5 s .995 rotate 1.5}
+}

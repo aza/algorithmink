@@ -1,0 +1,17 @@
+Kevin  Lusukbrazil&interrogao&startshape x
+
+background{b - 1}
+
+rule x{
+ CIRCLE{s .5 b 1}
+ SQUARE{s .3 x -0.25 }
+ CIRCLE{ s .35}
+ CIRCLE{s .104 b 1 y .135 x -.15}
+ SQUARE{s .2 y -.2 x -.12}
+ SQUARE{s .08 .2 b 1 y -.275}
+ CIRCLE{s .12 y -.49 b 1}
+}
+
+rule MOUSECLICK{
+ x{s .2}
+}

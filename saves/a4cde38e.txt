@@ -1,0 +1,10 @@
+willyam&will6yam&startshape shape
+
+rule shape{
+ CIRCLE{}
+} o mundo
+
+class OlaMundo {
+    public static void main(String[] args) {
+        System.out.println(\"Olá mundo!\"); //Imprime na tela
+    }

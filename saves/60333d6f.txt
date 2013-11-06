@@ -1,0 +1,32 @@
+Dirk&Drooping Tree&startshape scale
+
+rule scale{ 
+	SPIKES{ s .01 }
+}
+
+rule SPIKES {
+	SPIKE {}
+	SPIKE { r 90 }
+	SPIKE { r 180 }
+	SPIKE { r 270 }
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 100 }
+}
+
+rule LSPIKE {
+	SQUARE {}
+	LSPIKE { y 0.98 s 0.99 r 1}
+}
+rule LSPIKE 0.005 {
+	SPIKE { s 1.2 r 45 }
+        SPIKE { s 1.2 r 15 }
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .005 }
+}

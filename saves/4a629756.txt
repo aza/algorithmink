@@ -1,0 +1,14 @@
+Mb&Popup Stars&startshape shape
+
+rule shape{
+ TRIANGLE{}
+ shape{ s .5 b .1 x -.1}
+ shape{ s .5 b .1 x .1}
+ redraw{ s .2}
+}
+
+rule redraw{
+ SQUARE{}
+ shape{ s -5 b .1 x -.1}
+ redraw{y -.2}
+}

@@ -1,0 +1,15 @@
+rapaul&Record Player&startshape shape
+
+rule shape{
+  wonky{s 2}
+}
+
+rule wonky {
+ CIRCLE{b -1}
+ wonky{s .8}
+}
+
+rule wonky {
+ CIRCLE{b 1 s .95}
+ wonky{s .8 .7  r 10}
+}

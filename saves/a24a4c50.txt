@@ -1,0 +1,5 @@
+tester&circle duh&startshape shape
+
+rule shape{
+ CIRCLE{}
+}

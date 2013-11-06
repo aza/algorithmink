@@ -1,0 +1,7 @@
+Vivek Haldar&Nested Circles&startshape shape
+
+rule shape{
+ CIRCLE{ hue 200  sat 1 b 0.5 }
+ shape { x -0.25 s 0.5 hue 20 }
+ shape { x +0.25 s 0.5 hue 20 }
+}

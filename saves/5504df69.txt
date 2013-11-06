@@ -1,0 +1,11 @@
+J&myFirstTime3&startshape DOT
+
+rule DOT{
+  CIRCLE{ s 8 b 1 a -.9 }
+  CIRCLE{ s .33 b 1 a -.5 }  
+  CIRCLE{ s .3 b .5 sat 0 }
+}
+
+rule MOUSEMOVE{
+  DOT{ }
+}

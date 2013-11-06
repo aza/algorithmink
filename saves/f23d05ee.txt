@@ -1,0 +1,45 @@
+Yet another tendril thing&YATT&startshape drawing
+
+rule MOUSECLICK {
+shape {s 0.3}
+}
+
+rule drawing {
+shape {s 0.4}
+}
+
+rule shape{
+blue { s .05 hue 200 sat 1 }
+red { s .05 r 60 sat 1 }
+red { s .05 r 240 sat 1}
+blue { s .05 r 180 hue 200 sat 1}
+red { s .05 r 120  hue 120 sat 1}
+blue { s .05 r 300  hue 120 sat 1}
+}
+
+rule red 10 {
+SQUARE{}
+red{ y .5 s .993 r 2 b +0.006}
+}
+
+rule red .13 {
+SQUARE{}
+red { y .5 s .99 r 2 }
+red { y .5 s .99 r 10 flip 90 }
+}
+
+rule red 0.06 {
+SQUARE{}
+red { y .5 s .99 r 10 flip 90}
+}
+
+rule blue 10 {
+SQUARE{}
+blue{ y .5 s .993 r 2 b +0.007 }
+}
+
+rule blue .1 {
+SQUARE{}
+blue { y .5 s .99 r 2 }
+blue { y .5 s .99 r 10 flip 90 }
+}

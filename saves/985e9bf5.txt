@@ -1,0 +1,24 @@
+utok&yabag&startshape frame
+
+rule frame {
+  shape {s .07 y -2}
+}
+
+rule shape{
+ dit {r 2 s .9997}
+}
+
+rule dit {
+ triangle {x .5 s .8}
+ shape {x 30
+}
+}
+
+rule dit {
+ circle {x 1 s 1.6 .8}
+ shape {x 2 r 2}
+}
+
+rule dit .7 {
+ shape {x 1}
+}

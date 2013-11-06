@@ -1,0 +1,6 @@
+mertle&test&startshape twoshapes
+rule twoshapes{
+  CIRCLE{s .5}
+  SQUARE{x 1}
+  twoshapes{y .2 s .5 b .1}
+}

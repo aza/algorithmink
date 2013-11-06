@@ -1,0 +1,31 @@
+jojo&thistle&startshape scale
+
+rule scale{ D{ s .7 y -.1} }
+
+rule D
+{
+  C {r 1}
+  C {r 45}
+}
+
+rule C
+{
+  B {}
+  B {f -90}
+}
+
+rule B
+{
+  A {}
+  A {r 60}
+  A { r 120 }
+  A { r 180 }
+  A { r 240 }
+  A { r 300 }
+}
+
+rule A
+{
+  CIRCLE {s 1 .009}
+  A {x .9 r 130.21 s .99 b .0005 }
+}

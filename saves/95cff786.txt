@@ -1,0 +1,9 @@
+Alface&Infinity Dots&startshape circles
+ 
+rule circles { 
+	CIRCLE {s .09}
+	circles { z -1 s .7 y -.7 x -1.5 }
+	circles { z -1 s .7 y -.7 x 1.5 }
+	circles { z -1 s .7 y .7 x -1.5 }
+	circles { z -1 s .7 y .7 x 1.5 }
+}

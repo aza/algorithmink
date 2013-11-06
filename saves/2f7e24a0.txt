@@ -1,0 +1,23 @@
+retromad&confetti hand spirals&startshape scale
+
+rule scale{
+  shape{s .06 y -.06 x 1}
+}
+
+rule shape{
+ CIRCLE{ b 1 s 1.1 a -.8}
+ CIRCLE{ a -.5 }
+ shape{ y 1.5 r 10 s .99}
+}
+
+rule shape{
+ TRIANGLE{ b 1 s 1.1 }
+ SQUARE{ }
+ shape{ y 1.5 r 5 s .99}
+}
+
+rule shape .03 {
+ TRIANGLE{ }
+ shape{ y 1.5 r 10 s 2 b .1}
+ shape{ y 1.5 r 10 s .25 flip 50 b.1}
+}

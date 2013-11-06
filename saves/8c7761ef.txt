@@ -1,0 +1,10 @@
+alface&teste&startshape shape
+
+rule shape{
+ CIRCLE{s .1}
+ CIRCLE{s .2 x .3 b .10}
+ shape{x .5 y .5 flip rand(1,360)}
+}
+
+
+  

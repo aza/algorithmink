@@ -1,0 +1,25 @@
+Artu&myHeart4Miky&startshape lost
+
+rule lost {
+  half { flip 90 x 0.4 b 0.6 }
+  half {x -0.4 b 0.6 }
+}
+  
+rule half {
+  CIRCLE { hue 0 sat 1 }
+  half { s 0.959 0.97 x 0.0164 y -0.03 b -0.008 }
+}
+
+rule vine 15 {
+  CIRCLE { s 1 0.4 }
+  vine { s 0.96 x 0.4 r 10 z 0.05 b 0.01 }
+}
+
+rule vine 2 {
+  TRIANGLE { s 0.3 1.2 r 40 y -0.3 flip 0 }
+  vine { }
+}
+
+rule vine {
+  vine { flip 0 }
+}

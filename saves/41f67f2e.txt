@@ -1,0 +1,12 @@
+Nego&Circle&startshape start
+
+rule start{
+ shapeA{ r 90 s 2}
+ shapeA{ r 90 flip 90 s 1}
+}
+
+rule shapeA{
+ CIRCLE{ s .5 1}
+ CIRCLE{ s .50 .9 b 1}
+ shapeA{ s .85 r 1}
+}

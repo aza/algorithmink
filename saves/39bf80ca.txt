@@ -1,0 +1,11 @@
+Matt B&Colorful Snail&startshape go
+
+rule go{
+ sun {x -.8}
+ go {s .8 hue 58 sat 1 a 1 x .3 r 15}
+}
+
+rule sun {
+ CIRCLE{}
+ sun{ s .99 b .1}
+}

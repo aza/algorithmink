@@ -1,0 +1,11 @@
+Anonymous&sierpinski&startshape shape
+
+rule _shape{
+ TRIANGLE {a -0.8}
+ _shape {s 0.5 x -0.25 y -0.144}
+ _shape {s 0.5 x 0.25 y -0.144}
+ _shape {s 0.5 x 0 y 0.287}
+}
+rule shape{
+ _shape {s 3 y -0.5}
+}

@@ -1,0 +1,49 @@
+Nate&Wildfire&startshape Start
+background {b -1}
+
+rule Start{
+ fire{}
+ fireDown{}
+}
+
+rule fire{
+ CIRCLE{s 2.1 .008 sat 1 b 0.6 hue 0}
+ CIRCLE{s 2 .001 sat 1 b 0.6 hue 50 x 0.7}
+ CIRCLE{s 2 .001 sat 1 b 0.6 hue 50 x -0.6}
+ up{}
+}
+
+rule up{
+ fire{y 0.001 s 0.998 1 x 0.05 r 0.1}
+}
+
+rule up{
+ fire{y 0.001 s 0.998 1 x -0.05 r -0.1}
+}
+
+rule up{
+ fire{y 0.001 s 0.998 1}
+}
+
+rule fireDown{
+ CIRCLE{s 2.1 .008 sat 1 b 0.6 hue 0}
+ CIRCLE{s 2 .001 sat 1 b 0.6 hue 50 x 0.7}
+ CIRCLE{s 2 .001 sat 1 b 0.6 hue 50 x -0.6}
+ down{}
+}
+
+rule down{
+ fireDown{y -0.001 s 0.998 1 x 0.05 r 0.1}
+}
+
+rule down{
+ fireDown{y -0.001 s 0.998 1 x -0.05 r -0.1}
+}
+
+rule down{
+ fireDown{y -0.001 s 0.998 1}
+}
+
+rule MOUSECLICK{
+ Start{}
+}

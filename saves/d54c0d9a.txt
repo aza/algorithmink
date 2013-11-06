@@ -1,0 +1,46 @@
+Beast&Skulls&startshape face
+background{b -1}
+
+rule MOUSECLICK{
+face{s .1}
+}
+
+rule face{
+ 
+ CIRCLE{b 1}
+ SQUARE{s .75 .7 y -.4 b 1}
+ nose{}
+ eyes{}
+ teeth{}
+ face{s .17  x .25 y .15}
+ face{s .17  x -.25 y .15}
+}
+
+rule eyes{
+CIRCLE{s .3  x .25 y .12}
+CIRCLE{s .3  x -.25 y .12}
+
+}
+
+rule nose{
+ 
+CIRCLE{s .085 .15 y -.15 x .05}
+CIRCLE{s .085 .15 y -.15 x -.05}
+nose{y .01 s .8}
+}
+
+rule teeth{
+SQUARE{ b 0 s .02 .4 y -.6}
+teethT{x .2}
+teethT{x -.2}
+}
+
+rule teethT{
+SQUARE{ b 0 s .02 .4 y -.6}
+teethTT{x .1}
+teethTT{x -.1}
+}
+
+rule teethTT{
+SQUARE{ b 0 s .02 .4 y -.6}
+}

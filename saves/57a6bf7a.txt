@@ -1,0 +1,5 @@
+andy&title&startshape shape
+
+rule shape{
+ CIRCLE{12345}
+}

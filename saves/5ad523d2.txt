@@ -1,0 +1,24 @@
+tal&sputniks&startshape shape
+
+rule shape {
+ sputniks {}
+ shape { r .1 }  
+}
+
+rule sputniks {
+ background {}
+ CIRCLE { s .7 } 
+ sputnik { b .2 s .7 x .9  }
+ sputnik { b .2 s .7 x -.9 flip 90 }
+}
+
+rule sputnik {
+ TRIANGLE{ s .02 0.5 r 70 x -.1 y .133 }
+ TRIANGLE{ s .02 0.5 r 110 x -.1 y -.133 }
+ CIRCLE{ s .2 }
+}
+
+rule background {
+ CIRCLE { s 2.2  b 1 } 
+}
+	

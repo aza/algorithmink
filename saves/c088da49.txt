@@ -1,0 +1,35 @@
+Pete&Apple Tree&startshape start
+
+rule start{
+ branch {s .1}
+}
+
+
+rule branch {
+ SQUARE {x 1}
+ SQUARE {x 2}
+ leaf   {x 2 y 1}
+ SQUARE {x 3}
+ branch {x 3 rotate 25 s .7}
+ branch {x 3 rotate -45 s .7}
+}
+
+rule BUD {
+ stalk {}
+}
+
+rule stalk {
+ SQUARE {x 1}
+ SQUARE {x 2}
+ SQUARE {x 3}
+ SQUARE {x 4}
+ leaf {x 5}
+ leaf {x 4 y 1}
+ leaf {x 4 y -1}
+}
+
+rule leaf {
+ CIRCLE{}
+}
+
+

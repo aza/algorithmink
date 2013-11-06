@@ -1,0 +1,16 @@
+Joe DiPilato&Waves V1&startshape s
+background{b -.1 sat 1 h 200}
+rule s{wat{x -2 y -1 sat 1 h 200 b .5 a -.8}wa{a -.9 sat 1 h 200 b .5}}
+rule wa{wl{y -.875 s .8}}
+rule wa 7{wa{}wl{y -.875 s .8}}
+rule wl{ws{x 1.2  r 45}}
+rule wl{ws{x -1 r 45}}
+rule wl{ws{r 45}}
+rule wl 5{wl{x -.3}}
+rule wl 5{wl{x .3}}
+rule ws{w{}}
+rule ws 2{ws{s .9}}
+rule ws 2{ws{s 1.1}}
+rule w{CIRCLE{}w{s .92 y .1 r -5}}
+rule wat 3000{CIRCLE{}wat{x .1}}
+rule wat{}

@@ -1,0 +1,24 @@
+Mattia743&SnowFlakes&startshape mattss
+
+rule mattss{
+matts{x -0.5 y 0.5}
+matts{x -0.5 y -0.5}
+matts{x 0.5 y 0.5}
+matts{x 0.5 y -0.5}
+matts{x 0 y 0}
+}
+rule matts{
+matt{}
+matts{ s 0.9 r 180}
+}
+
+rule matt 0.3{
+TRIANGLE{hue 150 sat 0.5 b 0.5 s 0.5}
+}
+rule matt 0.7{
+TRIANGLE{hue 250 sat 0.5 b 0.5 s 0.5}
+}
+		
+rule MOUSECLICK{
+matts{}
+}

@@ -1,0 +1,32 @@
+Joe DiPilato&POP&startshape s
+rule s{a{b .6 sat 1 y -.1}}
+rule a{
+ci{}
+sq{x .5 y .5}
+sq{x -.5 y .5}
+sq{x .5 y -.5}
+sq{x -.5 y -.5}
+}
+rule sq 10{sq{hue 120}}
+rule sq 10{sq{hue 60}}
+rule sq 10{sq{hue 30}}
+rule sq{SQUARE{}sh{hue 120 s .7}}
+rule sq{CIRCLE{}sh{hue 120 s .7}}
+rule sh{SQUARE{}sh{hue 120 s .7}}
+rule sh{CIRCLE{}sh{hue 120 s .7}}
+rule sh .5{CIRCLE{}SQUARE{s .2 hue 180}}
+rule sh .5{SQUARE{}CIRCLE{s .2 hue 180}}
+rule sh .5{c{}}
+rule sh .5{q{}}
+rule sh {a{s .5}}
+rule sh .5{sh{x -.5 s .3}sh{s .3}sh{x .5 s .3}}
+rule sh .5{sh{y -.5 s .3}sh{s .3}sh{y .5 s .3}}
+rule c{CIRCLE{}c{s .8 hue 180}}
+rule q{SQUARE{}q{s .8 hue 180}}
+rule c .2{CIRCLE{}}
+rule q .2{SQUARE{}}
+rule ci {ci{hue 120}}
+rule ci {ci{hue 60}}
+rule ci {ci{hue 30}}
+rule ci 2{CIRCLE{}}
+

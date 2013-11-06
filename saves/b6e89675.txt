@@ -1,0 +1,9 @@
+idiotonuni&First one&startshape first
+
+rule first{
+ SQUARE{}
+ first{ s .5 b .2 y -.3 x -.25}
+ first{ s .5 b .2 y +.3 x +.25}
+ CIRCLE{ x +1.5 }
+
+}

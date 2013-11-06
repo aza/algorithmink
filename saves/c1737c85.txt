@@ -1,0 +1,12 @@
+asd&sd&startshape shape
+
+rule shape{
+ CIRCLE{
+asd{}asasd
+a
+sd
+as
+dasdd
+}
+}
+

@@ -1,0 +1,34 @@
+TSyn&Gold Vines&startshape scale
+background {b -1}
+rule scale{ 
+	SPIKES{ s .00 }
+}
+
+rule SPIKES {
+
+	SPIKE { r -180 }
+	SPIKE { r 180 }
+	SPIKE { r 10 }
+
+}
+
+rule SPIKE {
+	LSPIKE {}
+}
+rule SPIKE {
+	LSPIKE { flip 90 }
+}
+
+rule LSPIKE {
+	CIRCLE {}
+	LSPIKE {hue .5 sat .5 s .03 b 0.01 y 0.3 s 0.99 r 2.5}
+}
+rule LSPIKE 0.005 {
+	SPIKE { r 90 }
+	SPIKE { r 190 }
+	LSPIKE { y 0.04 s 0.99  r 10}
+}
+
+rule MOUSECLICK{
+  SPIKES{ s .05 }
+}

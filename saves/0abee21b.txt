@@ -1,0 +1,9 @@
+kk&ttt&startshape shape
+
+rule shape{
+ CIRCLE{}
+ shape{ a -0.2 s .5 x -.5}
+ shape{ a -0.2 s .5 x .5}
+ shape{ a -0.2 s .5 y -.5}
+ shape{ a -0.2 s .5 y .5}
+}

@@ -1,0 +1,6 @@
+jhllk&jnh&startshape shape
+
+rule shape{
+ CIRCLE{x 6 }
+y 9
+}

@@ -1,0 +1,19 @@
+qthomasbower&Five Color Radial Spiral on White&startshape SHAPE 
+background { b 0 }
+ rule SHAPE { 
+    THING { s .2 hue 46 sat 0.5  b 1 x 0 y -1.2 } } 
+rule THING { 
+    SPIR {} }
+ 
+rule SPIR {
+ CIRCLE { s 1 } 
+ CIRCLE { s 1.05 x 0 hue 0  b -.65 } 
+ CIRCLE { s .8 x 0 hue 36 b -.2 }
+ CIRCLE { s .6 x 0 hue -36 b -.5 }
+ CIRCLE { s 0.4 x 0 hue 36 b -.3 }
+ CIRCLE { s 0.15 x 0 hue -36 b -.6 }
+ SPIR { r 10.285 s .9949 x 1.1 y -.25  hue 72 sat -.002 b -.0024}
+}
+
+ 
+ 

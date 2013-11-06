@@ -1,0 +1,58 @@
+Mariano S&Branches&startshape shape
+
+rule shape{
+ rayaA{s .01 r -135 sat 1 b .45}
+}
+
+rule rayaA 5{
+ dibujar{}
+ rayaA{}
+}
+
+rule rayaA 1 {
+
+}
+
+
+rule dibujar{
+ CIRCLE{}
+ raya{}
+}
+
+
+rule raya 1 {
+ branch{ h .7}
+ simple{}
+}
+
+rule raya 1000 {
+ dibujar{y .03}
+}
+
+
+
+rule branch 7 {
+ raya{f 45 }
+}
+
+rule branch 1 {
+  raya{ r 180 }
+}
+
+rule branch 1 {
+  raya{ r 90 }
+}
+
+rule branch 1 {
+  raya{ r -90 }
+}
+
+rule simple 100{
+ CIRCLE{}
+ simple{y .1}
+}
+
+rule simple 1{
+}
+
+

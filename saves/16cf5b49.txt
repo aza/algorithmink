@@ -1,0 +1,30 @@
+Max&Stack O Gold&rule MOUSECLICK{
+ coinstack{} 
+}
+
+rule coinstack{
+ coin{}
+ seperator{}
+ keepgoin{}
+}
+
+rule keepgoin 90{
+ coinstack{y +.0256}
+}
+
+rule keepgoin 10{
+ coin{y .0256}
+}
+
+rule seperator{
+ CIRCLE{s .1 .02 y .004}
+}
+
+rule coin{
+ CIRCLE{s .1 .02 h 66 sat 1 b .6}
+ CIRCLE{s .1 .02 h 66 sat 1 b .6 y -.004}
+ CIRCLE{s .1 .02 h 66 sat 1 b .6 y -.008}
+ CIRCLE{s .1 .02 h 66 sat 1 b .6 y -.012}
+ CIRCLE{s .1 .02 h 66 sat 1 b .6 y -.016}
+ CIRCLE{s .1 .02 h 66 sat 1 b .6 y -.020}
+}

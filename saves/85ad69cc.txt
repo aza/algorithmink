@@ -1,0 +1,19 @@
+matt&spiralthing2&startshape shape
+
+rule shape{
+test { s .05 }
+test { s .05 flip 90 }
+test { s .05 r 180 }
+test { s .05 r 180 flip 90 }
+}
+
+rule test 10 {
+SQUARE{sat 1 b .5}
+test{ y .5 s .99 r 2 h +1 a -.01 }
+}
+
+rule test .2 {
+SQUARE{ sat 1 b .5 }
+test { y .5 s .99 r 2 }
+test { y .5 s .95 r 2 flip 90 }
+}

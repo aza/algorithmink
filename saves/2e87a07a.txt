@@ -1,0 +1,58 @@
+Matej Yin Gagyi&Tree generator&startshape shape
+
+rule shape {
+ stem { s 0.03 y -1 }
+}
+
+rule stem 1 {
+  CIRCLE {}
+  stem { y 0.5 }
+}
+rule stem 0.05 {
+  branch {r 60 s 0.5 }
+  stem {s 0.95}
+}
+rule stem 0.05 {
+  branch {r -60 s 0.5 }
+  stem {s 0.95}
+}
+rule stem 0.03 {
+  stem { s 0.9 }
+}
+rule stem 0.002 {
+}
+
+rule branch {
+  CIRCLE {}
+  branch { y 0.5 }
+}
+rule branch 0.01 {
+  branch {r 10}
+}
+rule branch 0.01 {
+  branch {r -10}
+}
+rule branch 0.1 {
+  leaf {r 30 s 0.5 }
+  branch {s 0.9}
+}
+rule branch 0.1 {
+  leaf {r -30 s 0.5 }
+  branch {s 0.9}
+}
+rule branch 0.01 {
+}
+
+rule leaf {
+  CIRCLE {}
+  leaf { y 0.5 }
+}
+rule leaf 0.1 {
+  leaf {r 20}
+}
+rule leaf 0.1 {
+  leaf {r -20}
+}
+rule leaf 0.05 {
+}
+

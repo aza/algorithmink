@@ -1,0 +1,70 @@
+Wizem&Heart&startshape START
+background {h 190 sat .5 b -.8}
+
+
+
+rule MOUSECLICK{ START{} }
+
+rule FRAME
+{
+DESATURATING_HEART { hue 0 sat 0 b 0.1 s .05 y -0.5 x -0.015 z -0.1}
+DESATURATING_HEART { hue 0 sat 1 b 0.1 s .05 y -0.5 x 0.015 z -0.1}
+}
+
+rule START
+{
+
+
+
+MIDDLE{y 0.30}
+MIDDLE{y 0.627 x -0.11 r 45 s 0.8}
+MIDDLE{y 0.627 x 0.11 r -45 s 0.8}
+
+GO{y -0.5 z 5}
+}
+
+rule GO
+{
+HEART { hue 0 sat 1 b 0.5 s .05}
+
+}
+
+rule HEART {
+PART {}
+PART {flip 90}
+}
+
+rule PART {
+CIRCLE { s 5}
+PART {y 0.282 x -0.3 s 0.9901 r -0.6 b -0.001 z .1}
+}
+
+rule DESATURATING_HEART{
+DESATURATING_PART {}
+DESATURATING_PART {flip 90}
+}
+
+rule DESATURATING_PART
+{
+CIRCLE { s 5}
+DESATURATING_PART {y 0.282 x -0.3 s 0.9901 r -0.6 b -0.001 z -.1}
+}
+
+rule DESATURATING_PART 0.01
+{
+CIRCLE { s 5}
+DESATURATING_PART_RED {y 0.282 x -0.3 s 0.9901 r -0.6 hue 0 b 0.5 sat 1 z -.1}
+}
+
+
+rule DESATURATING_PART_RED
+{
+CIRCLE { s 5}
+DESATURATING_PART_RED {y 0.282 x -0.3 s 0.9901 r -0.6 z -.1}
+}
+
+
+rule MIDDLE{
+CIRCLE {s 1 hue 0 sat 1 b 0.5}
+MIDDLE{s 0.91 y -0.08 b 0.003 z -.1}
+}

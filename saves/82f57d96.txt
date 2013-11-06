@@ -1,0 +1,54 @@
+Ike Fruusto&Spactal&startshape setup
+
+rule setup
+{
+ frac5{ sat 1 hue 180 b .5 s .1 }
+}
+
+rule frac1
+{
+ shape1{}
+ frac1{rotate -15 x .5 y -.2 s .9 hue 1}
+}
+
+rule frac2
+{
+ frac1{}
+ frac1{rotate 120}
+ frac1{rotate 240}
+}
+
+rule frac3-1
+{
+ frac2{}
+ frac3-2{rotate 190 hue -30 s .6}
+}
+rule frac3-2
+{
+ frac2{}
+ frac3-1{rotate 190 hue 40 s .6}
+}
+rule frac3
+{
+ frac3-1{}
+}
+
+rule frac4
+{
+ frac3{}
+ frac4{rotate -24 x -1.8 y -1.4 s .9}
+}
+
+rule frac5
+{
+frac4{}
+frac4{rotate 120}
+frac4{rotate 240}
+}
+
+rule shape1
+{
+ CIRCLE{ y .5 }
+ CIRCLE{ x -.5 y -.5 }
+ CIRCLE{ x .5 y -.5 }
+}

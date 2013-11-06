@@ -1,0 +1,46 @@
+beastman&Revolting mess&startshape intromusic
+
+rule intromusic{
+ hoorg{s .1}
+}
+
+rule hoorg{
+ orb{}
+ orb{r 60}
+ orb{r 120}
+ orb{r 180}
+ orb{r 240}
+ orb{r 300}
+}
+
+rule orb 15{
+ CIRCLE{}
+ orb{x .3}
+}
+
+rule orb 15{
+ CIRCLE{}
+ orb{x .3 r 15}
+}
+
+rule orb 15{
+ CIRCLE{}
+ orb{x .3 s .9 flip 0}
+}
+
+rule orb 2{
+ CIRCLE{}
+ orb{x .3 s .9}
+ orb{y .3 s .5 r 90}
+}
+
+rule orb 0.4{
+ CIRCLE{}
+ orb{x .4 s 1.7}
+ sanchez{y -.4 s .7 r 270}
+}
+
+rule sanchez{
+ CIRCLE{}
+ sanchez{s .99 x .1}
+}

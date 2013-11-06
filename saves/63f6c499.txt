@@ -1,0 +1,9 @@
+Joe DiPilato&Zebra Starfish&startshape x
+rule x{s{s .5}}
+rule s{shape{}shape{r 72}shape{r 144 }shape{r 216}shape{r 288}}
+rule shape 100{ CIRCLE{sat 1 b .5}
+shape{hue -123 r 1 x .02 s .99}}
+rule shape{shape{flip 0}}
+rule MOUSECLICK{x{s .5}}
+rule MOUSECLICK{x{s .2}}
+

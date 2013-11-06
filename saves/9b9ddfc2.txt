@@ -1,0 +1,12 @@
+todor&didi&startshape shape
+
+rule shape{
+ CIRCLE{s .3 x -.5 hue 170 sat 1 b .2}
+ shape{x .2 hue 110 sat -.1 b .1 r 230 s .99}
+ shape1{}
+}
+
+rule shape1{
+ SQUARE{s .05 hue 140 sat .5}
+ shape1{ x .4 r 14}
+}

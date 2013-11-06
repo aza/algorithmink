@@ -1,0 +1,30 @@
+Steve&diamond&startshape begin
+
+rule begin{
+ CIRCLE{s .75 b 0}
+ left{x -.3 s .5}
+ up{y .3 s .5}
+ right{x .3  s .5}
+ down{y -.3 s .5}
+}
+
+rule left{
+ CIRCLE {b 0}
+ begin{x -.3 s .9}
+}
+
+rule up{
+ CIRCLE {b 0}
+ begin{x 0 y .3 s .9 }
+}
+
+rule right{
+ CIRCLE {b 0}
+ begin{x .3 s .9}
+}
+
+rule down{
+ CIRCLE {b 0} 
+ begin{x 0 y -.3 s .9}
+}
+

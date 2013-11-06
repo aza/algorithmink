@@ -1,0 +1,100 @@
+xyz&xyz&startshape crossTree
+
+background{
+b -1
+}
+
+rule crossTree{
+
+/*
+
+logo{
+skew 10 0
+x -5
+b 0.35
+hue 80
+saturation 0.1
+}
+*/
+
+18* {hue 20 r 20} putShape [x 12 hue 0 b .1 saturation .8]
+
+}
+
+rule logo{
+letterA{}
+letterA{x 4}
+letterS{x 8}
+}
+
+rule putShape{
+// CIRCLE{s 3 z 1}
+SQUARE{skew 0 45}
+// cross{}
+// vLine{}
+// arrow{}
+makeNext{s 0.95 y 2 a 2}
+}
+
+/* VARIATIONS */
+rule makeNext {putShape{r 5}}
+rule makeNext {putShape{r 10}}
+rule makeNext {putShape{r 15}}
+rule makeNext 0.25 {split{}}
+
+rule split{
+// CIRCLE {y 4 b 0.1 s 2}
+putShape {b 0.1 r 10}
+putShape {f 90 r -40}
+}
+
+rule split 0.5{
+putShape {b 0.1 r 10}
+}
+
+rule split 0.05{
+// CIRCLE{y 4 b 0.1 s 16}
+flower{y 4 b 0.1 s 4 z 1}
+putShape{b 0.2 r 5}
+putShape{f 90 r -20}
+}
+
+//rule makeNext 0.1{TRIANGLE{ b -1}}
+
+/* FIGURES */
+rule cross{ hLine{} vLine{}}
+rule hLine{ SQUARE{s 5 1}}
+rule vLine{ SQUARE{s 1 5}}
+
+rule arrow{
+SQUARE{s 1 2}
+TRIANGLE{y 1 s 2}
+}
+
+rule letterA{
+vLine{}
+vLine{x 2}
+SQUARE{x 1}
+SQUARE{x 1 y 2}
+}
+
+rule letterS{
+SQUARE{y 2 x 2}
+SQUARE{y 2 x 1}
+SQUARE{y 2}
+SQUARE{y 1}
+SQUARE{}
+SQUARE{x 1}
+SQUARE{x 2}
+SQUARE{x 2 y -1}
+SQUARE{x 2 y -2}
+SQUARE{x 1 y -2}
+SQUARE{y -2}
+}
+
+rule flower {
+// petals
+12*{ r 30 } CIRCLE [r 0 x 0.5 s 1 0.5 ]
+//center
+CIRCLE { s 0.5 b .3 }
+}

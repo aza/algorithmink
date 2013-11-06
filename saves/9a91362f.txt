@@ -1,0 +1,50 @@
+Momo&REturn&startshape spiral
+
+rule spiral-right {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-right { r -5 x .05 s .99 h 7 }
+}
+
+rule spiral-right .01 {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-right { r -5 x .05 s .99 h 7 }
+ spiral-left {}
+}
+
+rule spiral-left {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-left { r 5 x .05 s .99 h 7 }
+}
+
+rule spiral-left .01 {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-left { r 5 x .05 s .99 h 7 }
+ spiral-right {}
+}
+
+rule spiral {
+ CIRCLE { s .05 h 180 sat .5 b .5 h 5}
+ spiral-left { }
+}
+
+rule spiral-left .01 {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-left { r 5 x .05 s .99 h 7 }
+ spiral-right {}
+}
+
+rule spiral-left {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-left { r 5 x .05 s .99 h 7 }
+}
+
+rule spiral-right .01 {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-right { r -5 x .05 s .99 h 7 }
+ spiral-left {}
+}
+
+rule spiral-right {
+ CIRCLE { s .05 h 180 sat .5 b .5 }
+ spiral-right { r -5 x .05 s .99 h 7 }
+}

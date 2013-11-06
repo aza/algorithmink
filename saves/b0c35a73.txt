@@ -1,0 +1,51 @@
+Chet Gray&Dustier Rounddust&startshape rounddust
+
+rule rounddust{
+ window{s 2.5}
+}
+
+rule window{
+ borw{s .5 x -.25 y -.25}
+ borw{s .5 x -.25 y  .25}
+ borw{s .5 x  .25 y  .25}
+ borw{s .5 x  .25 y -.25}
+}
+
+rule borw .0721{
+}
+
+rule borw{
+ circ{b 0}
+ corner{s .1464 x -.4268 y -.4268 r  90}
+ corner{s .1464 x -.4268 y  .4268}
+ corner{s .1464 x  .4268 y  .4268 r -90}
+ corner{s .1464 x  .4268 y -.4268 r  180}
+}
+
+rule borw 6{
+ window{}
+}
+
+rule corner .0721{
+}
+
+rule corner{
+ borw{}
+ series{s .5858 x  .7929 y  .2071}
+ series{s .5858 x -.2071 y -.7929 f -45}
+}
+
+rule series .0721{
+}
+
+rule series{
+ borw{}
+ series{s .5858 x  .7929 y  .2071}
+}
+
+rule circ .0721{
+}
+
+rule circ {
+ CIRCLE{}
+}

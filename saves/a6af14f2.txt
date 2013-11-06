@@ -1,0 +1,10 @@
+manuel&Test 1&startshape Circles
+
+background { a -1 }
+
+rule Circles { 
+	10 * { s 0.8 } Blue { b 0.8 size 0.8 }
+}
+rule Blue 1 { 
+	CIRCLE { sat 64 h 223 b 89 size 1 }
+}

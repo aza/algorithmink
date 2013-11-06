@@ -1,0 +1,15 @@
+Anonyme&circles&startshape jojo
+
+rule jojo{
+ CIRCLE{ s .6 }
+ CIRCLE{ s .5 x .25 b .2 }
+ CIRCLE{ s .4 x .50 b .3 }
+ CIRCLE{ s .3 x .75 b .4 }
+ CIRCLE{ s .2 x .95 b .5 }
+ CIRCLE{ s .1 x 1.05 b .6 }
+jaj
+}
+
+rule jaj{
+ jojo { r .1 a -.9}
+}

@@ -1,0 +1,16 @@
+njc&koch up&startshape start 
+
+rule start {
+  shape { s 0.2 a 0.2  y -0.5}
+}
+
+rule shape{
+  TRIANGLE{}
+  foo { r 60 y 1 }
+  foo { r -60 y 1 }
+}
+
+rule foo{
+  SQUARE{}
+  shape { y 1 s 0.8 }
+}

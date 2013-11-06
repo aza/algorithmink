@@ -1,0 +1,6 @@
+aaaaaaaa&aaaaaaaa&startshape shape
+
+rule shape{
+ CIRCLE{}
+alert(\'toto\');
+}

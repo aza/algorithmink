@@ -1,0 +1,29 @@
+Evan&Georges Bugs&startshape shape
+
+rule shape{
+ brownian{}
+}
+
+rule brownian 1{
+ bsquare{}
+ brownian{x .0125}
+}
+
+rule brownian 1{
+ bsquare{}
+ brownian{x -.0125}
+}
+
+rule brownian 1{
+ bsquare{}
+ brownian{y .0125}
+}
+
+rule brownian 1{
+ bsquare{}
+ brownian{y -.0125}
+}
+
+rule bsquare{
+ SQUARE{s .0125}
+}

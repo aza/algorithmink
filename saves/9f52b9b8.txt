@@ -1,0 +1,27 @@
+GJ&grass and stem&startshape tree
+ 
+rule tree {
+    branch {}
+    }
+ 
+rule branch {
+    stem {}
+    }
+ 
+rule branch {
+    stem {s .9 flip 100}
+    stem {s .9 flip -100}
+    stem { r  10}
+    }
+ 
+rule stem {
+    CIRCLE {}
+    stem {s .997 y .6 r .01 a -.002 sat .005 h .2 b .0009}
+    }
+ 
+rule stem .0225 {
+    CIRCLE {}
+    branch {}
+    }
+ 
+ 

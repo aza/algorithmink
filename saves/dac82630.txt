@@ -1,0 +1,5 @@
+Georgia&RA&startshape shape
+
+rule shape{
+ TRIANGLE{}
+}

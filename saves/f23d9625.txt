@@ -1,0 +1,43 @@
+Johann 007&The Fugue&startshape fugue
+
+rule fugue
+{
+    cadence {y -.1 x .5 s .77 sat .5 s .1}
+}
+
+rule cadence {
+ 
+   theme {  }
+   cadence {s -.997 sat .9 x -.5 y 1  r 2 hue .1}
+
+
+}
+
+rule theme {
+    bass {x 7 y 3}
+}
+rule theme {
+    tenor {y 7 x 3}
+}
+rule theme {
+    alto {y 7 x 3}
+}
+
+rule themex {
+    soprano {y -7 x -3}
+}
+rule bass {
+   CIRCLE {b .44 hue 34 s .7}
+}
+rule tenor {
+   SQUARE {b .5 hue 23 s .5 x 3}
+}
+
+rule alto {
+   CIRCLE {b .55 hue 17 s .3 x 2 }
+   alto {x 1.7}
+}
+rule soprano {
+   SQUARE {b .6 hue 7 s .25 x 1 }
+
+}

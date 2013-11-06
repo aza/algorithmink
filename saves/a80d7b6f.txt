@@ -1,0 +1,11 @@
+Joe DiPilato&split tree&startshape 1
+background{b -.5 sat .9 hue 220}
+rule 1{b{b .1 y -.7 s .1 a -.8 sat 1 hue 20} c{b .1 y -.7 s .1 a -.8 sat 1 hue 100}}
+rule a{CIRCLE{} b{s .994 y .1 r 1}}
+rule a{CIRCLE{} c{s .994 y .1 r -1}}
+rule b 90{CIRCLE{} b{s .994 y .1 r 1 b .01}}
+rule c 90{CIRCLE{} c{s .994 y .1 r -1 b -.01}}
+rule b 2 {a{}}
+rule c 2{a{}}
+rule b{a{}a{}}
+rule c{a{}a{}}

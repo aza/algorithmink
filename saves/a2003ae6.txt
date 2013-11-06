@@ -1,0 +1,29 @@
+lele&lele1&/* Example CFDG File
+   This is a block comment. */
+ 
+startshape Foo       // This is one type of line comment
+ 
+include stuff.cfdg   # This is the other type of line comment
+ 
+background { b -1 }  // This changes the background to black
+ 
+tile { s 3 4 }       // tile the design on a grid with spacing 3 units wide and 4 units high
+//size { s 3 4 x 1 y 2}       // Size the canvas 3 units wide and 4 units high, centered on (-1, -2)
+ 
+// Let us define a rule for shape Foo that is a white square
+// containing a black circle. This will be on a black background.
+rule Foo {
+    SQUARE { b 1 }
+    CIRCLE {}
+    Bar { b 1 s 0.5 }
+}
+ 
+path Bar {
+    MOVETO { y 1 }
+    12* { r (5 * 360 / 13) } {
+        LINETO { x cos(90 + 5 * 360 / 13)
+                 y sin(90 + 5 * 360 / 13) }
+    }
+    CLOSEPOLY {}
+    FILL { p evenodd }
+}

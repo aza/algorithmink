@@ -1,0 +1,17 @@
+Chet Gray&Splitting Spiral&startshape scale
+
+rule scale{
+  CIRCLE{s .1 y -.55 x 1}
+  spiral{s .1 y -.5 x 1}
+}
+
+rule spiral{
+ SQUARE{ }
+ spiral{ y .5 r 2 s .99}
+}
+
+rule spiral .01 {
+ SQUARE{ }
+ spiral{ y .5 r 2 s .99}
+ spiral{ y .5 r 2 s .99 flip 90}
+}

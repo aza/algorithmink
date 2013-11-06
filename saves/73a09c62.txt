@@ -1,0 +1,53 @@
+Joe Coffey&vines&startshape START
+
+rule MOUSECLICK {
+  scale{s .8}
+}
+
+rule MOUSECLICK {
+  scale{s .1}
+}
+
+rule MOUSECLICK {
+  scale{s .5}
+}
+
+rule MOUSECLICK {
+  scale{s .3}
+}
+
+rule START {
+}
+ 
+rule scale{
+  spiral{s .1}
+  spiral{s .1 flip -10}
+  spiral{s .1 flip 40}
+}
+ 
+rule spiral{
+ CIRCLE{ }
+ spiral{ y .2 r 1 s .99}
+}
+ 
+rule spiral .0095 {
+ CIRCLE{ }
+ spiral{ y .2 r 1 s .99}
+ spiral{ y .2 r 1 s .99 flip 90}
+}
+
+rule spiral .009 {
+ CIRCLE{}
+ spiral{ y .2 r 1 s .99 flip 90}
+}
+
+rule spiralopposite{
+ CIRCLE{}
+ spiralopposite{ y .2 r -1 s .99}
+}
+
+rule spiralopposite .00095{
+ CIRLCE{}
+ spiralopposite{ y .2 r -1 s .99}
+ spiralopposite{ y .2 r -1 s .99 flip 90}
+}

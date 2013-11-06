@@ -1,0 +1,86 @@
+1&1&background{b -1} startshape init
+rule init{time{z 0 r -90 sat .5 |h 220}}
+ 
+ 
+//CONTROL
+ 
+ 
+rule time 40 {draw{} time{r 1 s .9991 b .1| a .1|}}
+rule time    {slow{|b -1 |a 1 |sat 1}}
+rule time    {slow{|b 1 |a -1 |sat 1}}
+ 
+rule slow 20 {draw{} slow{ r 1 s .9991 b .03| a .03| h -1}}
+rule slow    {time{|sat -1}}
+ 
+ 
+//IMAGING
+ 
+ 
+rule draw{
+    SQUARE[z 0 x 1 s .27 .018 x -.5 a 1 h 1|]
+    stars{z 1 x .91}
+    cloud[z 2 x .83 s .17 x .5 h .7| a 1 sat .3|]
+    ground[z 3 x .73 s .1 x .5]
+}
+ 
+ 
+rule ground{
+    SQUARE[s 1 .18 a 1 b -.5]
+    highlight{s 1 .14} 
+    stuff{z 1}
+}
+ 
+ 
+rule stuff 5 {block[z 79 x .5 s .7225 .2 x -.5 a 1]}
+rule stuff  {bush[z 86 x -.5 s 1.62 r -90 b -.7| a 1]}
+rule stuff  {}
+ 
+ 
+rule block 2 {block{b -.1|}}
+rule block 3 {block[z -4 x .5 s .7225 x -.5 b .4|]}
+rule block 1 {block2{} block[z -4 x .5 s .64 x -.5 b .4|]}
+ 
+rule block2 {block3[x -.5 s .5 x .5 h 12]}
+rule block2 {block3[x -.5 s .5 x .5 h -12]}
+rule block3{SQUARE{} gleam{}}
+ 
+rule gleam{}
+rule gleam 2 {highlight{a 1}}
+rule highlight{SQUARE[z 50 x .5 s .02 1 x -.5 b 1]}
+ 
+ 
+rule bush 2 {bush[z -2 y .617 s .85 y -.617 b .3|]}
+rule bush {tree{h 180 sat -.4 b -.7}}
+rule tree {
+    SQUARE{y .08 s .064 .16}
+    fork{y .155}
+    fork{y .155 f 90}
+}
+rule branch{tree{}}
+rule branch 3 {
+    SQUARE{y .192 s .064 .384}
+    fork{y .38}
+    fork{y .38 f 90}
+}
+rule fork{branch{r 22 s .7}}
+rule fork{branch{r 33 s .7}}
+rule fork 0.2 {}
+ 
+ 
+rule stars   {}
+rule stars 6 {star1{sat -1 h .99|} stars{}}
+rule star1   {star1{sat .12}}
+rule star1 6 {star1{r 139}}
+rule star1   {star2{}}
+rule star2   {star3{x .05 s .8}}
+rule star2   {star3{}}
+rule star3 9 {star3{s .8}}
+rule star3   {CIRCLE{x .03 s .007 b 1 h -.55|}}
+ 
+ 
+rule cloud 25 {}
+rule cloud{puff[ x -.6 s .25 .6 x .5 a -.95 h 170 sat .2]}
+rule puff 7 {TRIANGLE{} puff{x .5 r 20 s .91}}
+rule puff  { TRIANGLE{} puff{x .5 f 0 s .91}}
+rule puff 5 {puff{x .5 r 20 s .9} puff{z 1 s .9 sat -.2 b
+.02}}

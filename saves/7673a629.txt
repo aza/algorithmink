@@ -1,0 +1,20 @@
+olya&olya&startshape shape
+
+rule shape{
+
+
+ 
+
+
+    CIRCLE [ r  30 x 0.5 s 1 0.25 ]
+    CIRCLE [ r  90 x 0.5 s 1 0.25 ]
+    CIRCLE [ r 150 x 0.5 s 1 0.25 ]
+    CIRCLE [ r 210 x 0.5 s 1 0.25 ]
+    CIRCLE [ r 270 x 0.5 s 1 0.25 ]
+    CIRCLE [ r 330 x 0.5 s 1 0.25 ]
+
+    CIRCLE { s 0.25 b 1 }
+}
+
+}
+}

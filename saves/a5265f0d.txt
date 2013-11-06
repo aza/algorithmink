@@ -1,0 +1,39 @@
+Jim&SquareATTACK&startshape start
+
+rule start{ SS1{ s 1.5 y -.13} }
+ 
+rule SS1 {
+    BASE{s 0.5 h 30}
+  BARNEY{}
+  FRED {}
+}
+ 
+rule BASE {
+    SQUARE {b 0}
+    SQUARE {s 0.9825 b 1}
+}
+ 
+rule FRED 0.5 {
+    SQUARE {b 0}
+    SQUARE {s 0.9825 b 1}
+    FRED {r -10 s 0.95}
+}
+ 
+rule FRED 0.5 {
+    SQUARE {b 0}
+    SQUARE {s 0.9825 b 1}
+    FRED {r -3 s 0.55}
+}
+
+rule BARNEY 0.5 {
+    SQUARE {b 0}
+    SQUARE {s 0.9925 b 1}
+    BARNEY {r 2 s 0.73}
+}
+
+
+rule BARNEY 0.5 {
+    SQUARE {b 20}
+    SQUARE {s 0.9925 b 1 h 20}
+    BARNEY {r 45 s 1.3 h 20}
+}

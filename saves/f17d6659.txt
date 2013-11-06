@@ -1,0 +1,52 @@
+Fortisimo&Spirals&startshape START
+background {b -1}
+
+rule START{
+ shape{ r 90 |hue 240 h 0 b .5 saturation 1}
+ //shape2{|hue 240 h 0 b .5 saturation 1}
+}
+
+rule shape .99{
+ CIRCLE{s .3}
+ shape{r 5 s .98 x .08 hue 05|}
+}
+
+rule shape .01{
+ CIRCLE{s .3}
+shape{r 10 s .5 x .08 hue 05|}
+shape{r 5 s .98 x .08 hue 05|}
+shape2{r 5 s .98 x .08 hue 05|}
+ 
+}
+
+rule shape2 .95{
+CIRCLE{s .3}
+ shape2{r -5 s .95 x .08 hue 05|}
+
+}
+
+rule shape2 .05{
+CIRCLE{s .3}
+ shape2{r -5 s .95 x .08 hue 05|}
+ shape3{r -5 s .95 x .08 hue 05|}
+
+}
+
+rule shape3 .95{
+CIRCLE{s .3}
+ shape3{r -1 s .95 x .08 hue 05|}
+
+}
+
+rule shape3 .95{
+CIRCLE{s .3}
+ shape3{r 1 s .95 x .08 hue 05|}
+
+}
+
+rule shape3 .001{
+CIRCLE{s .3}
+ shape2{r 0 s .95 x .08 hue 05|}
+ shape{r 1 s .95 x .08 hue 05|}
+
+}

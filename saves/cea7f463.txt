@@ -1,0 +1,62 @@
+The Jahn&3DRainbowStar&startshape start
+
+background{b -1}
+
+rule MOUSECLICK{start{}}
+rule MOUSECLICK{start{s 0.75}}
+rule MOUSECLICK{start{s 0.5}}
+rule MOUSECLICK{start{s 0.25}}
+
+rule start{
+plant{}
+plant{r 72 h 72}
+plant{r 144 h 144}
+plant{r 216 h 216}
+plant{r 288 h 288}
+}
+
+rule vine{
+CIRCLE{ s 0.1 hue 120 sat 0.8 b 0.5}
+CIRCLE{ s 0.025 x -0.03 y -0.03 hue 120 sat 0.8 b 0.25}
+CIRCLE{ s 0.025 x -0.03 y 0.03 hue 120 sat 0.8 b 0.75}
+vine{s 0.995 x 0.01 r 1 b -0.05}
+}
+rule vine{
+CIRCLE{ s 0.1 hue 120 sat 0.8 b 0.5}
+CIRCLE{ s 0.025 x -0.03 y -0.03 hue 120 sat 0.8 b 0.25}
+CIRCLE{ s 0.025 x -0.03 y 0.03 hue 120 sat 0.8 b 0.75}
+vine{s 0.995 x 0.01 r -0.5 b -0.05}
+}
+
+rule plant{
+leaf{}
+plant{flip 15 s 0.06}
+}
+rule plant{
+leaf{}
+plant{flip -15 s 0.06}
+}
+
+rule leaf{
+cord{}
+leaf{x 0.125 flip 180 r -15 s 0.75}
+}
+rule leaf{
+cord{}
+leaf{x 0.125 flip 180 r 15 s 0.75}
+}
+
+rule tdshape{
+CIRCLE{s 0.2 hue 250 b 0.15}
+CIRCLE{x -0.06 y 0.05 hue 250 s 0.05 b 0.5}
+}
+
+rule cord{
+tdshape{}
+cord{x 0.01 s 0.95 r 1 h 1 sat 0.5 b 0.01}
+}
+
+rule cord{
+tdshape{}
+cord{x 0.01 s 0.95 r 1 h 1 sat 0.5 b 0.01}
+}

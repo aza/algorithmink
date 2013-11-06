@@ -1,0 +1,19 @@
+jewry&Stack of Stickies&startshape start
+
+rule start{ SS1{ s 1.5 y 0} }
+ 
+rule SS1 {
+    ALPHA {}
+}
+
+rule ALPHA {
+    SQUARE {b 0.1}
+    SQUARE {s .995 b .5 sat 1}
+    ALPHA {r -2 s .995 h 9 sat .1}
+}
+ 
+rule ALPHA .3 {
+    SQUARE {b 0.1 sat .75}
+    SQUARE {s .99 b .9 sat .75}
+    ALPHA {r 10 s .9194 h 15 sat -.1}
+}

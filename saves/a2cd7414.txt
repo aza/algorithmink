@@ -1,0 +1,31 @@
+cody&chalk dust eraser&startshape eraser_start
+
+
+rule eraser_start{
+  SQUARE{ s .2 b .3 }
+  eraser{}
+}
+
+rule eraser{
+  SQUARE{ s .2 b .9 y -.001 }
+  SQUARE{ s .2 b .3 }
+  eraser{ y .002 }
+}
+
+rule eraser{
+  SQUARE{ s .2 b .9 y .001 }
+  SQUARE{ s .2 b .3 }
+  eraser{ y -.002 }
+}
+
+rule eraser{
+  SQUARE{ s .2 b .9 x -.001 }
+  SQUARE{ s .2 b .3 }
+  eraser{ x .002 }
+}
+
+rule eraser{
+  SQUARE{ s .2 b .9 x .001 }
+  SQUARE{ s .2 b .3 }
+  eraser{ x -.002 }
+}

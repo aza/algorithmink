@@ -1,0 +1,9 @@
+gorbiz&mechanical pellsson&startshape init
+rule init {
+  a { s 0.9 y .5 x .3 hue 240 sat 0 b 1 r -60 }
+}
+rule a {
+  SQUARE { s .93 }
+  a { r 60  hue -1 sat .025 b -.05 s -.55 x .3 y .3 }
+  a { r -32 hue -1 sat .025 b -.05 s  .75 x .6 y -.3 }
+}

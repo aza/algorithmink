@@ -1,0 +1,15 @@
+Joe DiPilato&Warped&startshape start
+rule start{
+ a{ r 90 s 2.5}
+ a{ r 90 flip 90 s 2.5}
+ a{ r -90 flip 90 s 2.5}
+ a{ r -90 s 2.5}
+}
+rule a{
+ CIRCLE{s .5}
+ CIRCLE{ s .496 b 1}
+ a{ s .98 r 10 x .001 y .001}
+}
+rule MOUSECLICK{
+  start{s .5}
+}

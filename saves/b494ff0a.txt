@@ -1,0 +1,6 @@
+undefined&undefined&startshape shape
+
+rule shape{
+ CIRCLE{}
+}
+jhhj

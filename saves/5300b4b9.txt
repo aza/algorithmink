@@ -1,0 +1,22 @@
+kaishaku&simple tree v1&startshape SCALE
+
+rule SCALE { seed{ s 0.09 } }
+
+rule seed {
+  _branch{ y -10 h 30 sat 0.5 b 0.3 } 
+}
+
+rule _branch {
+  SQUARE{ }
+  branch { y 0.92 s 0.97 }
+}
+
+rule branch { _branch{ r -5 } }
+rule branch { _branch{ r +5 } }
+rule branch 0.25 { split{} }
+
+rule split {
+  SQUARE{}
+  branch { r +20 s 0.8 }
+  branch { r -20 s 0.8 }
+}

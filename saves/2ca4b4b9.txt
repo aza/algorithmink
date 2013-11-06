@@ -1,0 +1,33 @@
+The Fixer&The Growing Zebra Tree&startshape flaregun
+ 
+background {b -1}
+ 
+rule flaregun {
+ flare{ s .1}
+ flare{ s .1 r 180}
+}
+ 
+rule flare {
+  marker{}
+  flare{r 1 s 0.99 y 0.1}
+}
+
+rule flare 0.02{
+  marker{}
+  flare{r 1 s 0.99 y 0.1}
+  flare{r 1 s 0.99 y 0.1 flip -80}
+}
+ 
+rule marker {
+  CIRCLE{s 3 b 1}
+  CIRCLE {s 2 b -1}
+  CIRCLE {s 1 b 1}
+  CIRCLE {s 0.5 b -1}
+}
+
+rule marker {
+  CIRCLE{s 3 b -1}
+  CIRCLE {s 2 b 1}
+  CIRCLE {s 1 b -1}
+  CIRCLE {s 0.5 b 1}
+}

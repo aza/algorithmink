@@ -1,0 +1,16 @@
+fff&fff&startshape A
+ 
+background {b -.75}
+ 
+rule A{
+    720*[r .5 a -.0125]B{}
+}
+ 
+rule B{
+    CIRCLE{y -.5}
+    CIRCLE{y -1.125 s .25 b 1}
+    CIRCLE{y -.5 s .2 b 1}
+    CIRCLE{y .5 flip 90 b 1}
+    CIRCLE{y 1.125 s .25}
+    CIRCLE{y .5 s .2}
+}

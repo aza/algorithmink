@@ -1,0 +1,21 @@
+Scotty&Random Walk&startshape makesquare
+
+rule makesquare{
+ SQUARE{ s -.01 }
+ makesquare{ y .01 a -.1}
+}
+
+
+rule makesquare{
+ SQUARE{ s -.01 }
+ makesquare{ x .01 a -.1}
+}
+rule makesquare{
+ SQUARE{ s -.01 }
+ makesquare{ x -.01 a +.01}
+}
+
+rule makesquare{
+ SQUARE{ s -.01 }
+ makesquare{ y -.01 a +.01}
+}

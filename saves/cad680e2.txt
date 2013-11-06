@@ -1,0 +1,7 @@
+smahaseeb&The Loading Bar&startshape fractal
+
+rule fractal{
+ CIRCLE{}
+ fractal{ s .8 b .1 x -.29}
+ fractal{ s .8 b .1 x .29}
+}

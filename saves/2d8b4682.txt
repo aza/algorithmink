@@ -1,0 +1,10 @@
+Erwan&Hublot&startshape erwan
+
+rule erwan{
+ HUBLOT{}
+}
+
+rule HUBLOT {
+  CIRCLE {}
+  CIRCLE { s .9 b .5}
+}

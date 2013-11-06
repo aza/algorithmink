@@ -1,0 +1,8 @@
+Aku&The Gadget of Aku&startshape shape
+
+rule shape{
+ TRIANGLE{s 1.5}
+shape{ s .5 b  .25 x -.2}
+shape{ s .5 b  .25 x .2}
+shape{ s .5 b  .25 y .2}
+}

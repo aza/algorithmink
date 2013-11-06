@@ -1,0 +1,41 @@
+WAHa06x36&Pop Art 1242&startshape start
+background {  b -0.5 }
+
+rule start {
+dark { s 2 b -1 }
+}
+
+rule start {
+light { s 2 b 1 }
+}
+
+rule dark
+{
+SQUARE {}
+light { s 0.45 x 0.25 y 0.25 b 1 }
+light { s 0.45 x -0.25 y 0.25 b 1 }
+light { s 0.45 x 0.25 y -0.25 b 1 }
+light { s 0.45 x -0.25 y -0.25 b 1 }
+}
+
+rule dark
+{
+CIRCLE {}
+light { s 0.7 b 1}
+}
+
+rule light
+{
+SQUARE {}
+dark { s 0.45 x 0.25 y 0.25 b -1 }
+dark { s 0.45 x -0.25 y 0.25 b -1 }
+dark { s 0.45 x 0.25 y -0.25 b -1 }
+dark { s 0.45 x -0.25 y -0.25 b -1 }
+}
+
+rule light
+{
+CIRCLE {}
+dark { s 0.7 b -1}
+}
+

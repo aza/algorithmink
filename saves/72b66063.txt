@@ -1,0 +1,15 @@
+contextfree&triarc test&startshape triArc
+
+background { b -1 }  // looks more cool on black
+ 
+rule triArc {
+    TRIANGLE {r -2 sat 1 b 1 }
+    triArc { x 1 r 4 hue 4 sat 1 }  // Never shrinks!
+}
+ 
+rule triArc 0.01 {
+    TRIANGLE { r -45 sat 1 b 1 }
+    triArc { y -1 r -90 hue 4 }
+}
+ 
+rule triArc 0.001 {} // ... unless we execute 

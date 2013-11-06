@@ -1,0 +1,26 @@
+ox&circles&startshape begin
+background { b -1 }
+
+rule begin {
+   horns { a -0.5 sat 0.5 b 0.5 y -.1 s .5 }
+}
+
+rule horns .5 {
+   line { h 120 x 2 }
+   horns { h 30 b 0.1 s 0.70 r 20 }
+}
+
+rule horns {
+   line { x 2 }
+   horns { x -0.1 y .1 r 50 s 0.97 r 200 }
+}
+
+rule line 20 {
+  shape { x 10  }
+  line ( b -.04 x -0.1 s .92 r 150 }
+}
+
+
+rule shape{
+ CIRCLE{ x 5 }
+}

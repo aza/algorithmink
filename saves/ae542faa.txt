@@ -1,0 +1,37 @@
+Steren&triplant&background { b -1 }
+
+startshape scale
+
+rule scale{
+  scene{ s .02 h 240 sat .4 b .3 }
+}
+
+rule scene {
+ group {}
+ group { h 50 r 120}
+ group { h -50 r -120}
+}
+
+rule group {
+  path{}
+  path{}
+  path{}
+}
+
+rule path 5 {
+ element {}
+ path {x .5 r 1 s 0.994 b .005}
+}
+
+rule path 0.01 {
+path {flip 1}
+}
+
+rule element 100{
+ CIRCLE{x .8 }
+}
+
+rule element {
+ CIRCLE{ s 5 y 10 b 0.5}
+ element{}
+}

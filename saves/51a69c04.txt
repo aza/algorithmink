@@ -1,0 +1,34 @@
+Alex R&Sanctuary&startshape start 
+  
+rule start{
+shapeA{ r 90 s 2}
+shapeA{ r 180 s 2}
+shapeA{ r 270 s 2}
+shapeA{ r 360 s 2}
+shapeA{ r 360 flip 180 s 2}
+shapeA{ r 270 flip 180 s 2}
+shapeA{ r 180 flip 180 s 2}
+shapeA{ r 90 flip 180 s 2}
+shapeB{ r 45 s 2}
+shapeB{ r 135 s 2}
+shapeB{ r 225 s 2}
+shapeB{ r 315 s 2}
+shapeB{ r 315 flip 90 s 2}
+shapeB{ r 225 flip 180 s 2}
+shapeB{ r 135 flip 90 s 2}
+shapeB{ r 45 flip 180 s 2}
+} 
+  
+rule shapeA{
+CIRCLE{ s .5 1}
+CIRCLE{ s .75 .99 b 2}
+shapeA{ s .95 r 1} 
+  
+}
+
+rule shapeB{
+CIRCLE{ s .5 1}
+CIRCLE{ s .75 .99 b 2}
+shapeB{ s .95 r 1} 
+  
+}

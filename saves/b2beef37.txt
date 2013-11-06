@@ -1,0 +1,29 @@
+the one&matrix&startshape start
+
+rule start {
+  rain {x -1.7 sat 1 hue 128}
+}
+
+rule rain {
+  string {}
+  rain {x .1}
+}
+
+rule stringS {
+  char {}
+  string {y -.1 b .1}
+}
+
+rule string 10 {
+  char {}
+  string {y -.1 b .1}
+}
+
+rule string 1 {
+  char {}
+  stringS {y 1 b -1}
+}
+
+rule char {
+ SQUARE {s .08}
+}

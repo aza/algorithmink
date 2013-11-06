@@ -1,0 +1,12 @@
+overlobe&space invaders&startshape fractal
+
+rule fractal{
+ shape{ s 5 b -.33}
+ fractal{ h 20 s 0.33 b -.33 y .33 x -.33}
+ fractal{ h 20 s 0.33 b -.33 y .33 x .33}
+ fractal { h 20 s .33 y .5}
+}
+
+rule shape{
+ SQUARE { hue 0 sat 1 b .5 y -.5}
+}

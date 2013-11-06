@@ -1,0 +1,22 @@
+adam&horizon&startshape horizon
+
+rule horizon{
+  building{x -2 a -.7}//init val
+  horizon{x .05 }
+}
+
+rule building{
+ SQUARE{s .1 .8 }
+}
+
+rule building{
+ SQUARE{s .1 .4 }
+}
+
+rule building{
+ SQUARE{s .1 .2 }
+}
+
+rule building{
+ SQUARE{s .1 .6 }
+}

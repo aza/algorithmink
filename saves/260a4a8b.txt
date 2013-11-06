@@ -1,0 +1,48 @@
+John Pratt&Chain of Stairs&startshape start
+
+rule start{
+   fouroneshapes{r .40}
+   fouroneshapes{x 1 r 30}
+   fouroneshapes{x -1 r -30}
+   fouroneshapes{x -2 r -60}
+   fouroneshapes{x -3 r -90}
+   fouroneshapes{x 2 r 60}
+}
+
+rule fouroneshapes{
+   twooneshapes{}
+   twooneshapes{r .12 y -.60}
+}
+
+rule twooneshapes{
+   oneshape{}
+   oneshape2{x .40}
+}
+
+rule oneshape{
+   spin{}
+}
+
+rule spin{
+   SQUARE{b .7}
+   spin{r .5 s .99}
+}
+
+rule spin{
+   SQUARE{b .4}
+   spin{r .7 s .99}
+}
+
+rule oneshape2{
+   spin2{}
+}
+
+rule spin2{
+   SQUARE{b .7}
+   spin2{r -.5 s .99}
+}
+
+rule spin2{
+   SQUARE{b .4}
+   spin2{r -.7 s .99}
+}

@@ -1,0 +1,11 @@
+overlobe&angry cross&startshape fractal
+
+rule fractal{
+ CIRCLE{ s 3 hue 1 sat 1 b .5}
+ fractal{ h 10 s 0.33 b -.2 y -.33}
+ fractal{ h 10 s 0.33 b -.2 y .33}
+ fractal{ h 10 s 0.33 b -.2 x -.33}
+ fractal{ h 10 s 0.33 b -.2 x .33}
+ fractal{ h 10 s 0.33 b -.2}
+}
+

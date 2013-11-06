@@ -1,0 +1,7 @@
+Erwan&Hublot&startshape erwan
+
+rule erwan{
+ HUBLOT{}
+}
+
+rule 

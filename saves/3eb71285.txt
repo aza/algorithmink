@@ -1,0 +1,23 @@
+Andreas Jung&Plant&startshape scale
+
+rule scale{
+  shape{s .1 y -.5 x 1}
+}
+
+rule shape{
+ SQUARE{ b 1 s 1.1 a -.8}
+ SQUARE{ hue 50 sat .9 b .5 }
+ shape{ y 1.5 r 5 s .9901}
+}
+
+rule shape {
+ SQUARE{ b 1 s 1.1 }
+ SQUARE{ hue .9 sat .5 b .5 }
+ shape{ y 1.5 r 5 s .9901}
+}
+
+rule shape .0305 {
+ TRIANGLE{ hue 0 sat 1 b .4 }
+ shape{ y 1.5 r 10 s .5 b .1}
+ shape{ y 1.5 r 10 s .5 flip 90 b.1}
+}

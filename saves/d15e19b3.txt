@@ -1,0 +1,6 @@
+blah&blah&startshape arc
+
+rule arc{
+ ARCTO{x 0  rx 1 ry .5 r 3}
+ STROKE{width .4 p roundcap}
+}
