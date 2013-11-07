@@ -152,31 +152,31 @@ $.get("saves", function(data){
   ALL_IMAGES = $("a[href*=.png]", data);
 
   jQuery("#browser").append("<div>");
-  
-  for( var i=0; i<ALL_IMAGES.length; i++ ){
-    var img = document.createElement( "img" );
 
+  for( var i=0; i<ALL_IMAGES.length; i++ ){
     var src = "saves/" + $.trim( $(ALL_IMAGES[i]).text() );
-    img.src = src;
-    
+    var $img = $("<img>")
+      .addClass("browser-thumbnail")
+      .attr('src', src);
+
     // Randomize the order!
     var c = Math.random();
-    if( c > .5 )
-      jQuery("#browser div").append( img )
+    if( c > 0.5 )
+      jQuery("#browser div").append($img);
     else
-      jQuery("#browser div").prepend( img )    
+      jQuery("#browser div").prepend($img);
   }
-  
+
   setTimeout( function(){
     jQuery('#browser').imagestrip({
       left: "#leftButton",
       right: "#rightButton",
       width: "100%",
       click: loadBrowserItem
-    })
-  , 1500 })
-  
-  jQuery( "#leftButton, #rightButton" ).css({display:"none"})
+    });
+  }, 1500);
+
+  jQuery( "#leftButton, #rightButton" ).css({display:"none"});
 
 });
 
