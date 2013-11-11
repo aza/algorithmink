@@ -11,7 +11,7 @@ function inkIt(){
 
   $("canvas").replaceWith( canvas );
   contextFree( "theCode", "aiCanvas" )
-  
+
 }
 
 // -----------------------------------------------------------
@@ -21,20 +21,20 @@ function inkIt(){
 function setupButtonHandler( buttonId, sheetId, modifierFunc, callback ){
   var buttonId = "#" + buttonId;
   var sheetId = "#" + sheetId;
-  
+
   modifierFunc = modifierFunc || function(){};
   callback = callback || function(){};
-  
-  
+
+
   $(buttonId).click(function() {
     modifierFunc( sheetId );
 
     $("a").not(buttonId).removeClass( "selected" );
     $(".sheet").not(sheetId).slideUp( "normal" );
-    
+
     if( $(this).hasClass( "selected") ){
       $(this).removeClass( "selected" );
-      
+
       $(sheetId).addClass( "animated" );
       $(sheetId).slideUp( 1000, function(){
         $(sheetId).removeClass( "animated" );
@@ -49,12 +49,12 @@ function setupButtonHandler( buttonId, sheetId, modifierFunc, callback ){
         callback();
       });
     }
-  })  
+  })
 }
 
 setupButtonHandler( "browse", "browseSheet", function(){
  $("#browseSheet:hidden").css("visibility", "visible").hide();
- $( "#leftButton, #rightButton" ).css({display:"block"}) 
+ $( "#leftButton, #rightButton" ).css({display:"block"})
 });
 setupButtonHandler( "about", "aboutSheet" );
 setupButtonHandler( "save", "saveSheet",
@@ -73,7 +73,7 @@ setupButtonHandler(
   "editSheet",
   function(id){
     $(id).height( $(window).height()-$("#bar").height() );
-    var newText = "startshape shape\n\nrule shape{\n CIRCLE{}\n}"    
+    var newText = "startshape shape\n\nrule shape{\n CIRCLE{}\n}"
     $("#editSheet textarea").attr( "value", newText );
   },
   function(){
@@ -103,7 +103,7 @@ function displayMessage( text ){
     $("#messageSheet").slideDown();
     setTimeout( function(){
       $("#messageSheet").slideUp();
-    }, 3000 )  
+    }, 3000 )
 }
 
 // -----------------------------------------------------------
@@ -117,14 +117,14 @@ function performSave(){
   thumb.height = size;
   ctx = thumb.getContext("2d");
   ctx.drawImage( Renderer.canvas, 0, 0, size, size*(Renderer.canvas.height/Renderer.canvas.width) );
-  
+
   var postData = {
     author: $("#authorInput").attr("value"),
     title: $("#titleInput").attr("value"),
     code: $("#theCode").attr("value"),
-    data: thumb.toDataURL()    
-  } 
-  
+    data: thumb.toDataURL()
+  }
+
   displayMessage( "Saving..." );
   $.post( "save.php", postData, function(data){
     $("#saveSheet").slideUp();
@@ -136,9 +136,9 @@ function performSave(){
       displayMessage( "Saved!" );
       location.replace( "#" + data );
     }
-  
+
   });
-  
+
 }
 
 
@@ -152,31 +152,31 @@ $.get("saves", function(data){
   ALL_IMAGES = $("a[href*=.png]", data);
 
   jQuery("#browser").append("<div>");
-  
-  for( var i=0; i<ALL_IMAGES.length; i++ ){
-    var img = document.createElement( "img" );
 
+  for( var i=0; i<ALL_IMAGES.length; i++ ){
     var src = "saves/" + $.trim( $(ALL_IMAGES[i]).text() );
-    img.src = src;
-    
+    var $img = $("<img>")
+      .addClass("browser-thumbnail")
+      .attr('src', src);
+
     // Randomize the order!
     var c = Math.random();
-    if( c > .5 )
-      jQuery("#browser div").append( img )
+    if( c > 0.5 )
+      jQuery("#browser div").append($img);
     else
-      jQuery("#browser div").prepend( img )    
+      jQuery("#browser div").prepend($img);
   }
-  
+
   setTimeout( function(){
     jQuery('#browser').imagestrip({
       left: "#leftButton",
       right: "#rightButton",
       width: "100%",
       click: loadBrowserItem
-    })
-  , 1500 })
-  
-  jQuery( "#leftButton, #rightButton" ).css({display:"none"})
+    });
+  }, 1500);
+
+  jQuery( "#leftButton, #rightButton" ).css({display:"none"});
 
 });
 
@@ -188,23 +188,23 @@ function loadByHash( hash ){
     var author = data[0];
     var title = data[1];
     var code = data[2];
-    
+
     $("#theCode").attr( "value", code );
     inkIt();
     var name = "\"" + title + "\" by " + author
     displayMessage( name );
     $("#namecard").text( name );
     location.replace( "#" + hash );
-  })  
+  })
 }
 
 function loadBrowserItem(a){
   var src = this.src;
   var endPos = src.indexOf( ".png" );
   var hash = src.substring(src.length-12, endPos);
-  
-  $("#browseSheet").slideUp(); 
-  $("#browse").removeClass( "selected" ); 
+
+  $("#browseSheet").slideUp();
+  $("#browse").removeClass( "selected" );
   loadByHash( hash );
 }
 
@@ -222,7 +222,7 @@ function __init__(){
     var choices = ["ea3a56b0", "8c7b9bf3", "0656fbe7", "bd67885b", "d3c3be13", "b32debe8", "adfc6f72", "72c75cc9", "99fdc2df", "8371e257", "aaf36d30", "d869669b", "e0274a5c", "0b846d61", "e03e6859"];
     var hash = choices[ parseInt( Math.random()*choices.length ) ];
     loadByHash( hash ); // 0656fbe7 Tangle Mouse, 8c7b9bf3 Cat's Eye
-  }  
+  }
 }
 
 var tempCanvas = document.createElement("canvas");

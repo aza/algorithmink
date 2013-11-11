@@ -83,7 +83,7 @@ body{
 #browser{ padding-top: 25px;}
 #browser #leftButton{ position: absolute; z-index: 100; right: 10px; top: 32px; }
 #browser #rightButton{ position: absolute; z-index: 100; left: 10px; top: 32px; }
-
+#browser .browser-thumbnail{ width: 150px; height: 150px; }
 
 #aiCanvas{
   position: absolute;
