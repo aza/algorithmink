@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Algorithm Ink | Aza Raskin</title>
-  <link rel="stylesheet" href="display.css" type="text/css" />  
+  <link rel="stylesheet" type="text/css" href="lib/normalize.css">
+  <link rel="stylesheet" href="display.css" type="text/css" />
+  <link rel="stylesheet/less" type="text/css" href="style/main.less">
+  <script src="lib/less-1.3.0.min.js"></script>
 </head>
 
 <body>
@@ -10,26 +13,26 @@
     <img id="logo" src="Website/logo.png"/>
     <div id="controls">
       <a id="draw"></a>
-      
+
       <a id="edit"></a>
       <a id="save"></a>
 
       <a id="browse"></a>
-      
+
       <a id="new"></a>
-      <a id="about"></a>      
+      <a id="about"></a>
     </div>
   </div>
-  
+
   <div class="sheet" id="browseSheet">
-    
+
     <div id="browser">
       <img id="rightButton" src="Website/LeftArrow.png">
       <img id="leftButton" src="Website/RightArrow.png">
     </div>
 
   </div>
-  
+
   <div class="sheet" id="warningSheet">
     <center>
     <br/>
@@ -62,11 +65,11 @@ rule twoshapes{
     <p>You can download <a href="http://code.google.com/p/contextfree/source/browse/trunk/contextfree.js">contextfree.js</a> and go wild. If you get inspired,
       it's open source, so <a href="http://code.google.com/p/contextfree/">jump in</a>! Email me (aza [at] mozilla [dot] com) to get involved.</p>
   </div>
-  
+
   <div class="sheet" id="editSheet">
     <textarea spellcheck="false" id="theCode"></textarea>
   </div>
-  
+
   <div class="sheet" id="saveSheet">
     <br/>
     <center>
@@ -79,46 +82,49 @@ rule twoshapes{
         <span>Your Name: </span>
         <input id="authorInput" value=""/>
       </div>
-      
+
       <br/><br/>
-      
+
       <a id="saveButton">Save It!</a> <span style="font-size:70%">or if you want to download it, right click on the image.</span>
     </center>
-    
+
   </div>
-  
+
   <div class="sheet" id="messageSheet">
     <h3 id="message"></h3>
   </div>
-  
+
   <div id="caption"> </div>
   <div id="namecard"> </div>
-  
-  
-  
+
+
+
   <canvas id="aiCanvas">
-    You're browser isn't standards compliant: It doesn't support
+    Your browser isn't standards compliant: It doesn't support
     <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/section-the-canvas.html">canvas</a>Canvas.
     If you wish to use Algorithm Ink, please download and use
     <a href="http://www.mozilla.com/en-US/firefox/all-rc.html">Firefox 3</a>.
   </canvas>
 
-  
+
 
 <script src="contextfree.js"></script>
 <script src="jquery.js"></script>
-<script src="jquery.dimensions.js"></script>
+<!-- <script src="lib/jquery-1.9.1.min.js"></script> -->
+<script src="lib/underscore-1.4.4.min.js"></script>
 <script src="imagestrip.jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/browse.js"></script>
 <script src="display.js"></script>
 
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-4020980-2");
-pageTracker._initData();
-pageTracker._trackPageview();
+  if (!/localhost/i.test(location.hostname)) {
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    var pageTracker = _gat._getTracker("UA-4020980-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  }
 </script>
 
 </body>

@@ -52,10 +52,6 @@ function setupButtonHandler( buttonId, sheetId, modifierFunc, callback ){
   })
 }
 
-setupButtonHandler( "browse", "browseSheet", function(){
- $("#browseSheet:hidden").css("visibility", "visible").hide();
- $( "#leftButton, #rightButton" ).css({display:"block"})
-});
 setupButtonHandler( "about", "aboutSheet" );
 setupButtonHandler( "save", "saveSheet",
   function(){ $("#saveSheet input").attr("value", ""); }
@@ -147,67 +143,28 @@ function performSave(){
 // -----------------------------------------------------------
 
 
-var ALL_IMAGES = null;
-$.get("saves", function(data){
-  ALL_IMAGES = $("a[href*=.png]", data);
-
-  jQuery("#browser").append("<div>");
-
-  for( var i=0; i<ALL_IMAGES.length; i++ ){
-    var src = "saves/" + $.trim( $(ALL_IMAGES[i]).text() );
-    var $img = $("<img>")
-      .addClass("browser-thumbnail")
-      .attr('src', src);
-
-    // Randomize the order!
-    var c = Math.random();
-    if( c > 0.5 )
-      jQuery("#browser div").append($img);
-    else
-      jQuery("#browser div").prepend($img);
+function loadByHash( hash ){
+  if (hash == "browse") {
+    App.goTo("browse");
+    return;
   }
 
-  setTimeout( function(){
-    jQuery('#browser').imagestrip({
-      left: "#leftButton",
-      right: "#rightButton",
-      width: "100%",
-      click: loadBrowserItem
-    });
-  }, 1500);
-
-  jQuery( "#leftButton, #rightButton" ).css({display:"none"});
-
-});
-
-function loadByHash( hash ){
   var url = "saves/" + hash + ".txt";
 
   $.get( url, function(data) {
-    var data = data.split("&");
+    data = data.split("&");
     var author = data[0];
     var title = data[1];
     var code = data[2];
 
     $("#theCode").attr( "value", code );
     inkIt();
-    var name = "\"" + title + "\" by " + author
+    var name = "\"" + title + "\" by " + author;
     displayMessage( name );
     $("#namecard").text( name );
     location.replace( "#" + hash );
-  })
+  });
 }
-
-function loadBrowserItem(a){
-  var src = this.src;
-  var endPos = src.indexOf( ".png" );
-  var hash = src.substring(src.length-12, endPos);
-
-  $("#browseSheet").slideUp();
-  $("#browse").removeClass( "selected" );
-  loadByHash( hash );
-}
-
 
 // -----------------------------------------------------------
 // __INIT__
