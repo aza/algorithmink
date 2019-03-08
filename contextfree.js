@@ -497,12 +497,23 @@ Renderer = {
 		Renderer.drawRule( ruleName, IdentityTransformation(), foregroundColor );
 	},
 	
-	drawRule: function( ruleName, transform, color, priority ){
-		// When things get too small, we can stop rendering.
-		// Too small, in this case, means less than half a pixel.
-		if( Math.abs(transform[0][1])*Renderer._globalScale < .5 && Math.abs(transform[1][1])*Renderer._globalScale < .5 ){
-			return;
-		}
+	drawRule: function( ruleName, transform, color, priority, sizeAttributes ){
+        if(sizeAttributes === undefined) {
+            sizeAttributes = {};
+        }
+        var minSize = sizeAttributes.min || 0.5;
+
+
+        // When things get too small, we can stop rendering.
+        // Too small, in this case, means less than half a pixel (if not specified otherwise).
+        if( Math.abs(transform[0][1])*Renderer._globalScale < minSize && Math.abs(transform[1][1])*Renderer._globalScale < minSize ){
+            return;
+        }
+
+        if(sizeAttributes.max !== undefined &&
+            ((Math.abs(transform[0][1])*Renderer._globalScale >= sizeAttributes.max) || (Math.abs(transform[1][1])*Renderer._globalScale >= sizeAttributes.max ))){
+            return;
+        }
 		
 		// Choose which rule to go with...
 		var choices = Renderer.compiled[ruleName];
@@ -582,6 +593,9 @@ Renderer = {
 
 			var localTransform = Renderer.adjustTransform( item, transform );
 			var localColor = adjustColor( color, item );
+			var sizeAttributes = {};
+		  	sizeAttributes.min = getKeyValue('min', 0.5, item);
+		  	sizeAttributes.max = getKeyValue('max', undefined, item);
 	    
 			switch( item.shape ){
 				case "CIRCLE":					
@@ -618,13 +632,13 @@ Renderer = {
 					break;
 										
 				default:
-				  var threadedDraw = function(shape, transform, color){
+				  var threadedDraw = function(shape, transform, color, sizeAttributes){
 				    this.start = function(){
-				      Renderer.drawRule( shape, transform, color );
+				      Renderer.drawRule( shape, transform, color, 1,  sizeAttributes );
 				    }
 				  }
 				  
-				  var tD = new threadedDraw( item.shape, localTransform, localColor );
+				  var tD = new threadedDraw( item.shape, localTransform, localColor, sizeAttributes);
 				  
 				  if( priority == 1 ){ Renderer.queue.unshift(tD); }
 				  else{ Renderer.queue.push( tD ); }
